@@ -1,7 +1,5 @@
 import 'package:bloc/bloc.dart';
 import 'package:dio/dio.dart';
-import 'package:meta/meta.dart';
-
 import '../../../../data/repository/main/product_repository.dart';
 import '../../../../data/source/remote/response/markets/markets_response.dart';
 import '../../../../di/di.dart';

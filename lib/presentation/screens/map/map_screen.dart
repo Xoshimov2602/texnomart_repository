@@ -4,6 +4,7 @@ import 'package:yandex_maps_mapkit_lite/mapkit.dart';
 import 'package:yandex_maps_mapkit_lite/mapkit_factory.dart';
 import 'package:yandex_maps_mapkit_lite/yandex_map.dart';
 import '../../../utils/service.dart';
+import "package:yandex_maps_mapkit_lite/src/bindings/image/image_provider.dart" as image_provider;
 
 class MapScreen extends StatefulWidget {
   final String lat;
@@ -37,6 +38,12 @@ class _MapScreenState extends State<MapScreen> {
       await locationService.requestPermission();
     }
   }
+
+  void _addMarker (){
+    final double latitude = double.parse(widget.lat);
+    final double longitude = double.parse(widget.lng);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -47,9 +54,11 @@ class _MapScreenState extends State<MapScreen> {
       ),
       body: YandexMap(
         onMapCreated: (mapWindow) {
-          setState(() {
-            _mapWindow = mapWindow;
-          });
+          _mapWindow = mapWindow;
+          final imageProvider = image_provider.ImageProvider.fromImageProvider(const AssetImage("assets/img.png"));
+          final placemark = mapWindow.map.mapObjects.addPlacemark()
+            ..geometry = Point(latitude: double.parse(widget.lat), longitude: double.parse(widget.lng))
+            ..setIcon(imageProvider);
         },
       ),
     );
