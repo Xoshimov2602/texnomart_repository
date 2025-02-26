@@ -95,7 +95,9 @@ class _MarketsScreenState extends State<MarketsScreen> {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => MapScreen(),
+                                builder: (context) => MapScreen(
+                                  lat: state.markets?.data?.data?[index].lat ?? "",
+                                  lng: state.markets?.data?.data?[index].long ?? "",),
                               ),
                             );
                           },
