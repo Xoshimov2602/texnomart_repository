@@ -59,6 +59,15 @@ class _MapScreenState extends State<MapScreen> {
           final placemark = mapWindow.map.mapObjects.addPlacemark()
             ..geometry = Point(latitude: double.parse(widget.lat), longitude: double.parse(widget.lng))
             ..setIcon(imageProvider);
+          _mapWindow?.map.move(
+              CameraPosition(
+                  Point(latitude: double.parse(widget.lat), longitude: double.parse(widget.lng
+                  )),
+                  zoom: 17.0,
+                  azimuth: 150.0,
+                  tilt: 30.0
+              )
+          );
         },
       ),
     );
