@@ -34,7 +34,6 @@ class _HolderScreenState extends State<HolderScreen> {
     ]);
   }
 
-  // Called from any screen when a cart item is added/removed
   void updateBasketCount(int count) {
     setState(() {
       basketItemCount = count;

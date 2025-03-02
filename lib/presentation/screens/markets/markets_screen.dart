@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:texnomart/data/source/remote/response/markets/markets_response.dart';
 
 import '../map/map_screen.dart';
 import 'bloc/market_bloc.dart';
@@ -85,7 +86,8 @@ class _MarketsScreenState extends State<MarketsScreen> {
                    },
                    itemCount: state.marketProfile?.data?.data?[0].openedStores?.length ?? 0,
                  )
-               :*/ ListView.separated(
+               :*/
+                        ListView.separated(
                       itemBuilder: (context, index) {
                         return ItemMarkets(
                           title: state.markets?.data?.data?[index].name ?? "",
@@ -96,8 +98,17 @@ class _MarketsScreenState extends State<MarketsScreen> {
                               context,
                               MaterialPageRoute(
                                 builder: (context) => MapScreen(
-                                  lat: state.markets?.data?.data?[index].lat ?? "",
-                                  lng: state.markets?.data?.data?[index].long ?? "",),
+                                  market: state.markets?.data?.data?[index] ??
+                                      MarketsElement(
+                                          "address",
+                                          "description",
+                                          0,
+                                          "lat",
+                                          "long",
+                                          "name",
+                                          "phone",
+                                          "workTime"),
+                                ),
                               ),
                             );
                           },

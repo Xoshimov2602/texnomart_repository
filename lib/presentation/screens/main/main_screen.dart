@@ -282,46 +282,37 @@ class _MainScreenState extends State<MainScreen> {
                                 scrollDirection: Axis.horizontal,
                                 gridDelegate:
                                     SliverGridDelegateWithFixedCrossAxisCount(
-                                      crossAxisCount: 2,
-                                      crossAxisSpacing: 5,
-                                      mainAxisSpacing: 5,
-                                      childAspectRatio: 1,
-                                    ),
-                                itemCount:
-                                    (state
-                                            .specialCategories
-                                            ?.data
-                                            ?.data
+                                  crossAxisCount: 2,
+                                  crossAxisSpacing: 5,
+                                  mainAxisSpacing: 5,
+                                  childAspectRatio: 1,
+                                ),
+                                itemCount: (state.specialCategories?.data?.data
                                             ?.length ??
                                         0) +
                                     1,
                                 itemBuilder: (context, index) {
-                                  final dataLength =
-                                      state
-                                          .specialCategories
-                                          ?.data
-                                          ?.data
-                                          ?.length ??
+                                  final dataLength = state.specialCategories
+                                          ?.data?.data?.length ??
                                       0;
                                   if (index < dataLength) {
                                     return Container(
                                       alignment: Alignment.center,
                                       // padding: EdgeInsets.all(10),
                                       child: ItemTopCategory(
-                                        data:
-                                            state
-                                                .specialCategories
-                                                ?.data
-                                                ?.data?[index],
+                                        data: state.specialCategories?.data
+                                            ?.data?[index],
                                         onTap: (specialCategory) {
                                           var a = specialCategory.slug ?? "";
                                           Navigator.push(
                                             context,
                                             MaterialPageRoute(
-                                              builder:
-                                                  (context) =>
-                                                      CategoryScreen(slug: a,
-                                                        category: specialCategory.title ?? "",),
+                                              builder: (context) =>
+                                                  CategoryScreen(
+                                                slug: a,
+                                                category:
+                                                    specialCategory.title ?? "",
+                                              ),
                                             ),
                                           );
                                           print(
@@ -341,9 +332,8 @@ class _MainScreenState extends State<MainScreen> {
                                           Navigator.push(
                                             context,
                                             MaterialPageRoute(
-                                              builder:
-                                                  (context) =>
-                                                      AllCategoryScreen(),
+                                              builder: (context) =>
+                                                  AllCategoryScreen(),
                                             ),
                                           );
                                         },
@@ -361,7 +351,6 @@ class _MainScreenState extends State<MainScreen> {
                                             child: Row(
                                               mainAxisAlignment:
                                                   MainAxisAlignment.center,
-
                                               children: [
                                                 Text('Barchasi '),
                                                 Icon(
@@ -407,72 +396,47 @@ class _MainScreenState extends State<MainScreen> {
                                   "RRR list size ${state.data?.data?.data.length}",
                                 );
                                 return hitProductCard(
-                                  productId:
-                                      state.data?.data?.data[index].id ?? 0,
-                                  title:
-                                      state.data?.data?.data[index].name ?? "",
-                                  imageUrl:
-                                      state.data?.data?.data[index].image ?? "",
-                                  subtitle:
-                                      state
-                                          .data
-                                          ?.data
-                                          ?.data[index]
-                                          .axiomMonthlyPrice ??
-                                      "",
-                                  price:
-                                      state.data?.data?.data[index].salePrice ??
-                                      0,
-                                  onClick: () {
-                                    Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                        builder:
-                                            (context) => DetailScreen(
-                                              productId:
-                                                  state
-                                                      .data
-                                                      ?.data
-                                                      ?.data[index]
-                                                      .id ??
-                                                  0,
-                                              name:
-                                                  state
-                                                      .data
-                                                      ?.data
-                                                      ?.data[index]
-                                                      .name ??
-                                                  "",
-                                              image:
-                                                  state
-                                                      .data
-                                                      ?.data
-                                                      ?.data[index]
-                                                      .image ??
-                                                  "",
-                                              axiom:
-                                                  state
-                                                      .data
-                                                      ?.data
-                                                      ?.data[index]
-                                                      .axiomMonthlyPrice ??
-                                                  "",
-                                              price:
-                                                  state
-                                                      .data
-                                                      ?.data
-                                                      ?.data[index]
-                                                      .salePrice ??
-                                                  0,
-                                            ),
-                                      ),
-                                    );
-                                  },
-                                  stickers: null,
-                                    onCartUpdated: () {setState(() {
-
-                                    });   }
-                                );
+                                    productId:
+                                        state.data?.data?.data[index].id ?? 0,
+                                    title: state.data?.data?.data[index].name ??
+                                        "",
+                                    imageUrl:
+                                        state.data?.data?.data[index].image ??
+                                            "",
+                                    subtitle: state.data?.data?.data[index]
+                                            .axiomMonthlyPrice ??
+                                        "",
+                                    price: state.data?.data?.data[index]
+                                            .salePrice ??
+                                        0,
+                                    onClick: () {
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) => DetailScreen(
+                                            productId: state.data?.data
+                                                    ?.data[index].id ??
+                                                0,
+                                            name: state.data?.data?.data[index]
+                                                    .name ??
+                                                "",
+                                            image: state.data?.data?.data[index]
+                                                    .image ??
+                                                "",
+                                            axiom: state.data?.data?.data[index]
+                                                    .axiomMonthlyPrice ??
+                                                "",
+                                            price: state.data?.data?.data[index]
+                                                    .salePrice ??
+                                                0,
+                                          ),
+                                        ),
+                                      );
+                                    },
+                                    stickers: null,
+                                    onCartUpdated: () {
+                                      setState(() {});
+                                    });
                               },
                             ),
                           ),
@@ -491,7 +455,7 @@ class _MainScreenState extends State<MainScreen> {
                                   clipBehavior: Clip.none,
                                   itemCount:
                                       state.specialBrands?.data?.data?.length ??
-                                      1,
+                                          1,
                                   scrollDirection: Axis.horizontal,
                                   itemBuilder: (context, index) {
                                     return Padding(
@@ -503,10 +467,7 @@ class _MainScreenState extends State<MainScreen> {
                                         clipBehavior: Clip.none,
                                         borderRadius: BorderRadius.circular(10),
                                         child: ItemBrands(
-                                          data:
-                                              state
-                                                  .specialBrands
-                                                  ?.data
+                                          data: state.specialBrands?.data
                                                   ?.data?[index] ??
                                               SpecialBrandsElement(
                                                 "image",
@@ -535,192 +496,132 @@ class _MainScreenState extends State<MainScreen> {
                                   state.newProducts?.data?.data?.length ?? 1,
                               itemBuilder: (context, index) {
                                 return hitProductCard(
-                                  productId:
-                                      state
-                                          .newProducts
-                                          ?.data
-                                          ?.data?[index]
-                                          .id ??
-                                      0,
-                                  title:
-                                      state
-                                          .newProducts
-                                          ?.data
-                                          ?.data?[index]
-                                          .name ??
-                                      "",
-                                  imageUrl:
-                                      state
-                                          .newProducts
-                                          ?.data
-                                          ?.data?[index]
-                                          .image ??
-                                      "",
-                                  subtitle:
-                                      state
-                                          .newProducts
-                                          ?.data
-                                          ?.data?[index]
-                                          .axiomMonthlyPrice ??
-                                      "",
-                                  price:
-                                      state
-                                          .newProducts
-                                          ?.data
-                                          ?.data?[index]
-                                          .salePrice ??
-                                      0,
-                                  onClick: () {
-                                    Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                        builder:
-                                            (context) => DetailScreen(
-                                              productId:
-                                                  state
-                                                      .newProducts
-                                                      ?.data
-                                                      ?.data?[index]
-                                                      .id ??
-                                                  0,
-                                              name:
-                                                  state
-                                                      .newProducts
-                                                      ?.data
-                                                      ?.data?[index]
-                                                      .name ??
-                                                  "",
-                                              image:
-                                                  state
-                                                      .newProducts
-                                                      ?.data
-                                                      ?.data?[index]
-                                                      .image ??
-                                                  "",
-                                              axiom:
-                                                  state
-                                                      .newProducts
-                                                      ?.data
-                                                      ?.data?[index]
-                                                      .axiomMonthlyPrice ??
-                                                  "",
-                                              price:
-                                                  state
-                                                      .newProducts
-                                                      ?.data
-                                                      ?.data?[index]
-                                                      .salePrice ??
-                                                  0,
-                                            ),
-                                      ),
-                                    );
-                                  },
-                                  stickers: null,
-                                    onCartUpdated: () {setState(() {
-
-                                    });   }
-                                );
+                                    productId: state.newProducts?.data
+                                            ?.data?[index].id ??
+                                        0,
+                                    title: state.newProducts?.data?.data?[index]
+                                            .name ??
+                                        "",
+                                    imageUrl: state.newProducts?.data
+                                            ?.data?[index].image ??
+                                        "",
+                                    subtitle: state.newProducts?.data
+                                            ?.data?[index].axiomMonthlyPrice ??
+                                        "",
+                                    price: state.newProducts?.data?.data?[index]
+                                            .salePrice ??
+                                        0,
+                                    onClick: () {
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) => DetailScreen(
+                                            productId: state.newProducts?.data
+                                                    ?.data?[index].id ??
+                                                0,
+                                            name: state.newProducts?.data
+                                                    ?.data?[index].name ??
+                                                "",
+                                            image: state.newProducts?.data
+                                                    ?.data?[index].image ??
+                                                "",
+                                            axiom: state
+                                                    .newProducts
+                                                    ?.data
+                                                    ?.data?[index]
+                                                    .axiomMonthlyPrice ??
+                                                "",
+                                            price: state.newProducts?.data
+                                                    ?.data?[index].salePrice ??
+                                                0,
+                                          ),
+                                        ),
+                                      );
+                                    },
+                                    stickers: null,
+                                    onCartUpdated: () {
+                                      setState(() {});
+                                    });
                               },
                             ),
                           ),
                           SizedBox(
                             height: 400,
                             child: ListView.builder(
-                              itemCount:
-                                  state.collections?.data?.data?.length ?? 1,
+                              itemCount: state.collections?.data?.data?[0]
+                                      .products?.length ??
+                                  0,
                               scrollDirection: Axis.horizontal,
                               itemBuilder: (context, index) {
                                 return hitProductCard(
-                                  productId:
-                                      state
-                                          .collections
-                                          ?.data
-                                          ?.data?[index]
-                                          .id ??
-                                      0,
-                                  title:
-                                      state
-                                          .collections
-                                          ?.data
-                                          ?.data?[index]
-                                          .name ??
-                                      "",
-                                  imageUrl:
-                                      state
-                                          .collections
-                                          ?.data
-                                          ?.data?[0]
-                                          .products?[index]
-                                          .image ??
-                                      "",
-                                  subtitle:
-                                      state
-                                          .collections
-                                          ?.data
-                                          ?.data?[0]
-                                          .products?[index]
-                                          .axiomMonthlyPrice ??
-                                      "",
-                                  // monthSale: "499 935 so'mdan / 24 oy",
-                                  price:
-                                      state
-                                          .collections
-                                          ?.data
-                                          ?.data?[0]
-                                          .products?[index]
-                                          .salePrice ??
-                                      0,
-                                  onClick: () {
-                                    Navigator.push(
-                                      context,
-                                      MaterialPageRoute(
-                                        builder:
-                                            (context) => DetailScreen(
-                                              productId:
-                                                  state
-                                                      .data
-                                                      ?.data
-                                                      ?.data[index]
-                                                      .id ??
-                                                  0,
-                                              name:
-                                                  state
-                                                      .data
-                                                      ?.data
-                                                      ?.data[index]
-                                                      .name ??
-                                                  "",
-                                              image:
-                                                  state
-                                                      .data
-                                                      ?.data
-                                                      ?.data[index]
-                                                      .image ??
-                                                  "",
-                                              axiom:
-                                                  state
-                                                      .data
-                                                      ?.data
-                                                      ?.data[index]
-                                                      .axiomMonthlyPrice ??
-                                                  "",
-                                              price:
-                                                  state
-                                                      .data
-                                                      ?.data
-                                                      ?.data[index]
-                                                      .salePrice ??
-                                                  0,
-                                            ),
-                                      ),
-                                    );
-                                  },
-                                  stickers: null,
-                                    onCartUpdated: () {setState(() {
-
-                                    });   }
-                                );
-
+                                    productId: state.collections?.data?.data?[0]
+                                            .products?[index].id ??
+                                        0,
+                                    title: state.collections?.data?.data?[0]
+                                            .products?[index].name ??
+                                        "",
+                                    imageUrl: state.collections?.data?.data?[0]
+                                            .products?[index].image ??
+                                        "",
+                                    subtitle: state
+                                            .collections
+                                            ?.data
+                                            ?.data?[0]
+                                            .products?[index]
+                                            .axiomMonthlyPrice ??
+                                        "",
+                                    // monthSale: "499 935 so'mdan / 24 oy",
+                                    price: state.collections?.data?.data?[0]
+                                            .products?[index].salePrice ??
+                                        0,
+                                    onClick: () {
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) => DetailScreen(
+                                            productId: state
+                                                    .collections
+                                                    ?.data
+                                                    ?.data?[0]
+                                                    .products?[index]
+                                                    .id ??
+                                                0,
+                                            name: state
+                                                    .collections
+                                                    ?.data
+                                                    ?.data?[0]
+                                                    .products?[index]
+                                                    .name ??
+                                                "",
+                                            image: state
+                                                    .collections
+                                                    ?.data
+                                                    ?.data?[0]
+                                                    .products?[index]
+                                                    .image ??
+                                                "",
+                                            axiom: state
+                                                    .collections
+                                                    ?.data
+                                                    ?.data?[0]
+                                                    .products?[index]
+                                                    .axiomMonthlyPrice ??
+                                                "",
+                                            price: state
+                                                    .collections
+                                                    ?.data
+                                                    ?.data?[0]
+                                                    .products?[index]
+                                                    .salePrice ??
+                                                0,
+                                          ),
+                                        ),
+                                      );
+                                    },
+                                    stickers: null,
+                                    onCartUpdated: () {
+                                      setState(() {});
+                                    });
                               },
                             ),
                           ),
