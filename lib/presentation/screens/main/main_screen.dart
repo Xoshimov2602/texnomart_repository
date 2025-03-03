@@ -485,16 +485,15 @@ class _MainScreenState extends State<MainScreen> {
                             ),
                           ),
                           SizedBox(
-                            height: 400, // Ensures ListView has a fixed height
+                            height: state.newProducts?.data?.data != null? 400 : 0,
                             child: ListView.builder(
                               physics: BouncingScrollPhysics(),
-                              // Smooth scrolling
                               shrinkWrap: true,
-                              // Prevent infinite height issues
                               scrollDirection: Axis.horizontal,
                               itemCount:
-                                  state.newProducts?.data?.data?.length ?? 1,
+                                  state.newProducts?.data?.data?.length ?? 0,
                               itemBuilder: (context, index) {
+                                print("llllll ${state.newProducts?.data?.data?.length}");
                                 return hitProductCard(
                                     productId: state.newProducts?.data
                                             ?.data?[index].id ??

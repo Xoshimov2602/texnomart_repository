@@ -6,7 +6,7 @@ import 'package:yandex_maps_mapkit_lite/mapkit_factory.dart';
 import 'package:yandex_maps_mapkit_lite/yandex_map.dart';
 import '../../../utils/service.dart';
 import "package:yandex_maps_mapkit_lite/src/bindings/image/image_provider.dart"
-    as image_provider;
+as image_provider;
 import 'package:flutter/src/painting/text_style.dart' as material_text_style;
 
 class MapScreen extends StatefulWidget {
@@ -19,13 +19,13 @@ class MapScreen extends StatefulWidget {
 }
 
 class _MapScreenState extends State<MapScreen> {
-  MapWindow? _mapWindow;
+  late MapWindow _mapWindow;
 
   @override
   void initState() {
     super.initState();
     mapkit.onStart();
-    _initPermission();
+    LocationService().checkPermission();
   }
 
   @override
@@ -34,16 +34,13 @@ class _MapScreenState extends State<MapScreen> {
     super.dispose();
   }
 
-  Future<void> _initPermission() async {
-    final locationService = LocationService();
-    if (!await locationService.checkPermission()) {
-      await locationService.requestPermission();
-    }
-  }
-
-  void _addMarker() {
-    final double latitude = double.parse(widget.market.lat ?? "0");
-    final double longitude = double.parse(widget.market.long ?? "0");
+  void moveCamera(double lat, double lng) {
+    _mapWindow.map.move(CameraPosition(
+      Point(latitude: lat, longitude: lng),
+      zoom: 18.0,
+      azimuth: 0.0,
+      tilt: 0.0,
+    ));
   }
 
   @override
@@ -63,21 +60,24 @@ class _MapScreenState extends State<MapScreen> {
               child: YandexMap(
                 onMapCreated: (mapWindow) {
                   _mapWindow = mapWindow;
+                  moveCamera(
+                      double.parse(widget.market.lat ?? "0"),
+                      double.parse(widget.market.long ?? "0"));
                   final imageProvider =
-                      image_provider.ImageProvider.fromImageProvider(
-                          const AssetImage("assets/img.png"));
+                  image_provider.ImageProvider.fromImageProvider(
+                      const AssetImage("assets/img.png"));
                   final placemark = mapWindow.map.mapObjects.addPlacemark()
                     ..geometry = Point(
                         latitude: double.parse(widget.market.lat ?? "0"),
                         longitude: double.parse(widget.market.long ?? "0"))
                     ..setIcon(imageProvider);
-                  _mapWindow?.map.move(CameraPosition(
-                      Point(
-                          latitude: double.parse(widget.market.lat ?? "0"),
-                          longitude: double.parse(widget.market.long ?? "0")),
-                      zoom: 17.0,
-                      azimuth: 150.0,
-                      tilt: 30.0));
+                  // _mapWindow.map.move(CameraPosition(
+                  //     Point(
+                  //         latitude: double.parse(widget.market.lat ?? "0"),
+                  //         longitude: double.parse(widget.market.long ?? "0")),
+                  //     zoom: 17.0,
+                  //     azimuth: 150.0,
+                  //     tilt: 30.0));
                 },
               ),
             ),
