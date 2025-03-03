@@ -83,28 +83,107 @@ class _MapScreenState extends State<MapScreen> {
             ),
             Container(
               width: double.infinity,
+              height: 200,
               child: Column(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: 16, vertical: 10),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 16, vertical: 10),
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Icon(Icons.shop, color: Colors.grey,size: 20,),
+                          SizedBox(width: 10),
+                          Expanded( // Ensures the text wraps properly
+                            child: Text(
+                              widget.market.address ?? "",
+                              style: material_text_style.TextStyle(
+                                fontWeight: FontWeight.w500,
+                                color: Colors.black,
+                                fontSize: 16,
+                              ),
+                              softWrap: true,
+                              overflow: TextOverflow.visible,
+                            ),
+                          ),
+                        ],
+                      ),
+
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16),
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        Icon(Icons.shop),
-                        SizedBox(
-                          width: 10,
+                        Icon(Icons.access_time_sharp, color: Colors.grey,size: 20,),
+                        SizedBox(width: 10),
+                        Expanded( // Ensures the text wraps properly
+                          child: Text(
+                            "Du-Yak(${widget.market.workTime})" ?? "",
+                            style: material_text_style.TextStyle(
+                              fontWeight: FontWeight.w500,
+                              color: Colors.grey.shade600,
+                              fontSize: 16,
+                            ),
+                            softWrap: true,
+                            overflow: TextOverflow.visible,
+                          ),
                         ),
-                        Text(
-                          "",
-                          style: material_text_style.TextStyle(
-                              fontWeight: FontWeight.w600,
-                              color: Colors.black,
-                              fontSize: 18),
-                        )
                       ],
                     ),
                   ),
+                  SizedBox(height: 10,),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Icon(Icons.phone, color: Colors.grey,size: 20,),
+                        SizedBox(width: 10),
+                        Expanded( // Ensures the text wraps properly
+                          child: Text(
+                            widget.market.phone ?? "",
+                            style: material_text_style.TextStyle(
+                              fontWeight: FontWeight.w500,
+                              color: Colors.grey.shade600,
+                              fontSize: 16,
+                            ),
+                            softWrap: true,
+                            overflow: TextOverflow.visible,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(left: 16.0, top: 16),
+                    child: Row(
+                      children: [
+                        Container(
+                          padding: EdgeInsets.all(8),
+                          decoration: BoxDecoration(
+                            border: Border.all(color: Colors.grey.shade400, width: 1), // 1dp grey border
+                            borderRadius: BorderRadius.circular(8), // Optional rounded corners
+                          ),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.min, // Wrap content size
+                            children: [
+                              Icon(Icons.pattern_sharp, color: Colors.yellow[800], size: 20),
+                              SizedBox(width: 8),
+                              Text(
+                                "Marshrut",
+                                style: material_text_style.TextStyle(
+                                  color: Colors.black,
+                                  fontSize: 16,
+                                  fontWeight: FontWeight.w500,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  )
                 ],
               ),
             )
