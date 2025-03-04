@@ -484,31 +484,42 @@ class _MainScreenState extends State<MainScreen> {
                               ),
                             ),
                           ),
+                          Padding(
+                            padding: EdgeInsets.only(left: 16, bottom: 10),
+                            child: Text(
+                              "Yangi mahsulotlar",
+                              style: TextStyle(
+                                fontWeight: FontWeight.w700,
+                                color: Colors.black,
+                                fontSize: 16,
+                              ),
+                            ),
+                          ),
                           SizedBox(
-                            height: state.newProducts?.data?.data != null? 400 : 0,
+                            height: 400,
                             child: ListView.builder(
-                              physics: BouncingScrollPhysics(),
-                              shrinkWrap: true,
+                              itemCount: state.collections?.data?.data?[0]
+                                      .products?.length ??
+                                  0,
                               scrollDirection: Axis.horizontal,
-                              itemCount:
-                                  state.newProducts?.data?.data?.length ?? 0,
                               itemBuilder: (context, index) {
-                                print("llllll ${state.newProducts?.data?.data?.length}");
                                 return hitProductCard(
                                     productId: state.newProducts?.data
-                                            ?.data?[index].id ??
+                                        ?.data?[index].id ??
                                         0,
-                                    title: state.newProducts?.data?.data?[index]
-                                            .name ??
+                                    title: state.newProducts?.data
+                                        ?.data?[index].name ??
                                         "",
                                     imageUrl: state.newProducts?.data
-                                            ?.data?[index].image ??
+                                        ?.data?[index].image ??
                                         "",
                                     subtitle: state.newProducts?.data
-                                            ?.data?[index].axiomMonthlyPrice ??
+                                        ?.data?[index]
+                                            .axiomMonthlyPrice ??
                                         "",
-                                    price: state.newProducts?.data?.data?[index]
-                                            .salePrice ??
+                                    // monthSale: "499 935 so'mdan / 24 oy",
+                                    price: state.newProducts?.data
+                                        ?.data?[index].salePrice ??
                                         0,
                                     onClick: () {
                                       Navigator.push(
@@ -516,22 +527,24 @@ class _MainScreenState extends State<MainScreen> {
                                         MaterialPageRoute(
                                           builder: (context) => DetailScreen(
                                             productId: state.newProducts?.data
-                                                    ?.data?[index].id ??
+                                        ?.data?[index]
+                                                    .id ??
                                                 0,
                                             name: state.newProducts?.data
-                                                    ?.data?[index].name ??
+                                        ?.data?[index]
+                                                    .name ??
                                                 "",
                                             image: state.newProducts?.data
-                                                    ?.data?[index].image ??
+                                        ?.data?[index]
+                                                    .image ??
                                                 "",
-                                            axiom: state
-                                                    .newProducts
-                                                    ?.data
-                                                    ?.data?[index]
+                                            axiom: state.newProducts?.data
+                                        ?.data?[index]
                                                     .axiomMonthlyPrice ??
                                                 "",
                                             price: state.newProducts?.data
-                                                    ?.data?[index].salePrice ??
+                                        ?.data?[index]
+                                                    .salePrice ??
                                                 0,
                                           ),
                                         ),
@@ -544,34 +557,45 @@ class _MainScreenState extends State<MainScreen> {
                               },
                             ),
                           ),
+                          Padding(
+                            padding: EdgeInsets.only(left: 16, bottom: 10),
+                            child: Text(
+                              "1 + 1",
+                              style: TextStyle(
+                                fontWeight: FontWeight.w700,
+                                color: Colors.black,
+                                fontSize: 16,
+                              ),
+                            ),
+                          ),
                           SizedBox(
                             height: 400,
                             child: ListView.builder(
                               itemCount: state.collections?.data?.data?[0]
-                                      .products?.length ??
+                                  .products?.length ??
                                   0,
                               scrollDirection: Axis.horizontal,
                               itemBuilder: (context, index) {
                                 return hitProductCard(
                                     productId: state.collections?.data?.data?[0]
-                                            .products?[index].id ??
+                                        .products?[index].id ??
                                         0,
                                     title: state.collections?.data?.data?[0]
-                                            .products?[index].name ??
+                                        .products?[index].name ??
                                         "",
                                     imageUrl: state.collections?.data?.data?[0]
-                                            .products?[index].image ??
+                                        .products?[index].image ??
                                         "",
                                     subtitle: state
-                                            .collections
-                                            ?.data
-                                            ?.data?[0]
-                                            .products?[index]
-                                            .axiomMonthlyPrice ??
+                                        .collections
+                                        ?.data
+                                        ?.data?[0]
+                                        .products?[index]
+                                        .axiomMonthlyPrice ??
                                         "",
                                     // monthSale: "499 935 so'mdan / 24 oy",
                                     price: state.collections?.data?.data?[0]
-                                            .products?[index].salePrice ??
+                                        .products?[index].salePrice ??
                                         0,
                                     onClick: () {
                                       Navigator.push(
@@ -579,39 +603,39 @@ class _MainScreenState extends State<MainScreen> {
                                         MaterialPageRoute(
                                           builder: (context) => DetailScreen(
                                             productId: state
-                                                    .collections
-                                                    ?.data
-                                                    ?.data?[0]
-                                                    .products?[index]
-                                                    .id ??
+                                                .collections
+                                                ?.data
+                                                ?.data?[0]
+                                                .products?[index]
+                                                .id ??
                                                 0,
                                             name: state
-                                                    .collections
-                                                    ?.data
-                                                    ?.data?[0]
-                                                    .products?[index]
-                                                    .name ??
+                                                .collections
+                                                ?.data
+                                                ?.data?[0]
+                                                .products?[index]
+                                                .name ??
                                                 "",
                                             image: state
-                                                    .collections
-                                                    ?.data
-                                                    ?.data?[0]
-                                                    .products?[index]
-                                                    .image ??
+                                                .collections
+                                                ?.data
+                                                ?.data?[0]
+                                                .products?[index]
+                                                .image ??
                                                 "",
                                             axiom: state
-                                                    .collections
-                                                    ?.data
-                                                    ?.data?[0]
-                                                    .products?[index]
-                                                    .axiomMonthlyPrice ??
+                                                .collections
+                                                ?.data
+                                                ?.data?[0]
+                                                .products?[index]
+                                                .axiomMonthlyPrice ??
                                                 "",
                                             price: state
-                                                    .collections
-                                                    ?.data
-                                                    ?.data?[0]
-                                                    .products?[index]
-                                                    .salePrice ??
+                                                .collections
+                                                ?.data
+                                                ?.data?[0]
+                                                .products?[index]
+                                                .salePrice ??
                                                 0,
                                           ),
                                         ),
