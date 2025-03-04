@@ -74,11 +74,11 @@ class _MarketsScreenState extends State<MarketsScreen> {
                 {
                   return Container(
                     width: double.infinity,
-                    child: /*widget.id == 0 ? ListView.separated(
+                    child: widget.id == 0 ? ListView.separated(
                    itemBuilder: (context, index) {
                      return ItemMarkets(
-                       title: state.marketProfile?.data?.data?[0].openedStores?[index].name ?? "",
-                       subtitle: state.marketProfile?.data?.data?[0].openedStores?[index].workTime ?? "",
+                       title: state.openedMarkets?[index].name ?? "",
+                       subtitle: state.openedMarkets?[index].workTime ?? "", onTab: (){},
                      );
                    },
                    separatorBuilder: (context, index) {
@@ -90,10 +90,9 @@ class _MarketsScreenState extends State<MarketsScreen> {
                        ),
                      );
                    },
-                   itemCount: state.marketProfile?.data?.data?[0].openedStores?.length ?? 0,
+                   itemCount: state.openedMarkets?.length ?? 0,
                  )
-               :*/
-                        ListView.separated(
+               : ListView.separated(
                       itemBuilder: (context, index) {
                         return ItemMarkets(
                           title: state.markets?.data?.data?[index].name ?? "",

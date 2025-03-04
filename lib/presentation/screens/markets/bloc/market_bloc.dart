@@ -26,8 +26,8 @@ class MarketBloc extends Bloc<MarketEvent, MarketState> {
       emit(state.copyWith(status: MarketStatus.loading));
       try {
         final second = await repository.getMarketsProfile();
-        print("TTT in bloc markets size : ${second.data?.data?.length}");
-        emit(state.copyWith(status: MarketStatus.success, marketProfile: second));
+        print("TTT in bloc markets size : ${second.data?.data?[0].openedStores?.length}");
+        emit(state.copyWith(status: MarketStatus.success, openedMarkets: second.data?.data?[0].openedStores));
       } on DioException {
         print("TTT  in bloc erroring in bloc");
         emit(state.copyWith(status: MarketStatus.failure));

@@ -65,7 +65,7 @@ void setup () {
   getIt.registerSingleton<DetailAboutApi>(DetailAboutApi(getIt<Dio>()));
   getIt.registerSingleton<AccessoriesApi>(AccessoriesApi(getIt<Dio>()));
   getIt.registerSingleton<MarketsApi>(MarketsApi(getIt<Dio>()));
-  getIt.registerSingleton<ProductApi>(ProductApi(getIt<Dio>(instanceName: 'stores')));
+  getIt.registerSingleton<MarketsProfileApi>(MarketsProfileApi(getIt<Dio>(instanceName: 'stores')));
 
   getIt.registerSingleton<ProductRepository>(ProductRepositoryimpl());
 }
