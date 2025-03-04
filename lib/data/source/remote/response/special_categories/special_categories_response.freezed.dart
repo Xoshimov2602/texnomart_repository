@@ -12,12 +12,10 @@ part of 'special_categories_response.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 SpecialCategoriesResponse _$SpecialCategoriesResponseFromJson(
-  Map<String, dynamic> json,
-) {
+    Map<String, dynamic> json) {
   return _SpecialCategoriesResponse.fromJson(json);
 }
 
@@ -41,27 +39,23 @@ mixin _$SpecialCategoriesResponse {
 
 /// @nodoc
 abstract class $SpecialCategoriesResponseCopyWith<$Res> {
-  factory $SpecialCategoriesResponseCopyWith(
-    SpecialCategoriesResponse value,
-    $Res Function(SpecialCategoriesResponse) then,
-  ) = _$SpecialCategoriesResponseCopyWithImpl<$Res, SpecialCategoriesResponse>;
+  factory $SpecialCategoriesResponseCopyWith(SpecialCategoriesResponse value,
+          $Res Function(SpecialCategoriesResponse) then) =
+      _$SpecialCategoriesResponseCopyWithImpl<$Res, SpecialCategoriesResponse>;
   @useResult
-  $Res call({
-    int? code,
-    SpecialData? data,
-    String? message,
-    int? status,
-    bool? success,
-  });
+  $Res call(
+      {int? code,
+      SpecialData? data,
+      String? message,
+      int? status,
+      bool? success});
 
   $SpecialDataCopyWith<$Res>? get data;
 }
 
 /// @nodoc
-class _$SpecialCategoriesResponseCopyWithImpl<
-  $Res,
-  $Val extends SpecialCategoriesResponse
->
+class _$SpecialCategoriesResponseCopyWithImpl<$Res,
+        $Val extends SpecialCategoriesResponse>
     implements $SpecialCategoriesResponseCopyWith<$Res> {
   _$SpecialCategoriesResponseCopyWithImpl(this._value, this._then);
 
@@ -81,36 +75,28 @@ class _$SpecialCategoriesResponseCopyWithImpl<
     Object? status = freezed,
     Object? success = freezed,
   }) {
-    return _then(
-      _value.copyWith(
-            code:
-                freezed == code
-                    ? _value.code
-                    : code // ignore: cast_nullable_to_non_nullable
-                        as int?,
-            data:
-                freezed == data
-                    ? _value.data
-                    : data // ignore: cast_nullable_to_non_nullable
-                        as SpecialData?,
-            message:
-                freezed == message
-                    ? _value.message
-                    : message // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            status:
-                freezed == status
-                    ? _value.status
-                    : status // ignore: cast_nullable_to_non_nullable
-                        as int?,
-            success:
-                freezed == success
-                    ? _value.success
-                    : success // ignore: cast_nullable_to_non_nullable
-                        as bool?,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      code: freezed == code
+          ? _value.code
+          : code // ignore: cast_nullable_to_non_nullable
+              as int?,
+      data: freezed == data
+          ? _value.data
+          : data // ignore: cast_nullable_to_non_nullable
+              as SpecialData?,
+      message: freezed == message
+          ? _value.message
+          : message // ignore: cast_nullable_to_non_nullable
+              as String?,
+      status: freezed == status
+          ? _value.status
+          : status // ignore: cast_nullable_to_non_nullable
+              as int?,
+      success: freezed == success
+          ? _value.success
+          : success // ignore: cast_nullable_to_non_nullable
+              as bool?,
+    ) as $Val);
   }
 
   /// Create a copy of SpecialCategoriesResponse
@@ -132,18 +118,17 @@ class _$SpecialCategoriesResponseCopyWithImpl<
 abstract class _$$SpecialCategoriesResponseImplCopyWith<$Res>
     implements $SpecialCategoriesResponseCopyWith<$Res> {
   factory _$$SpecialCategoriesResponseImplCopyWith(
-    _$SpecialCategoriesResponseImpl value,
-    $Res Function(_$SpecialCategoriesResponseImpl) then,
-  ) = __$$SpecialCategoriesResponseImplCopyWithImpl<$Res>;
+          _$SpecialCategoriesResponseImpl value,
+          $Res Function(_$SpecialCategoriesResponseImpl) then) =
+      __$$SpecialCategoriesResponseImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    int? code,
-    SpecialData? data,
-    String? message,
-    int? status,
-    bool? success,
-  });
+  $Res call(
+      {int? code,
+      SpecialData? data,
+      String? message,
+      int? status,
+      bool? success});
 
   @override
   $SpecialDataCopyWith<$Res>? get data;
@@ -151,16 +136,13 @@ abstract class _$$SpecialCategoriesResponseImplCopyWith<$Res>
 
 /// @nodoc
 class __$$SpecialCategoriesResponseImplCopyWithImpl<$Res>
-    extends
-        _$SpecialCategoriesResponseCopyWithImpl<
-          $Res,
-          _$SpecialCategoriesResponseImpl
-        >
+    extends _$SpecialCategoriesResponseCopyWithImpl<$Res,
+        _$SpecialCategoriesResponseImpl>
     implements _$$SpecialCategoriesResponseImplCopyWith<$Res> {
   __$$SpecialCategoriesResponseImplCopyWithImpl(
-    _$SpecialCategoriesResponseImpl _value,
-    $Res Function(_$SpecialCategoriesResponseImpl) _then,
-  ) : super(_value, _then);
+      _$SpecialCategoriesResponseImpl _value,
+      $Res Function(_$SpecialCategoriesResponseImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of SpecialCategoriesResponse
   /// with the given fields replaced by the non-null parameter values.
@@ -173,30 +155,28 @@ class __$$SpecialCategoriesResponseImplCopyWithImpl<$Res>
     Object? status = freezed,
     Object? success = freezed,
   }) {
-    return _then(
-      _$SpecialCategoriesResponseImpl(
-        freezed == code
-            ? _value.code
-            : code // ignore: cast_nullable_to_non_nullable
-                as int?,
-        freezed == data
-            ? _value.data
-            : data // ignore: cast_nullable_to_non_nullable
-                as SpecialData?,
-        freezed == message
-            ? _value.message
-            : message // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == status
-            ? _value.status
-            : status // ignore: cast_nullable_to_non_nullable
-                as int?,
-        freezed == success
-            ? _value.success
-            : success // ignore: cast_nullable_to_non_nullable
-                as bool?,
-      ),
-    );
+    return _then(_$SpecialCategoriesResponseImpl(
+      freezed == code
+          ? _value.code
+          : code // ignore: cast_nullable_to_non_nullable
+              as int?,
+      freezed == data
+          ? _value.data
+          : data // ignore: cast_nullable_to_non_nullable
+              as SpecialData?,
+      freezed == message
+          ? _value.message
+          : message // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == status
+          ? _value.status
+          : status // ignore: cast_nullable_to_non_nullable
+              as int?,
+      freezed == success
+          ? _value.success
+          : success // ignore: cast_nullable_to_non_nullable
+              as bool?,
+    ));
   }
 }
 
@@ -205,12 +185,7 @@ class __$$SpecialCategoriesResponseImplCopyWithImpl<$Res>
 @JsonSerializable(explicitToJson: true, fieldRename: FieldRename.snake)
 class _$SpecialCategoriesResponseImpl implements _SpecialCategoriesResponse {
   const _$SpecialCategoriesResponseImpl(
-    this.code,
-    this.data,
-    this.message,
-    this.status,
-    this.success,
-  );
+      this.code, this.data, this.message, this.status, this.success);
 
   factory _$SpecialCategoriesResponseImpl.fromJson(Map<String, dynamic> json) =>
       _$$SpecialCategoriesResponseImplFromJson(json);
@@ -254,24 +229,24 @@ class _$SpecialCategoriesResponseImpl implements _SpecialCategoriesResponse {
   @override
   @pragma('vm:prefer-inline')
   _$$SpecialCategoriesResponseImplCopyWith<_$SpecialCategoriesResponseImpl>
-  get copyWith => __$$SpecialCategoriesResponseImplCopyWithImpl<
-    _$SpecialCategoriesResponseImpl
-  >(this, _$identity);
+      get copyWith => __$$SpecialCategoriesResponseImplCopyWithImpl<
+          _$SpecialCategoriesResponseImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$SpecialCategoriesResponseImplToJson(this);
+    return _$$SpecialCategoriesResponseImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _SpecialCategoriesResponse implements SpecialCategoriesResponse {
   const factory _SpecialCategoriesResponse(
-    final int? code,
-    final SpecialData? data,
-    final String? message,
-    final int? status,
-    final bool? success,
-  ) = _$SpecialCategoriesResponseImpl;
+      final int? code,
+      final SpecialData? data,
+      final String? message,
+      final int? status,
+      final bool? success) = _$SpecialCategoriesResponseImpl;
 
   factory _SpecialCategoriesResponse.fromJson(Map<String, dynamic> json) =
       _$SpecialCategoriesResponseImpl.fromJson;
@@ -292,7 +267,7 @@ abstract class _SpecialCategoriesResponse implements SpecialCategoriesResponse {
   @override
   @JsonKey(includeFromJson: false, includeToJson: false)
   _$$SpecialCategoriesResponseImplCopyWith<_$SpecialCategoriesResponseImpl>
-  get copyWith => throw _privateConstructorUsedError;
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 SpecialData _$SpecialDataFromJson(Map<String, dynamic> json) {
@@ -316,9 +291,8 @@ mixin _$SpecialData {
 /// @nodoc
 abstract class $SpecialDataCopyWith<$Res> {
   factory $SpecialDataCopyWith(
-    SpecialData value,
-    $Res Function(SpecialData) then,
-  ) = _$SpecialDataCopyWithImpl<$Res, SpecialData>;
+          SpecialData value, $Res Function(SpecialData) then) =
+      _$SpecialDataCopyWithImpl<$Res, SpecialData>;
   @useResult
   $Res call({List<SpecialElement>? data});
 }
@@ -337,17 +311,15 @@ class _$SpecialDataCopyWithImpl<$Res, $Val extends SpecialData>
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? data = freezed}) {
-    return _then(
-      _value.copyWith(
-            data:
-                freezed == data
-                    ? _value.data
-                    : data // ignore: cast_nullable_to_non_nullable
-                        as List<SpecialElement>?,
-          )
-          as $Val,
-    );
+  $Res call({
+    Object? data = freezed,
+  }) {
+    return _then(_value.copyWith(
+      data: freezed == data
+          ? _value.data
+          : data // ignore: cast_nullable_to_non_nullable
+              as List<SpecialElement>?,
+    ) as $Val);
   }
 }
 
@@ -355,9 +327,8 @@ class _$SpecialDataCopyWithImpl<$Res, $Val extends SpecialData>
 abstract class _$$SpecialDataImplCopyWith<$Res>
     implements $SpecialDataCopyWith<$Res> {
   factory _$$SpecialDataImplCopyWith(
-    _$SpecialDataImpl value,
-    $Res Function(_$SpecialDataImpl) then,
-  ) = __$$SpecialDataImplCopyWithImpl<$Res>;
+          _$SpecialDataImpl value, $Res Function(_$SpecialDataImpl) then) =
+      __$$SpecialDataImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({List<SpecialElement>? data});
@@ -368,23 +339,22 @@ class __$$SpecialDataImplCopyWithImpl<$Res>
     extends _$SpecialDataCopyWithImpl<$Res, _$SpecialDataImpl>
     implements _$$SpecialDataImplCopyWith<$Res> {
   __$$SpecialDataImplCopyWithImpl(
-    _$SpecialDataImpl _value,
-    $Res Function(_$SpecialDataImpl) _then,
-  ) : super(_value, _then);
+      _$SpecialDataImpl _value, $Res Function(_$SpecialDataImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of SpecialData
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? data = freezed}) {
-    return _then(
-      _$SpecialDataImpl(
-        freezed == data
-            ? _value._data
-            : data // ignore: cast_nullable_to_non_nullable
-                as List<SpecialElement>?,
-      ),
-    );
+  $Res call({
+    Object? data = freezed,
+  }) {
+    return _then(_$SpecialDataImpl(
+      freezed == data
+          ? _value._data
+          : data // ignore: cast_nullable_to_non_nullable
+              as List<SpecialElement>?,
+    ));
   }
 }
 
@@ -435,7 +405,9 @@ class _$SpecialDataImpl implements _SpecialData {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$SpecialDataImplToJson(this);
+    return _$$SpecialDataImplToJson(
+      this,
+    );
   }
 }
 
@@ -480,9 +452,8 @@ mixin _$SpecialElement {
 /// @nodoc
 abstract class $SpecialElementCopyWith<$Res> {
   factory $SpecialElementCopyWith(
-    SpecialElement value,
-    $Res Function(SpecialElement) then,
-  ) = _$SpecialElementCopyWithImpl<$Res, SpecialElement>;
+          SpecialElement value, $Res Function(SpecialElement) then) =
+      _$SpecialElementCopyWithImpl<$Res, SpecialElement>;
   @useResult
   $Res call({String? image, String? slug, String? title});
 }
@@ -506,36 +477,29 @@ class _$SpecialElementCopyWithImpl<$Res, $Val extends SpecialElement>
     Object? slug = freezed,
     Object? title = freezed,
   }) {
-    return _then(
-      _value.copyWith(
-            image:
-                freezed == image
-                    ? _value.image
-                    : image // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            slug:
-                freezed == slug
-                    ? _value.slug
-                    : slug // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            title:
-                freezed == title
-                    ? _value.title
-                    : title // ignore: cast_nullable_to_non_nullable
-                        as String?,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      image: freezed == image
+          ? _value.image
+          : image // ignore: cast_nullable_to_non_nullable
+              as String?,
+      slug: freezed == slug
+          ? _value.slug
+          : slug // ignore: cast_nullable_to_non_nullable
+              as String?,
+      title: freezed == title
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ) as $Val);
   }
 }
 
 /// @nodoc
 abstract class _$$SpecialElementImplCopyWith<$Res>
     implements $SpecialElementCopyWith<$Res> {
-  factory _$$SpecialElementImplCopyWith(
-    _$SpecialElementImpl value,
-    $Res Function(_$SpecialElementImpl) then,
-  ) = __$$SpecialElementImplCopyWithImpl<$Res>;
+  factory _$$SpecialElementImplCopyWith(_$SpecialElementImpl value,
+          $Res Function(_$SpecialElementImpl) then) =
+      __$$SpecialElementImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String? image, String? slug, String? title});
@@ -546,9 +510,8 @@ class __$$SpecialElementImplCopyWithImpl<$Res>
     extends _$SpecialElementCopyWithImpl<$Res, _$SpecialElementImpl>
     implements _$$SpecialElementImplCopyWith<$Res> {
   __$$SpecialElementImplCopyWithImpl(
-    _$SpecialElementImpl _value,
-    $Res Function(_$SpecialElementImpl) _then,
-  ) : super(_value, _then);
+      _$SpecialElementImpl _value, $Res Function(_$SpecialElementImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of SpecialElement
   /// with the given fields replaced by the non-null parameter values.
@@ -559,22 +522,20 @@ class __$$SpecialElementImplCopyWithImpl<$Res>
     Object? slug = freezed,
     Object? title = freezed,
   }) {
-    return _then(
-      _$SpecialElementImpl(
-        freezed == image
-            ? _value.image
-            : image // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == slug
-            ? _value.slug
-            : slug // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == title
-            ? _value.title
-            : title // ignore: cast_nullable_to_non_nullable
-                as String?,
-      ),
-    );
+    return _then(_$SpecialElementImpl(
+      freezed == image
+          ? _value.image
+          : image // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == slug
+          ? _value.slug
+          : slug // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == title
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ));
   }
 }
 
@@ -620,22 +581,20 @@ class _$SpecialElementImpl implements _SpecialElement {
   @pragma('vm:prefer-inline')
   _$$SpecialElementImplCopyWith<_$SpecialElementImpl> get copyWith =>
       __$$SpecialElementImplCopyWithImpl<_$SpecialElementImpl>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$SpecialElementImplToJson(this);
+    return _$$SpecialElementImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _SpecialElement implements SpecialElement {
   const factory _SpecialElement(
-    final String? image,
-    final String? slug,
-    final String? title,
-  ) = _$SpecialElementImpl;
+          final String? image, final String? slug, final String? title) =
+      _$SpecialElementImpl;
 
   factory _SpecialElement.fromJson(Map<String, dynamic> json) =
       _$SpecialElementImpl.fromJson;

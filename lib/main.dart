@@ -3,7 +3,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:texnomart/di/di.dart';
 import 'package:texnomart/presentation/screens/holder/holder_screen.dart';
 import 'package:yandex_maps_mapkit_lite/init.dart' as init;
-
 import 'data/hive/hive_helper.dart';
 import 'main/bloc/main_bloc.dart';
 
@@ -23,7 +22,6 @@ void main() async {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

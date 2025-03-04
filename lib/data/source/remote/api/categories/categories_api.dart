@@ -1,7 +1,6 @@
 import 'package:dio/dio.dart';
 import 'package:retrofit/error_logger.dart';
 import 'package:retrofit/http.dart';
-
 import '../../response/categories/categories_response.dart';
 
 part 'categories_api.g.dart';

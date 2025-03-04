@@ -27,7 +27,11 @@ Map<String, dynamic> _$$InfoResponseImplToJson(_$InfoResponseImpl instance) =>
     };
 
 _$InfoDataImpl _$$InfoDataImplFromJson(Map<String, dynamic> json) =>
-    _$InfoDataImpl(json['data'] as String?);
+    _$InfoDataImpl(
+      json['data'] as String?,
+    );
 
 Map<String, dynamic> _$$InfoDataImplToJson(_$InfoDataImpl instance) =>
-    <String, dynamic>{'data': instance.data};
+    <String, dynamic>{
+      'data': instance.data,
+    };

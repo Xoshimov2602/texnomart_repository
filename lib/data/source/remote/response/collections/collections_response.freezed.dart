@@ -12,8 +12,7 @@ part of 'collections_response.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 CollectionsResponse _$CollectionsResponseFromJson(Map<String, dynamic> json) {
   return _CollectionsResponse.fromJson(json);
@@ -40,17 +39,15 @@ mixin _$CollectionsResponse {
 /// @nodoc
 abstract class $CollectionsResponseCopyWith<$Res> {
   factory $CollectionsResponseCopyWith(
-    CollectionsResponse value,
-    $Res Function(CollectionsResponse) then,
-  ) = _$CollectionsResponseCopyWithImpl<$Res, CollectionsResponse>;
+          CollectionsResponse value, $Res Function(CollectionsResponse) then) =
+      _$CollectionsResponseCopyWithImpl<$Res, CollectionsResponse>;
   @useResult
-  $Res call({
-    int? code,
-    CollectionData? data,
-    String? message,
-    int? status,
-    bool? success,
-  });
+  $Res call(
+      {int? code,
+      CollectionData? data,
+      String? message,
+      int? status,
+      bool? success});
 
   $CollectionDataCopyWith<$Res>? get data;
 }
@@ -76,36 +73,28 @@ class _$CollectionsResponseCopyWithImpl<$Res, $Val extends CollectionsResponse>
     Object? status = freezed,
     Object? success = freezed,
   }) {
-    return _then(
-      _value.copyWith(
-            code:
-                freezed == code
-                    ? _value.code
-                    : code // ignore: cast_nullable_to_non_nullable
-                        as int?,
-            data:
-                freezed == data
-                    ? _value.data
-                    : data // ignore: cast_nullable_to_non_nullable
-                        as CollectionData?,
-            message:
-                freezed == message
-                    ? _value.message
-                    : message // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            status:
-                freezed == status
-                    ? _value.status
-                    : status // ignore: cast_nullable_to_non_nullable
-                        as int?,
-            success:
-                freezed == success
-                    ? _value.success
-                    : success // ignore: cast_nullable_to_non_nullable
-                        as bool?,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      code: freezed == code
+          ? _value.code
+          : code // ignore: cast_nullable_to_non_nullable
+              as int?,
+      data: freezed == data
+          ? _value.data
+          : data // ignore: cast_nullable_to_non_nullable
+              as CollectionData?,
+      message: freezed == message
+          ? _value.message
+          : message // ignore: cast_nullable_to_non_nullable
+              as String?,
+      status: freezed == status
+          ? _value.status
+          : status // ignore: cast_nullable_to_non_nullable
+              as int?,
+      success: freezed == success
+          ? _value.success
+          : success // ignore: cast_nullable_to_non_nullable
+              as bool?,
+    ) as $Val);
   }
 
   /// Create a copy of CollectionsResponse
@@ -126,19 +115,17 @@ class _$CollectionsResponseCopyWithImpl<$Res, $Val extends CollectionsResponse>
 /// @nodoc
 abstract class _$$CollectionsResponseImplCopyWith<$Res>
     implements $CollectionsResponseCopyWith<$Res> {
-  factory _$$CollectionsResponseImplCopyWith(
-    _$CollectionsResponseImpl value,
-    $Res Function(_$CollectionsResponseImpl) then,
-  ) = __$$CollectionsResponseImplCopyWithImpl<$Res>;
+  factory _$$CollectionsResponseImplCopyWith(_$CollectionsResponseImpl value,
+          $Res Function(_$CollectionsResponseImpl) then) =
+      __$$CollectionsResponseImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    int? code,
-    CollectionData? data,
-    String? message,
-    int? status,
-    bool? success,
-  });
+  $Res call(
+      {int? code,
+      CollectionData? data,
+      String? message,
+      int? status,
+      bool? success});
 
   @override
   $CollectionDataCopyWith<$Res>? get data;
@@ -148,10 +135,9 @@ abstract class _$$CollectionsResponseImplCopyWith<$Res>
 class __$$CollectionsResponseImplCopyWithImpl<$Res>
     extends _$CollectionsResponseCopyWithImpl<$Res, _$CollectionsResponseImpl>
     implements _$$CollectionsResponseImplCopyWith<$Res> {
-  __$$CollectionsResponseImplCopyWithImpl(
-    _$CollectionsResponseImpl _value,
-    $Res Function(_$CollectionsResponseImpl) _then,
-  ) : super(_value, _then);
+  __$$CollectionsResponseImplCopyWithImpl(_$CollectionsResponseImpl _value,
+      $Res Function(_$CollectionsResponseImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of CollectionsResponse
   /// with the given fields replaced by the non-null parameter values.
@@ -164,30 +150,28 @@ class __$$CollectionsResponseImplCopyWithImpl<$Res>
     Object? status = freezed,
     Object? success = freezed,
   }) {
-    return _then(
-      _$CollectionsResponseImpl(
-        freezed == code
-            ? _value.code
-            : code // ignore: cast_nullable_to_non_nullable
-                as int?,
-        freezed == data
-            ? _value.data
-            : data // ignore: cast_nullable_to_non_nullable
-                as CollectionData?,
-        freezed == message
-            ? _value.message
-            : message // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == status
-            ? _value.status
-            : status // ignore: cast_nullable_to_non_nullable
-                as int?,
-        freezed == success
-            ? _value.success
-            : success // ignore: cast_nullable_to_non_nullable
-                as bool?,
-      ),
-    );
+    return _then(_$CollectionsResponseImpl(
+      freezed == code
+          ? _value.code
+          : code // ignore: cast_nullable_to_non_nullable
+              as int?,
+      freezed == data
+          ? _value.data
+          : data // ignore: cast_nullable_to_non_nullable
+              as CollectionData?,
+      freezed == message
+          ? _value.message
+          : message // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == status
+          ? _value.status
+          : status // ignore: cast_nullable_to_non_nullable
+              as int?,
+      freezed == success
+          ? _value.success
+          : success // ignore: cast_nullable_to_non_nullable
+              as bool?,
+    ));
   }
 }
 
@@ -196,12 +180,7 @@ class __$$CollectionsResponseImplCopyWithImpl<$Res>
 @JsonSerializable(explicitToJson: true, fieldRename: FieldRename.snake)
 class _$CollectionsResponseImpl implements _CollectionsResponse {
   const _$CollectionsResponseImpl(
-    this.code,
-    this.data,
-    this.message,
-    this.status,
-    this.success,
-  );
+      this.code, this.data, this.message, this.status, this.success);
 
   factory _$CollectionsResponseImpl.fromJson(Map<String, dynamic> json) =>
       _$$CollectionsResponseImplFromJson(json);
@@ -246,24 +225,23 @@ class _$CollectionsResponseImpl implements _CollectionsResponse {
   @pragma('vm:prefer-inline')
   _$$CollectionsResponseImplCopyWith<_$CollectionsResponseImpl> get copyWith =>
       __$$CollectionsResponseImplCopyWithImpl<_$CollectionsResponseImpl>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$CollectionsResponseImplToJson(this);
+    return _$$CollectionsResponseImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _CollectionsResponse implements CollectionsResponse {
   const factory _CollectionsResponse(
-    final int? code,
-    final CollectionData? data,
-    final String? message,
-    final int? status,
-    final bool? success,
-  ) = _$CollectionsResponseImpl;
+      final int? code,
+      final CollectionData? data,
+      final String? message,
+      final int? status,
+      final bool? success) = _$CollectionsResponseImpl;
 
   factory _CollectionsResponse.fromJson(Map<String, dynamic> json) =
       _$CollectionsResponseImpl.fromJson;
@@ -308,9 +286,8 @@ mixin _$CollectionData {
 /// @nodoc
 abstract class $CollectionDataCopyWith<$Res> {
   factory $CollectionDataCopyWith(
-    CollectionData value,
-    $Res Function(CollectionData) then,
-  ) = _$CollectionDataCopyWithImpl<$Res, CollectionData>;
+          CollectionData value, $Res Function(CollectionData) then) =
+      _$CollectionDataCopyWithImpl<$Res, CollectionData>;
   @useResult
   $Res call({List<CollectionsElement>? data});
 }
@@ -329,27 +306,24 @@ class _$CollectionDataCopyWithImpl<$Res, $Val extends CollectionData>
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? data = freezed}) {
-    return _then(
-      _value.copyWith(
-            data:
-                freezed == data
-                    ? _value.data
-                    : data // ignore: cast_nullable_to_non_nullable
-                        as List<CollectionsElement>?,
-          )
-          as $Val,
-    );
+  $Res call({
+    Object? data = freezed,
+  }) {
+    return _then(_value.copyWith(
+      data: freezed == data
+          ? _value.data
+          : data // ignore: cast_nullable_to_non_nullable
+              as List<CollectionsElement>?,
+    ) as $Val);
   }
 }
 
 /// @nodoc
 abstract class _$$CollectionDataImplCopyWith<$Res>
     implements $CollectionDataCopyWith<$Res> {
-  factory _$$CollectionDataImplCopyWith(
-    _$CollectionDataImpl value,
-    $Res Function(_$CollectionDataImpl) then,
-  ) = __$$CollectionDataImplCopyWithImpl<$Res>;
+  factory _$$CollectionDataImplCopyWith(_$CollectionDataImpl value,
+          $Res Function(_$CollectionDataImpl) then) =
+      __$$CollectionDataImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({List<CollectionsElement>? data});
@@ -360,23 +334,22 @@ class __$$CollectionDataImplCopyWithImpl<$Res>
     extends _$CollectionDataCopyWithImpl<$Res, _$CollectionDataImpl>
     implements _$$CollectionDataImplCopyWith<$Res> {
   __$$CollectionDataImplCopyWithImpl(
-    _$CollectionDataImpl _value,
-    $Res Function(_$CollectionDataImpl) _then,
-  ) : super(_value, _then);
+      _$CollectionDataImpl _value, $Res Function(_$CollectionDataImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of CollectionData
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? data = freezed}) {
-    return _then(
-      _$CollectionDataImpl(
-        freezed == data
-            ? _value._data
-            : data // ignore: cast_nullable_to_non_nullable
-                as List<CollectionsElement>?,
-      ),
-    );
+  $Res call({
+    Object? data = freezed,
+  }) {
+    return _then(_$CollectionDataImpl(
+      freezed == data
+          ? _value._data
+          : data // ignore: cast_nullable_to_non_nullable
+              as List<CollectionsElement>?,
+    ));
   }
 }
 
@@ -385,7 +358,7 @@ class __$$CollectionDataImplCopyWithImpl<$Res>
 @JsonSerializable(explicitToJson: true, fieldRename: FieldRename.snake)
 class _$CollectionDataImpl implements _CollectionData {
   const _$CollectionDataImpl(final List<CollectionsElement>? data)
-    : _data = data;
+      : _data = data;
 
   factory _$CollectionDataImpl.fromJson(Map<String, dynamic> json) =>
       _$$CollectionDataImplFromJson(json);
@@ -425,13 +398,13 @@ class _$CollectionDataImpl implements _CollectionData {
   @pragma('vm:prefer-inline')
   _$$CollectionDataImplCopyWith<_$CollectionDataImpl> get copyWith =>
       __$$CollectionDataImplCopyWithImpl<_$CollectionDataImpl>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$CollectionDataImplToJson(this);
+    return _$$CollectionDataImplToJson(
+      this,
+    );
   }
 }
 
@@ -479,18 +452,16 @@ mixin _$CollectionsElement {
 /// @nodoc
 abstract class $CollectionsElementCopyWith<$Res> {
   factory $CollectionsElementCopyWith(
-    CollectionsElement value,
-    $Res Function(CollectionsElement) then,
-  ) = _$CollectionsElementCopyWithImpl<$Res, CollectionsElement>;
+          CollectionsElement value, $Res Function(CollectionsElement) then) =
+      _$CollectionsElementCopyWithImpl<$Res, CollectionsElement>;
   @useResult
-  $Res call({
-    int? id,
-    String? name,
-    List<CollectionsProducts>? products,
-    String? slug,
-    String? type,
-    String? key,
-  });
+  $Res call(
+      {int? id,
+      String? name,
+      List<CollectionsProducts>? products,
+      String? slug,
+      String? type,
+      String? key});
 }
 
 /// @nodoc
@@ -515,71 +486,59 @@ class _$CollectionsElementCopyWithImpl<$Res, $Val extends CollectionsElement>
     Object? type = freezed,
     Object? key = freezed,
   }) {
-    return _then(
-      _value.copyWith(
-            id:
-                freezed == id
-                    ? _value.id
-                    : id // ignore: cast_nullable_to_non_nullable
-                        as int?,
-            name:
-                freezed == name
-                    ? _value.name
-                    : name // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            products:
-                freezed == products
-                    ? _value.products
-                    : products // ignore: cast_nullable_to_non_nullable
-                        as List<CollectionsProducts>?,
-            slug:
-                freezed == slug
-                    ? _value.slug
-                    : slug // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            type:
-                freezed == type
-                    ? _value.type
-                    : type // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            key:
-                freezed == key
-                    ? _value.key
-                    : key // ignore: cast_nullable_to_non_nullable
-                        as String?,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      id: freezed == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int?,
+      name: freezed == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String?,
+      products: freezed == products
+          ? _value.products
+          : products // ignore: cast_nullable_to_non_nullable
+              as List<CollectionsProducts>?,
+      slug: freezed == slug
+          ? _value.slug
+          : slug // ignore: cast_nullable_to_non_nullable
+              as String?,
+      type: freezed == type
+          ? _value.type
+          : type // ignore: cast_nullable_to_non_nullable
+              as String?,
+      key: freezed == key
+          ? _value.key
+          : key // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ) as $Val);
   }
 }
 
 /// @nodoc
 abstract class _$$CollectionsElementImplCopyWith<$Res>
     implements $CollectionsElementCopyWith<$Res> {
-  factory _$$CollectionsElementImplCopyWith(
-    _$CollectionsElementImpl value,
-    $Res Function(_$CollectionsElementImpl) then,
-  ) = __$$CollectionsElementImplCopyWithImpl<$Res>;
+  factory _$$CollectionsElementImplCopyWith(_$CollectionsElementImpl value,
+          $Res Function(_$CollectionsElementImpl) then) =
+      __$$CollectionsElementImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    int? id,
-    String? name,
-    List<CollectionsProducts>? products,
-    String? slug,
-    String? type,
-    String? key,
-  });
+  $Res call(
+      {int? id,
+      String? name,
+      List<CollectionsProducts>? products,
+      String? slug,
+      String? type,
+      String? key});
 }
 
 /// @nodoc
 class __$$CollectionsElementImplCopyWithImpl<$Res>
     extends _$CollectionsElementCopyWithImpl<$Res, _$CollectionsElementImpl>
     implements _$$CollectionsElementImplCopyWith<$Res> {
-  __$$CollectionsElementImplCopyWithImpl(
-    _$CollectionsElementImpl _value,
-    $Res Function(_$CollectionsElementImpl) _then,
-  ) : super(_value, _then);
+  __$$CollectionsElementImplCopyWithImpl(_$CollectionsElementImpl _value,
+      $Res Function(_$CollectionsElementImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of CollectionsElement
   /// with the given fields replaced by the non-null parameter values.
@@ -593,34 +552,32 @@ class __$$CollectionsElementImplCopyWithImpl<$Res>
     Object? type = freezed,
     Object? key = freezed,
   }) {
-    return _then(
-      _$CollectionsElementImpl(
-        freezed == id
-            ? _value.id
-            : id // ignore: cast_nullable_to_non_nullable
-                as int?,
-        freezed == name
-            ? _value.name
-            : name // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == products
-            ? _value._products
-            : products // ignore: cast_nullable_to_non_nullable
-                as List<CollectionsProducts>?,
-        freezed == slug
-            ? _value.slug
-            : slug // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == type
-            ? _value.type
-            : type // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == key
-            ? _value.key
-            : key // ignore: cast_nullable_to_non_nullable
-                as String?,
-      ),
-    );
+    return _then(_$CollectionsElementImpl(
+      freezed == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int?,
+      freezed == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == products
+          ? _value._products
+          : products // ignore: cast_nullable_to_non_nullable
+              as List<CollectionsProducts>?,
+      freezed == slug
+          ? _value.slug
+          : slug // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == type
+          ? _value.type
+          : type // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == key
+          ? _value.key
+          : key // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ));
   }
 }
 
@@ -628,14 +585,9 @@ class __$$CollectionsElementImplCopyWithImpl<$Res>
 
 @JsonSerializable(explicitToJson: true, fieldRename: FieldRename.snake)
 class _$CollectionsElementImpl implements _CollectionsElement {
-  const _$CollectionsElementImpl(
-    this.id,
-    this.name,
-    final List<CollectionsProducts>? products,
-    this.slug,
-    this.type,
-    this.key,
-  ) : _products = products;
+  const _$CollectionsElementImpl(this.id, this.name,
+      final List<CollectionsProducts>? products, this.slug, this.type, this.key)
+      : _products = products;
 
   factory _$CollectionsElementImpl.fromJson(Map<String, dynamic> json) =>
       _$$CollectionsElementImplFromJson(json);
@@ -681,15 +633,8 @@ class _$CollectionsElementImpl implements _CollectionsElement {
 
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  int get hashCode => Object.hash(
-    runtimeType,
-    id,
-    name,
-    const DeepCollectionEquality().hash(_products),
-    slug,
-    type,
-    key,
-  );
+  int get hashCode => Object.hash(runtimeType, id, name,
+      const DeepCollectionEquality().hash(_products), slug, type, key);
 
   /// Create a copy of CollectionsElement
   /// with the given fields replaced by the non-null parameter values.
@@ -698,25 +643,24 @@ class _$CollectionsElementImpl implements _CollectionsElement {
   @pragma('vm:prefer-inline')
   _$$CollectionsElementImplCopyWith<_$CollectionsElementImpl> get copyWith =>
       __$$CollectionsElementImplCopyWithImpl<_$CollectionsElementImpl>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$CollectionsElementImplToJson(this);
+    return _$$CollectionsElementImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _CollectionsElement implements CollectionsElement {
   const factory _CollectionsElement(
-    final int? id,
-    final String? name,
-    final List<CollectionsProducts>? products,
-    final String? slug,
-    final String? type,
-    final String? key,
-  ) = _$CollectionsElementImpl;
+      final int? id,
+      final String? name,
+      final List<CollectionsProducts>? products,
+      final String? slug,
+      final String? type,
+      final String? key) = _$CollectionsElementImpl;
 
   factory _CollectionsElement.fromJson(Map<String, dynamic> json) =
       _$CollectionsElementImpl.fromJson;
@@ -778,27 +722,25 @@ mixin _$CollectionsProducts {
 /// @nodoc
 abstract class $CollectionsProductsCopyWith<$Res> {
   factory $CollectionsProductsCopyWith(
-    CollectionsProducts value,
-    $Res Function(CollectionsProducts) then,
-  ) = _$CollectionsProductsCopyWithImpl<$Res, CollectionsProducts>;
+          CollectionsProducts value, $Res Function(CollectionsProducts) then) =
+      _$CollectionsProductsCopyWithImpl<$Res, CollectionsProducts>;
   @useResult
-  $Res call({
-    int? allCount,
-    String? availability,
-    String? axiomMonthlyPrice,
-    int? benefit,
-    int? discountPrice,
-    int? id,
-    String? image,
-    int? isCanLoanOrder,
-    String? name,
-    int? oldPrice,
-    int? reviewsAverage,
-    int? reviewsCount,
-    List<CollectionsSaleMonths>? saleMonths,
-    int? salePrice,
-    List<CollectionsProducts>? stickers,
-  });
+  $Res call(
+      {int? allCount,
+      String? availability,
+      String? axiomMonthlyPrice,
+      int? benefit,
+      int? discountPrice,
+      int? id,
+      String? image,
+      int? isCanLoanOrder,
+      String? name,
+      int? oldPrice,
+      int? reviewsAverage,
+      int? reviewsCount,
+      List<CollectionsSaleMonths>? saleMonths,
+      int? salePrice,
+      List<CollectionsProducts>? stickers});
 }
 
 /// @nodoc
@@ -832,125 +774,104 @@ class _$CollectionsProductsCopyWithImpl<$Res, $Val extends CollectionsProducts>
     Object? salePrice = freezed,
     Object? stickers = freezed,
   }) {
-    return _then(
-      _value.copyWith(
-            allCount:
-                freezed == allCount
-                    ? _value.allCount
-                    : allCount // ignore: cast_nullable_to_non_nullable
-                        as int?,
-            availability:
-                freezed == availability
-                    ? _value.availability
-                    : availability // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            axiomMonthlyPrice:
-                freezed == axiomMonthlyPrice
-                    ? _value.axiomMonthlyPrice
-                    : axiomMonthlyPrice // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            benefit:
-                freezed == benefit
-                    ? _value.benefit
-                    : benefit // ignore: cast_nullable_to_non_nullable
-                        as int?,
-            discountPrice:
-                freezed == discountPrice
-                    ? _value.discountPrice
-                    : discountPrice // ignore: cast_nullable_to_non_nullable
-                        as int?,
-            id:
-                freezed == id
-                    ? _value.id
-                    : id // ignore: cast_nullable_to_non_nullable
-                        as int?,
-            image:
-                freezed == image
-                    ? _value.image
-                    : image // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            isCanLoanOrder:
-                freezed == isCanLoanOrder
-                    ? _value.isCanLoanOrder
-                    : isCanLoanOrder // ignore: cast_nullable_to_non_nullable
-                        as int?,
-            name:
-                freezed == name
-                    ? _value.name
-                    : name // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            oldPrice:
-                freezed == oldPrice
-                    ? _value.oldPrice
-                    : oldPrice // ignore: cast_nullable_to_non_nullable
-                        as int?,
-            reviewsAverage:
-                freezed == reviewsAverage
-                    ? _value.reviewsAverage
-                    : reviewsAverage // ignore: cast_nullable_to_non_nullable
-                        as int?,
-            reviewsCount:
-                freezed == reviewsCount
-                    ? _value.reviewsCount
-                    : reviewsCount // ignore: cast_nullable_to_non_nullable
-                        as int?,
-            saleMonths:
-                freezed == saleMonths
-                    ? _value.saleMonths
-                    : saleMonths // ignore: cast_nullable_to_non_nullable
-                        as List<CollectionsSaleMonths>?,
-            salePrice:
-                freezed == salePrice
-                    ? _value.salePrice
-                    : salePrice // ignore: cast_nullable_to_non_nullable
-                        as int?,
-            stickers:
-                freezed == stickers
-                    ? _value.stickers
-                    : stickers // ignore: cast_nullable_to_non_nullable
-                        as List<CollectionsProducts>?,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      allCount: freezed == allCount
+          ? _value.allCount
+          : allCount // ignore: cast_nullable_to_non_nullable
+              as int?,
+      availability: freezed == availability
+          ? _value.availability
+          : availability // ignore: cast_nullable_to_non_nullable
+              as String?,
+      axiomMonthlyPrice: freezed == axiomMonthlyPrice
+          ? _value.axiomMonthlyPrice
+          : axiomMonthlyPrice // ignore: cast_nullable_to_non_nullable
+              as String?,
+      benefit: freezed == benefit
+          ? _value.benefit
+          : benefit // ignore: cast_nullable_to_non_nullable
+              as int?,
+      discountPrice: freezed == discountPrice
+          ? _value.discountPrice
+          : discountPrice // ignore: cast_nullable_to_non_nullable
+              as int?,
+      id: freezed == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int?,
+      image: freezed == image
+          ? _value.image
+          : image // ignore: cast_nullable_to_non_nullable
+              as String?,
+      isCanLoanOrder: freezed == isCanLoanOrder
+          ? _value.isCanLoanOrder
+          : isCanLoanOrder // ignore: cast_nullable_to_non_nullable
+              as int?,
+      name: freezed == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String?,
+      oldPrice: freezed == oldPrice
+          ? _value.oldPrice
+          : oldPrice // ignore: cast_nullable_to_non_nullable
+              as int?,
+      reviewsAverage: freezed == reviewsAverage
+          ? _value.reviewsAverage
+          : reviewsAverage // ignore: cast_nullable_to_non_nullable
+              as int?,
+      reviewsCount: freezed == reviewsCount
+          ? _value.reviewsCount
+          : reviewsCount // ignore: cast_nullable_to_non_nullable
+              as int?,
+      saleMonths: freezed == saleMonths
+          ? _value.saleMonths
+          : saleMonths // ignore: cast_nullable_to_non_nullable
+              as List<CollectionsSaleMonths>?,
+      salePrice: freezed == salePrice
+          ? _value.salePrice
+          : salePrice // ignore: cast_nullable_to_non_nullable
+              as int?,
+      stickers: freezed == stickers
+          ? _value.stickers
+          : stickers // ignore: cast_nullable_to_non_nullable
+              as List<CollectionsProducts>?,
+    ) as $Val);
   }
 }
 
 /// @nodoc
 abstract class _$$CollectionsProductsImplCopyWith<$Res>
     implements $CollectionsProductsCopyWith<$Res> {
-  factory _$$CollectionsProductsImplCopyWith(
-    _$CollectionsProductsImpl value,
-    $Res Function(_$CollectionsProductsImpl) then,
-  ) = __$$CollectionsProductsImplCopyWithImpl<$Res>;
+  factory _$$CollectionsProductsImplCopyWith(_$CollectionsProductsImpl value,
+          $Res Function(_$CollectionsProductsImpl) then) =
+      __$$CollectionsProductsImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    int? allCount,
-    String? availability,
-    String? axiomMonthlyPrice,
-    int? benefit,
-    int? discountPrice,
-    int? id,
-    String? image,
-    int? isCanLoanOrder,
-    String? name,
-    int? oldPrice,
-    int? reviewsAverage,
-    int? reviewsCount,
-    List<CollectionsSaleMonths>? saleMonths,
-    int? salePrice,
-    List<CollectionsProducts>? stickers,
-  });
+  $Res call(
+      {int? allCount,
+      String? availability,
+      String? axiomMonthlyPrice,
+      int? benefit,
+      int? discountPrice,
+      int? id,
+      String? image,
+      int? isCanLoanOrder,
+      String? name,
+      int? oldPrice,
+      int? reviewsAverage,
+      int? reviewsCount,
+      List<CollectionsSaleMonths>? saleMonths,
+      int? salePrice,
+      List<CollectionsProducts>? stickers});
 }
 
 /// @nodoc
 class __$$CollectionsProductsImplCopyWithImpl<$Res>
     extends _$CollectionsProductsCopyWithImpl<$Res, _$CollectionsProductsImpl>
     implements _$$CollectionsProductsImplCopyWith<$Res> {
-  __$$CollectionsProductsImplCopyWithImpl(
-    _$CollectionsProductsImpl _value,
-    $Res Function(_$CollectionsProductsImpl) _then,
-  ) : super(_value, _then);
+  __$$CollectionsProductsImplCopyWithImpl(_$CollectionsProductsImpl _value,
+      $Res Function(_$CollectionsProductsImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of CollectionsProducts
   /// with the given fields replaced by the non-null parameter values.
@@ -973,70 +894,68 @@ class __$$CollectionsProductsImplCopyWithImpl<$Res>
     Object? salePrice = freezed,
     Object? stickers = freezed,
   }) {
-    return _then(
-      _$CollectionsProductsImpl(
-        freezed == allCount
-            ? _value.allCount
-            : allCount // ignore: cast_nullable_to_non_nullable
-                as int?,
-        freezed == availability
-            ? _value.availability
-            : availability // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == axiomMonthlyPrice
-            ? _value.axiomMonthlyPrice
-            : axiomMonthlyPrice // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == benefit
-            ? _value.benefit
-            : benefit // ignore: cast_nullable_to_non_nullable
-                as int?,
-        freezed == discountPrice
-            ? _value.discountPrice
-            : discountPrice // ignore: cast_nullable_to_non_nullable
-                as int?,
-        freezed == id
-            ? _value.id
-            : id // ignore: cast_nullable_to_non_nullable
-                as int?,
-        freezed == image
-            ? _value.image
-            : image // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == isCanLoanOrder
-            ? _value.isCanLoanOrder
-            : isCanLoanOrder // ignore: cast_nullable_to_non_nullable
-                as int?,
-        freezed == name
-            ? _value.name
-            : name // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == oldPrice
-            ? _value.oldPrice
-            : oldPrice // ignore: cast_nullable_to_non_nullable
-                as int?,
-        freezed == reviewsAverage
-            ? _value.reviewsAverage
-            : reviewsAverage // ignore: cast_nullable_to_non_nullable
-                as int?,
-        freezed == reviewsCount
-            ? _value.reviewsCount
-            : reviewsCount // ignore: cast_nullable_to_non_nullable
-                as int?,
-        freezed == saleMonths
-            ? _value._saleMonths
-            : saleMonths // ignore: cast_nullable_to_non_nullable
-                as List<CollectionsSaleMonths>?,
-        freezed == salePrice
-            ? _value.salePrice
-            : salePrice // ignore: cast_nullable_to_non_nullable
-                as int?,
-        freezed == stickers
-            ? _value._stickers
-            : stickers // ignore: cast_nullable_to_non_nullable
-                as List<CollectionsProducts>?,
-      ),
-    );
+    return _then(_$CollectionsProductsImpl(
+      freezed == allCount
+          ? _value.allCount
+          : allCount // ignore: cast_nullable_to_non_nullable
+              as int?,
+      freezed == availability
+          ? _value.availability
+          : availability // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == axiomMonthlyPrice
+          ? _value.axiomMonthlyPrice
+          : axiomMonthlyPrice // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == benefit
+          ? _value.benefit
+          : benefit // ignore: cast_nullable_to_non_nullable
+              as int?,
+      freezed == discountPrice
+          ? _value.discountPrice
+          : discountPrice // ignore: cast_nullable_to_non_nullable
+              as int?,
+      freezed == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int?,
+      freezed == image
+          ? _value.image
+          : image // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == isCanLoanOrder
+          ? _value.isCanLoanOrder
+          : isCanLoanOrder // ignore: cast_nullable_to_non_nullable
+              as int?,
+      freezed == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == oldPrice
+          ? _value.oldPrice
+          : oldPrice // ignore: cast_nullable_to_non_nullable
+              as int?,
+      freezed == reviewsAverage
+          ? _value.reviewsAverage
+          : reviewsAverage // ignore: cast_nullable_to_non_nullable
+              as int?,
+      freezed == reviewsCount
+          ? _value.reviewsCount
+          : reviewsCount // ignore: cast_nullable_to_non_nullable
+              as int?,
+      freezed == saleMonths
+          ? _value._saleMonths
+          : saleMonths // ignore: cast_nullable_to_non_nullable
+              as List<CollectionsSaleMonths>?,
+      freezed == salePrice
+          ? _value.salePrice
+          : salePrice // ignore: cast_nullable_to_non_nullable
+              as int?,
+      freezed == stickers
+          ? _value._stickers
+          : stickers // ignore: cast_nullable_to_non_nullable
+              as List<CollectionsProducts>?,
+    ));
   }
 }
 
@@ -1045,23 +964,23 @@ class __$$CollectionsProductsImplCopyWithImpl<$Res>
 @JsonSerializable(explicitToJson: true, fieldRename: FieldRename.snake)
 class _$CollectionsProductsImpl implements _CollectionsProducts {
   const _$CollectionsProductsImpl(
-    this.allCount,
-    this.availability,
-    this.axiomMonthlyPrice,
-    this.benefit,
-    this.discountPrice,
-    this.id,
-    this.image,
-    this.isCanLoanOrder,
-    this.name,
-    this.oldPrice,
-    this.reviewsAverage,
-    this.reviewsCount,
-    final List<CollectionsSaleMonths>? saleMonths,
-    this.salePrice,
-    final List<CollectionsProducts>? stickers,
-  ) : _saleMonths = saleMonths,
-      _stickers = stickers;
+      this.allCount,
+      this.availability,
+      this.axiomMonthlyPrice,
+      this.benefit,
+      this.discountPrice,
+      this.id,
+      this.image,
+      this.isCanLoanOrder,
+      this.name,
+      this.oldPrice,
+      this.reviewsAverage,
+      this.reviewsCount,
+      final List<CollectionsSaleMonths>? saleMonths,
+      this.salePrice,
+      final List<CollectionsProducts>? stickers)
+      : _saleMonths = saleMonths,
+        _stickers = stickers;
 
   factory _$CollectionsProductsImpl.fromJson(Map<String, dynamic> json) =>
       _$$CollectionsProductsImplFromJson(json);
@@ -1142,10 +1061,8 @@ class _$CollectionsProductsImpl implements _CollectionsProducts {
                 other.reviewsAverage == reviewsAverage) &&
             (identical(other.reviewsCount, reviewsCount) ||
                 other.reviewsCount == reviewsCount) &&
-            const DeepCollectionEquality().equals(
-              other._saleMonths,
-              _saleMonths,
-            ) &&
+            const DeepCollectionEquality()
+                .equals(other._saleMonths, _saleMonths) &&
             (identical(other.salePrice, salePrice) ||
                 other.salePrice == salePrice) &&
             const DeepCollectionEquality().equals(other._stickers, _stickers));
@@ -1154,23 +1071,22 @@ class _$CollectionsProductsImpl implements _CollectionsProducts {
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
-    runtimeType,
-    allCount,
-    availability,
-    axiomMonthlyPrice,
-    benefit,
-    discountPrice,
-    id,
-    image,
-    isCanLoanOrder,
-    name,
-    oldPrice,
-    reviewsAverage,
-    reviewsCount,
-    const DeepCollectionEquality().hash(_saleMonths),
-    salePrice,
-    const DeepCollectionEquality().hash(_stickers),
-  );
+      runtimeType,
+      allCount,
+      availability,
+      axiomMonthlyPrice,
+      benefit,
+      discountPrice,
+      id,
+      image,
+      isCanLoanOrder,
+      name,
+      oldPrice,
+      reviewsAverage,
+      reviewsCount,
+      const DeepCollectionEquality().hash(_saleMonths),
+      salePrice,
+      const DeepCollectionEquality().hash(_stickers));
 
   /// Create a copy of CollectionsProducts
   /// with the given fields replaced by the non-null parameter values.
@@ -1179,34 +1095,33 @@ class _$CollectionsProductsImpl implements _CollectionsProducts {
   @pragma('vm:prefer-inline')
   _$$CollectionsProductsImplCopyWith<_$CollectionsProductsImpl> get copyWith =>
       __$$CollectionsProductsImplCopyWithImpl<_$CollectionsProductsImpl>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$CollectionsProductsImplToJson(this);
+    return _$$CollectionsProductsImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _CollectionsProducts implements CollectionsProducts {
   const factory _CollectionsProducts(
-    final int? allCount,
-    final String? availability,
-    final String? axiomMonthlyPrice,
-    final int? benefit,
-    final int? discountPrice,
-    final int? id,
-    final String? image,
-    final int? isCanLoanOrder,
-    final String? name,
-    final int? oldPrice,
-    final int? reviewsAverage,
-    final int? reviewsCount,
-    final List<CollectionsSaleMonths>? saleMonths,
-    final int? salePrice,
-    final List<CollectionsProducts>? stickers,
-  ) = _$CollectionsProductsImpl;
+      final int? allCount,
+      final String? availability,
+      final String? axiomMonthlyPrice,
+      final int? benefit,
+      final int? discountPrice,
+      final int? id,
+      final String? image,
+      final int? isCanLoanOrder,
+      final String? name,
+      final int? oldPrice,
+      final int? reviewsAverage,
+      final int? reviewsCount,
+      final List<CollectionsSaleMonths>? saleMonths,
+      final int? salePrice,
+      final List<CollectionsProducts>? stickers) = _$CollectionsProductsImpl;
 
   factory _CollectionsProducts.fromJson(Map<String, dynamic> json) =
       _$CollectionsProductsImpl.fromJson;
@@ -1251,8 +1166,7 @@ abstract class _CollectionsProducts implements CollectionsProducts {
 }
 
 CollectionsSaleMonths _$CollectionsSaleMonthsFromJson(
-  Map<String, dynamic> json,
-) {
+    Map<String, dynamic> json) {
   return _CollectionsSaleMonths.fromJson(json);
 }
 
@@ -1275,19 +1189,16 @@ mixin _$CollectionsSaleMonths {
 
 /// @nodoc
 abstract class $CollectionsSaleMonthsCopyWith<$Res> {
-  factory $CollectionsSaleMonthsCopyWith(
-    CollectionsSaleMonths value,
-    $Res Function(CollectionsSaleMonths) then,
-  ) = _$CollectionsSaleMonthsCopyWithImpl<$Res, CollectionsSaleMonths>;
+  factory $CollectionsSaleMonthsCopyWith(CollectionsSaleMonths value,
+          $Res Function(CollectionsSaleMonths) then) =
+      _$CollectionsSaleMonthsCopyWithImpl<$Res, CollectionsSaleMonths>;
   @useResult
   $Res call({int? id, String? image, String? key, String? name});
 }
 
 /// @nodoc
-class _$CollectionsSaleMonthsCopyWithImpl<
-  $Res,
-  $Val extends CollectionsSaleMonths
->
+class _$CollectionsSaleMonthsCopyWithImpl<$Res,
+        $Val extends CollectionsSaleMonths>
     implements $CollectionsSaleMonthsCopyWith<$Res> {
   _$CollectionsSaleMonthsCopyWithImpl(this._value, this._then);
 
@@ -1306,31 +1217,24 @@ class _$CollectionsSaleMonthsCopyWithImpl<
     Object? key = freezed,
     Object? name = freezed,
   }) {
-    return _then(
-      _value.copyWith(
-            id:
-                freezed == id
-                    ? _value.id
-                    : id // ignore: cast_nullable_to_non_nullable
-                        as int?,
-            image:
-                freezed == image
-                    ? _value.image
-                    : image // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            key:
-                freezed == key
-                    ? _value.key
-                    : key // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            name:
-                freezed == name
-                    ? _value.name
-                    : name // ignore: cast_nullable_to_non_nullable
-                        as String?,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      id: freezed == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int?,
+      image: freezed == image
+          ? _value.image
+          : image // ignore: cast_nullable_to_non_nullable
+              as String?,
+      key: freezed == key
+          ? _value.key
+          : key // ignore: cast_nullable_to_non_nullable
+              as String?,
+      name: freezed == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ) as $Val);
   }
 }
 
@@ -1338,9 +1242,9 @@ class _$CollectionsSaleMonthsCopyWithImpl<
 abstract class _$$CollectionsSaleMonthsImplCopyWith<$Res>
     implements $CollectionsSaleMonthsCopyWith<$Res> {
   factory _$$CollectionsSaleMonthsImplCopyWith(
-    _$CollectionsSaleMonthsImpl value,
-    $Res Function(_$CollectionsSaleMonthsImpl) then,
-  ) = __$$CollectionsSaleMonthsImplCopyWithImpl<$Res>;
+          _$CollectionsSaleMonthsImpl value,
+          $Res Function(_$CollectionsSaleMonthsImpl) then) =
+      __$$CollectionsSaleMonthsImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({int? id, String? image, String? key, String? name});
@@ -1348,13 +1252,12 @@ abstract class _$$CollectionsSaleMonthsImplCopyWith<$Res>
 
 /// @nodoc
 class __$$CollectionsSaleMonthsImplCopyWithImpl<$Res>
-    extends
-        _$CollectionsSaleMonthsCopyWithImpl<$Res, _$CollectionsSaleMonthsImpl>
+    extends _$CollectionsSaleMonthsCopyWithImpl<$Res,
+        _$CollectionsSaleMonthsImpl>
     implements _$$CollectionsSaleMonthsImplCopyWith<$Res> {
-  __$$CollectionsSaleMonthsImplCopyWithImpl(
-    _$CollectionsSaleMonthsImpl _value,
-    $Res Function(_$CollectionsSaleMonthsImpl) _then,
-  ) : super(_value, _then);
+  __$$CollectionsSaleMonthsImplCopyWithImpl(_$CollectionsSaleMonthsImpl _value,
+      $Res Function(_$CollectionsSaleMonthsImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of CollectionsSaleMonths
   /// with the given fields replaced by the non-null parameter values.
@@ -1366,26 +1269,24 @@ class __$$CollectionsSaleMonthsImplCopyWithImpl<$Res>
     Object? key = freezed,
     Object? name = freezed,
   }) {
-    return _then(
-      _$CollectionsSaleMonthsImpl(
-        freezed == id
-            ? _value.id
-            : id // ignore: cast_nullable_to_non_nullable
-                as int?,
-        freezed == image
-            ? _value.image
-            : image // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == key
-            ? _value.key
-            : key // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == name
-            ? _value.name
-            : name // ignore: cast_nullable_to_non_nullable
-                as String?,
-      ),
-    );
+    return _then(_$CollectionsSaleMonthsImpl(
+      freezed == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int?,
+      freezed == image
+          ? _value.image
+          : image // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == key
+          ? _value.key
+          : key // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ));
   }
 }
 
@@ -1433,25 +1334,20 @@ class _$CollectionsSaleMonthsImpl implements _CollectionsSaleMonths {
   @override
   @pragma('vm:prefer-inline')
   _$$CollectionsSaleMonthsImplCopyWith<_$CollectionsSaleMonthsImpl>
-  get copyWith =>
-      __$$CollectionsSaleMonthsImplCopyWithImpl<_$CollectionsSaleMonthsImpl>(
-        this,
-        _$identity,
-      );
+      get copyWith => __$$CollectionsSaleMonthsImplCopyWithImpl<
+          _$CollectionsSaleMonthsImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$CollectionsSaleMonthsImplToJson(this);
+    return _$$CollectionsSaleMonthsImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _CollectionsSaleMonths implements CollectionsSaleMonths {
-  const factory _CollectionsSaleMonths(
-    final int? id,
-    final String? image,
-    final String? key,
-    final String? name,
-  ) = _$CollectionsSaleMonthsImpl;
+  const factory _CollectionsSaleMonths(final int? id, final String? image,
+      final String? key, final String? name) = _$CollectionsSaleMonthsImpl;
 
   factory _CollectionsSaleMonths.fromJson(Map<String, dynamic> json) =
       _$CollectionsSaleMonthsImpl.fromJson;
@@ -1470,7 +1366,7 @@ abstract class _CollectionsSaleMonths implements CollectionsSaleMonths {
   @override
   @JsonKey(includeFromJson: false, includeToJson: false)
   _$$CollectionsSaleMonthsImplCopyWith<_$CollectionsSaleMonthsImpl>
-  get copyWith => throw _privateConstructorUsedError;
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 CollectionsStickers _$CollectionsStickersFromJson(Map<String, dynamic> json) {
@@ -1499,18 +1395,16 @@ mixin _$CollectionsStickers {
 /// @nodoc
 abstract class $CollectionsStickersCopyWith<$Res> {
   factory $CollectionsStickersCopyWith(
-    CollectionsStickers value,
-    $Res Function(CollectionsStickers) then,
-  ) = _$CollectionsStickersCopyWithImpl<$Res, CollectionsStickers>;
+          CollectionsStickers value, $Res Function(CollectionsStickers) then) =
+      _$CollectionsStickersCopyWithImpl<$Res, CollectionsStickers>;
   @useResult
-  $Res call({
-    String? backgroundColor,
-    String? image,
-    bool? isImage,
-    String? name,
-    bool? showInCard,
-    String? textColor,
-  });
+  $Res call(
+      {String? backgroundColor,
+      String? image,
+      bool? isImage,
+      String? name,
+      bool? showInCard,
+      String? textColor});
 }
 
 /// @nodoc
@@ -1535,71 +1429,59 @@ class _$CollectionsStickersCopyWithImpl<$Res, $Val extends CollectionsStickers>
     Object? showInCard = freezed,
     Object? textColor = freezed,
   }) {
-    return _then(
-      _value.copyWith(
-            backgroundColor:
-                freezed == backgroundColor
-                    ? _value.backgroundColor
-                    : backgroundColor // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            image:
-                freezed == image
-                    ? _value.image
-                    : image // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            isImage:
-                freezed == isImage
-                    ? _value.isImage
-                    : isImage // ignore: cast_nullable_to_non_nullable
-                        as bool?,
-            name:
-                freezed == name
-                    ? _value.name
-                    : name // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            showInCard:
-                freezed == showInCard
-                    ? _value.showInCard
-                    : showInCard // ignore: cast_nullable_to_non_nullable
-                        as bool?,
-            textColor:
-                freezed == textColor
-                    ? _value.textColor
-                    : textColor // ignore: cast_nullable_to_non_nullable
-                        as String?,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      backgroundColor: freezed == backgroundColor
+          ? _value.backgroundColor
+          : backgroundColor // ignore: cast_nullable_to_non_nullable
+              as String?,
+      image: freezed == image
+          ? _value.image
+          : image // ignore: cast_nullable_to_non_nullable
+              as String?,
+      isImage: freezed == isImage
+          ? _value.isImage
+          : isImage // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      name: freezed == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String?,
+      showInCard: freezed == showInCard
+          ? _value.showInCard
+          : showInCard // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      textColor: freezed == textColor
+          ? _value.textColor
+          : textColor // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ) as $Val);
   }
 }
 
 /// @nodoc
 abstract class _$$CollectionsStickersImplCopyWith<$Res>
     implements $CollectionsStickersCopyWith<$Res> {
-  factory _$$CollectionsStickersImplCopyWith(
-    _$CollectionsStickersImpl value,
-    $Res Function(_$CollectionsStickersImpl) then,
-  ) = __$$CollectionsStickersImplCopyWithImpl<$Res>;
+  factory _$$CollectionsStickersImplCopyWith(_$CollectionsStickersImpl value,
+          $Res Function(_$CollectionsStickersImpl) then) =
+      __$$CollectionsStickersImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    String? backgroundColor,
-    String? image,
-    bool? isImage,
-    String? name,
-    bool? showInCard,
-    String? textColor,
-  });
+  $Res call(
+      {String? backgroundColor,
+      String? image,
+      bool? isImage,
+      String? name,
+      bool? showInCard,
+      String? textColor});
 }
 
 /// @nodoc
 class __$$CollectionsStickersImplCopyWithImpl<$Res>
     extends _$CollectionsStickersCopyWithImpl<$Res, _$CollectionsStickersImpl>
     implements _$$CollectionsStickersImplCopyWith<$Res> {
-  __$$CollectionsStickersImplCopyWithImpl(
-    _$CollectionsStickersImpl _value,
-    $Res Function(_$CollectionsStickersImpl) _then,
-  ) : super(_value, _then);
+  __$$CollectionsStickersImplCopyWithImpl(_$CollectionsStickersImpl _value,
+      $Res Function(_$CollectionsStickersImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of CollectionsStickers
   /// with the given fields replaced by the non-null parameter values.
@@ -1613,34 +1495,32 @@ class __$$CollectionsStickersImplCopyWithImpl<$Res>
     Object? showInCard = freezed,
     Object? textColor = freezed,
   }) {
-    return _then(
-      _$CollectionsStickersImpl(
-        freezed == backgroundColor
-            ? _value.backgroundColor
-            : backgroundColor // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == image
-            ? _value.image
-            : image // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == isImage
-            ? _value.isImage
-            : isImage // ignore: cast_nullable_to_non_nullable
-                as bool?,
-        freezed == name
-            ? _value.name
-            : name // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == showInCard
-            ? _value.showInCard
-            : showInCard // ignore: cast_nullable_to_non_nullable
-                as bool?,
-        freezed == textColor
-            ? _value.textColor
-            : textColor // ignore: cast_nullable_to_non_nullable
-                as String?,
-      ),
-    );
+    return _then(_$CollectionsStickersImpl(
+      freezed == backgroundColor
+          ? _value.backgroundColor
+          : backgroundColor // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == image
+          ? _value.image
+          : image // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == isImage
+          ? _value.isImage
+          : isImage // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      freezed == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == showInCard
+          ? _value.showInCard
+          : showInCard // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      freezed == textColor
+          ? _value.textColor
+          : textColor // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ));
   }
 }
 
@@ -1648,14 +1528,8 @@ class __$$CollectionsStickersImplCopyWithImpl<$Res>
 
 @JsonSerializable(explicitToJson: true, fieldRename: FieldRename.snake)
 class _$CollectionsStickersImpl implements _CollectionsStickers {
-  const _$CollectionsStickersImpl(
-    this.backgroundColor,
-    this.image,
-    this.isImage,
-    this.name,
-    this.showInCard,
-    this.textColor,
-  );
+  const _$CollectionsStickersImpl(this.backgroundColor, this.image,
+      this.isImage, this.name, this.showInCard, this.textColor);
 
   factory _$CollectionsStickersImpl.fromJson(Map<String, dynamic> json) =>
       _$$CollectionsStickersImplFromJson(json);
@@ -1696,15 +1570,8 @@ class _$CollectionsStickersImpl implements _CollectionsStickers {
 
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  int get hashCode => Object.hash(
-    runtimeType,
-    backgroundColor,
-    image,
-    isImage,
-    name,
-    showInCard,
-    textColor,
-  );
+  int get hashCode => Object.hash(runtimeType, backgroundColor, image, isImage,
+      name, showInCard, textColor);
 
   /// Create a copy of CollectionsStickers
   /// with the given fields replaced by the non-null parameter values.
@@ -1713,25 +1580,24 @@ class _$CollectionsStickersImpl implements _CollectionsStickers {
   @pragma('vm:prefer-inline')
   _$$CollectionsStickersImplCopyWith<_$CollectionsStickersImpl> get copyWith =>
       __$$CollectionsStickersImplCopyWithImpl<_$CollectionsStickersImpl>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$CollectionsStickersImplToJson(this);
+    return _$$CollectionsStickersImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _CollectionsStickers implements CollectionsStickers {
   const factory _CollectionsStickers(
-    final String? backgroundColor,
-    final String? image,
-    final bool? isImage,
-    final String? name,
-    final bool? showInCard,
-    final String? textColor,
-  ) = _$CollectionsStickersImpl;
+      final String? backgroundColor,
+      final String? image,
+      final bool? isImage,
+      final String? name,
+      final bool? showInCard,
+      final String? textColor) = _$CollectionsStickersImpl;
 
   factory _CollectionsStickers.fromJson(Map<String, dynamic> json) =
       _$CollectionsStickersImpl.fromJson;

@@ -12,12 +12,10 @@ part of 'all_categories_response.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 AllCategoriesResponse _$AllCategoriesResponseFromJson(
-  Map<String, dynamic> json,
-) {
+    Map<String, dynamic> json) {
   return _AllCategoriesResponse.fromJson(json);
 }
 
@@ -41,27 +39,23 @@ mixin _$AllCategoriesResponse {
 
 /// @nodoc
 abstract class $AllCategoriesResponseCopyWith<$Res> {
-  factory $AllCategoriesResponseCopyWith(
-    AllCategoriesResponse value,
-    $Res Function(AllCategoriesResponse) then,
-  ) = _$AllCategoriesResponseCopyWithImpl<$Res, AllCategoriesResponse>;
+  factory $AllCategoriesResponseCopyWith(AllCategoriesResponse value,
+          $Res Function(AllCategoriesResponse) then) =
+      _$AllCategoriesResponseCopyWithImpl<$Res, AllCategoriesResponse>;
   @useResult
-  $Res call({
-    int? code,
-    AllCategoriesData? data,
-    String? message,
-    int? status,
-    bool? success,
-  });
+  $Res call(
+      {int? code,
+      AllCategoriesData? data,
+      String? message,
+      int? status,
+      bool? success});
 
   $AllCategoriesDataCopyWith<$Res>? get data;
 }
 
 /// @nodoc
-class _$AllCategoriesResponseCopyWithImpl<
-  $Res,
-  $Val extends AllCategoriesResponse
->
+class _$AllCategoriesResponseCopyWithImpl<$Res,
+        $Val extends AllCategoriesResponse>
     implements $AllCategoriesResponseCopyWith<$Res> {
   _$AllCategoriesResponseCopyWithImpl(this._value, this._then);
 
@@ -81,36 +75,28 @@ class _$AllCategoriesResponseCopyWithImpl<
     Object? status = freezed,
     Object? success = freezed,
   }) {
-    return _then(
-      _value.copyWith(
-            code:
-                freezed == code
-                    ? _value.code
-                    : code // ignore: cast_nullable_to_non_nullable
-                        as int?,
-            data:
-                freezed == data
-                    ? _value.data
-                    : data // ignore: cast_nullable_to_non_nullable
-                        as AllCategoriesData?,
-            message:
-                freezed == message
-                    ? _value.message
-                    : message // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            status:
-                freezed == status
-                    ? _value.status
-                    : status // ignore: cast_nullable_to_non_nullable
-                        as int?,
-            success:
-                freezed == success
-                    ? _value.success
-                    : success // ignore: cast_nullable_to_non_nullable
-                        as bool?,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      code: freezed == code
+          ? _value.code
+          : code // ignore: cast_nullable_to_non_nullable
+              as int?,
+      data: freezed == data
+          ? _value.data
+          : data // ignore: cast_nullable_to_non_nullable
+              as AllCategoriesData?,
+      message: freezed == message
+          ? _value.message
+          : message // ignore: cast_nullable_to_non_nullable
+              as String?,
+      status: freezed == status
+          ? _value.status
+          : status // ignore: cast_nullable_to_non_nullable
+              as int?,
+      success: freezed == success
+          ? _value.success
+          : success // ignore: cast_nullable_to_non_nullable
+              as bool?,
+    ) as $Val);
   }
 
   /// Create a copy of AllCategoriesResponse
@@ -132,18 +118,17 @@ class _$AllCategoriesResponseCopyWithImpl<
 abstract class _$$AllCategoriesResponseImplCopyWith<$Res>
     implements $AllCategoriesResponseCopyWith<$Res> {
   factory _$$AllCategoriesResponseImplCopyWith(
-    _$AllCategoriesResponseImpl value,
-    $Res Function(_$AllCategoriesResponseImpl) then,
-  ) = __$$AllCategoriesResponseImplCopyWithImpl<$Res>;
+          _$AllCategoriesResponseImpl value,
+          $Res Function(_$AllCategoriesResponseImpl) then) =
+      __$$AllCategoriesResponseImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    int? code,
-    AllCategoriesData? data,
-    String? message,
-    int? status,
-    bool? success,
-  });
+  $Res call(
+      {int? code,
+      AllCategoriesData? data,
+      String? message,
+      int? status,
+      bool? success});
 
   @override
   $AllCategoriesDataCopyWith<$Res>? get data;
@@ -151,13 +136,12 @@ abstract class _$$AllCategoriesResponseImplCopyWith<$Res>
 
 /// @nodoc
 class __$$AllCategoriesResponseImplCopyWithImpl<$Res>
-    extends
-        _$AllCategoriesResponseCopyWithImpl<$Res, _$AllCategoriesResponseImpl>
+    extends _$AllCategoriesResponseCopyWithImpl<$Res,
+        _$AllCategoriesResponseImpl>
     implements _$$AllCategoriesResponseImplCopyWith<$Res> {
-  __$$AllCategoriesResponseImplCopyWithImpl(
-    _$AllCategoriesResponseImpl _value,
-    $Res Function(_$AllCategoriesResponseImpl) _then,
-  ) : super(_value, _then);
+  __$$AllCategoriesResponseImplCopyWithImpl(_$AllCategoriesResponseImpl _value,
+      $Res Function(_$AllCategoriesResponseImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of AllCategoriesResponse
   /// with the given fields replaced by the non-null parameter values.
@@ -170,30 +154,28 @@ class __$$AllCategoriesResponseImplCopyWithImpl<$Res>
     Object? status = freezed,
     Object? success = freezed,
   }) {
-    return _then(
-      _$AllCategoriesResponseImpl(
-        freezed == code
-            ? _value.code
-            : code // ignore: cast_nullable_to_non_nullable
-                as int?,
-        freezed == data
-            ? _value.data
-            : data // ignore: cast_nullable_to_non_nullable
-                as AllCategoriesData?,
-        freezed == message
-            ? _value.message
-            : message // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == status
-            ? _value.status
-            : status // ignore: cast_nullable_to_non_nullable
-                as int?,
-        freezed == success
-            ? _value.success
-            : success // ignore: cast_nullable_to_non_nullable
-                as bool?,
-      ),
-    );
+    return _then(_$AllCategoriesResponseImpl(
+      freezed == code
+          ? _value.code
+          : code // ignore: cast_nullable_to_non_nullable
+              as int?,
+      freezed == data
+          ? _value.data
+          : data // ignore: cast_nullable_to_non_nullable
+              as AllCategoriesData?,
+      freezed == message
+          ? _value.message
+          : message // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == status
+          ? _value.status
+          : status // ignore: cast_nullable_to_non_nullable
+              as int?,
+      freezed == success
+          ? _value.success
+          : success // ignore: cast_nullable_to_non_nullable
+              as bool?,
+    ));
   }
 }
 
@@ -202,12 +184,7 @@ class __$$AllCategoriesResponseImplCopyWithImpl<$Res>
 @JsonSerializable(explicitToJson: true, fieldRename: FieldRename.snake)
 class _$AllCategoriesResponseImpl implements _AllCategoriesResponse {
   const _$AllCategoriesResponseImpl(
-    this.code,
-    this.data,
-    this.message,
-    this.status,
-    this.success,
-  );
+      this.code, this.data, this.message, this.status, this.success);
 
   factory _$AllCategoriesResponseImpl.fromJson(Map<String, dynamic> json) =>
       _$$AllCategoriesResponseImplFromJson(json);
@@ -251,26 +228,24 @@ class _$AllCategoriesResponseImpl implements _AllCategoriesResponse {
   @override
   @pragma('vm:prefer-inline')
   _$$AllCategoriesResponseImplCopyWith<_$AllCategoriesResponseImpl>
-  get copyWith =>
-      __$$AllCategoriesResponseImplCopyWithImpl<_$AllCategoriesResponseImpl>(
-        this,
-        _$identity,
-      );
+      get copyWith => __$$AllCategoriesResponseImplCopyWithImpl<
+          _$AllCategoriesResponseImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$AllCategoriesResponseImplToJson(this);
+    return _$$AllCategoriesResponseImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _AllCategoriesResponse implements AllCategoriesResponse {
   const factory _AllCategoriesResponse(
-    final int? code,
-    final AllCategoriesData? data,
-    final String? message,
-    final int? status,
-    final bool? success,
-  ) = _$AllCategoriesResponseImpl;
+      final int? code,
+      final AllCategoriesData? data,
+      final String? message,
+      final int? status,
+      final bool? success) = _$AllCategoriesResponseImpl;
 
   factory _AllCategoriesResponse.fromJson(Map<String, dynamic> json) =
       _$AllCategoriesResponseImpl.fromJson;
@@ -291,7 +266,7 @@ abstract class _AllCategoriesResponse implements AllCategoriesResponse {
   @override
   @JsonKey(includeFromJson: false, includeToJson: false)
   _$$AllCategoriesResponseImplCopyWith<_$AllCategoriesResponseImpl>
-  get copyWith => throw _privateConstructorUsedError;
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 AllCategoriesData _$AllCategoriesDataFromJson(Map<String, dynamic> json) {
@@ -315,9 +290,8 @@ mixin _$AllCategoriesData {
 /// @nodoc
 abstract class $AllCategoriesDataCopyWith<$Res> {
   factory $AllCategoriesDataCopyWith(
-    AllCategoriesData value,
-    $Res Function(AllCategoriesData) then,
-  ) = _$AllCategoriesDataCopyWithImpl<$Res, AllCategoriesData>;
+          AllCategoriesData value, $Res Function(AllCategoriesData) then) =
+      _$AllCategoriesDataCopyWithImpl<$Res, AllCategoriesData>;
   @useResult
   $Res call({List<AllCategories>? categories});
 }
@@ -336,27 +310,24 @@ class _$AllCategoriesDataCopyWithImpl<$Res, $Val extends AllCategoriesData>
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? categories = freezed}) {
-    return _then(
-      _value.copyWith(
-            categories:
-                freezed == categories
-                    ? _value.categories
-                    : categories // ignore: cast_nullable_to_non_nullable
-                        as List<AllCategories>?,
-          )
-          as $Val,
-    );
+  $Res call({
+    Object? categories = freezed,
+  }) {
+    return _then(_value.copyWith(
+      categories: freezed == categories
+          ? _value.categories
+          : categories // ignore: cast_nullable_to_non_nullable
+              as List<AllCategories>?,
+    ) as $Val);
   }
 }
 
 /// @nodoc
 abstract class _$$AllCategoriesDataImplCopyWith<$Res>
     implements $AllCategoriesDataCopyWith<$Res> {
-  factory _$$AllCategoriesDataImplCopyWith(
-    _$AllCategoriesDataImpl value,
-    $Res Function(_$AllCategoriesDataImpl) then,
-  ) = __$$AllCategoriesDataImplCopyWithImpl<$Res>;
+  factory _$$AllCategoriesDataImplCopyWith(_$AllCategoriesDataImpl value,
+          $Res Function(_$AllCategoriesDataImpl) then) =
+      __$$AllCategoriesDataImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({List<AllCategories>? categories});
@@ -366,24 +337,23 @@ abstract class _$$AllCategoriesDataImplCopyWith<$Res>
 class __$$AllCategoriesDataImplCopyWithImpl<$Res>
     extends _$AllCategoriesDataCopyWithImpl<$Res, _$AllCategoriesDataImpl>
     implements _$$AllCategoriesDataImplCopyWith<$Res> {
-  __$$AllCategoriesDataImplCopyWithImpl(
-    _$AllCategoriesDataImpl _value,
-    $Res Function(_$AllCategoriesDataImpl) _then,
-  ) : super(_value, _then);
+  __$$AllCategoriesDataImplCopyWithImpl(_$AllCategoriesDataImpl _value,
+      $Res Function(_$AllCategoriesDataImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of AllCategoriesData
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? categories = freezed}) {
-    return _then(
-      _$AllCategoriesDataImpl(
-        freezed == categories
-            ? _value._categories
-            : categories // ignore: cast_nullable_to_non_nullable
-                as List<AllCategories>?,
-      ),
-    );
+  $Res call({
+    Object? categories = freezed,
+  }) {
+    return _then(_$AllCategoriesDataImpl(
+      freezed == categories
+          ? _value._categories
+          : categories // ignore: cast_nullable_to_non_nullable
+              as List<AllCategories>?,
+    ));
   }
 }
 
@@ -392,7 +362,7 @@ class __$$AllCategoriesDataImplCopyWithImpl<$Res>
 @JsonSerializable(explicitToJson: true, fieldRename: FieldRename.snake)
 class _$AllCategoriesDataImpl implements _AllCategoriesData {
   const _$AllCategoriesDataImpl(final List<AllCategories>? categories)
-    : _categories = categories;
+      : _categories = categories;
 
   factory _$AllCategoriesDataImpl.fromJson(Map<String, dynamic> json) =>
       _$$AllCategoriesDataImplFromJson(json);
@@ -417,18 +387,14 @@ class _$AllCategoriesDataImpl implements _AllCategoriesData {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$AllCategoriesDataImpl &&
-            const DeepCollectionEquality().equals(
-              other._categories,
-              _categories,
-            ));
+            const DeepCollectionEquality()
+                .equals(other._categories, _categories));
   }
 
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
-    runtimeType,
-    const DeepCollectionEquality().hash(_categories),
-  );
+      runtimeType, const DeepCollectionEquality().hash(_categories));
 
   /// Create a copy of AllCategoriesData
   /// with the given fields replaced by the non-null parameter values.
@@ -437,13 +403,13 @@ class _$AllCategoriesDataImpl implements _AllCategoriesData {
   @pragma('vm:prefer-inline')
   _$$AllCategoriesDataImplCopyWith<_$AllCategoriesDataImpl> get copyWith =>
       __$$AllCategoriesDataImplCopyWithImpl<_$AllCategoriesDataImpl>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$AllCategoriesDataImplToJson(this);
+    return _$$AllCategoriesDataImplToJson(
+      this,
+    );
   }
 }
 
@@ -492,19 +458,17 @@ mixin _$AllCategories {
 /// @nodoc
 abstract class $AllCategoriesCopyWith<$Res> {
   factory $AllCategoriesCopyWith(
-    AllCategories value,
-    $Res Function(AllCategories) then,
-  ) = _$AllCategoriesCopyWithImpl<$Res, AllCategories>;
+          AllCategories value, $Res Function(AllCategories) then) =
+      _$AllCategoriesCopyWithImpl<$Res, AllCategories>;
   @useResult
-  $Res call({
-    List<AllCategoriesChilds>? childs,
-    bool? hasChilds,
-    String? image,
-    String? name,
-    bool? showChildsInWebMobile,
-    String? slug,
-    String? smallImage,
-  });
+  $Res call(
+      {List<AllCategoriesChilds>? childs,
+      bool? hasChilds,
+      String? image,
+      String? name,
+      bool? showChildsInWebMobile,
+      String? slug,
+      String? smallImage});
 }
 
 /// @nodoc
@@ -530,46 +494,36 @@ class _$AllCategoriesCopyWithImpl<$Res, $Val extends AllCategories>
     Object? slug = freezed,
     Object? smallImage = freezed,
   }) {
-    return _then(
-      _value.copyWith(
-            childs:
-                freezed == childs
-                    ? _value.childs
-                    : childs // ignore: cast_nullable_to_non_nullable
-                        as List<AllCategoriesChilds>?,
-            hasChilds:
-                freezed == hasChilds
-                    ? _value.hasChilds
-                    : hasChilds // ignore: cast_nullable_to_non_nullable
-                        as bool?,
-            image:
-                freezed == image
-                    ? _value.image
-                    : image // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            name:
-                freezed == name
-                    ? _value.name
-                    : name // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            showChildsInWebMobile:
-                freezed == showChildsInWebMobile
-                    ? _value.showChildsInWebMobile
-                    : showChildsInWebMobile // ignore: cast_nullable_to_non_nullable
-                        as bool?,
-            slug:
-                freezed == slug
-                    ? _value.slug
-                    : slug // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            smallImage:
-                freezed == smallImage
-                    ? _value.smallImage
-                    : smallImage // ignore: cast_nullable_to_non_nullable
-                        as String?,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      childs: freezed == childs
+          ? _value.childs
+          : childs // ignore: cast_nullable_to_non_nullable
+              as List<AllCategoriesChilds>?,
+      hasChilds: freezed == hasChilds
+          ? _value.hasChilds
+          : hasChilds // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      image: freezed == image
+          ? _value.image
+          : image // ignore: cast_nullable_to_non_nullable
+              as String?,
+      name: freezed == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String?,
+      showChildsInWebMobile: freezed == showChildsInWebMobile
+          ? _value.showChildsInWebMobile
+          : showChildsInWebMobile // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      slug: freezed == slug
+          ? _value.slug
+          : slug // ignore: cast_nullable_to_non_nullable
+              as String?,
+      smallImage: freezed == smallImage
+          ? _value.smallImage
+          : smallImage // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ) as $Val);
   }
 }
 
@@ -577,20 +531,18 @@ class _$AllCategoriesCopyWithImpl<$Res, $Val extends AllCategories>
 abstract class _$$AllCategoriesImplCopyWith<$Res>
     implements $AllCategoriesCopyWith<$Res> {
   factory _$$AllCategoriesImplCopyWith(
-    _$AllCategoriesImpl value,
-    $Res Function(_$AllCategoriesImpl) then,
-  ) = __$$AllCategoriesImplCopyWithImpl<$Res>;
+          _$AllCategoriesImpl value, $Res Function(_$AllCategoriesImpl) then) =
+      __$$AllCategoriesImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    List<AllCategoriesChilds>? childs,
-    bool? hasChilds,
-    String? image,
-    String? name,
-    bool? showChildsInWebMobile,
-    String? slug,
-    String? smallImage,
-  });
+  $Res call(
+      {List<AllCategoriesChilds>? childs,
+      bool? hasChilds,
+      String? image,
+      String? name,
+      bool? showChildsInWebMobile,
+      String? slug,
+      String? smallImage});
 }
 
 /// @nodoc
@@ -598,9 +550,8 @@ class __$$AllCategoriesImplCopyWithImpl<$Res>
     extends _$AllCategoriesCopyWithImpl<$Res, _$AllCategoriesImpl>
     implements _$$AllCategoriesImplCopyWith<$Res> {
   __$$AllCategoriesImplCopyWithImpl(
-    _$AllCategoriesImpl _value,
-    $Res Function(_$AllCategoriesImpl) _then,
-  ) : super(_value, _then);
+      _$AllCategoriesImpl _value, $Res Function(_$AllCategoriesImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of AllCategories
   /// with the given fields replaced by the non-null parameter values.
@@ -615,38 +566,36 @@ class __$$AllCategoriesImplCopyWithImpl<$Res>
     Object? slug = freezed,
     Object? smallImage = freezed,
   }) {
-    return _then(
-      _$AllCategoriesImpl(
-        freezed == childs
-            ? _value._childs
-            : childs // ignore: cast_nullable_to_non_nullable
-                as List<AllCategoriesChilds>?,
-        freezed == hasChilds
-            ? _value.hasChilds
-            : hasChilds // ignore: cast_nullable_to_non_nullable
-                as bool?,
-        freezed == image
-            ? _value.image
-            : image // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == name
-            ? _value.name
-            : name // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == showChildsInWebMobile
-            ? _value.showChildsInWebMobile
-            : showChildsInWebMobile // ignore: cast_nullable_to_non_nullable
-                as bool?,
-        freezed == slug
-            ? _value.slug
-            : slug // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == smallImage
-            ? _value.smallImage
-            : smallImage // ignore: cast_nullable_to_non_nullable
-                as String?,
-      ),
-    );
+    return _then(_$AllCategoriesImpl(
+      freezed == childs
+          ? _value._childs
+          : childs // ignore: cast_nullable_to_non_nullable
+              as List<AllCategoriesChilds>?,
+      freezed == hasChilds
+          ? _value.hasChilds
+          : hasChilds // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      freezed == image
+          ? _value.image
+          : image // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == showChildsInWebMobile
+          ? _value.showChildsInWebMobile
+          : showChildsInWebMobile // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      freezed == slug
+          ? _value.slug
+          : slug // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == smallImage
+          ? _value.smallImage
+          : smallImage // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ));
   }
 }
 
@@ -655,14 +604,14 @@ class __$$AllCategoriesImplCopyWithImpl<$Res>
 @JsonSerializable(explicitToJson: true, fieldRename: FieldRename.snake)
 class _$AllCategoriesImpl implements _AllCategories {
   const _$AllCategoriesImpl(
-    final List<AllCategoriesChilds>? childs,
-    this.hasChilds,
-    this.image,
-    this.name,
-    this.showChildsInWebMobile,
-    this.slug,
-    this.smallImage,
-  ) : _childs = childs;
+      final List<AllCategoriesChilds>? childs,
+      this.hasChilds,
+      this.image,
+      this.name,
+      this.showChildsInWebMobile,
+      this.slug,
+      this.smallImage)
+      : _childs = childs;
 
   factory _$AllCategoriesImpl.fromJson(Map<String, dynamic> json) =>
       _$$AllCategoriesImplFromJson(json);
@@ -715,15 +664,14 @@ class _$AllCategoriesImpl implements _AllCategories {
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
-    runtimeType,
-    const DeepCollectionEquality().hash(_childs),
-    hasChilds,
-    image,
-    name,
-    showChildsInWebMobile,
-    slug,
-    smallImage,
-  );
+      runtimeType,
+      const DeepCollectionEquality().hash(_childs),
+      hasChilds,
+      image,
+      name,
+      showChildsInWebMobile,
+      slug,
+      smallImage);
 
   /// Create a copy of AllCategories
   /// with the given fields replaced by the non-null parameter values.
@@ -735,20 +683,21 @@ class _$AllCategoriesImpl implements _AllCategories {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$AllCategoriesImplToJson(this);
+    return _$$AllCategoriesImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _AllCategories implements AllCategories {
   const factory _AllCategories(
-    final List<AllCategoriesChilds>? childs,
-    final bool? hasChilds,
-    final String? image,
-    final String? name,
-    final bool? showChildsInWebMobile,
-    final String? slug,
-    final String? smallImage,
-  ) = _$AllCategoriesImpl;
+      final List<AllCategoriesChilds>? childs,
+      final bool? hasChilds,
+      final String? image,
+      final String? name,
+      final bool? showChildsInWebMobile,
+      final String? slug,
+      final String? smallImage) = _$AllCategoriesImpl;
 
   factory _AllCategories.fromJson(Map<String, dynamic> json) =
       _$AllCategoriesImpl.fromJson;
@@ -800,16 +749,14 @@ mixin _$AllCategoriesChilds {
 /// @nodoc
 abstract class $AllCategoriesChildsCopyWith<$Res> {
   factory $AllCategoriesChildsCopyWith(
-    AllCategoriesChilds value,
-    $Res Function(AllCategoriesChilds) then,
-  ) = _$AllCategoriesChildsCopyWithImpl<$Res, AllCategoriesChilds>;
+          AllCategoriesChilds value, $Res Function(AllCategoriesChilds) then) =
+      _$AllCategoriesChildsCopyWithImpl<$Res, AllCategoriesChilds>;
   @useResult
-  $Res call({
-    bool? hasChilds,
-    String? name,
-    bool? showChildsInWebMobile,
-    String? slug,
-  });
+  $Res call(
+      {bool? hasChilds,
+      String? name,
+      bool? showChildsInWebMobile,
+      String? slug});
 }
 
 /// @nodoc
@@ -832,59 +779,49 @@ class _$AllCategoriesChildsCopyWithImpl<$Res, $Val extends AllCategoriesChilds>
     Object? showChildsInWebMobile = freezed,
     Object? slug = freezed,
   }) {
-    return _then(
-      _value.copyWith(
-            hasChilds:
-                freezed == hasChilds
-                    ? _value.hasChilds
-                    : hasChilds // ignore: cast_nullable_to_non_nullable
-                        as bool?,
-            name:
-                freezed == name
-                    ? _value.name
-                    : name // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            showChildsInWebMobile:
-                freezed == showChildsInWebMobile
-                    ? _value.showChildsInWebMobile
-                    : showChildsInWebMobile // ignore: cast_nullable_to_non_nullable
-                        as bool?,
-            slug:
-                freezed == slug
-                    ? _value.slug
-                    : slug // ignore: cast_nullable_to_non_nullable
-                        as String?,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      hasChilds: freezed == hasChilds
+          ? _value.hasChilds
+          : hasChilds // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      name: freezed == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String?,
+      showChildsInWebMobile: freezed == showChildsInWebMobile
+          ? _value.showChildsInWebMobile
+          : showChildsInWebMobile // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      slug: freezed == slug
+          ? _value.slug
+          : slug // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ) as $Val);
   }
 }
 
 /// @nodoc
 abstract class _$$AllCategoriesChildsImplCopyWith<$Res>
     implements $AllCategoriesChildsCopyWith<$Res> {
-  factory _$$AllCategoriesChildsImplCopyWith(
-    _$AllCategoriesChildsImpl value,
-    $Res Function(_$AllCategoriesChildsImpl) then,
-  ) = __$$AllCategoriesChildsImplCopyWithImpl<$Res>;
+  factory _$$AllCategoriesChildsImplCopyWith(_$AllCategoriesChildsImpl value,
+          $Res Function(_$AllCategoriesChildsImpl) then) =
+      __$$AllCategoriesChildsImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    bool? hasChilds,
-    String? name,
-    bool? showChildsInWebMobile,
-    String? slug,
-  });
+  $Res call(
+      {bool? hasChilds,
+      String? name,
+      bool? showChildsInWebMobile,
+      String? slug});
 }
 
 /// @nodoc
 class __$$AllCategoriesChildsImplCopyWithImpl<$Res>
     extends _$AllCategoriesChildsCopyWithImpl<$Res, _$AllCategoriesChildsImpl>
     implements _$$AllCategoriesChildsImplCopyWith<$Res> {
-  __$$AllCategoriesChildsImplCopyWithImpl(
-    _$AllCategoriesChildsImpl _value,
-    $Res Function(_$AllCategoriesChildsImpl) _then,
-  ) : super(_value, _then);
+  __$$AllCategoriesChildsImplCopyWithImpl(_$AllCategoriesChildsImpl _value,
+      $Res Function(_$AllCategoriesChildsImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of AllCategoriesChilds
   /// with the given fields replaced by the non-null parameter values.
@@ -896,26 +833,24 @@ class __$$AllCategoriesChildsImplCopyWithImpl<$Res>
     Object? showChildsInWebMobile = freezed,
     Object? slug = freezed,
   }) {
-    return _then(
-      _$AllCategoriesChildsImpl(
-        freezed == hasChilds
-            ? _value.hasChilds
-            : hasChilds // ignore: cast_nullable_to_non_nullable
-                as bool?,
-        freezed == name
-            ? _value.name
-            : name // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == showChildsInWebMobile
-            ? _value.showChildsInWebMobile
-            : showChildsInWebMobile // ignore: cast_nullable_to_non_nullable
-                as bool?,
-        freezed == slug
-            ? _value.slug
-            : slug // ignore: cast_nullable_to_non_nullable
-                as String?,
-      ),
-    );
+    return _then(_$AllCategoriesChildsImpl(
+      freezed == hasChilds
+          ? _value.hasChilds
+          : hasChilds // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      freezed == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == showChildsInWebMobile
+          ? _value.showChildsInWebMobile
+          : showChildsInWebMobile // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      freezed == slug
+          ? _value.slug
+          : slug // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ));
   }
 }
 
@@ -924,11 +859,7 @@ class __$$AllCategoriesChildsImplCopyWithImpl<$Res>
 @JsonSerializable(explicitToJson: true, fieldRename: FieldRename.snake)
 class _$AllCategoriesChildsImpl implements _AllCategoriesChilds {
   const _$AllCategoriesChildsImpl(
-    this.hasChilds,
-    this.name,
-    this.showChildsInWebMobile,
-    this.slug,
-  );
+      this.hasChilds, this.name, this.showChildsInWebMobile, this.slug);
 
   factory _$AllCategoriesChildsImpl.fromJson(Map<String, dynamic> json) =>
       _$$AllCategoriesChildsImplFromJson(json);
@@ -972,23 +903,22 @@ class _$AllCategoriesChildsImpl implements _AllCategoriesChilds {
   @pragma('vm:prefer-inline')
   _$$AllCategoriesChildsImplCopyWith<_$AllCategoriesChildsImpl> get copyWith =>
       __$$AllCategoriesChildsImplCopyWithImpl<_$AllCategoriesChildsImpl>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$AllCategoriesChildsImplToJson(this);
+    return _$$AllCategoriesChildsImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _AllCategoriesChilds implements AllCategoriesChilds {
   const factory _AllCategoriesChilds(
-    final bool? hasChilds,
-    final String? name,
-    final bool? showChildsInWebMobile,
-    final String? slug,
-  ) = _$AllCategoriesChildsImpl;
+      final bool? hasChilds,
+      final String? name,
+      final bool? showChildsInWebMobile,
+      final String? slug) = _$AllCategoriesChildsImpl;
 
   factory _AllCategoriesChilds.fromJson(Map<String, dynamic> json) =
       _$AllCategoriesChildsImpl.fromJson;

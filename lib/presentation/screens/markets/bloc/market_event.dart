@@ -7,3 +7,7 @@ class GetMarkets extends MarketEvent {
   final int id;
   GetMarkets(this.id);
 }
+
+class GetMarketsProfile extends MarketEvent {
+
+}

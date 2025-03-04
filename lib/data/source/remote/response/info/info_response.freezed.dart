@@ -12,8 +12,7 @@ part of 'info_response.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 InfoResponse _$InfoResponseFromJson(Map<String, dynamic> json) {
   return _InfoResponse.fromJson(json);
@@ -40,17 +39,11 @@ mixin _$InfoResponse {
 /// @nodoc
 abstract class $InfoResponseCopyWith<$Res> {
   factory $InfoResponseCopyWith(
-    InfoResponse value,
-    $Res Function(InfoResponse) then,
-  ) = _$InfoResponseCopyWithImpl<$Res, InfoResponse>;
+          InfoResponse value, $Res Function(InfoResponse) then) =
+      _$InfoResponseCopyWithImpl<$Res, InfoResponse>;
   @useResult
-  $Res call({
-    int? code,
-    InfoData? data,
-    String? message,
-    int? status,
-    bool? success,
-  });
+  $Res call(
+      {int? code, InfoData? data, String? message, int? status, bool? success});
 
   $InfoDataCopyWith<$Res>? get data;
 }
@@ -76,36 +69,28 @@ class _$InfoResponseCopyWithImpl<$Res, $Val extends InfoResponse>
     Object? status = freezed,
     Object? success = freezed,
   }) {
-    return _then(
-      _value.copyWith(
-            code:
-                freezed == code
-                    ? _value.code
-                    : code // ignore: cast_nullable_to_non_nullable
-                        as int?,
-            data:
-                freezed == data
-                    ? _value.data
-                    : data // ignore: cast_nullable_to_non_nullable
-                        as InfoData?,
-            message:
-                freezed == message
-                    ? _value.message
-                    : message // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            status:
-                freezed == status
-                    ? _value.status
-                    : status // ignore: cast_nullable_to_non_nullable
-                        as int?,
-            success:
-                freezed == success
-                    ? _value.success
-                    : success // ignore: cast_nullable_to_non_nullable
-                        as bool?,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      code: freezed == code
+          ? _value.code
+          : code // ignore: cast_nullable_to_non_nullable
+              as int?,
+      data: freezed == data
+          ? _value.data
+          : data // ignore: cast_nullable_to_non_nullable
+              as InfoData?,
+      message: freezed == message
+          ? _value.message
+          : message // ignore: cast_nullable_to_non_nullable
+              as String?,
+      status: freezed == status
+          ? _value.status
+          : status // ignore: cast_nullable_to_non_nullable
+              as int?,
+      success: freezed == success
+          ? _value.success
+          : success // ignore: cast_nullable_to_non_nullable
+              as bool?,
+    ) as $Val);
   }
 
   /// Create a copy of InfoResponse
@@ -127,18 +112,12 @@ class _$InfoResponseCopyWithImpl<$Res, $Val extends InfoResponse>
 abstract class _$$InfoResponseImplCopyWith<$Res>
     implements $InfoResponseCopyWith<$Res> {
   factory _$$InfoResponseImplCopyWith(
-    _$InfoResponseImpl value,
-    $Res Function(_$InfoResponseImpl) then,
-  ) = __$$InfoResponseImplCopyWithImpl<$Res>;
+          _$InfoResponseImpl value, $Res Function(_$InfoResponseImpl) then) =
+      __$$InfoResponseImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    int? code,
-    InfoData? data,
-    String? message,
-    int? status,
-    bool? success,
-  });
+  $Res call(
+      {int? code, InfoData? data, String? message, int? status, bool? success});
 
   @override
   $InfoDataCopyWith<$Res>? get data;
@@ -149,9 +128,8 @@ class __$$InfoResponseImplCopyWithImpl<$Res>
     extends _$InfoResponseCopyWithImpl<$Res, _$InfoResponseImpl>
     implements _$$InfoResponseImplCopyWith<$Res> {
   __$$InfoResponseImplCopyWithImpl(
-    _$InfoResponseImpl _value,
-    $Res Function(_$InfoResponseImpl) _then,
-  ) : super(_value, _then);
+      _$InfoResponseImpl _value, $Res Function(_$InfoResponseImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of InfoResponse
   /// with the given fields replaced by the non-null parameter values.
@@ -164,30 +142,28 @@ class __$$InfoResponseImplCopyWithImpl<$Res>
     Object? status = freezed,
     Object? success = freezed,
   }) {
-    return _then(
-      _$InfoResponseImpl(
-        freezed == code
-            ? _value.code
-            : code // ignore: cast_nullable_to_non_nullable
-                as int?,
-        freezed == data
-            ? _value.data
-            : data // ignore: cast_nullable_to_non_nullable
-                as InfoData?,
-        freezed == message
-            ? _value.message
-            : message // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == status
-            ? _value.status
-            : status // ignore: cast_nullable_to_non_nullable
-                as int?,
-        freezed == success
-            ? _value.success
-            : success // ignore: cast_nullable_to_non_nullable
-                as bool?,
-      ),
-    );
+    return _then(_$InfoResponseImpl(
+      freezed == code
+          ? _value.code
+          : code // ignore: cast_nullable_to_non_nullable
+              as int?,
+      freezed == data
+          ? _value.data
+          : data // ignore: cast_nullable_to_non_nullable
+              as InfoData?,
+      freezed == message
+          ? _value.message
+          : message // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == status
+          ? _value.status
+          : status // ignore: cast_nullable_to_non_nullable
+              as int?,
+      freezed == success
+          ? _value.success
+          : success // ignore: cast_nullable_to_non_nullable
+              as bool?,
+    ));
   }
 }
 
@@ -196,12 +172,7 @@ class __$$InfoResponseImplCopyWithImpl<$Res>
 @JsonSerializable(explicitToJson: true, fieldRename: FieldRename.snake)
 class _$InfoResponseImpl implements _InfoResponse {
   const _$InfoResponseImpl(
-    this.code,
-    this.data,
-    this.message,
-    this.status,
-    this.success,
-  );
+      this.code, this.data, this.message, this.status, this.success);
 
   factory _$InfoResponseImpl.fromJson(Map<String, dynamic> json) =>
       _$$InfoResponseImplFromJson(json);
@@ -249,18 +220,19 @@ class _$InfoResponseImpl implements _InfoResponse {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$InfoResponseImplToJson(this);
+    return _$$InfoResponseImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _InfoResponse implements InfoResponse {
   const factory _InfoResponse(
-    final int? code,
-    final InfoData? data,
-    final String? message,
-    final int? status,
-    final bool? success,
-  ) = _$InfoResponseImpl;
+      final int? code,
+      final InfoData? data,
+      final String? message,
+      final int? status,
+      final bool? success) = _$InfoResponseImpl;
 
   factory _InfoResponse.fromJson(Map<String, dynamic> json) =
       _$InfoResponseImpl.fromJson;
@@ -324,17 +296,15 @@ class _$InfoDataCopyWithImpl<$Res, $Val extends InfoData>
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? data = freezed}) {
-    return _then(
-      _value.copyWith(
-            data:
-                freezed == data
-                    ? _value.data
-                    : data // ignore: cast_nullable_to_non_nullable
-                        as String?,
-          )
-          as $Val,
-    );
+  $Res call({
+    Object? data = freezed,
+  }) {
+    return _then(_value.copyWith(
+      data: freezed == data
+          ? _value.data
+          : data // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ) as $Val);
   }
 }
 
@@ -342,9 +312,8 @@ class _$InfoDataCopyWithImpl<$Res, $Val extends InfoData>
 abstract class _$$InfoDataImplCopyWith<$Res>
     implements $InfoDataCopyWith<$Res> {
   factory _$$InfoDataImplCopyWith(
-    _$InfoDataImpl value,
-    $Res Function(_$InfoDataImpl) then,
-  ) = __$$InfoDataImplCopyWithImpl<$Res>;
+          _$InfoDataImpl value, $Res Function(_$InfoDataImpl) then) =
+      __$$InfoDataImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String? data});
@@ -355,23 +324,22 @@ class __$$InfoDataImplCopyWithImpl<$Res>
     extends _$InfoDataCopyWithImpl<$Res, _$InfoDataImpl>
     implements _$$InfoDataImplCopyWith<$Res> {
   __$$InfoDataImplCopyWithImpl(
-    _$InfoDataImpl _value,
-    $Res Function(_$InfoDataImpl) _then,
-  ) : super(_value, _then);
+      _$InfoDataImpl _value, $Res Function(_$InfoDataImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of InfoData
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? data = freezed}) {
-    return _then(
-      _$InfoDataImpl(
-        freezed == data
-            ? _value.data
-            : data // ignore: cast_nullable_to_non_nullable
-                as String?,
-      ),
-    );
+  $Res call({
+    Object? data = freezed,
+  }) {
+    return _then(_$InfoDataImpl(
+      freezed == data
+          ? _value.data
+          : data // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ));
   }
 }
 
@@ -414,7 +382,9 @@ class _$InfoDataImpl implements _InfoData {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$InfoDataImplToJson(this);
+    return _$$InfoDataImplToJson(
+      this,
+    );
   }
 }
 

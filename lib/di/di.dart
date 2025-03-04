@@ -23,17 +23,34 @@ import '../data/source/remote/api/top_categories/special_category_api.dart';
 final getIt = GetIt.instance;
 
 void setup () {
-  getIt.registerSingleton<Dio>(Dio(BaseOptions(
-    baseUrl: 'https://gw.texnomart.uz/api/',
-  ))..interceptors.add(
-    TalkerDioLogger(
-      settings: const TalkerDioLoggerSettings(
-        printRequestHeaders: true,
-        printResponseHeaders: true,
-        printResponseMessage: true,
-      ),
-    )
-  ));
+  // getIt.registerSingleton<Dio>(Dio(BaseOptions(
+  //   baseUrl: 'https://gw.texnomart.uz/api/',
+  //   //https://gateway.texnomart.uz/api/web/v1/region/stores-list
+  // ))..interceptors.add(
+  //   TalkerDioLogger(
+  //     settings: const TalkerDioLoggerSettings(
+  //       printRequestHeaders: true,
+  //       printResponseHeaders: true,
+  //       printResponseMessage: true,
+  //     ),
+  //   )
+  // ));
+  //
+  // getIt.registerSingleton<Dio>(Dio(BaseOptions(
+  //   baseUrl: 'https://gateway.texnomart.uz/api/web/v1/',
+  // ))..interceptors.add(
+  //     TalkerDioLogger(
+  //       settings: const TalkerDioLoggerSettings(
+  //         printRequestHeaders: true,
+  //         printResponseHeaders: true,
+  //         printResponseMessage: true,
+  //       ),
+  //     )
+  // ), instanceName: 'stores');
+
+  registerMainDio();
+  registerStoresDio();
+
   getIt.registerSingleton<ProductApi>(ProductApi(getIt<Dio>()));
   getIt.registerSingleton<NewProductsApi>(NewProductsApi(getIt<Dio>()));
   getIt.registerSingleton<SpecialBrandsApi>(SpecialBrandsApi(getIt<Dio>()));
@@ -48,7 +65,42 @@ void setup () {
   getIt.registerSingleton<DetailAboutApi>(DetailAboutApi(getIt<Dio>()));
   getIt.registerSingleton<AccessoriesApi>(AccessoriesApi(getIt<Dio>()));
   getIt.registerSingleton<MarketsApi>(MarketsApi(getIt<Dio>()));
-  getIt.registerSingleton<MarketsProfileApi>(MarketsProfileApi(getIt<Dio>()));
+  getIt.registerSingleton<ProductApi>(ProductApi(getIt<Dio>(instanceName: 'stores')));
 
   getIt.registerSingleton<ProductRepository>(ProductRepositoryimpl());
+}
+
+void registerMainDio() {
+  getIt.registerSingleton<Dio>(
+    Dio(BaseOptions(
+      baseUrl: 'https://gw.texnomart.uz/api/',
+    ))
+      ..interceptors.add(
+        TalkerDioLogger(
+          settings: const TalkerDioLoggerSettings(
+            printRequestHeaders: true,
+            printResponseHeaders: true,
+            printResponseMessage: true,
+          ),
+        ),
+      ),
+  );
+}
+
+void registerStoresDio() {
+  getIt.registerSingleton<Dio>(
+    Dio(BaseOptions(
+      baseUrl: 'https://gateway.texnomart.uz/api/web/v1/',
+    ))
+      ..interceptors.add(
+        TalkerDioLogger(
+          settings: const TalkerDioLoggerSettings(
+            printRequestHeaders: true,
+            printResponseHeaders: true,
+            printResponseMessage: true,
+          ),
+        ),
+      ),
+    instanceName: 'stores',
+  );
 }

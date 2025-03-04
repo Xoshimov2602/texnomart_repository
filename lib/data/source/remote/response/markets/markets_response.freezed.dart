@@ -12,8 +12,7 @@ part of 'markets_response.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 MarketsResponse _$MarketsResponseFromJson(Map<String, dynamic> json) {
   return _MarketsResponse.fromJson(json);
@@ -40,17 +39,15 @@ mixin _$MarketsResponse {
 /// @nodoc
 abstract class $MarketsResponseCopyWith<$Res> {
   factory $MarketsResponseCopyWith(
-    MarketsResponse value,
-    $Res Function(MarketsResponse) then,
-  ) = _$MarketsResponseCopyWithImpl<$Res, MarketsResponse>;
+          MarketsResponse value, $Res Function(MarketsResponse) then) =
+      _$MarketsResponseCopyWithImpl<$Res, MarketsResponse>;
   @useResult
-  $Res call({
-    int? code,
-    MarketsData? data,
-    String? message,
-    int? status,
-    bool? success,
-  });
+  $Res call(
+      {int? code,
+      MarketsData? data,
+      String? message,
+      int? status,
+      bool? success});
 
   $MarketsDataCopyWith<$Res>? get data;
 }
@@ -76,36 +73,28 @@ class _$MarketsResponseCopyWithImpl<$Res, $Val extends MarketsResponse>
     Object? status = freezed,
     Object? success = freezed,
   }) {
-    return _then(
-      _value.copyWith(
-            code:
-                freezed == code
-                    ? _value.code
-                    : code // ignore: cast_nullable_to_non_nullable
-                        as int?,
-            data:
-                freezed == data
-                    ? _value.data
-                    : data // ignore: cast_nullable_to_non_nullable
-                        as MarketsData?,
-            message:
-                freezed == message
-                    ? _value.message
-                    : message // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            status:
-                freezed == status
-                    ? _value.status
-                    : status // ignore: cast_nullable_to_non_nullable
-                        as int?,
-            success:
-                freezed == success
-                    ? _value.success
-                    : success // ignore: cast_nullable_to_non_nullable
-                        as bool?,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      code: freezed == code
+          ? _value.code
+          : code // ignore: cast_nullable_to_non_nullable
+              as int?,
+      data: freezed == data
+          ? _value.data
+          : data // ignore: cast_nullable_to_non_nullable
+              as MarketsData?,
+      message: freezed == message
+          ? _value.message
+          : message // ignore: cast_nullable_to_non_nullable
+              as String?,
+      status: freezed == status
+          ? _value.status
+          : status // ignore: cast_nullable_to_non_nullable
+              as int?,
+      success: freezed == success
+          ? _value.success
+          : success // ignore: cast_nullable_to_non_nullable
+              as bool?,
+    ) as $Val);
   }
 
   /// Create a copy of MarketsResponse
@@ -126,19 +115,17 @@ class _$MarketsResponseCopyWithImpl<$Res, $Val extends MarketsResponse>
 /// @nodoc
 abstract class _$$MarketsResponseImplCopyWith<$Res>
     implements $MarketsResponseCopyWith<$Res> {
-  factory _$$MarketsResponseImplCopyWith(
-    _$MarketsResponseImpl value,
-    $Res Function(_$MarketsResponseImpl) then,
-  ) = __$$MarketsResponseImplCopyWithImpl<$Res>;
+  factory _$$MarketsResponseImplCopyWith(_$MarketsResponseImpl value,
+          $Res Function(_$MarketsResponseImpl) then) =
+      __$$MarketsResponseImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    int? code,
-    MarketsData? data,
-    String? message,
-    int? status,
-    bool? success,
-  });
+  $Res call(
+      {int? code,
+      MarketsData? data,
+      String? message,
+      int? status,
+      bool? success});
 
   @override
   $MarketsDataCopyWith<$Res>? get data;
@@ -149,9 +136,8 @@ class __$$MarketsResponseImplCopyWithImpl<$Res>
     extends _$MarketsResponseCopyWithImpl<$Res, _$MarketsResponseImpl>
     implements _$$MarketsResponseImplCopyWith<$Res> {
   __$$MarketsResponseImplCopyWithImpl(
-    _$MarketsResponseImpl _value,
-    $Res Function(_$MarketsResponseImpl) _then,
-  ) : super(_value, _then);
+      _$MarketsResponseImpl _value, $Res Function(_$MarketsResponseImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of MarketsResponse
   /// with the given fields replaced by the non-null parameter values.
@@ -164,30 +150,28 @@ class __$$MarketsResponseImplCopyWithImpl<$Res>
     Object? status = freezed,
     Object? success = freezed,
   }) {
-    return _then(
-      _$MarketsResponseImpl(
-        freezed == code
-            ? _value.code
-            : code // ignore: cast_nullable_to_non_nullable
-                as int?,
-        freezed == data
-            ? _value.data
-            : data // ignore: cast_nullable_to_non_nullable
-                as MarketsData?,
-        freezed == message
-            ? _value.message
-            : message // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == status
-            ? _value.status
-            : status // ignore: cast_nullable_to_non_nullable
-                as int?,
-        freezed == success
-            ? _value.success
-            : success // ignore: cast_nullable_to_non_nullable
-                as bool?,
-      ),
-    );
+    return _then(_$MarketsResponseImpl(
+      freezed == code
+          ? _value.code
+          : code // ignore: cast_nullable_to_non_nullable
+              as int?,
+      freezed == data
+          ? _value.data
+          : data // ignore: cast_nullable_to_non_nullable
+              as MarketsData?,
+      freezed == message
+          ? _value.message
+          : message // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == status
+          ? _value.status
+          : status // ignore: cast_nullable_to_non_nullable
+              as int?,
+      freezed == success
+          ? _value.success
+          : success // ignore: cast_nullable_to_non_nullable
+              as bool?,
+    ));
   }
 }
 
@@ -196,12 +180,7 @@ class __$$MarketsResponseImplCopyWithImpl<$Res>
 @JsonSerializable(explicitToJson: true, fieldRename: FieldRename.snake)
 class _$MarketsResponseImpl implements _MarketsResponse {
   const _$MarketsResponseImpl(
-    this.code,
-    this.data,
-    this.message,
-    this.status,
-    this.success,
-  );
+      this.code, this.data, this.message, this.status, this.success);
 
   factory _$MarketsResponseImpl.fromJson(Map<String, dynamic> json) =>
       _$$MarketsResponseImplFromJson(json);
@@ -246,24 +225,23 @@ class _$MarketsResponseImpl implements _MarketsResponse {
   @pragma('vm:prefer-inline')
   _$$MarketsResponseImplCopyWith<_$MarketsResponseImpl> get copyWith =>
       __$$MarketsResponseImplCopyWithImpl<_$MarketsResponseImpl>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$MarketsResponseImplToJson(this);
+    return _$$MarketsResponseImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _MarketsResponse implements MarketsResponse {
   const factory _MarketsResponse(
-    final int? code,
-    final MarketsData? data,
-    final String? message,
-    final int? status,
-    final bool? success,
-  ) = _$MarketsResponseImpl;
+      final int? code,
+      final MarketsData? data,
+      final String? message,
+      final int? status,
+      final bool? success) = _$MarketsResponseImpl;
 
   factory _MarketsResponse.fromJson(Map<String, dynamic> json) =
       _$MarketsResponseImpl.fromJson;
@@ -308,9 +286,8 @@ mixin _$MarketsData {
 /// @nodoc
 abstract class $MarketsDataCopyWith<$Res> {
   factory $MarketsDataCopyWith(
-    MarketsData value,
-    $Res Function(MarketsData) then,
-  ) = _$MarketsDataCopyWithImpl<$Res, MarketsData>;
+          MarketsData value, $Res Function(MarketsData) then) =
+      _$MarketsDataCopyWithImpl<$Res, MarketsData>;
   @useResult
   $Res call({List<MarketsElement>? data});
 }
@@ -329,17 +306,15 @@ class _$MarketsDataCopyWithImpl<$Res, $Val extends MarketsData>
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? data = freezed}) {
-    return _then(
-      _value.copyWith(
-            data:
-                freezed == data
-                    ? _value.data
-                    : data // ignore: cast_nullable_to_non_nullable
-                        as List<MarketsElement>?,
-          )
-          as $Val,
-    );
+  $Res call({
+    Object? data = freezed,
+  }) {
+    return _then(_value.copyWith(
+      data: freezed == data
+          ? _value.data
+          : data // ignore: cast_nullable_to_non_nullable
+              as List<MarketsElement>?,
+    ) as $Val);
   }
 }
 
@@ -347,9 +322,8 @@ class _$MarketsDataCopyWithImpl<$Res, $Val extends MarketsData>
 abstract class _$$MarketsDataImplCopyWith<$Res>
     implements $MarketsDataCopyWith<$Res> {
   factory _$$MarketsDataImplCopyWith(
-    _$MarketsDataImpl value,
-    $Res Function(_$MarketsDataImpl) then,
-  ) = __$$MarketsDataImplCopyWithImpl<$Res>;
+          _$MarketsDataImpl value, $Res Function(_$MarketsDataImpl) then) =
+      __$$MarketsDataImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({List<MarketsElement>? data});
@@ -360,23 +334,22 @@ class __$$MarketsDataImplCopyWithImpl<$Res>
     extends _$MarketsDataCopyWithImpl<$Res, _$MarketsDataImpl>
     implements _$$MarketsDataImplCopyWith<$Res> {
   __$$MarketsDataImplCopyWithImpl(
-    _$MarketsDataImpl _value,
-    $Res Function(_$MarketsDataImpl) _then,
-  ) : super(_value, _then);
+      _$MarketsDataImpl _value, $Res Function(_$MarketsDataImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of MarketsData
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? data = freezed}) {
-    return _then(
-      _$MarketsDataImpl(
-        freezed == data
-            ? _value._data
-            : data // ignore: cast_nullable_to_non_nullable
-                as List<MarketsElement>?,
-      ),
-    );
+  $Res call({
+    Object? data = freezed,
+  }) {
+    return _then(_$MarketsDataImpl(
+      freezed == data
+          ? _value._data
+          : data // ignore: cast_nullable_to_non_nullable
+              as List<MarketsElement>?,
+    ));
   }
 }
 
@@ -427,7 +400,9 @@ class _$MarketsDataImpl implements _MarketsData {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$MarketsDataImplToJson(this);
+    return _$$MarketsDataImplToJson(
+      this,
+    );
   }
 }
 
@@ -477,20 +452,18 @@ mixin _$MarketsElement {
 /// @nodoc
 abstract class $MarketsElementCopyWith<$Res> {
   factory $MarketsElementCopyWith(
-    MarketsElement value,
-    $Res Function(MarketsElement) then,
-  ) = _$MarketsElementCopyWithImpl<$Res, MarketsElement>;
+          MarketsElement value, $Res Function(MarketsElement) then) =
+      _$MarketsElementCopyWithImpl<$Res, MarketsElement>;
   @useResult
-  $Res call({
-    String? address,
-    String? description,
-    int? id,
-    String? lat,
-    String? long,
-    String? name,
-    String? phone,
-    String? workTime,
-  });
+  $Res call(
+      {String? address,
+      String? description,
+      int? id,
+      String? lat,
+      String? long,
+      String? name,
+      String? phone,
+      String? workTime});
 }
 
 /// @nodoc
@@ -517,73 +490,60 @@ class _$MarketsElementCopyWithImpl<$Res, $Val extends MarketsElement>
     Object? phone = freezed,
     Object? workTime = freezed,
   }) {
-    return _then(
-      _value.copyWith(
-            address:
-                freezed == address
-                    ? _value.address
-                    : address // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            description:
-                freezed == description
-                    ? _value.description
-                    : description // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            id:
-                freezed == id
-                    ? _value.id
-                    : id // ignore: cast_nullable_to_non_nullable
-                        as int?,
-            lat:
-                freezed == lat
-                    ? _value.lat
-                    : lat // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            long:
-                freezed == long
-                    ? _value.long
-                    : long // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            name:
-                freezed == name
-                    ? _value.name
-                    : name // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            phone:
-                freezed == phone
-                    ? _value.phone
-                    : phone // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            workTime:
-                freezed == workTime
-                    ? _value.workTime
-                    : workTime // ignore: cast_nullable_to_non_nullable
-                        as String?,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      address: freezed == address
+          ? _value.address
+          : address // ignore: cast_nullable_to_non_nullable
+              as String?,
+      description: freezed == description
+          ? _value.description
+          : description // ignore: cast_nullable_to_non_nullable
+              as String?,
+      id: freezed == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int?,
+      lat: freezed == lat
+          ? _value.lat
+          : lat // ignore: cast_nullable_to_non_nullable
+              as String?,
+      long: freezed == long
+          ? _value.long
+          : long // ignore: cast_nullable_to_non_nullable
+              as String?,
+      name: freezed == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String?,
+      phone: freezed == phone
+          ? _value.phone
+          : phone // ignore: cast_nullable_to_non_nullable
+              as String?,
+      workTime: freezed == workTime
+          ? _value.workTime
+          : workTime // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ) as $Val);
   }
 }
 
 /// @nodoc
 abstract class _$$MarketsElementImplCopyWith<$Res>
     implements $MarketsElementCopyWith<$Res> {
-  factory _$$MarketsElementImplCopyWith(
-    _$MarketsElementImpl value,
-    $Res Function(_$MarketsElementImpl) then,
-  ) = __$$MarketsElementImplCopyWithImpl<$Res>;
+  factory _$$MarketsElementImplCopyWith(_$MarketsElementImpl value,
+          $Res Function(_$MarketsElementImpl) then) =
+      __$$MarketsElementImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    String? address,
-    String? description,
-    int? id,
-    String? lat,
-    String? long,
-    String? name,
-    String? phone,
-    String? workTime,
-  });
+  $Res call(
+      {String? address,
+      String? description,
+      int? id,
+      String? lat,
+      String? long,
+      String? name,
+      String? phone,
+      String? workTime});
 }
 
 /// @nodoc
@@ -591,9 +551,8 @@ class __$$MarketsElementImplCopyWithImpl<$Res>
     extends _$MarketsElementCopyWithImpl<$Res, _$MarketsElementImpl>
     implements _$$MarketsElementImplCopyWith<$Res> {
   __$$MarketsElementImplCopyWithImpl(
-    _$MarketsElementImpl _value,
-    $Res Function(_$MarketsElementImpl) _then,
-  ) : super(_value, _then);
+      _$MarketsElementImpl _value, $Res Function(_$MarketsElementImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of MarketsElement
   /// with the given fields replaced by the non-null parameter values.
@@ -609,42 +568,40 @@ class __$$MarketsElementImplCopyWithImpl<$Res>
     Object? phone = freezed,
     Object? workTime = freezed,
   }) {
-    return _then(
-      _$MarketsElementImpl(
-        freezed == address
-            ? _value.address
-            : address // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == description
-            ? _value.description
-            : description // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == id
-            ? _value.id
-            : id // ignore: cast_nullable_to_non_nullable
-                as int?,
-        freezed == lat
-            ? _value.lat
-            : lat // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == long
-            ? _value.long
-            : long // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == name
-            ? _value.name
-            : name // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == phone
-            ? _value.phone
-            : phone // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == workTime
-            ? _value.workTime
-            : workTime // ignore: cast_nullable_to_non_nullable
-                as String?,
-      ),
-    );
+    return _then(_$MarketsElementImpl(
+      freezed == address
+          ? _value.address
+          : address // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == description
+          ? _value.description
+          : description // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int?,
+      freezed == lat
+          ? _value.lat
+          : lat // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == long
+          ? _value.long
+          : long // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == phone
+          ? _value.phone
+          : phone // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == workTime
+          ? _value.workTime
+          : workTime // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ));
   }
 }
 
@@ -652,16 +609,8 @@ class __$$MarketsElementImplCopyWithImpl<$Res>
 
 @JsonSerializable(explicitToJson: true, fieldRename: FieldRename.snake)
 class _$MarketsElementImpl implements _MarketsElement {
-  const _$MarketsElementImpl(
-    this.address,
-    this.description,
-    this.id,
-    this.lat,
-    this.long,
-    this.name,
-    this.phone,
-    this.workTime,
-  );
+  const _$MarketsElementImpl(this.address, this.description, this.id, this.lat,
+      this.long, this.name, this.phone, this.workTime);
 
   factory _$MarketsElementImpl.fromJson(Map<String, dynamic> json) =>
       _$$MarketsElementImplFromJson(json);
@@ -708,16 +657,7 @@ class _$MarketsElementImpl implements _MarketsElement {
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
-    runtimeType,
-    address,
-    description,
-    id,
-    lat,
-    long,
-    name,
-    phone,
-    workTime,
-  );
+      runtimeType, address, description, id, lat, long, name, phone, workTime);
 
   /// Create a copy of MarketsElement
   /// with the given fields replaced by the non-null parameter values.
@@ -726,27 +666,26 @@ class _$MarketsElementImpl implements _MarketsElement {
   @pragma('vm:prefer-inline')
   _$$MarketsElementImplCopyWith<_$MarketsElementImpl> get copyWith =>
       __$$MarketsElementImplCopyWithImpl<_$MarketsElementImpl>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$MarketsElementImplToJson(this);
+    return _$$MarketsElementImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _MarketsElement implements MarketsElement {
   const factory _MarketsElement(
-    final String? address,
-    final String? description,
-    final int? id,
-    final String? lat,
-    final String? long,
-    final String? name,
-    final String? phone,
-    final String? workTime,
-  ) = _$MarketsElementImpl;
+      final String? address,
+      final String? description,
+      final int? id,
+      final String? lat,
+      final String? long,
+      final String? name,
+      final String? phone,
+      final String? workTime) = _$MarketsElementImpl;
 
   factory _MarketsElement.fromJson(Map<String, dynamic> json) =
       _$MarketsElementImpl.fromJson;

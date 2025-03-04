@@ -12,8 +12,7 @@ part of 'detail_about_response.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 DetailAboutResponse _$DetailAboutResponseFromJson(Map<String, dynamic> json) {
   return _DetailAboutResponse.fromJson(json);
@@ -40,17 +39,15 @@ mixin _$DetailAboutResponse {
 /// @nodoc
 abstract class $DetailAboutResponseCopyWith<$Res> {
   factory $DetailAboutResponseCopyWith(
-    DetailAboutResponse value,
-    $Res Function(DetailAboutResponse) then,
-  ) = _$DetailAboutResponseCopyWithImpl<$Res, DetailAboutResponse>;
+          DetailAboutResponse value, $Res Function(DetailAboutResponse) then) =
+      _$DetailAboutResponseCopyWithImpl<$Res, DetailAboutResponse>;
   @useResult
-  $Res call({
-    int? code,
-    DetailAboutData? data,
-    String? message,
-    int? status,
-    bool? success,
-  });
+  $Res call(
+      {int? code,
+      DetailAboutData? data,
+      String? message,
+      int? status,
+      bool? success});
 
   $DetailAboutDataCopyWith<$Res>? get data;
 }
@@ -76,36 +73,28 @@ class _$DetailAboutResponseCopyWithImpl<$Res, $Val extends DetailAboutResponse>
     Object? status = freezed,
     Object? success = freezed,
   }) {
-    return _then(
-      _value.copyWith(
-            code:
-                freezed == code
-                    ? _value.code
-                    : code // ignore: cast_nullable_to_non_nullable
-                        as int?,
-            data:
-                freezed == data
-                    ? _value.data
-                    : data // ignore: cast_nullable_to_non_nullable
-                        as DetailAboutData?,
-            message:
-                freezed == message
-                    ? _value.message
-                    : message // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            status:
-                freezed == status
-                    ? _value.status
-                    : status // ignore: cast_nullable_to_non_nullable
-                        as int?,
-            success:
-                freezed == success
-                    ? _value.success
-                    : success // ignore: cast_nullable_to_non_nullable
-                        as bool?,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      code: freezed == code
+          ? _value.code
+          : code // ignore: cast_nullable_to_non_nullable
+              as int?,
+      data: freezed == data
+          ? _value.data
+          : data // ignore: cast_nullable_to_non_nullable
+              as DetailAboutData?,
+      message: freezed == message
+          ? _value.message
+          : message // ignore: cast_nullable_to_non_nullable
+              as String?,
+      status: freezed == status
+          ? _value.status
+          : status // ignore: cast_nullable_to_non_nullable
+              as int?,
+      success: freezed == success
+          ? _value.success
+          : success // ignore: cast_nullable_to_non_nullable
+              as bool?,
+    ) as $Val);
   }
 
   /// Create a copy of DetailAboutResponse
@@ -126,19 +115,17 @@ class _$DetailAboutResponseCopyWithImpl<$Res, $Val extends DetailAboutResponse>
 /// @nodoc
 abstract class _$$DetailAboutResponseImplCopyWith<$Res>
     implements $DetailAboutResponseCopyWith<$Res> {
-  factory _$$DetailAboutResponseImplCopyWith(
-    _$DetailAboutResponseImpl value,
-    $Res Function(_$DetailAboutResponseImpl) then,
-  ) = __$$DetailAboutResponseImplCopyWithImpl<$Res>;
+  factory _$$DetailAboutResponseImplCopyWith(_$DetailAboutResponseImpl value,
+          $Res Function(_$DetailAboutResponseImpl) then) =
+      __$$DetailAboutResponseImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    int? code,
-    DetailAboutData? data,
-    String? message,
-    int? status,
-    bool? success,
-  });
+  $Res call(
+      {int? code,
+      DetailAboutData? data,
+      String? message,
+      int? status,
+      bool? success});
 
   @override
   $DetailAboutDataCopyWith<$Res>? get data;
@@ -148,10 +135,9 @@ abstract class _$$DetailAboutResponseImplCopyWith<$Res>
 class __$$DetailAboutResponseImplCopyWithImpl<$Res>
     extends _$DetailAboutResponseCopyWithImpl<$Res, _$DetailAboutResponseImpl>
     implements _$$DetailAboutResponseImplCopyWith<$Res> {
-  __$$DetailAboutResponseImplCopyWithImpl(
-    _$DetailAboutResponseImpl _value,
-    $Res Function(_$DetailAboutResponseImpl) _then,
-  ) : super(_value, _then);
+  __$$DetailAboutResponseImplCopyWithImpl(_$DetailAboutResponseImpl _value,
+      $Res Function(_$DetailAboutResponseImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of DetailAboutResponse
   /// with the given fields replaced by the non-null parameter values.
@@ -164,35 +150,28 @@ class __$$DetailAboutResponseImplCopyWithImpl<$Res>
     Object? status = freezed,
     Object? success = freezed,
   }) {
-    return _then(
-      _$DetailAboutResponseImpl(
-        code:
-            freezed == code
-                ? _value.code
-                : code // ignore: cast_nullable_to_non_nullable
-                    as int?,
-        data:
-            freezed == data
-                ? _value.data
-                : data // ignore: cast_nullable_to_non_nullable
-                    as DetailAboutData?,
-        message:
-            freezed == message
-                ? _value.message
-                : message // ignore: cast_nullable_to_non_nullable
-                    as String?,
-        status:
-            freezed == status
-                ? _value.status
-                : status // ignore: cast_nullable_to_non_nullable
-                    as int?,
-        success:
-            freezed == success
-                ? _value.success
-                : success // ignore: cast_nullable_to_non_nullable
-                    as bool?,
-      ),
-    );
+    return _then(_$DetailAboutResponseImpl(
+      code: freezed == code
+          ? _value.code
+          : code // ignore: cast_nullable_to_non_nullable
+              as int?,
+      data: freezed == data
+          ? _value.data
+          : data // ignore: cast_nullable_to_non_nullable
+              as DetailAboutData?,
+      message: freezed == message
+          ? _value.message
+          : message // ignore: cast_nullable_to_non_nullable
+              as String?,
+      status: freezed == status
+          ? _value.status
+          : status // ignore: cast_nullable_to_non_nullable
+              as int?,
+      success: freezed == success
+          ? _value.success
+          : success // ignore: cast_nullable_to_non_nullable
+              as bool?,
+    ));
   }
 }
 
@@ -200,13 +179,8 @@ class __$$DetailAboutResponseImplCopyWithImpl<$Res>
 
 @JsonSerializable(explicitToJson: true, fieldRename: FieldRename.snake)
 class _$DetailAboutResponseImpl implements _DetailAboutResponse {
-  const _$DetailAboutResponseImpl({
-    this.code,
-    this.data,
-    this.message,
-    this.status,
-    this.success,
-  });
+  const _$DetailAboutResponseImpl(
+      {this.code, this.data, this.message, this.status, this.success});
 
   factory _$DetailAboutResponseImpl.fromJson(Map<String, dynamic> json) =>
       _$$DetailAboutResponseImplFromJson(json);
@@ -251,24 +225,23 @@ class _$DetailAboutResponseImpl implements _DetailAboutResponse {
   @pragma('vm:prefer-inline')
   _$$DetailAboutResponseImplCopyWith<_$DetailAboutResponseImpl> get copyWith =>
       __$$DetailAboutResponseImplCopyWithImpl<_$DetailAboutResponseImpl>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$DetailAboutResponseImplToJson(this);
+    return _$$DetailAboutResponseImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _DetailAboutResponse implements DetailAboutResponse {
-  const factory _DetailAboutResponse({
-    final int? code,
-    final DetailAboutData? data,
-    final String? message,
-    final int? status,
-    final bool? success,
-  }) = _$DetailAboutResponseImpl;
+  const factory _DetailAboutResponse(
+      {final int? code,
+      final DetailAboutData? data,
+      final String? message,
+      final int? status,
+      final bool? success}) = _$DetailAboutResponseImpl;
 
   factory _DetailAboutResponse.fromJson(Map<String, dynamic> json) =
       _$DetailAboutResponseImpl.fromJson;
@@ -313,9 +286,8 @@ mixin _$DetailAboutData {
 /// @nodoc
 abstract class $DetailAboutDataCopyWith<$Res> {
   factory $DetailAboutDataCopyWith(
-    DetailAboutData value,
-    $Res Function(DetailAboutData) then,
-  ) = _$DetailAboutDataCopyWithImpl<$Res, DetailAboutData>;
+          DetailAboutData value, $Res Function(DetailAboutData) then) =
+      _$DetailAboutDataCopyWithImpl<$Res, DetailAboutData>;
   @useResult
   $Res call({List<DetailAboutElement>? data});
 }
@@ -334,27 +306,24 @@ class _$DetailAboutDataCopyWithImpl<$Res, $Val extends DetailAboutData>
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? data = freezed}) {
-    return _then(
-      _value.copyWith(
-            data:
-                freezed == data
-                    ? _value.data
-                    : data // ignore: cast_nullable_to_non_nullable
-                        as List<DetailAboutElement>?,
-          )
-          as $Val,
-    );
+  $Res call({
+    Object? data = freezed,
+  }) {
+    return _then(_value.copyWith(
+      data: freezed == data
+          ? _value.data
+          : data // ignore: cast_nullable_to_non_nullable
+              as List<DetailAboutElement>?,
+    ) as $Val);
   }
 }
 
 /// @nodoc
 abstract class _$$DetailAboutDataImplCopyWith<$Res>
     implements $DetailAboutDataCopyWith<$Res> {
-  factory _$$DetailAboutDataImplCopyWith(
-    _$DetailAboutDataImpl value,
-    $Res Function(_$DetailAboutDataImpl) then,
-  ) = __$$DetailAboutDataImplCopyWithImpl<$Res>;
+  factory _$$DetailAboutDataImplCopyWith(_$DetailAboutDataImpl value,
+          $Res Function(_$DetailAboutDataImpl) then) =
+      __$$DetailAboutDataImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({List<DetailAboutElement>? data});
@@ -365,23 +334,22 @@ class __$$DetailAboutDataImplCopyWithImpl<$Res>
     extends _$DetailAboutDataCopyWithImpl<$Res, _$DetailAboutDataImpl>
     implements _$$DetailAboutDataImplCopyWith<$Res> {
   __$$DetailAboutDataImplCopyWithImpl(
-    _$DetailAboutDataImpl _value,
-    $Res Function(_$DetailAboutDataImpl) _then,
-  ) : super(_value, _then);
+      _$DetailAboutDataImpl _value, $Res Function(_$DetailAboutDataImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of DetailAboutData
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? data = freezed}) {
-    return _then(
-      _$DetailAboutDataImpl(
-        freezed == data
-            ? _value._data
-            : data // ignore: cast_nullable_to_non_nullable
-                as List<DetailAboutElement>?,
-      ),
-    );
+  $Res call({
+    Object? data = freezed,
+  }) {
+    return _then(_$DetailAboutDataImpl(
+      freezed == data
+          ? _value._data
+          : data // ignore: cast_nullable_to_non_nullable
+              as List<DetailAboutElement>?,
+    ));
   }
 }
 
@@ -390,7 +358,7 @@ class __$$DetailAboutDataImplCopyWithImpl<$Res>
 @JsonSerializable(explicitToJson: true, fieldRename: FieldRename.snake)
 class _$DetailAboutDataImpl implements _DetailAboutData {
   const _$DetailAboutDataImpl(final List<DetailAboutElement>? data)
-    : _data = data;
+      : _data = data;
 
   factory _$DetailAboutDataImpl.fromJson(Map<String, dynamic> json) =>
       _$$DetailAboutDataImplFromJson(json);
@@ -430,13 +398,13 @@ class _$DetailAboutDataImpl implements _DetailAboutData {
   @pragma('vm:prefer-inline')
   _$$DetailAboutDataImplCopyWith<_$DetailAboutDataImpl> get copyWith =>
       __$$DetailAboutDataImplCopyWithImpl<_$DetailAboutDataImpl>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$DetailAboutDataImplToJson(this);
+    return _$$DetailAboutDataImplToJson(
+      this,
+    );
   }
 }
 
@@ -481,9 +449,8 @@ mixin _$DetailAboutElement {
 /// @nodoc
 abstract class $DetailAboutElementCopyWith<$Res> {
   factory $DetailAboutElementCopyWith(
-    DetailAboutElement value,
-    $Res Function(DetailAboutElement) then,
-  ) = _$DetailAboutElementCopyWithImpl<$Res, DetailAboutElement>;
+          DetailAboutElement value, $Res Function(DetailAboutElement) then) =
+      _$DetailAboutElementCopyWithImpl<$Res, DetailAboutElement>;
   @useResult
   $Res call({List<DetailAboutCharacter>? characters, String? name});
 }
@@ -502,32 +469,29 @@ class _$DetailAboutElementCopyWithImpl<$Res, $Val extends DetailAboutElement>
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? characters = freezed, Object? name = freezed}) {
-    return _then(
-      _value.copyWith(
-            characters:
-                freezed == characters
-                    ? _value.characters
-                    : characters // ignore: cast_nullable_to_non_nullable
-                        as List<DetailAboutCharacter>?,
-            name:
-                freezed == name
-                    ? _value.name
-                    : name // ignore: cast_nullable_to_non_nullable
-                        as String?,
-          )
-          as $Val,
-    );
+  $Res call({
+    Object? characters = freezed,
+    Object? name = freezed,
+  }) {
+    return _then(_value.copyWith(
+      characters: freezed == characters
+          ? _value.characters
+          : characters // ignore: cast_nullable_to_non_nullable
+              as List<DetailAboutCharacter>?,
+      name: freezed == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ) as $Val);
   }
 }
 
 /// @nodoc
 abstract class _$$DetailAboutElementImplCopyWith<$Res>
     implements $DetailAboutElementCopyWith<$Res> {
-  factory _$$DetailAboutElementImplCopyWith(
-    _$DetailAboutElementImpl value,
-    $Res Function(_$DetailAboutElementImpl) then,
-  ) = __$$DetailAboutElementImplCopyWithImpl<$Res>;
+  factory _$$DetailAboutElementImplCopyWith(_$DetailAboutElementImpl value,
+          $Res Function(_$DetailAboutElementImpl) then) =
+      __$$DetailAboutElementImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({List<DetailAboutCharacter>? characters, String? name});
@@ -537,28 +501,28 @@ abstract class _$$DetailAboutElementImplCopyWith<$Res>
 class __$$DetailAboutElementImplCopyWithImpl<$Res>
     extends _$DetailAboutElementCopyWithImpl<$Res, _$DetailAboutElementImpl>
     implements _$$DetailAboutElementImplCopyWith<$Res> {
-  __$$DetailAboutElementImplCopyWithImpl(
-    _$DetailAboutElementImpl _value,
-    $Res Function(_$DetailAboutElementImpl) _then,
-  ) : super(_value, _then);
+  __$$DetailAboutElementImplCopyWithImpl(_$DetailAboutElementImpl _value,
+      $Res Function(_$DetailAboutElementImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of DetailAboutElement
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? characters = freezed, Object? name = freezed}) {
-    return _then(
-      _$DetailAboutElementImpl(
-        freezed == characters
-            ? _value._characters
-            : characters // ignore: cast_nullable_to_non_nullable
-                as List<DetailAboutCharacter>?,
-        freezed == name
-            ? _value.name
-            : name // ignore: cast_nullable_to_non_nullable
-                as String?,
-      ),
-    );
+  $Res call({
+    Object? characters = freezed,
+    Object? name = freezed,
+  }) {
+    return _then(_$DetailAboutElementImpl(
+      freezed == characters
+          ? _value._characters
+          : characters // ignore: cast_nullable_to_non_nullable
+              as List<DetailAboutCharacter>?,
+      freezed == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ));
   }
 }
 
@@ -567,9 +531,8 @@ class __$$DetailAboutElementImplCopyWithImpl<$Res>
 @JsonSerializable(explicitToJson: true, fieldRename: FieldRename.snake)
 class _$DetailAboutElementImpl implements _DetailAboutElement {
   const _$DetailAboutElementImpl(
-    final List<DetailAboutCharacter>? characters,
-    this.name,
-  ) : _characters = characters;
+      final List<DetailAboutCharacter>? characters, this.name)
+      : _characters = characters;
 
   factory _$DetailAboutElementImpl.fromJson(Map<String, dynamic> json) =>
       _$$DetailAboutElementImplFromJson(json);
@@ -597,20 +560,15 @@ class _$DetailAboutElementImpl implements _DetailAboutElement {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$DetailAboutElementImpl &&
-            const DeepCollectionEquality().equals(
-              other._characters,
-              _characters,
-            ) &&
+            const DeepCollectionEquality()
+                .equals(other._characters, _characters) &&
             (identical(other.name, name) || other.name == name));
   }
 
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
-    runtimeType,
-    const DeepCollectionEquality().hash(_characters),
-    name,
-  );
+      runtimeType, const DeepCollectionEquality().hash(_characters), name);
 
   /// Create a copy of DetailAboutElement
   /// with the given fields replaced by the non-null parameter values.
@@ -619,21 +577,20 @@ class _$DetailAboutElementImpl implements _DetailAboutElement {
   @pragma('vm:prefer-inline')
   _$$DetailAboutElementImplCopyWith<_$DetailAboutElementImpl> get copyWith =>
       __$$DetailAboutElementImplCopyWithImpl<_$DetailAboutElementImpl>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$DetailAboutElementImplToJson(this);
+    return _$$DetailAboutElementImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _DetailAboutElement implements DetailAboutElement {
   const factory _DetailAboutElement(
-    final List<DetailAboutCharacter>? characters,
-    final String? name,
-  ) = _$DetailAboutElementImpl;
+          final List<DetailAboutCharacter>? characters, final String? name) =
+      _$DetailAboutElementImpl;
 
   factory _DetailAboutElement.fromJson(Map<String, dynamic> json) =
       _$DetailAboutElementImpl.fromJson;
@@ -672,19 +629,16 @@ mixin _$DetailAboutCharacter {
 
 /// @nodoc
 abstract class $DetailAboutCharacterCopyWith<$Res> {
-  factory $DetailAboutCharacterCopyWith(
-    DetailAboutCharacter value,
-    $Res Function(DetailAboutCharacter) then,
-  ) = _$DetailAboutCharacterCopyWithImpl<$Res, DetailAboutCharacter>;
+  factory $DetailAboutCharacterCopyWith(DetailAboutCharacter value,
+          $Res Function(DetailAboutCharacter) then) =
+      _$DetailAboutCharacterCopyWithImpl<$Res, DetailAboutCharacter>;
   @useResult
   $Res call({String? name, String? value});
 }
 
 /// @nodoc
-class _$DetailAboutCharacterCopyWithImpl<
-  $Res,
-  $Val extends DetailAboutCharacter
->
+class _$DetailAboutCharacterCopyWithImpl<$Res,
+        $Val extends DetailAboutCharacter>
     implements $DetailAboutCharacterCopyWith<$Res> {
   _$DetailAboutCharacterCopyWithImpl(this._value, this._then);
 
@@ -697,32 +651,29 @@ class _$DetailAboutCharacterCopyWithImpl<
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? name = freezed, Object? value = freezed}) {
-    return _then(
-      _value.copyWith(
-            name:
-                freezed == name
-                    ? _value.name
-                    : name // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            value:
-                freezed == value
-                    ? _value.value
-                    : value // ignore: cast_nullable_to_non_nullable
-                        as String?,
-          )
-          as $Val,
-    );
+  $Res call({
+    Object? name = freezed,
+    Object? value = freezed,
+  }) {
+    return _then(_value.copyWith(
+      name: freezed == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String?,
+      value: freezed == value
+          ? _value.value
+          : value // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ) as $Val);
   }
 }
 
 /// @nodoc
 abstract class _$$DetailAboutCharacterImplCopyWith<$Res>
     implements $DetailAboutCharacterCopyWith<$Res> {
-  factory _$$DetailAboutCharacterImplCopyWith(
-    _$DetailAboutCharacterImpl value,
-    $Res Function(_$DetailAboutCharacterImpl) then,
-  ) = __$$DetailAboutCharacterImplCopyWithImpl<$Res>;
+  factory _$$DetailAboutCharacterImplCopyWith(_$DetailAboutCharacterImpl value,
+          $Res Function(_$DetailAboutCharacterImpl) then) =
+      __$$DetailAboutCharacterImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String? name, String? value});
@@ -732,28 +683,28 @@ abstract class _$$DetailAboutCharacterImplCopyWith<$Res>
 class __$$DetailAboutCharacterImplCopyWithImpl<$Res>
     extends _$DetailAboutCharacterCopyWithImpl<$Res, _$DetailAboutCharacterImpl>
     implements _$$DetailAboutCharacterImplCopyWith<$Res> {
-  __$$DetailAboutCharacterImplCopyWithImpl(
-    _$DetailAboutCharacterImpl _value,
-    $Res Function(_$DetailAboutCharacterImpl) _then,
-  ) : super(_value, _then);
+  __$$DetailAboutCharacterImplCopyWithImpl(_$DetailAboutCharacterImpl _value,
+      $Res Function(_$DetailAboutCharacterImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of DetailAboutCharacter
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? name = freezed, Object? value = freezed}) {
-    return _then(
-      _$DetailAboutCharacterImpl(
-        freezed == name
-            ? _value.name
-            : name // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == value
-            ? _value.value
-            : value // ignore: cast_nullable_to_non_nullable
-                as String?,
-      ),
-    );
+  $Res call({
+    Object? name = freezed,
+    Object? value = freezed,
+  }) {
+    return _then(_$DetailAboutCharacterImpl(
+      freezed == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == value
+          ? _value.value
+          : value // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ));
   }
 }
 
@@ -794,15 +745,15 @@ class _$DetailAboutCharacterImpl implements _DetailAboutCharacter {
   @override
   @pragma('vm:prefer-inline')
   _$$DetailAboutCharacterImplCopyWith<_$DetailAboutCharacterImpl>
-  get copyWith =>
-      __$$DetailAboutCharacterImplCopyWithImpl<_$DetailAboutCharacterImpl>(
-        this,
-        _$identity,
-      );
+      get copyWith =>
+          __$$DetailAboutCharacterImplCopyWithImpl<_$DetailAboutCharacterImpl>(
+              this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$DetailAboutCharacterImplToJson(this);
+    return _$$DetailAboutCharacterImplToJson(
+      this,
+    );
   }
 }
 
@@ -823,5 +774,5 @@ abstract class _DetailAboutCharacter implements DetailAboutCharacter {
   @override
   @JsonKey(includeFromJson: false, includeToJson: false)
   _$$DetailAboutCharacterImplCopyWith<_$DetailAboutCharacterImpl>
-  get copyWith => throw _privateConstructorUsedError;
+      get copyWith => throw _privateConstructorUsedError;
 }

@@ -106,6 +106,16 @@ class _MainScreenState extends State<MainScreen> {
                   print(
                     'TTT init hit products in ${state.data?.data?.data.length} ',
                   );
+                  final List<String> imageUrls = [
+                    "https://mini-io-api.texnomart.uz/newcontent/slider/351/A0dK8BtYZLjVNBD89BUV1Wd72zpzWeNcdTMmb2cU.webp",
+                    "https://mini-io-api.texnomart.uz/newcontent/slider/357/ok6THYXwt4G7WJsQc1VfsqnRFDGDKw4SYvPzzKu9.webp",
+                    "https://mini-io-api.texnomart.uz/newcontent/slider/353/AWwDlY3UOS7znzwxN4cAIZgPkTWSFJ0659GjlbZf.webp",
+                    "https://mini-io-api.texnomart.uz/newcontent/slider/350/gXy6OkeWzHE0SzsqaoNAZV1RAO9RTXrEpCMbZ8BS.webp",
+                    "https://mini-io-api.texnomart.uz/newcontent/slider/352/oaEqLWR2w74zDycFUloaBrES0jHb00jYYgVlLrbD.webp",
+                    "https://mini-io-api.texnomart.uz/newcontent/slider/355/kMFlfjowXn6ojwLMdqQG51qisOoV1kwrzYJHX9XK.webp",
+                    "https://mini-io-api.texnomart.uz/newcontent/slider/356/EWqp5GJFJ8lFkG5iG7iHnZRbwYA3iUX0QeLgGuJ6.webp",
+                    "https://mini-io-api.texnomart.uz/newcontent/slider/347/oeS5KtRfzHNlGKSrb6RyyhuWvRSIybZsy5IvSmWE.webp",
+                  ];
                   return Container(
                     color: Colors.white,
                     width: double.infinity,
@@ -115,151 +125,26 @@ class _MainScreenState extends State<MainScreen> {
                         children: [
                           Padding(
                             padding: const EdgeInsets.only(top: 10, bottom: 10),
-                            child: CarouselSlider(
+                            child:CarouselSlider(
                               options: CarouselOptions(
                                 height: 160,
                                 autoPlay: true,
                                 autoPlayInterval: Duration(seconds: 4),
+                                enlargeCenterPage: true, // Highlights the center image
+                                viewportFraction: 0.85, // Adjusts the visible part of the side images
                               ),
-                              items: [
-                                Padding(
-                                  padding: const EdgeInsets.symmetric(
-                                    horizontal: 8,
+                              items: imageUrls.map((url) {
+                                return ClipRRect(
+                                  borderRadius: BorderRadius.circular(20),
+                                  child: Image.network(
+                                    url,
+                                    width: double.infinity,
+                                    height: double.infinity,
+                                    fit: BoxFit.cover,
                                   ),
-                                  child: Container(
-                                    decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(20),
-                                    ),
-                                    child: Image(
-                                      height: double.infinity,
-                                      width: double.infinity,
-                                      image: NetworkImage(
-                                        "https://mini-io-api.texnomart.uz/newcontent/slider/351/A0dK8BtYZLjVNBD89BUV1Wd72zpzWeNcdTMmb2cU.webp",
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                                Padding(
-                                  padding: const EdgeInsets.symmetric(
-                                    horizontal: 8.0,
-                                  ),
-                                  child: Container(
-                                    decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(20),
-                                    ),
-                                    child: Image(
-                                      height: double.infinity,
-                                      width: double.infinity,
-                                      image: NetworkImage(
-                                        "https://mini-io-api.texnomart.uz/newcontent/slider/357/ok6THYXwt4G7WJsQc1VfsqnRFDGDKw4SYvPzzKu9.webp",
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                                Padding(
-                                  padding: const EdgeInsets.symmetric(
-                                    horizontal: 8.0,
-                                  ),
-                                  child: Container(
-                                    decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(20),
-                                    ),
-                                    child: Image(
-                                      height: double.infinity,
-                                      width: double.infinity,
-                                      image: NetworkImage(
-                                        "https://mini-io-api.texnomart.uz/newcontent/slider/353/AWwDlY3UOS7znzwxN4cAIZgPkTWSFJ0659GjlbZf.webp",
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                                Padding(
-                                  padding: const EdgeInsets.symmetric(
-                                    horizontal: 8.0,
-                                  ),
-                                  child: Container(
-                                    decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(20),
-                                    ),
-                                    child: Image(
-                                      height: double.infinity,
-                                      width: double.infinity,
-                                      image: NetworkImage(
-                                        "https://mini-io-api.texnomart.uz/newcontent/slider/350/gXy6OkeWzHE0SzsqaoNAZV1RAO9RTXrEpCMbZ8BS.webp",
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                                Padding(
-                                  padding: const EdgeInsets.symmetric(
-                                    horizontal: 8.0,
-                                  ),
-                                  child: Container(
-                                    decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(20),
-                                    ),
-                                    child: Image(
-                                      height: double.infinity,
-                                      width: double.infinity,
-                                      image: NetworkImage(
-                                        "https://mini-io-api.texnomart.uz/newcontent/slider/352/oaEqLWR2w74zDycFUloaBrES0jHb00jYYgVlLrbD.webp",
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                                Padding(
-                                  padding: const EdgeInsets.symmetric(
-                                    horizontal: 8.0,
-                                  ),
-                                  child: Container(
-                                    decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(20),
-                                    ),
-                                    child: Image(
-                                      height: double.infinity,
-                                      width: double.infinity,
-                                      image: NetworkImage(
-                                        "https://mini-io-api.texnomart.uz/newcontent/slider/355/kMFlfjowXn6ojwLMdqQG51qisOoV1kwrzYJHX9XK.webp",
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                                Padding(
-                                  padding: const EdgeInsets.symmetric(
-                                    horizontal: 8.0,
-                                  ),
-                                  child: Container(
-                                    decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(20),
-                                    ),
-                                    child: Image(
-                                      height: double.infinity,
-                                      width: double.infinity,
-                                      image: NetworkImage(
-                                        "https://mini-io-api.texnomart.uz/newcontent/slider/356/EWqp5GJFJ8lFkG5iG7iHnZRbwYA3iUX0QeLgGuJ6.webp",
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                                Padding(
-                                  padding: const EdgeInsets.symmetric(
-                                    horizontal: 8.0,
-                                  ),
-                                  child: Container(
-                                    decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(20),
-                                    ),
-                                    child: Image(
-                                      height: double.infinity,
-                                      width: double.infinity,
-                                      image: NetworkImage(
-                                        "https://mini-io-api.texnomart.uz/newcontent/slider/347/oeS5KtRfzHNlGKSrb6RyyhuWvRSIybZsy5IvSmWE.webp",
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
+                                );
+                              }).toList(),
+                            )
                           ),
                           Padding(
                             padding: const EdgeInsets.only(left: 16),

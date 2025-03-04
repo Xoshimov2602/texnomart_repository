@@ -12,12 +12,10 @@ part of 'category_chips_response.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 CategoryChipsResponse _$CategoryChipsResponseFromJson(
-  Map<String, dynamic> json,
-) {
+    Map<String, dynamic> json) {
   return _CategoryChipsResponse.fromJson(json);
 }
 
@@ -41,27 +39,23 @@ mixin _$CategoryChipsResponse {
 
 /// @nodoc
 abstract class $CategoryChipsResponseCopyWith<$Res> {
-  factory $CategoryChipsResponseCopyWith(
-    CategoryChipsResponse value,
-    $Res Function(CategoryChipsResponse) then,
-  ) = _$CategoryChipsResponseCopyWithImpl<$Res, CategoryChipsResponse>;
+  factory $CategoryChipsResponseCopyWith(CategoryChipsResponse value,
+          $Res Function(CategoryChipsResponse) then) =
+      _$CategoryChipsResponseCopyWithImpl<$Res, CategoryChipsResponse>;
   @useResult
-  $Res call({
-    int? code,
-    CategoryChipsData? data,
-    String? message,
-    int? status,
-    bool? success,
-  });
+  $Res call(
+      {int? code,
+      CategoryChipsData? data,
+      String? message,
+      int? status,
+      bool? success});
 
   $CategoryChipsDataCopyWith<$Res>? get data;
 }
 
 /// @nodoc
-class _$CategoryChipsResponseCopyWithImpl<
-  $Res,
-  $Val extends CategoryChipsResponse
->
+class _$CategoryChipsResponseCopyWithImpl<$Res,
+        $Val extends CategoryChipsResponse>
     implements $CategoryChipsResponseCopyWith<$Res> {
   _$CategoryChipsResponseCopyWithImpl(this._value, this._then);
 
@@ -81,36 +75,28 @@ class _$CategoryChipsResponseCopyWithImpl<
     Object? status = freezed,
     Object? success = freezed,
   }) {
-    return _then(
-      _value.copyWith(
-            code:
-                freezed == code
-                    ? _value.code
-                    : code // ignore: cast_nullable_to_non_nullable
-                        as int?,
-            data:
-                freezed == data
-                    ? _value.data
-                    : data // ignore: cast_nullable_to_non_nullable
-                        as CategoryChipsData?,
-            message:
-                freezed == message
-                    ? _value.message
-                    : message // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            status:
-                freezed == status
-                    ? _value.status
-                    : status // ignore: cast_nullable_to_non_nullable
-                        as int?,
-            success:
-                freezed == success
-                    ? _value.success
-                    : success // ignore: cast_nullable_to_non_nullable
-                        as bool?,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      code: freezed == code
+          ? _value.code
+          : code // ignore: cast_nullable_to_non_nullable
+              as int?,
+      data: freezed == data
+          ? _value.data
+          : data // ignore: cast_nullable_to_non_nullable
+              as CategoryChipsData?,
+      message: freezed == message
+          ? _value.message
+          : message // ignore: cast_nullable_to_non_nullable
+              as String?,
+      status: freezed == status
+          ? _value.status
+          : status // ignore: cast_nullable_to_non_nullable
+              as int?,
+      success: freezed == success
+          ? _value.success
+          : success // ignore: cast_nullable_to_non_nullable
+              as bool?,
+    ) as $Val);
   }
 
   /// Create a copy of CategoryChipsResponse
@@ -132,18 +118,17 @@ class _$CategoryChipsResponseCopyWithImpl<
 abstract class _$$CategoryChipsResponseImplCopyWith<$Res>
     implements $CategoryChipsResponseCopyWith<$Res> {
   factory _$$CategoryChipsResponseImplCopyWith(
-    _$CategoryChipsResponseImpl value,
-    $Res Function(_$CategoryChipsResponseImpl) then,
-  ) = __$$CategoryChipsResponseImplCopyWithImpl<$Res>;
+          _$CategoryChipsResponseImpl value,
+          $Res Function(_$CategoryChipsResponseImpl) then) =
+      __$$CategoryChipsResponseImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    int? code,
-    CategoryChipsData? data,
-    String? message,
-    int? status,
-    bool? success,
-  });
+  $Res call(
+      {int? code,
+      CategoryChipsData? data,
+      String? message,
+      int? status,
+      bool? success});
 
   @override
   $CategoryChipsDataCopyWith<$Res>? get data;
@@ -151,13 +136,12 @@ abstract class _$$CategoryChipsResponseImplCopyWith<$Res>
 
 /// @nodoc
 class __$$CategoryChipsResponseImplCopyWithImpl<$Res>
-    extends
-        _$CategoryChipsResponseCopyWithImpl<$Res, _$CategoryChipsResponseImpl>
+    extends _$CategoryChipsResponseCopyWithImpl<$Res,
+        _$CategoryChipsResponseImpl>
     implements _$$CategoryChipsResponseImplCopyWith<$Res> {
-  __$$CategoryChipsResponseImplCopyWithImpl(
-    _$CategoryChipsResponseImpl _value,
-    $Res Function(_$CategoryChipsResponseImpl) _then,
-  ) : super(_value, _then);
+  __$$CategoryChipsResponseImplCopyWithImpl(_$CategoryChipsResponseImpl _value,
+      $Res Function(_$CategoryChipsResponseImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of CategoryChipsResponse
   /// with the given fields replaced by the non-null parameter values.
@@ -170,30 +154,28 @@ class __$$CategoryChipsResponseImplCopyWithImpl<$Res>
     Object? status = freezed,
     Object? success = freezed,
   }) {
-    return _then(
-      _$CategoryChipsResponseImpl(
-        freezed == code
-            ? _value.code
-            : code // ignore: cast_nullable_to_non_nullable
-                as int?,
-        freezed == data
-            ? _value.data
-            : data // ignore: cast_nullable_to_non_nullable
-                as CategoryChipsData?,
-        freezed == message
-            ? _value.message
-            : message // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == status
-            ? _value.status
-            : status // ignore: cast_nullable_to_non_nullable
-                as int?,
-        freezed == success
-            ? _value.success
-            : success // ignore: cast_nullable_to_non_nullable
-                as bool?,
-      ),
-    );
+    return _then(_$CategoryChipsResponseImpl(
+      freezed == code
+          ? _value.code
+          : code // ignore: cast_nullable_to_non_nullable
+              as int?,
+      freezed == data
+          ? _value.data
+          : data // ignore: cast_nullable_to_non_nullable
+              as CategoryChipsData?,
+      freezed == message
+          ? _value.message
+          : message // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == status
+          ? _value.status
+          : status // ignore: cast_nullable_to_non_nullable
+              as int?,
+      freezed == success
+          ? _value.success
+          : success // ignore: cast_nullable_to_non_nullable
+              as bool?,
+    ));
   }
 }
 
@@ -202,12 +184,7 @@ class __$$CategoryChipsResponseImplCopyWithImpl<$Res>
 @JsonSerializable(explicitToJson: true, fieldRename: FieldRename.snake)
 class _$CategoryChipsResponseImpl implements _CategoryChipsResponse {
   const _$CategoryChipsResponseImpl(
-    this.code,
-    this.data,
-    this.message,
-    this.status,
-    this.success,
-  );
+      this.code, this.data, this.message, this.status, this.success);
 
   factory _$CategoryChipsResponseImpl.fromJson(Map<String, dynamic> json) =>
       _$$CategoryChipsResponseImplFromJson(json);
@@ -251,26 +228,24 @@ class _$CategoryChipsResponseImpl implements _CategoryChipsResponse {
   @override
   @pragma('vm:prefer-inline')
   _$$CategoryChipsResponseImplCopyWith<_$CategoryChipsResponseImpl>
-  get copyWith =>
-      __$$CategoryChipsResponseImplCopyWithImpl<_$CategoryChipsResponseImpl>(
-        this,
-        _$identity,
-      );
+      get copyWith => __$$CategoryChipsResponseImplCopyWithImpl<
+          _$CategoryChipsResponseImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$CategoryChipsResponseImplToJson(this);
+    return _$$CategoryChipsResponseImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _CategoryChipsResponse implements CategoryChipsResponse {
   const factory _CategoryChipsResponse(
-    final int? code,
-    final CategoryChipsData? data,
-    final String? message,
-    final int? status,
-    final bool? success,
-  ) = _$CategoryChipsResponseImpl;
+      final int? code,
+      final CategoryChipsData? data,
+      final String? message,
+      final int? status,
+      final bool? success) = _$CategoryChipsResponseImpl;
 
   factory _CategoryChipsResponse.fromJson(Map<String, dynamic> json) =
       _$CategoryChipsResponseImpl.fromJson;
@@ -291,7 +266,7 @@ abstract class _CategoryChipsResponse implements CategoryChipsResponse {
   @override
   @JsonKey(includeFromJson: false, includeToJson: false)
   _$$CategoryChipsResponseImplCopyWith<_$CategoryChipsResponseImpl>
-  get copyWith => throw _privateConstructorUsedError;
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 CategoryChipsData _$CategoryChipsDataFromJson(Map<String, dynamic> json) {
@@ -319,16 +294,14 @@ mixin _$CategoryChipsData {
 /// @nodoc
 abstract class $CategoryChipsDataCopyWith<$Res> {
   factory $CategoryChipsDataCopyWith(
-    CategoryChipsData value,
-    $Res Function(CategoryChipsData) then,
-  ) = _$CategoryChipsDataCopyWithImpl<$Res, CategoryChipsData>;
+          CategoryChipsData value, $Res Function(CategoryChipsData) then) =
+      _$CategoryChipsDataCopyWithImpl<$Res, CategoryChipsData>;
   @useResult
-  $Res call({
-    List<CategoryChipElement>? categories,
-    bool? hasChild,
-    bool? hasChildImage,
-    CategoryChipElement? parent,
-  });
+  $Res call(
+      {List<CategoryChipElement>? categories,
+      bool? hasChild,
+      bool? hasChildImage,
+      CategoryChipElement? parent});
 
   $CategoryChipElementCopyWith<$Res>? get parent;
 }
@@ -353,31 +326,24 @@ class _$CategoryChipsDataCopyWithImpl<$Res, $Val extends CategoryChipsData>
     Object? hasChildImage = freezed,
     Object? parent = freezed,
   }) {
-    return _then(
-      _value.copyWith(
-            categories:
-                freezed == categories
-                    ? _value.categories
-                    : categories // ignore: cast_nullable_to_non_nullable
-                        as List<CategoryChipElement>?,
-            hasChild:
-                freezed == hasChild
-                    ? _value.hasChild
-                    : hasChild // ignore: cast_nullable_to_non_nullable
-                        as bool?,
-            hasChildImage:
-                freezed == hasChildImage
-                    ? _value.hasChildImage
-                    : hasChildImage // ignore: cast_nullable_to_non_nullable
-                        as bool?,
-            parent:
-                freezed == parent
-                    ? _value.parent
-                    : parent // ignore: cast_nullable_to_non_nullable
-                        as CategoryChipElement?,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      categories: freezed == categories
+          ? _value.categories
+          : categories // ignore: cast_nullable_to_non_nullable
+              as List<CategoryChipElement>?,
+      hasChild: freezed == hasChild
+          ? _value.hasChild
+          : hasChild // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      hasChildImage: freezed == hasChildImage
+          ? _value.hasChildImage
+          : hasChildImage // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      parent: freezed == parent
+          ? _value.parent
+          : parent // ignore: cast_nullable_to_non_nullable
+              as CategoryChipElement?,
+    ) as $Val);
   }
 
   /// Create a copy of CategoryChipsData
@@ -398,18 +364,16 @@ class _$CategoryChipsDataCopyWithImpl<$Res, $Val extends CategoryChipsData>
 /// @nodoc
 abstract class _$$CategoryChipsDataImplCopyWith<$Res>
     implements $CategoryChipsDataCopyWith<$Res> {
-  factory _$$CategoryChipsDataImplCopyWith(
-    _$CategoryChipsDataImpl value,
-    $Res Function(_$CategoryChipsDataImpl) then,
-  ) = __$$CategoryChipsDataImplCopyWithImpl<$Res>;
+  factory _$$CategoryChipsDataImplCopyWith(_$CategoryChipsDataImpl value,
+          $Res Function(_$CategoryChipsDataImpl) then) =
+      __$$CategoryChipsDataImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    List<CategoryChipElement>? categories,
-    bool? hasChild,
-    bool? hasChildImage,
-    CategoryChipElement? parent,
-  });
+  $Res call(
+      {List<CategoryChipElement>? categories,
+      bool? hasChild,
+      bool? hasChildImage,
+      CategoryChipElement? parent});
 
   @override
   $CategoryChipElementCopyWith<$Res>? get parent;
@@ -419,10 +383,9 @@ abstract class _$$CategoryChipsDataImplCopyWith<$Res>
 class __$$CategoryChipsDataImplCopyWithImpl<$Res>
     extends _$CategoryChipsDataCopyWithImpl<$Res, _$CategoryChipsDataImpl>
     implements _$$CategoryChipsDataImplCopyWith<$Res> {
-  __$$CategoryChipsDataImplCopyWithImpl(
-    _$CategoryChipsDataImpl _value,
-    $Res Function(_$CategoryChipsDataImpl) _then,
-  ) : super(_value, _then);
+  __$$CategoryChipsDataImplCopyWithImpl(_$CategoryChipsDataImpl _value,
+      $Res Function(_$CategoryChipsDataImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of CategoryChipsData
   /// with the given fields replaced by the non-null parameter values.
@@ -434,26 +397,24 @@ class __$$CategoryChipsDataImplCopyWithImpl<$Res>
     Object? hasChildImage = freezed,
     Object? parent = freezed,
   }) {
-    return _then(
-      _$CategoryChipsDataImpl(
-        freezed == categories
-            ? _value._categories
-            : categories // ignore: cast_nullable_to_non_nullable
-                as List<CategoryChipElement>?,
-        freezed == hasChild
-            ? _value.hasChild
-            : hasChild // ignore: cast_nullable_to_non_nullable
-                as bool?,
-        freezed == hasChildImage
-            ? _value.hasChildImage
-            : hasChildImage // ignore: cast_nullable_to_non_nullable
-                as bool?,
-        freezed == parent
-            ? _value.parent
-            : parent // ignore: cast_nullable_to_non_nullable
-                as CategoryChipElement?,
-      ),
-    );
+    return _then(_$CategoryChipsDataImpl(
+      freezed == categories
+          ? _value._categories
+          : categories // ignore: cast_nullable_to_non_nullable
+              as List<CategoryChipElement>?,
+      freezed == hasChild
+          ? _value.hasChild
+          : hasChild // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      freezed == hasChildImage
+          ? _value.hasChildImage
+          : hasChildImage // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      freezed == parent
+          ? _value.parent
+          : parent // ignore: cast_nullable_to_non_nullable
+              as CategoryChipElement?,
+    ));
   }
 }
 
@@ -461,12 +422,9 @@ class __$$CategoryChipsDataImplCopyWithImpl<$Res>
 
 @JsonSerializable(explicitToJson: true, fieldRename: FieldRename.snake)
 class _$CategoryChipsDataImpl implements _CategoryChipsData {
-  const _$CategoryChipsDataImpl(
-    final List<CategoryChipElement>? categories,
-    this.hasChild,
-    this.hasChildImage,
-    this.parent,
-  ) : _categories = categories;
+  const _$CategoryChipsDataImpl(final List<CategoryChipElement>? categories,
+      this.hasChild, this.hasChildImage, this.parent)
+      : _categories = categories;
 
   factory _$CategoryChipsDataImpl.fromJson(Map<String, dynamic> json) =>
       _$$CategoryChipsDataImplFromJson(json);
@@ -498,10 +456,8 @@ class _$CategoryChipsDataImpl implements _CategoryChipsData {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$CategoryChipsDataImpl &&
-            const DeepCollectionEquality().equals(
-              other._categories,
-              _categories,
-            ) &&
+            const DeepCollectionEquality()
+                .equals(other._categories, _categories) &&
             (identical(other.hasChild, hasChild) ||
                 other.hasChild == hasChild) &&
             (identical(other.hasChildImage, hasChildImage) ||
@@ -512,12 +468,11 @@ class _$CategoryChipsDataImpl implements _CategoryChipsData {
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
-    runtimeType,
-    const DeepCollectionEquality().hash(_categories),
-    hasChild,
-    hasChildImage,
-    parent,
-  );
+      runtimeType,
+      const DeepCollectionEquality().hash(_categories),
+      hasChild,
+      hasChildImage,
+      parent);
 
   /// Create a copy of CategoryChipsData
   /// with the given fields replaced by the non-null parameter values.
@@ -526,23 +481,22 @@ class _$CategoryChipsDataImpl implements _CategoryChipsData {
   @pragma('vm:prefer-inline')
   _$$CategoryChipsDataImplCopyWith<_$CategoryChipsDataImpl> get copyWith =>
       __$$CategoryChipsDataImplCopyWithImpl<_$CategoryChipsDataImpl>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$CategoryChipsDataImplToJson(this);
+    return _$$CategoryChipsDataImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _CategoryChipsData implements CategoryChipsData {
   const factory _CategoryChipsData(
-    final List<CategoryChipElement>? categories,
-    final bool? hasChild,
-    final bool? hasChildImage,
-    final CategoryChipElement? parent,
-  ) = _$CategoryChipsDataImpl;
+      final List<CategoryChipElement>? categories,
+      final bool? hasChild,
+      final bool? hasChildImage,
+      final CategoryChipElement? parent) = _$CategoryChipsDataImpl;
 
   factory _CategoryChipsData.fromJson(Map<String, dynamic> json) =
       _$CategoryChipsDataImpl.fromJson;
@@ -589,17 +543,11 @@ mixin _$CategoryChipElement {
 /// @nodoc
 abstract class $CategoryChipElementCopyWith<$Res> {
   factory $CategoryChipElementCopyWith(
-    CategoryChipElement value,
-    $Res Function(CategoryChipElement) then,
-  ) = _$CategoryChipElementCopyWithImpl<$Res, CategoryChipElement>;
+          CategoryChipElement value, $Res Function(CategoryChipElement) then) =
+      _$CategoryChipElementCopyWithImpl<$Res, CategoryChipElement>;
   @useResult
-  $Res call({
-    bool? hasChild,
-    int? id,
-    String? image,
-    String? name,
-    String? slug,
-  });
+  $Res call(
+      {bool? hasChild, int? id, String? image, String? name, String? slug});
 }
 
 /// @nodoc
@@ -623,65 +571,50 @@ class _$CategoryChipElementCopyWithImpl<$Res, $Val extends CategoryChipElement>
     Object? name = freezed,
     Object? slug = freezed,
   }) {
-    return _then(
-      _value.copyWith(
-            hasChild:
-                freezed == hasChild
-                    ? _value.hasChild
-                    : hasChild // ignore: cast_nullable_to_non_nullable
-                        as bool?,
-            id:
-                freezed == id
-                    ? _value.id
-                    : id // ignore: cast_nullable_to_non_nullable
-                        as int?,
-            image:
-                freezed == image
-                    ? _value.image
-                    : image // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            name:
-                freezed == name
-                    ? _value.name
-                    : name // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            slug:
-                freezed == slug
-                    ? _value.slug
-                    : slug // ignore: cast_nullable_to_non_nullable
-                        as String?,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      hasChild: freezed == hasChild
+          ? _value.hasChild
+          : hasChild // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      id: freezed == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int?,
+      image: freezed == image
+          ? _value.image
+          : image // ignore: cast_nullable_to_non_nullable
+              as String?,
+      name: freezed == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String?,
+      slug: freezed == slug
+          ? _value.slug
+          : slug // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ) as $Val);
   }
 }
 
 /// @nodoc
 abstract class _$$CategoryChipElementImplCopyWith<$Res>
     implements $CategoryChipElementCopyWith<$Res> {
-  factory _$$CategoryChipElementImplCopyWith(
-    _$CategoryChipElementImpl value,
-    $Res Function(_$CategoryChipElementImpl) then,
-  ) = __$$CategoryChipElementImplCopyWithImpl<$Res>;
+  factory _$$CategoryChipElementImplCopyWith(_$CategoryChipElementImpl value,
+          $Res Function(_$CategoryChipElementImpl) then) =
+      __$$CategoryChipElementImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    bool? hasChild,
-    int? id,
-    String? image,
-    String? name,
-    String? slug,
-  });
+  $Res call(
+      {bool? hasChild, int? id, String? image, String? name, String? slug});
 }
 
 /// @nodoc
 class __$$CategoryChipElementImplCopyWithImpl<$Res>
     extends _$CategoryChipElementCopyWithImpl<$Res, _$CategoryChipElementImpl>
     implements _$$CategoryChipElementImplCopyWith<$Res> {
-  __$$CategoryChipElementImplCopyWithImpl(
-    _$CategoryChipElementImpl _value,
-    $Res Function(_$CategoryChipElementImpl) _then,
-  ) : super(_value, _then);
+  __$$CategoryChipElementImplCopyWithImpl(_$CategoryChipElementImpl _value,
+      $Res Function(_$CategoryChipElementImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of CategoryChipElement
   /// with the given fields replaced by the non-null parameter values.
@@ -694,30 +627,28 @@ class __$$CategoryChipElementImplCopyWithImpl<$Res>
     Object? name = freezed,
     Object? slug = freezed,
   }) {
-    return _then(
-      _$CategoryChipElementImpl(
-        freezed == hasChild
-            ? _value.hasChild
-            : hasChild // ignore: cast_nullable_to_non_nullable
-                as bool?,
-        freezed == id
-            ? _value.id
-            : id // ignore: cast_nullable_to_non_nullable
-                as int?,
-        freezed == image
-            ? _value.image
-            : image // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == name
-            ? _value.name
-            : name // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == slug
-            ? _value.slug
-            : slug // ignore: cast_nullable_to_non_nullable
-                as String?,
-      ),
-    );
+    return _then(_$CategoryChipElementImpl(
+      freezed == hasChild
+          ? _value.hasChild
+          : hasChild // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      freezed == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int?,
+      freezed == image
+          ? _value.image
+          : image // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == slug
+          ? _value.slug
+          : slug // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ));
   }
 }
 
@@ -726,12 +657,7 @@ class __$$CategoryChipElementImplCopyWithImpl<$Res>
 @JsonSerializable(explicitToJson: true, fieldRename: FieldRename.snake)
 class _$CategoryChipElementImpl implements _CategoryChipElement {
   const _$CategoryChipElementImpl(
-    this.hasChild,
-    this.id,
-    this.image,
-    this.name,
-    this.slug,
-  );
+      this.hasChild, this.id, this.image, this.name, this.slug);
 
   factory _$CategoryChipElementImpl.fromJson(Map<String, dynamic> json) =>
       _$$CategoryChipElementImplFromJson(json);
@@ -776,24 +702,23 @@ class _$CategoryChipElementImpl implements _CategoryChipElement {
   @pragma('vm:prefer-inline')
   _$$CategoryChipElementImplCopyWith<_$CategoryChipElementImpl> get copyWith =>
       __$$CategoryChipElementImplCopyWithImpl<_$CategoryChipElementImpl>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$CategoryChipElementImplToJson(this);
+    return _$$CategoryChipElementImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _CategoryChipElement implements CategoryChipElement {
   const factory _CategoryChipElement(
-    final bool? hasChild,
-    final int? id,
-    final String? image,
-    final String? name,
-    final String? slug,
-  ) = _$CategoryChipElementImpl;
+      final bool? hasChild,
+      final int? id,
+      final String? image,
+      final String? name,
+      final String? slug) = _$CategoryChipElementImpl;
 
   factory _CategoryChipElement.fromJson(Map<String, dynamic> json) =
       _$CategoryChipElementImpl.fromJson;

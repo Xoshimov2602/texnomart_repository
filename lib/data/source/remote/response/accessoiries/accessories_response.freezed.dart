@@ -12,8 +12,7 @@ part of 'accessories_response.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 AccessoriesResponse _$AccessoriesResponseFromJson(Map<String, dynamic> json) {
   return _AccessoriesResponse.fromJson(json);
@@ -40,17 +39,15 @@ mixin _$AccessoriesResponse {
 /// @nodoc
 abstract class $AccessoriesResponseCopyWith<$Res> {
   factory $AccessoriesResponseCopyWith(
-    AccessoriesResponse value,
-    $Res Function(AccessoriesResponse) then,
-  ) = _$AccessoriesResponseCopyWithImpl<$Res, AccessoriesResponse>;
+          AccessoriesResponse value, $Res Function(AccessoriesResponse) then) =
+      _$AccessoriesResponseCopyWithImpl<$Res, AccessoriesResponse>;
   @useResult
-  $Res call({
-    int? code,
-    AccessoriesData? data,
-    String? message,
-    int? status,
-    bool? success,
-  });
+  $Res call(
+      {int? code,
+      AccessoriesData? data,
+      String? message,
+      int? status,
+      bool? success});
 
   $AccessoriesDataCopyWith<$Res>? get data;
 }
@@ -76,36 +73,28 @@ class _$AccessoriesResponseCopyWithImpl<$Res, $Val extends AccessoriesResponse>
     Object? status = freezed,
     Object? success = freezed,
   }) {
-    return _then(
-      _value.copyWith(
-            code:
-                freezed == code
-                    ? _value.code
-                    : code // ignore: cast_nullable_to_non_nullable
-                        as int?,
-            data:
-                freezed == data
-                    ? _value.data
-                    : data // ignore: cast_nullable_to_non_nullable
-                        as AccessoriesData?,
-            message:
-                freezed == message
-                    ? _value.message
-                    : message // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            status:
-                freezed == status
-                    ? _value.status
-                    : status // ignore: cast_nullable_to_non_nullable
-                        as int?,
-            success:
-                freezed == success
-                    ? _value.success
-                    : success // ignore: cast_nullable_to_non_nullable
-                        as bool?,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      code: freezed == code
+          ? _value.code
+          : code // ignore: cast_nullable_to_non_nullable
+              as int?,
+      data: freezed == data
+          ? _value.data
+          : data // ignore: cast_nullable_to_non_nullable
+              as AccessoriesData?,
+      message: freezed == message
+          ? _value.message
+          : message // ignore: cast_nullable_to_non_nullable
+              as String?,
+      status: freezed == status
+          ? _value.status
+          : status // ignore: cast_nullable_to_non_nullable
+              as int?,
+      success: freezed == success
+          ? _value.success
+          : success // ignore: cast_nullable_to_non_nullable
+              as bool?,
+    ) as $Val);
   }
 
   /// Create a copy of AccessoriesResponse
@@ -126,19 +115,17 @@ class _$AccessoriesResponseCopyWithImpl<$Res, $Val extends AccessoriesResponse>
 /// @nodoc
 abstract class _$$AccessoriesResponseImplCopyWith<$Res>
     implements $AccessoriesResponseCopyWith<$Res> {
-  factory _$$AccessoriesResponseImplCopyWith(
-    _$AccessoriesResponseImpl value,
-    $Res Function(_$AccessoriesResponseImpl) then,
-  ) = __$$AccessoriesResponseImplCopyWithImpl<$Res>;
+  factory _$$AccessoriesResponseImplCopyWith(_$AccessoriesResponseImpl value,
+          $Res Function(_$AccessoriesResponseImpl) then) =
+      __$$AccessoriesResponseImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    int? code,
-    AccessoriesData? data,
-    String? message,
-    int? status,
-    bool? success,
-  });
+  $Res call(
+      {int? code,
+      AccessoriesData? data,
+      String? message,
+      int? status,
+      bool? success});
 
   @override
   $AccessoriesDataCopyWith<$Res>? get data;
@@ -148,10 +135,9 @@ abstract class _$$AccessoriesResponseImplCopyWith<$Res>
 class __$$AccessoriesResponseImplCopyWithImpl<$Res>
     extends _$AccessoriesResponseCopyWithImpl<$Res, _$AccessoriesResponseImpl>
     implements _$$AccessoriesResponseImplCopyWith<$Res> {
-  __$$AccessoriesResponseImplCopyWithImpl(
-    _$AccessoriesResponseImpl _value,
-    $Res Function(_$AccessoriesResponseImpl) _then,
-  ) : super(_value, _then);
+  __$$AccessoriesResponseImplCopyWithImpl(_$AccessoriesResponseImpl _value,
+      $Res Function(_$AccessoriesResponseImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of AccessoriesResponse
   /// with the given fields replaced by the non-null parameter values.
@@ -164,35 +150,28 @@ class __$$AccessoriesResponseImplCopyWithImpl<$Res>
     Object? status = freezed,
     Object? success = freezed,
   }) {
-    return _then(
-      _$AccessoriesResponseImpl(
-        code:
-            freezed == code
-                ? _value.code
-                : code // ignore: cast_nullable_to_non_nullable
-                    as int?,
-        data:
-            freezed == data
-                ? _value.data
-                : data // ignore: cast_nullable_to_non_nullable
-                    as AccessoriesData?,
-        message:
-            freezed == message
-                ? _value.message
-                : message // ignore: cast_nullable_to_non_nullable
-                    as String?,
-        status:
-            freezed == status
-                ? _value.status
-                : status // ignore: cast_nullable_to_non_nullable
-                    as int?,
-        success:
-            freezed == success
-                ? _value.success
-                : success // ignore: cast_nullable_to_non_nullable
-                    as bool?,
-      ),
-    );
+    return _then(_$AccessoriesResponseImpl(
+      code: freezed == code
+          ? _value.code
+          : code // ignore: cast_nullable_to_non_nullable
+              as int?,
+      data: freezed == data
+          ? _value.data
+          : data // ignore: cast_nullable_to_non_nullable
+              as AccessoriesData?,
+      message: freezed == message
+          ? _value.message
+          : message // ignore: cast_nullable_to_non_nullable
+              as String?,
+      status: freezed == status
+          ? _value.status
+          : status // ignore: cast_nullable_to_non_nullable
+              as int?,
+      success: freezed == success
+          ? _value.success
+          : success // ignore: cast_nullable_to_non_nullable
+              as bool?,
+    ));
   }
 }
 
@@ -200,13 +179,8 @@ class __$$AccessoriesResponseImplCopyWithImpl<$Res>
 
 @JsonSerializable(explicitToJson: true, fieldRename: FieldRename.snake)
 class _$AccessoriesResponseImpl implements _AccessoriesResponse {
-  const _$AccessoriesResponseImpl({
-    this.code,
-    this.data,
-    this.message,
-    this.status,
-    this.success,
-  });
+  const _$AccessoriesResponseImpl(
+      {this.code, this.data, this.message, this.status, this.success});
 
   factory _$AccessoriesResponseImpl.fromJson(Map<String, dynamic> json) =>
       _$$AccessoriesResponseImplFromJson(json);
@@ -251,24 +225,23 @@ class _$AccessoriesResponseImpl implements _AccessoriesResponse {
   @pragma('vm:prefer-inline')
   _$$AccessoriesResponseImplCopyWith<_$AccessoriesResponseImpl> get copyWith =>
       __$$AccessoriesResponseImplCopyWithImpl<_$AccessoriesResponseImpl>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$AccessoriesResponseImplToJson(this);
+    return _$$AccessoriesResponseImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _AccessoriesResponse implements AccessoriesResponse {
-  const factory _AccessoriesResponse({
-    final int? code,
-    final AccessoriesData? data,
-    final String? message,
-    final int? status,
-    final bool? success,
-  }) = _$AccessoriesResponseImpl;
+  const factory _AccessoriesResponse(
+      {final int? code,
+      final AccessoriesData? data,
+      final String? message,
+      final int? status,
+      final bool? success}) = _$AccessoriesResponseImpl;
 
   factory _AccessoriesResponse.fromJson(Map<String, dynamic> json) =
       _$AccessoriesResponseImpl.fromJson;
@@ -313,9 +286,8 @@ mixin _$AccessoriesData {
 /// @nodoc
 abstract class $AccessoriesDataCopyWith<$Res> {
   factory $AccessoriesDataCopyWith(
-    AccessoriesData value,
-    $Res Function(AccessoriesData) then,
-  ) = _$AccessoriesDataCopyWithImpl<$Res, AccessoriesData>;
+          AccessoriesData value, $Res Function(AccessoriesData) then) =
+      _$AccessoriesDataCopyWithImpl<$Res, AccessoriesData>;
   @useResult
   $Res call({List<AccessoriesElement>? data});
 }
@@ -334,27 +306,24 @@ class _$AccessoriesDataCopyWithImpl<$Res, $Val extends AccessoriesData>
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? data = freezed}) {
-    return _then(
-      _value.copyWith(
-            data:
-                freezed == data
-                    ? _value.data
-                    : data // ignore: cast_nullable_to_non_nullable
-                        as List<AccessoriesElement>?,
-          )
-          as $Val,
-    );
+  $Res call({
+    Object? data = freezed,
+  }) {
+    return _then(_value.copyWith(
+      data: freezed == data
+          ? _value.data
+          : data // ignore: cast_nullable_to_non_nullable
+              as List<AccessoriesElement>?,
+    ) as $Val);
   }
 }
 
 /// @nodoc
 abstract class _$$AccessoriesDataImplCopyWith<$Res>
     implements $AccessoriesDataCopyWith<$Res> {
-  factory _$$AccessoriesDataImplCopyWith(
-    _$AccessoriesDataImpl value,
-    $Res Function(_$AccessoriesDataImpl) then,
-  ) = __$$AccessoriesDataImplCopyWithImpl<$Res>;
+  factory _$$AccessoriesDataImplCopyWith(_$AccessoriesDataImpl value,
+          $Res Function(_$AccessoriesDataImpl) then) =
+      __$$AccessoriesDataImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({List<AccessoriesElement>? data});
@@ -365,24 +334,22 @@ class __$$AccessoriesDataImplCopyWithImpl<$Res>
     extends _$AccessoriesDataCopyWithImpl<$Res, _$AccessoriesDataImpl>
     implements _$$AccessoriesDataImplCopyWith<$Res> {
   __$$AccessoriesDataImplCopyWithImpl(
-    _$AccessoriesDataImpl _value,
-    $Res Function(_$AccessoriesDataImpl) _then,
-  ) : super(_value, _then);
+      _$AccessoriesDataImpl _value, $Res Function(_$AccessoriesDataImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of AccessoriesData
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? data = freezed}) {
-    return _then(
-      _$AccessoriesDataImpl(
-        data:
-            freezed == data
-                ? _value._data
-                : data // ignore: cast_nullable_to_non_nullable
-                    as List<AccessoriesElement>?,
-      ),
-    );
+  $Res call({
+    Object? data = freezed,
+  }) {
+    return _then(_$AccessoriesDataImpl(
+      data: freezed == data
+          ? _value._data
+          : data // ignore: cast_nullable_to_non_nullable
+              as List<AccessoriesElement>?,
+    ));
   }
 }
 
@@ -391,7 +358,7 @@ class __$$AccessoriesDataImplCopyWithImpl<$Res>
 @JsonSerializable(explicitToJson: true, fieldRename: FieldRename.snake)
 class _$AccessoriesDataImpl implements _AccessoriesData {
   const _$AccessoriesDataImpl({final List<AccessoriesElement>? data})
-    : _data = data;
+      : _data = data;
 
   factory _$AccessoriesDataImpl.fromJson(Map<String, dynamic> json) =>
       _$$AccessoriesDataImplFromJson(json);
@@ -431,13 +398,13 @@ class _$AccessoriesDataImpl implements _AccessoriesData {
   @pragma('vm:prefer-inline')
   _$$AccessoriesDataImplCopyWith<_$AccessoriesDataImpl> get copyWith =>
       __$$AccessoriesDataImplCopyWithImpl<_$AccessoriesDataImpl>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$AccessoriesDataImplToJson(this);
+    return _$$AccessoriesDataImplToJson(
+      this,
+    );
   }
 }
 
@@ -481,9 +448,8 @@ mixin _$AccessoriesElement {
 /// @nodoc
 abstract class $AccessoriesElementCopyWith<$Res> {
   factory $AccessoriesElementCopyWith(
-    AccessoriesElement value,
-    $Res Function(AccessoriesElement) then,
-  ) = _$AccessoriesElementCopyWithImpl<$Res, AccessoriesElement>;
+          AccessoriesElement value, $Res Function(AccessoriesElement) then) =
+      _$AccessoriesElementCopyWithImpl<$Res, AccessoriesElement>;
   @useResult
   $Res call({String? name, List<AccessoriesProducts>? products});
 }
@@ -502,32 +468,29 @@ class _$AccessoriesElementCopyWithImpl<$Res, $Val extends AccessoriesElement>
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? name = freezed, Object? products = freezed}) {
-    return _then(
-      _value.copyWith(
-            name:
-                freezed == name
-                    ? _value.name
-                    : name // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            products:
-                freezed == products
-                    ? _value.products
-                    : products // ignore: cast_nullable_to_non_nullable
-                        as List<AccessoriesProducts>?,
-          )
-          as $Val,
-    );
+  $Res call({
+    Object? name = freezed,
+    Object? products = freezed,
+  }) {
+    return _then(_value.copyWith(
+      name: freezed == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String?,
+      products: freezed == products
+          ? _value.products
+          : products // ignore: cast_nullable_to_non_nullable
+              as List<AccessoriesProducts>?,
+    ) as $Val);
   }
 }
 
 /// @nodoc
 abstract class _$$AccessoriesElementImplCopyWith<$Res>
     implements $AccessoriesElementCopyWith<$Res> {
-  factory _$$AccessoriesElementImplCopyWith(
-    _$AccessoriesElementImpl value,
-    $Res Function(_$AccessoriesElementImpl) then,
-  ) = __$$AccessoriesElementImplCopyWithImpl<$Res>;
+  factory _$$AccessoriesElementImplCopyWith(_$AccessoriesElementImpl value,
+          $Res Function(_$AccessoriesElementImpl) then) =
+      __$$AccessoriesElementImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String? name, List<AccessoriesProducts>? products});
@@ -537,30 +500,28 @@ abstract class _$$AccessoriesElementImplCopyWith<$Res>
 class __$$AccessoriesElementImplCopyWithImpl<$Res>
     extends _$AccessoriesElementCopyWithImpl<$Res, _$AccessoriesElementImpl>
     implements _$$AccessoriesElementImplCopyWith<$Res> {
-  __$$AccessoriesElementImplCopyWithImpl(
-    _$AccessoriesElementImpl _value,
-    $Res Function(_$AccessoriesElementImpl) _then,
-  ) : super(_value, _then);
+  __$$AccessoriesElementImplCopyWithImpl(_$AccessoriesElementImpl _value,
+      $Res Function(_$AccessoriesElementImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of AccessoriesElement
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? name = freezed, Object? products = freezed}) {
-    return _then(
-      _$AccessoriesElementImpl(
-        name:
-            freezed == name
-                ? _value.name
-                : name // ignore: cast_nullable_to_non_nullable
-                    as String?,
-        products:
-            freezed == products
-                ? _value._products
-                : products // ignore: cast_nullable_to_non_nullable
-                    as List<AccessoriesProducts>?,
-      ),
-    );
+  $Res call({
+    Object? name = freezed,
+    Object? products = freezed,
+  }) {
+    return _then(_$AccessoriesElementImpl(
+      name: freezed == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String?,
+      products: freezed == products
+          ? _value._products
+          : products // ignore: cast_nullable_to_non_nullable
+              as List<AccessoriesProducts>?,
+    ));
   }
 }
 
@@ -568,10 +529,9 @@ class __$$AccessoriesElementImplCopyWithImpl<$Res>
 
 @JsonSerializable(explicitToJson: true, fieldRename: FieldRename.snake)
 class _$AccessoriesElementImpl implements _AccessoriesElement {
-  const _$AccessoriesElementImpl({
-    this.name,
-    final List<AccessoriesProducts>? products,
-  }) : _products = products;
+  const _$AccessoriesElementImpl(
+      {this.name, final List<AccessoriesProducts>? products})
+      : _products = products;
 
   factory _$AccessoriesElementImpl.fromJson(Map<String, dynamic> json) =>
       _$$AccessoriesElementImplFromJson(json);
@@ -605,10 +565,7 @@ class _$AccessoriesElementImpl implements _AccessoriesElement {
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
-    runtimeType,
-    name,
-    const DeepCollectionEquality().hash(_products),
-  );
+      runtimeType, name, const DeepCollectionEquality().hash(_products));
 
   /// Create a copy of AccessoriesElement
   /// with the given fields replaced by the non-null parameter values.
@@ -617,21 +574,20 @@ class _$AccessoriesElementImpl implements _AccessoriesElement {
   @pragma('vm:prefer-inline')
   _$$AccessoriesElementImplCopyWith<_$AccessoriesElementImpl> get copyWith =>
       __$$AccessoriesElementImplCopyWithImpl<_$AccessoriesElementImpl>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$AccessoriesElementImplToJson(this);
+    return _$$AccessoriesElementImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _AccessoriesElement implements AccessoriesElement {
-  const factory _AccessoriesElement({
-    final String? name,
-    final List<AccessoriesProducts>? products,
-  }) = _$AccessoriesElementImpl;
+  const factory _AccessoriesElement(
+      {final String? name,
+      final List<AccessoriesProducts>? products}) = _$AccessoriesElementImpl;
 
   factory _AccessoriesElement.fromJson(Map<String, dynamic> json) =
       _$AccessoriesElementImpl.fromJson;
@@ -679,22 +635,20 @@ mixin _$AccessoriesProducts {
 /// @nodoc
 abstract class $AccessoriesProductsCopyWith<$Res> {
   factory $AccessoriesProductsCopyWith(
-    AccessoriesProducts value,
-    $Res Function(AccessoriesProducts) then,
-  ) = _$AccessoriesProductsCopyWithImpl<$Res, AccessoriesProducts>;
+          AccessoriesProducts value, $Res Function(AccessoriesProducts) then) =
+      _$AccessoriesProductsCopyWithImpl<$Res, AccessoriesProducts>;
   @useResult
-  $Res call({
-    int? allCount,
-    String? availability,
-    String? axiomMonthlyPrice,
-    int? benefit,
-    int? id,
-    String? image,
-    int? isCanLoanOrder,
-    String? name,
-    dynamic oldPrice,
-    int? salePrice,
-  });
+  $Res call(
+      {int? allCount,
+      String? availability,
+      String? axiomMonthlyPrice,
+      int? benefit,
+      int? id,
+      String? image,
+      int? isCanLoanOrder,
+      String? name,
+      dynamic oldPrice,
+      int? salePrice});
 }
 
 /// @nodoc
@@ -723,95 +677,79 @@ class _$AccessoriesProductsCopyWithImpl<$Res, $Val extends AccessoriesProducts>
     Object? oldPrice = freezed,
     Object? salePrice = freezed,
   }) {
-    return _then(
-      _value.copyWith(
-            allCount:
-                freezed == allCount
-                    ? _value.allCount
-                    : allCount // ignore: cast_nullable_to_non_nullable
-                        as int?,
-            availability:
-                freezed == availability
-                    ? _value.availability
-                    : availability // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            axiomMonthlyPrice:
-                freezed == axiomMonthlyPrice
-                    ? _value.axiomMonthlyPrice
-                    : axiomMonthlyPrice // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            benefit:
-                freezed == benefit
-                    ? _value.benefit
-                    : benefit // ignore: cast_nullable_to_non_nullable
-                        as int?,
-            id:
-                freezed == id
-                    ? _value.id
-                    : id // ignore: cast_nullable_to_non_nullable
-                        as int?,
-            image:
-                freezed == image
-                    ? _value.image
-                    : image // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            isCanLoanOrder:
-                freezed == isCanLoanOrder
-                    ? _value.isCanLoanOrder
-                    : isCanLoanOrder // ignore: cast_nullable_to_non_nullable
-                        as int?,
-            name:
-                freezed == name
-                    ? _value.name
-                    : name // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            oldPrice:
-                freezed == oldPrice
-                    ? _value.oldPrice
-                    : oldPrice // ignore: cast_nullable_to_non_nullable
-                        as dynamic,
-            salePrice:
-                freezed == salePrice
-                    ? _value.salePrice
-                    : salePrice // ignore: cast_nullable_to_non_nullable
-                        as int?,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      allCount: freezed == allCount
+          ? _value.allCount
+          : allCount // ignore: cast_nullable_to_non_nullable
+              as int?,
+      availability: freezed == availability
+          ? _value.availability
+          : availability // ignore: cast_nullable_to_non_nullable
+              as String?,
+      axiomMonthlyPrice: freezed == axiomMonthlyPrice
+          ? _value.axiomMonthlyPrice
+          : axiomMonthlyPrice // ignore: cast_nullable_to_non_nullable
+              as String?,
+      benefit: freezed == benefit
+          ? _value.benefit
+          : benefit // ignore: cast_nullable_to_non_nullable
+              as int?,
+      id: freezed == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int?,
+      image: freezed == image
+          ? _value.image
+          : image // ignore: cast_nullable_to_non_nullable
+              as String?,
+      isCanLoanOrder: freezed == isCanLoanOrder
+          ? _value.isCanLoanOrder
+          : isCanLoanOrder // ignore: cast_nullable_to_non_nullable
+              as int?,
+      name: freezed == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String?,
+      oldPrice: freezed == oldPrice
+          ? _value.oldPrice
+          : oldPrice // ignore: cast_nullable_to_non_nullable
+              as dynamic,
+      salePrice: freezed == salePrice
+          ? _value.salePrice
+          : salePrice // ignore: cast_nullable_to_non_nullable
+              as int?,
+    ) as $Val);
   }
 }
 
 /// @nodoc
 abstract class _$$AccessoriesProductsImplCopyWith<$Res>
     implements $AccessoriesProductsCopyWith<$Res> {
-  factory _$$AccessoriesProductsImplCopyWith(
-    _$AccessoriesProductsImpl value,
-    $Res Function(_$AccessoriesProductsImpl) then,
-  ) = __$$AccessoriesProductsImplCopyWithImpl<$Res>;
+  factory _$$AccessoriesProductsImplCopyWith(_$AccessoriesProductsImpl value,
+          $Res Function(_$AccessoriesProductsImpl) then) =
+      __$$AccessoriesProductsImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    int? allCount,
-    String? availability,
-    String? axiomMonthlyPrice,
-    int? benefit,
-    int? id,
-    String? image,
-    int? isCanLoanOrder,
-    String? name,
-    dynamic oldPrice,
-    int? salePrice,
-  });
+  $Res call(
+      {int? allCount,
+      String? availability,
+      String? axiomMonthlyPrice,
+      int? benefit,
+      int? id,
+      String? image,
+      int? isCanLoanOrder,
+      String? name,
+      dynamic oldPrice,
+      int? salePrice});
 }
 
 /// @nodoc
 class __$$AccessoriesProductsImplCopyWithImpl<$Res>
     extends _$AccessoriesProductsCopyWithImpl<$Res, _$AccessoriesProductsImpl>
     implements _$$AccessoriesProductsImplCopyWith<$Res> {
-  __$$AccessoriesProductsImplCopyWithImpl(
-    _$AccessoriesProductsImpl _value,
-    $Res Function(_$AccessoriesProductsImpl) _then,
-  ) : super(_value, _then);
+  __$$AccessoriesProductsImplCopyWithImpl(_$AccessoriesProductsImpl _value,
+      $Res Function(_$AccessoriesProductsImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of AccessoriesProducts
   /// with the given fields replaced by the non-null parameter values.
@@ -829,60 +767,48 @@ class __$$AccessoriesProductsImplCopyWithImpl<$Res>
     Object? oldPrice = freezed,
     Object? salePrice = freezed,
   }) {
-    return _then(
-      _$AccessoriesProductsImpl(
-        allCount:
-            freezed == allCount
-                ? _value.allCount
-                : allCount // ignore: cast_nullable_to_non_nullable
-                    as int?,
-        availability:
-            freezed == availability
-                ? _value.availability
-                : availability // ignore: cast_nullable_to_non_nullable
-                    as String?,
-        axiomMonthlyPrice:
-            freezed == axiomMonthlyPrice
-                ? _value.axiomMonthlyPrice
-                : axiomMonthlyPrice // ignore: cast_nullable_to_non_nullable
-                    as String?,
-        benefit:
-            freezed == benefit
-                ? _value.benefit
-                : benefit // ignore: cast_nullable_to_non_nullable
-                    as int?,
-        id:
-            freezed == id
-                ? _value.id
-                : id // ignore: cast_nullable_to_non_nullable
-                    as int?,
-        image:
-            freezed == image
-                ? _value.image
-                : image // ignore: cast_nullable_to_non_nullable
-                    as String?,
-        isCanLoanOrder:
-            freezed == isCanLoanOrder
-                ? _value.isCanLoanOrder
-                : isCanLoanOrder // ignore: cast_nullable_to_non_nullable
-                    as int?,
-        name:
-            freezed == name
-                ? _value.name
-                : name // ignore: cast_nullable_to_non_nullable
-                    as String?,
-        oldPrice:
-            freezed == oldPrice
-                ? _value.oldPrice
-                : oldPrice // ignore: cast_nullable_to_non_nullable
-                    as dynamic,
-        salePrice:
-            freezed == salePrice
-                ? _value.salePrice
-                : salePrice // ignore: cast_nullable_to_non_nullable
-                    as int?,
-      ),
-    );
+    return _then(_$AccessoriesProductsImpl(
+      allCount: freezed == allCount
+          ? _value.allCount
+          : allCount // ignore: cast_nullable_to_non_nullable
+              as int?,
+      availability: freezed == availability
+          ? _value.availability
+          : availability // ignore: cast_nullable_to_non_nullable
+              as String?,
+      axiomMonthlyPrice: freezed == axiomMonthlyPrice
+          ? _value.axiomMonthlyPrice
+          : axiomMonthlyPrice // ignore: cast_nullable_to_non_nullable
+              as String?,
+      benefit: freezed == benefit
+          ? _value.benefit
+          : benefit // ignore: cast_nullable_to_non_nullable
+              as int?,
+      id: freezed == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int?,
+      image: freezed == image
+          ? _value.image
+          : image // ignore: cast_nullable_to_non_nullable
+              as String?,
+      isCanLoanOrder: freezed == isCanLoanOrder
+          ? _value.isCanLoanOrder
+          : isCanLoanOrder // ignore: cast_nullable_to_non_nullable
+              as int?,
+      name: freezed == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String?,
+      oldPrice: freezed == oldPrice
+          ? _value.oldPrice
+          : oldPrice // ignore: cast_nullable_to_non_nullable
+              as dynamic,
+      salePrice: freezed == salePrice
+          ? _value.salePrice
+          : salePrice // ignore: cast_nullable_to_non_nullable
+              as int?,
+    ));
   }
 }
 
@@ -890,18 +816,17 @@ class __$$AccessoriesProductsImplCopyWithImpl<$Res>
 
 @JsonSerializable(explicitToJson: true, fieldRename: FieldRename.snake)
 class _$AccessoriesProductsImpl implements _AccessoriesProducts {
-  const _$AccessoriesProductsImpl({
-    this.allCount,
-    this.availability,
-    this.axiomMonthlyPrice,
-    this.benefit,
-    this.id,
-    this.image,
-    this.isCanLoanOrder,
-    this.name,
-    this.oldPrice,
-    this.salePrice,
-  });
+  const _$AccessoriesProductsImpl(
+      {this.allCount,
+      this.availability,
+      this.axiomMonthlyPrice,
+      this.benefit,
+      this.id,
+      this.image,
+      this.isCanLoanOrder,
+      this.name,
+      this.oldPrice,
+      this.salePrice});
 
   factory _$AccessoriesProductsImpl.fromJson(Map<String, dynamic> json) =>
       _$$AccessoriesProductsImplFromJson(json);
@@ -924,7 +849,7 @@ class _$AccessoriesProductsImpl implements _AccessoriesProducts {
   final String? name;
   @override
   final dynamic oldPrice;
-  // FIXED HERE
+// FIXED HERE
   @override
   final int? salePrice;
 
@@ -958,18 +883,17 @@ class _$AccessoriesProductsImpl implements _AccessoriesProducts {
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
-    runtimeType,
-    allCount,
-    availability,
-    axiomMonthlyPrice,
-    benefit,
-    id,
-    image,
-    isCanLoanOrder,
-    name,
-    const DeepCollectionEquality().hash(oldPrice),
-    salePrice,
-  );
+      runtimeType,
+      allCount,
+      availability,
+      axiomMonthlyPrice,
+      benefit,
+      id,
+      image,
+      isCanLoanOrder,
+      name,
+      const DeepCollectionEquality().hash(oldPrice),
+      salePrice);
 
   /// Create a copy of AccessoriesProducts
   /// with the given fields replaced by the non-null parameter values.
@@ -978,29 +902,28 @@ class _$AccessoriesProductsImpl implements _AccessoriesProducts {
   @pragma('vm:prefer-inline')
   _$$AccessoriesProductsImplCopyWith<_$AccessoriesProductsImpl> get copyWith =>
       __$$AccessoriesProductsImplCopyWithImpl<_$AccessoriesProductsImpl>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$AccessoriesProductsImplToJson(this);
+    return _$$AccessoriesProductsImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _AccessoriesProducts implements AccessoriesProducts {
-  const factory _AccessoriesProducts({
-    final int? allCount,
-    final String? availability,
-    final String? axiomMonthlyPrice,
-    final int? benefit,
-    final int? id,
-    final String? image,
-    final int? isCanLoanOrder,
-    final String? name,
-    final dynamic oldPrice,
-    final int? salePrice,
-  }) = _$AccessoriesProductsImpl;
+  const factory _AccessoriesProducts(
+      {final int? allCount,
+      final String? availability,
+      final String? axiomMonthlyPrice,
+      final int? benefit,
+      final int? id,
+      final String? image,
+      final int? isCanLoanOrder,
+      final String? name,
+      final dynamic oldPrice,
+      final int? salePrice}) = _$AccessoriesProductsImpl;
 
   factory _AccessoriesProducts.fromJson(Map<String, dynamic> json) =
       _$AccessoriesProductsImpl.fromJson;

@@ -12,8 +12,7 @@ part of 'hit_products_response.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 HitProductsResponse _$HitProductsResponseFromJson(Map<String, dynamic> json) {
   return _HitProductsResponse.fromJson(json);
@@ -40,17 +39,15 @@ mixin _$HitProductsResponse {
 /// @nodoc
 abstract class $HitProductsResponseCopyWith<$Res> {
   factory $HitProductsResponseCopyWith(
-    HitProductsResponse value,
-    $Res Function(HitProductsResponse) then,
-  ) = _$HitProductsResponseCopyWithImpl<$Res, HitProductsResponse>;
+          HitProductsResponse value, $Res Function(HitProductsResponse) then) =
+      _$HitProductsResponseCopyWithImpl<$Res, HitProductsResponse>;
   @useResult
-  $Res call({
-    int? code,
-    HitProductsData? data,
-    String? message,
-    int? status,
-    bool? success,
-  });
+  $Res call(
+      {int? code,
+      HitProductsData? data,
+      String? message,
+      int? status,
+      bool? success});
 
   $HitProductsDataCopyWith<$Res>? get data;
 }
@@ -76,36 +73,28 @@ class _$HitProductsResponseCopyWithImpl<$Res, $Val extends HitProductsResponse>
     Object? status = freezed,
     Object? success = freezed,
   }) {
-    return _then(
-      _value.copyWith(
-            code:
-                freezed == code
-                    ? _value.code
-                    : code // ignore: cast_nullable_to_non_nullable
-                        as int?,
-            data:
-                freezed == data
-                    ? _value.data
-                    : data // ignore: cast_nullable_to_non_nullable
-                        as HitProductsData?,
-            message:
-                freezed == message
-                    ? _value.message
-                    : message // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            status:
-                freezed == status
-                    ? _value.status
-                    : status // ignore: cast_nullable_to_non_nullable
-                        as int?,
-            success:
-                freezed == success
-                    ? _value.success
-                    : success // ignore: cast_nullable_to_non_nullable
-                        as bool?,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      code: freezed == code
+          ? _value.code
+          : code // ignore: cast_nullable_to_non_nullable
+              as int?,
+      data: freezed == data
+          ? _value.data
+          : data // ignore: cast_nullable_to_non_nullable
+              as HitProductsData?,
+      message: freezed == message
+          ? _value.message
+          : message // ignore: cast_nullable_to_non_nullable
+              as String?,
+      status: freezed == status
+          ? _value.status
+          : status // ignore: cast_nullable_to_non_nullable
+              as int?,
+      success: freezed == success
+          ? _value.success
+          : success // ignore: cast_nullable_to_non_nullable
+              as bool?,
+    ) as $Val);
   }
 
   /// Create a copy of HitProductsResponse
@@ -126,19 +115,17 @@ class _$HitProductsResponseCopyWithImpl<$Res, $Val extends HitProductsResponse>
 /// @nodoc
 abstract class _$$HitProductsResponseImplCopyWith<$Res>
     implements $HitProductsResponseCopyWith<$Res> {
-  factory _$$HitProductsResponseImplCopyWith(
-    _$HitProductsResponseImpl value,
-    $Res Function(_$HitProductsResponseImpl) then,
-  ) = __$$HitProductsResponseImplCopyWithImpl<$Res>;
+  factory _$$HitProductsResponseImplCopyWith(_$HitProductsResponseImpl value,
+          $Res Function(_$HitProductsResponseImpl) then) =
+      __$$HitProductsResponseImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    int? code,
-    HitProductsData? data,
-    String? message,
-    int? status,
-    bool? success,
-  });
+  $Res call(
+      {int? code,
+      HitProductsData? data,
+      String? message,
+      int? status,
+      bool? success});
 
   @override
   $HitProductsDataCopyWith<$Res>? get data;
@@ -148,10 +135,9 @@ abstract class _$$HitProductsResponseImplCopyWith<$Res>
 class __$$HitProductsResponseImplCopyWithImpl<$Res>
     extends _$HitProductsResponseCopyWithImpl<$Res, _$HitProductsResponseImpl>
     implements _$$HitProductsResponseImplCopyWith<$Res> {
-  __$$HitProductsResponseImplCopyWithImpl(
-    _$HitProductsResponseImpl _value,
-    $Res Function(_$HitProductsResponseImpl) _then,
-  ) : super(_value, _then);
+  __$$HitProductsResponseImplCopyWithImpl(_$HitProductsResponseImpl _value,
+      $Res Function(_$HitProductsResponseImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of HitProductsResponse
   /// with the given fields replaced by the non-null parameter values.
@@ -164,30 +150,28 @@ class __$$HitProductsResponseImplCopyWithImpl<$Res>
     Object? status = freezed,
     Object? success = freezed,
   }) {
-    return _then(
-      _$HitProductsResponseImpl(
-        freezed == code
-            ? _value.code
-            : code // ignore: cast_nullable_to_non_nullable
-                as int?,
-        freezed == data
-            ? _value.data
-            : data // ignore: cast_nullable_to_non_nullable
-                as HitProductsData?,
-        freezed == message
-            ? _value.message
-            : message // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == status
-            ? _value.status
-            : status // ignore: cast_nullable_to_non_nullable
-                as int?,
-        freezed == success
-            ? _value.success
-            : success // ignore: cast_nullable_to_non_nullable
-                as bool?,
-      ),
-    );
+    return _then(_$HitProductsResponseImpl(
+      freezed == code
+          ? _value.code
+          : code // ignore: cast_nullable_to_non_nullable
+              as int?,
+      freezed == data
+          ? _value.data
+          : data // ignore: cast_nullable_to_non_nullable
+              as HitProductsData?,
+      freezed == message
+          ? _value.message
+          : message // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == status
+          ? _value.status
+          : status // ignore: cast_nullable_to_non_nullable
+              as int?,
+      freezed == success
+          ? _value.success
+          : success // ignore: cast_nullable_to_non_nullable
+              as bool?,
+    ));
   }
 }
 
@@ -196,12 +180,7 @@ class __$$HitProductsResponseImplCopyWithImpl<$Res>
 @JsonSerializable(explicitToJson: true, fieldRename: FieldRename.snake)
 class _$HitProductsResponseImpl implements _HitProductsResponse {
   const _$HitProductsResponseImpl(
-    this.code,
-    this.data,
-    this.message,
-    this.status,
-    this.success,
-  );
+      this.code, this.data, this.message, this.status, this.success);
 
   factory _$HitProductsResponseImpl.fromJson(Map<String, dynamic> json) =>
       _$$HitProductsResponseImplFromJson(json);
@@ -246,24 +225,23 @@ class _$HitProductsResponseImpl implements _HitProductsResponse {
   @pragma('vm:prefer-inline')
   _$$HitProductsResponseImplCopyWith<_$HitProductsResponseImpl> get copyWith =>
       __$$HitProductsResponseImplCopyWithImpl<_$HitProductsResponseImpl>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$HitProductsResponseImplToJson(this);
+    return _$$HitProductsResponseImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _HitProductsResponse implements HitProductsResponse {
   const factory _HitProductsResponse(
-    final int? code,
-    final HitProductsData? data,
-    final String? message,
-    final int? status,
-    final bool? success,
-  ) = _$HitProductsResponseImpl;
+      final int? code,
+      final HitProductsData? data,
+      final String? message,
+      final int? status,
+      final bool? success) = _$HitProductsResponseImpl;
 
   factory _HitProductsResponse.fromJson(Map<String, dynamic> json) =
       _$HitProductsResponseImpl.fromJson;
@@ -308,9 +286,8 @@ mixin _$HitProductsData {
 /// @nodoc
 abstract class $HitProductsDataCopyWith<$Res> {
   factory $HitProductsDataCopyWith(
-    HitProductsData value,
-    $Res Function(HitProductsData) then,
-  ) = _$HitProductsDataCopyWithImpl<$Res, HitProductsData>;
+          HitProductsData value, $Res Function(HitProductsData) then) =
+      _$HitProductsDataCopyWithImpl<$Res, HitProductsData>;
   @useResult
   $Res call({List<HitProductsDataElement> data});
 }
@@ -329,27 +306,24 @@ class _$HitProductsDataCopyWithImpl<$Res, $Val extends HitProductsData>
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? data = null}) {
-    return _then(
-      _value.copyWith(
-            data:
-                null == data
-                    ? _value.data
-                    : data // ignore: cast_nullable_to_non_nullable
-                        as List<HitProductsDataElement>,
-          )
-          as $Val,
-    );
+  $Res call({
+    Object? data = null,
+  }) {
+    return _then(_value.copyWith(
+      data: null == data
+          ? _value.data
+          : data // ignore: cast_nullable_to_non_nullable
+              as List<HitProductsDataElement>,
+    ) as $Val);
   }
 }
 
 /// @nodoc
 abstract class _$$HitProductsDataImplCopyWith<$Res>
     implements $HitProductsDataCopyWith<$Res> {
-  factory _$$HitProductsDataImplCopyWith(
-    _$HitProductsDataImpl value,
-    $Res Function(_$HitProductsDataImpl) then,
-  ) = __$$HitProductsDataImplCopyWithImpl<$Res>;
+  factory _$$HitProductsDataImplCopyWith(_$HitProductsDataImpl value,
+          $Res Function(_$HitProductsDataImpl) then) =
+      __$$HitProductsDataImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({List<HitProductsDataElement> data});
@@ -360,23 +334,22 @@ class __$$HitProductsDataImplCopyWithImpl<$Res>
     extends _$HitProductsDataCopyWithImpl<$Res, _$HitProductsDataImpl>
     implements _$$HitProductsDataImplCopyWith<$Res> {
   __$$HitProductsDataImplCopyWithImpl(
-    _$HitProductsDataImpl _value,
-    $Res Function(_$HitProductsDataImpl) _then,
-  ) : super(_value, _then);
+      _$HitProductsDataImpl _value, $Res Function(_$HitProductsDataImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of HitProductsData
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? data = null}) {
-    return _then(
-      _$HitProductsDataImpl(
-        null == data
-            ? _value._data
-            : data // ignore: cast_nullable_to_non_nullable
-                as List<HitProductsDataElement>,
-      ),
-    );
+  $Res call({
+    Object? data = null,
+  }) {
+    return _then(_$HitProductsDataImpl(
+      null == data
+          ? _value._data
+          : data // ignore: cast_nullable_to_non_nullable
+              as List<HitProductsDataElement>,
+    ));
   }
 }
 
@@ -385,7 +358,7 @@ class __$$HitProductsDataImplCopyWithImpl<$Res>
 @JsonSerializable(explicitToJson: true, fieldRename: FieldRename.snake)
 class _$HitProductsDataImpl implements _HitProductsData {
   const _$HitProductsDataImpl(final List<HitProductsDataElement> data)
-    : _data = data;
+      : _data = data;
 
   factory _$HitProductsDataImpl.fromJson(Map<String, dynamic> json) =>
       _$$HitProductsDataImplFromJson(json);
@@ -423,13 +396,13 @@ class _$HitProductsDataImpl implements _HitProductsData {
   @pragma('vm:prefer-inline')
   _$$HitProductsDataImplCopyWith<_$HitProductsDataImpl> get copyWith =>
       __$$HitProductsDataImplCopyWithImpl<_$HitProductsDataImpl>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$HitProductsDataImplToJson(this);
+    return _$$HitProductsDataImplToJson(
+      this,
+    );
   }
 }
 
@@ -452,8 +425,7 @@ abstract class _HitProductsData implements HitProductsData {
 }
 
 HitProductsDataElement _$HitProductsDataElementFromJson(
-  Map<String, dynamic> json,
-) {
+    Map<String, dynamic> json) {
   return _HitProductsDataElement.fromJson(json);
 }
 
@@ -487,35 +459,31 @@ mixin _$HitProductsDataElement {
 
 /// @nodoc
 abstract class $HitProductsDataElementCopyWith<$Res> {
-  factory $HitProductsDataElementCopyWith(
-    HitProductsDataElement value,
-    $Res Function(HitProductsDataElement) then,
-  ) = _$HitProductsDataElementCopyWithImpl<$Res, HitProductsDataElement>;
+  factory $HitProductsDataElementCopyWith(HitProductsDataElement value,
+          $Res Function(HitProductsDataElement) then) =
+      _$HitProductsDataElementCopyWithImpl<$Res, HitProductsDataElement>;
   @useResult
-  $Res call({
-    int? allCount,
-    String? availability,
-    String? axiomMonthlyPrice,
-    int? benefit,
-    int? discountPrice,
-    int? id,
-    String? image,
-    int? isCanLoanOrder,
-    String? name,
-    int? oldPrice,
-    int? reviewsAverage,
-    int? reviewsCount,
-    List<SaleMonths>? saleMonths,
-    int? salePrice,
-    List<Stickers>? stickers,
-  });
+  $Res call(
+      {int? allCount,
+      String? availability,
+      String? axiomMonthlyPrice,
+      int? benefit,
+      int? discountPrice,
+      int? id,
+      String? image,
+      int? isCanLoanOrder,
+      String? name,
+      int? oldPrice,
+      int? reviewsAverage,
+      int? reviewsCount,
+      List<SaleMonths>? saleMonths,
+      int? salePrice,
+      List<Stickers>? stickers});
 }
 
 /// @nodoc
-class _$HitProductsDataElementCopyWithImpl<
-  $Res,
-  $Val extends HitProductsDataElement
->
+class _$HitProductsDataElementCopyWithImpl<$Res,
+        $Val extends HitProductsDataElement>
     implements $HitProductsDataElementCopyWith<$Res> {
   _$HitProductsDataElementCopyWithImpl(this._value, this._then);
 
@@ -545,86 +513,68 @@ class _$HitProductsDataElementCopyWithImpl<
     Object? salePrice = freezed,
     Object? stickers = freezed,
   }) {
-    return _then(
-      _value.copyWith(
-            allCount:
-                freezed == allCount
-                    ? _value.allCount
-                    : allCount // ignore: cast_nullable_to_non_nullable
-                        as int?,
-            availability:
-                freezed == availability
-                    ? _value.availability
-                    : availability // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            axiomMonthlyPrice:
-                freezed == axiomMonthlyPrice
-                    ? _value.axiomMonthlyPrice
-                    : axiomMonthlyPrice // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            benefit:
-                freezed == benefit
-                    ? _value.benefit
-                    : benefit // ignore: cast_nullable_to_non_nullable
-                        as int?,
-            discountPrice:
-                freezed == discountPrice
-                    ? _value.discountPrice
-                    : discountPrice // ignore: cast_nullable_to_non_nullable
-                        as int?,
-            id:
-                freezed == id
-                    ? _value.id
-                    : id // ignore: cast_nullable_to_non_nullable
-                        as int?,
-            image:
-                freezed == image
-                    ? _value.image
-                    : image // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            isCanLoanOrder:
-                freezed == isCanLoanOrder
-                    ? _value.isCanLoanOrder
-                    : isCanLoanOrder // ignore: cast_nullable_to_non_nullable
-                        as int?,
-            name:
-                freezed == name
-                    ? _value.name
-                    : name // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            oldPrice:
-                freezed == oldPrice
-                    ? _value.oldPrice
-                    : oldPrice // ignore: cast_nullable_to_non_nullable
-                        as int?,
-            reviewsAverage:
-                freezed == reviewsAverage
-                    ? _value.reviewsAverage
-                    : reviewsAverage // ignore: cast_nullable_to_non_nullable
-                        as int?,
-            reviewsCount:
-                freezed == reviewsCount
-                    ? _value.reviewsCount
-                    : reviewsCount // ignore: cast_nullable_to_non_nullable
-                        as int?,
-            saleMonths:
-                freezed == saleMonths
-                    ? _value.saleMonths
-                    : saleMonths // ignore: cast_nullable_to_non_nullable
-                        as List<SaleMonths>?,
-            salePrice:
-                freezed == salePrice
-                    ? _value.salePrice
-                    : salePrice // ignore: cast_nullable_to_non_nullable
-                        as int?,
-            stickers:
-                freezed == stickers
-                    ? _value.stickers
-                    : stickers // ignore: cast_nullable_to_non_nullable
-                        as List<Stickers>?,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      allCount: freezed == allCount
+          ? _value.allCount
+          : allCount // ignore: cast_nullable_to_non_nullable
+              as int?,
+      availability: freezed == availability
+          ? _value.availability
+          : availability // ignore: cast_nullable_to_non_nullable
+              as String?,
+      axiomMonthlyPrice: freezed == axiomMonthlyPrice
+          ? _value.axiomMonthlyPrice
+          : axiomMonthlyPrice // ignore: cast_nullable_to_non_nullable
+              as String?,
+      benefit: freezed == benefit
+          ? _value.benefit
+          : benefit // ignore: cast_nullable_to_non_nullable
+              as int?,
+      discountPrice: freezed == discountPrice
+          ? _value.discountPrice
+          : discountPrice // ignore: cast_nullable_to_non_nullable
+              as int?,
+      id: freezed == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int?,
+      image: freezed == image
+          ? _value.image
+          : image // ignore: cast_nullable_to_non_nullable
+              as String?,
+      isCanLoanOrder: freezed == isCanLoanOrder
+          ? _value.isCanLoanOrder
+          : isCanLoanOrder // ignore: cast_nullable_to_non_nullable
+              as int?,
+      name: freezed == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String?,
+      oldPrice: freezed == oldPrice
+          ? _value.oldPrice
+          : oldPrice // ignore: cast_nullable_to_non_nullable
+              as int?,
+      reviewsAverage: freezed == reviewsAverage
+          ? _value.reviewsAverage
+          : reviewsAverage // ignore: cast_nullable_to_non_nullable
+              as int?,
+      reviewsCount: freezed == reviewsCount
+          ? _value.reviewsCount
+          : reviewsCount // ignore: cast_nullable_to_non_nullable
+              as int?,
+      saleMonths: freezed == saleMonths
+          ? _value.saleMonths
+          : saleMonths // ignore: cast_nullable_to_non_nullable
+              as List<SaleMonths>?,
+      salePrice: freezed == salePrice
+          ? _value.salePrice
+          : salePrice // ignore: cast_nullable_to_non_nullable
+              as int?,
+      stickers: freezed == stickers
+          ? _value.stickers
+          : stickers // ignore: cast_nullable_to_non_nullable
+              as List<Stickers>?,
+    ) as $Val);
   }
 }
 
@@ -632,39 +582,38 @@ class _$HitProductsDataElementCopyWithImpl<
 abstract class _$$HitProductsDataElementImplCopyWith<$Res>
     implements $HitProductsDataElementCopyWith<$Res> {
   factory _$$HitProductsDataElementImplCopyWith(
-    _$HitProductsDataElementImpl value,
-    $Res Function(_$HitProductsDataElementImpl) then,
-  ) = __$$HitProductsDataElementImplCopyWithImpl<$Res>;
+          _$HitProductsDataElementImpl value,
+          $Res Function(_$HitProductsDataElementImpl) then) =
+      __$$HitProductsDataElementImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    int? allCount,
-    String? availability,
-    String? axiomMonthlyPrice,
-    int? benefit,
-    int? discountPrice,
-    int? id,
-    String? image,
-    int? isCanLoanOrder,
-    String? name,
-    int? oldPrice,
-    int? reviewsAverage,
-    int? reviewsCount,
-    List<SaleMonths>? saleMonths,
-    int? salePrice,
-    List<Stickers>? stickers,
-  });
+  $Res call(
+      {int? allCount,
+      String? availability,
+      String? axiomMonthlyPrice,
+      int? benefit,
+      int? discountPrice,
+      int? id,
+      String? image,
+      int? isCanLoanOrder,
+      String? name,
+      int? oldPrice,
+      int? reviewsAverage,
+      int? reviewsCount,
+      List<SaleMonths>? saleMonths,
+      int? salePrice,
+      List<Stickers>? stickers});
 }
 
 /// @nodoc
 class __$$HitProductsDataElementImplCopyWithImpl<$Res>
-    extends
-        _$HitProductsDataElementCopyWithImpl<$Res, _$HitProductsDataElementImpl>
+    extends _$HitProductsDataElementCopyWithImpl<$Res,
+        _$HitProductsDataElementImpl>
     implements _$$HitProductsDataElementImplCopyWith<$Res> {
   __$$HitProductsDataElementImplCopyWithImpl(
-    _$HitProductsDataElementImpl _value,
-    $Res Function(_$HitProductsDataElementImpl) _then,
-  ) : super(_value, _then);
+      _$HitProductsDataElementImpl _value,
+      $Res Function(_$HitProductsDataElementImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of HitProductsDataElement
   /// with the given fields replaced by the non-null parameter values.
@@ -687,70 +636,68 @@ class __$$HitProductsDataElementImplCopyWithImpl<$Res>
     Object? salePrice = freezed,
     Object? stickers = freezed,
   }) {
-    return _then(
-      _$HitProductsDataElementImpl(
-        freezed == allCount
-            ? _value.allCount
-            : allCount // ignore: cast_nullable_to_non_nullable
-                as int?,
-        freezed == availability
-            ? _value.availability
-            : availability // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == axiomMonthlyPrice
-            ? _value.axiomMonthlyPrice
-            : axiomMonthlyPrice // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == benefit
-            ? _value.benefit
-            : benefit // ignore: cast_nullable_to_non_nullable
-                as int?,
-        freezed == discountPrice
-            ? _value.discountPrice
-            : discountPrice // ignore: cast_nullable_to_non_nullable
-                as int?,
-        freezed == id
-            ? _value.id
-            : id // ignore: cast_nullable_to_non_nullable
-                as int?,
-        freezed == image
-            ? _value.image
-            : image // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == isCanLoanOrder
-            ? _value.isCanLoanOrder
-            : isCanLoanOrder // ignore: cast_nullable_to_non_nullable
-                as int?,
-        freezed == name
-            ? _value.name
-            : name // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == oldPrice
-            ? _value.oldPrice
-            : oldPrice // ignore: cast_nullable_to_non_nullable
-                as int?,
-        freezed == reviewsAverage
-            ? _value.reviewsAverage
-            : reviewsAverage // ignore: cast_nullable_to_non_nullable
-                as int?,
-        freezed == reviewsCount
-            ? _value.reviewsCount
-            : reviewsCount // ignore: cast_nullable_to_non_nullable
-                as int?,
-        freezed == saleMonths
-            ? _value._saleMonths
-            : saleMonths // ignore: cast_nullable_to_non_nullable
-                as List<SaleMonths>?,
-        freezed == salePrice
-            ? _value.salePrice
-            : salePrice // ignore: cast_nullable_to_non_nullable
-                as int?,
-        freezed == stickers
-            ? _value._stickers
-            : stickers // ignore: cast_nullable_to_non_nullable
-                as List<Stickers>?,
-      ),
-    );
+    return _then(_$HitProductsDataElementImpl(
+      freezed == allCount
+          ? _value.allCount
+          : allCount // ignore: cast_nullable_to_non_nullable
+              as int?,
+      freezed == availability
+          ? _value.availability
+          : availability // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == axiomMonthlyPrice
+          ? _value.axiomMonthlyPrice
+          : axiomMonthlyPrice // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == benefit
+          ? _value.benefit
+          : benefit // ignore: cast_nullable_to_non_nullable
+              as int?,
+      freezed == discountPrice
+          ? _value.discountPrice
+          : discountPrice // ignore: cast_nullable_to_non_nullable
+              as int?,
+      freezed == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int?,
+      freezed == image
+          ? _value.image
+          : image // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == isCanLoanOrder
+          ? _value.isCanLoanOrder
+          : isCanLoanOrder // ignore: cast_nullable_to_non_nullable
+              as int?,
+      freezed == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == oldPrice
+          ? _value.oldPrice
+          : oldPrice // ignore: cast_nullable_to_non_nullable
+              as int?,
+      freezed == reviewsAverage
+          ? _value.reviewsAverage
+          : reviewsAverage // ignore: cast_nullable_to_non_nullable
+              as int?,
+      freezed == reviewsCount
+          ? _value.reviewsCount
+          : reviewsCount // ignore: cast_nullable_to_non_nullable
+              as int?,
+      freezed == saleMonths
+          ? _value._saleMonths
+          : saleMonths // ignore: cast_nullable_to_non_nullable
+              as List<SaleMonths>?,
+      freezed == salePrice
+          ? _value.salePrice
+          : salePrice // ignore: cast_nullable_to_non_nullable
+              as int?,
+      freezed == stickers
+          ? _value._stickers
+          : stickers // ignore: cast_nullable_to_non_nullable
+              as List<Stickers>?,
+    ));
   }
 }
 
@@ -759,23 +706,23 @@ class __$$HitProductsDataElementImplCopyWithImpl<$Res>
 @JsonSerializable(explicitToJson: true, fieldRename: FieldRename.snake)
 class _$HitProductsDataElementImpl implements _HitProductsDataElement {
   const _$HitProductsDataElementImpl(
-    this.allCount,
-    this.availability,
-    this.axiomMonthlyPrice,
-    this.benefit,
-    this.discountPrice,
-    this.id,
-    this.image,
-    this.isCanLoanOrder,
-    this.name,
-    this.oldPrice,
-    this.reviewsAverage,
-    this.reviewsCount,
-    final List<SaleMonths>? saleMonths,
-    this.salePrice,
-    final List<Stickers>? stickers,
-  ) : _saleMonths = saleMonths,
-      _stickers = stickers;
+      this.allCount,
+      this.availability,
+      this.axiomMonthlyPrice,
+      this.benefit,
+      this.discountPrice,
+      this.id,
+      this.image,
+      this.isCanLoanOrder,
+      this.name,
+      this.oldPrice,
+      this.reviewsAverage,
+      this.reviewsCount,
+      final List<SaleMonths>? saleMonths,
+      this.salePrice,
+      final List<Stickers>? stickers)
+      : _saleMonths = saleMonths,
+        _stickers = stickers;
 
   factory _$HitProductsDataElementImpl.fromJson(Map<String, dynamic> json) =>
       _$$HitProductsDataElementImplFromJson(json);
@@ -856,10 +803,8 @@ class _$HitProductsDataElementImpl implements _HitProductsDataElement {
                 other.reviewsAverage == reviewsAverage) &&
             (identical(other.reviewsCount, reviewsCount) ||
                 other.reviewsCount == reviewsCount) &&
-            const DeepCollectionEquality().equals(
-              other._saleMonths,
-              _saleMonths,
-            ) &&
+            const DeepCollectionEquality()
+                .equals(other._saleMonths, _saleMonths) &&
             (identical(other.salePrice, salePrice) ||
                 other.salePrice == salePrice) &&
             const DeepCollectionEquality().equals(other._stickers, _stickers));
@@ -868,23 +813,22 @@ class _$HitProductsDataElementImpl implements _HitProductsDataElement {
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
-    runtimeType,
-    allCount,
-    availability,
-    axiomMonthlyPrice,
-    benefit,
-    discountPrice,
-    id,
-    image,
-    isCanLoanOrder,
-    name,
-    oldPrice,
-    reviewsAverage,
-    reviewsCount,
-    const DeepCollectionEquality().hash(_saleMonths),
-    salePrice,
-    const DeepCollectionEquality().hash(_stickers),
-  );
+      runtimeType,
+      allCount,
+      availability,
+      axiomMonthlyPrice,
+      benefit,
+      discountPrice,
+      id,
+      image,
+      isCanLoanOrder,
+      name,
+      oldPrice,
+      reviewsAverage,
+      reviewsCount,
+      const DeepCollectionEquality().hash(_saleMonths),
+      salePrice,
+      const DeepCollectionEquality().hash(_stickers));
 
   /// Create a copy of HitProductsDataElement
   /// with the given fields replaced by the non-null parameter values.
@@ -892,36 +836,34 @@ class _$HitProductsDataElementImpl implements _HitProductsDataElement {
   @override
   @pragma('vm:prefer-inline')
   _$$HitProductsDataElementImplCopyWith<_$HitProductsDataElementImpl>
-  get copyWith =>
-      __$$HitProductsDataElementImplCopyWithImpl<_$HitProductsDataElementImpl>(
-        this,
-        _$identity,
-      );
+      get copyWith => __$$HitProductsDataElementImplCopyWithImpl<
+          _$HitProductsDataElementImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$HitProductsDataElementImplToJson(this);
+    return _$$HitProductsDataElementImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _HitProductsDataElement implements HitProductsDataElement {
   const factory _HitProductsDataElement(
-    final int? allCount,
-    final String? availability,
-    final String? axiomMonthlyPrice,
-    final int? benefit,
-    final int? discountPrice,
-    final int? id,
-    final String? image,
-    final int? isCanLoanOrder,
-    final String? name,
-    final int? oldPrice,
-    final int? reviewsAverage,
-    final int? reviewsCount,
-    final List<SaleMonths>? saleMonths,
-    final int? salePrice,
-    final List<Stickers>? stickers,
-  ) = _$HitProductsDataElementImpl;
+      final int? allCount,
+      final String? availability,
+      final String? axiomMonthlyPrice,
+      final int? benefit,
+      final int? discountPrice,
+      final int? id,
+      final String? image,
+      final int? isCanLoanOrder,
+      final String? name,
+      final int? oldPrice,
+      final int? reviewsAverage,
+      final int? reviewsCount,
+      final List<SaleMonths>? saleMonths,
+      final int? salePrice,
+      final List<Stickers>? stickers) = _$HitProductsDataElementImpl;
 
   factory _HitProductsDataElement.fromJson(Map<String, dynamic> json) =
       _$HitProductsDataElementImpl.fromJson;
@@ -962,7 +904,7 @@ abstract class _HitProductsDataElement implements HitProductsDataElement {
   @override
   @JsonKey(includeFromJson: false, includeToJson: false)
   _$$HitProductsDataElementImplCopyWith<_$HitProductsDataElementImpl>
-  get copyWith => throw _privateConstructorUsedError;
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 SaleMonths _$SaleMonthsFromJson(Map<String, dynamic> json) {
@@ -989,9 +931,8 @@ mixin _$SaleMonths {
 /// @nodoc
 abstract class $SaleMonthsCopyWith<$Res> {
   factory $SaleMonthsCopyWith(
-    SaleMonths value,
-    $Res Function(SaleMonths) then,
-  ) = _$SaleMonthsCopyWithImpl<$Res, SaleMonths>;
+          SaleMonths value, $Res Function(SaleMonths) then) =
+      _$SaleMonthsCopyWithImpl<$Res, SaleMonths>;
   @useResult
   $Res call({int? id, String? image, String? key, String? name});
 }
@@ -1016,31 +957,24 @@ class _$SaleMonthsCopyWithImpl<$Res, $Val extends SaleMonths>
     Object? key = freezed,
     Object? name = freezed,
   }) {
-    return _then(
-      _value.copyWith(
-            id:
-                freezed == id
-                    ? _value.id
-                    : id // ignore: cast_nullable_to_non_nullable
-                        as int?,
-            image:
-                freezed == image
-                    ? _value.image
-                    : image // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            key:
-                freezed == key
-                    ? _value.key
-                    : key // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            name:
-                freezed == name
-                    ? _value.name
-                    : name // ignore: cast_nullable_to_non_nullable
-                        as String?,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      id: freezed == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int?,
+      image: freezed == image
+          ? _value.image
+          : image // ignore: cast_nullable_to_non_nullable
+              as String?,
+      key: freezed == key
+          ? _value.key
+          : key // ignore: cast_nullable_to_non_nullable
+              as String?,
+      name: freezed == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ) as $Val);
   }
 }
 
@@ -1048,9 +982,8 @@ class _$SaleMonthsCopyWithImpl<$Res, $Val extends SaleMonths>
 abstract class _$$SaleMonthsImplCopyWith<$Res>
     implements $SaleMonthsCopyWith<$Res> {
   factory _$$SaleMonthsImplCopyWith(
-    _$SaleMonthsImpl value,
-    $Res Function(_$SaleMonthsImpl) then,
-  ) = __$$SaleMonthsImplCopyWithImpl<$Res>;
+          _$SaleMonthsImpl value, $Res Function(_$SaleMonthsImpl) then) =
+      __$$SaleMonthsImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({int? id, String? image, String? key, String? name});
@@ -1061,9 +994,8 @@ class __$$SaleMonthsImplCopyWithImpl<$Res>
     extends _$SaleMonthsCopyWithImpl<$Res, _$SaleMonthsImpl>
     implements _$$SaleMonthsImplCopyWith<$Res> {
   __$$SaleMonthsImplCopyWithImpl(
-    _$SaleMonthsImpl _value,
-    $Res Function(_$SaleMonthsImpl) _then,
-  ) : super(_value, _then);
+      _$SaleMonthsImpl _value, $Res Function(_$SaleMonthsImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of SaleMonths
   /// with the given fields replaced by the non-null parameter values.
@@ -1075,26 +1007,24 @@ class __$$SaleMonthsImplCopyWithImpl<$Res>
     Object? key = freezed,
     Object? name = freezed,
   }) {
-    return _then(
-      _$SaleMonthsImpl(
-        freezed == id
-            ? _value.id
-            : id // ignore: cast_nullable_to_non_nullable
-                as int?,
-        freezed == image
-            ? _value.image
-            : image // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == key
-            ? _value.key
-            : key // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == name
-            ? _value.name
-            : name // ignore: cast_nullable_to_non_nullable
-                as String?,
-      ),
-    );
+    return _then(_$SaleMonthsImpl(
+      freezed == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int?,
+      freezed == image
+          ? _value.image
+          : image // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == key
+          ? _value.key
+          : key // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ));
   }
 }
 
@@ -1146,17 +1076,15 @@ class _$SaleMonthsImpl implements _SaleMonths {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$SaleMonthsImplToJson(this);
+    return _$$SaleMonthsImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _SaleMonths implements SaleMonths {
-  const factory _SaleMonths(
-    final int? id,
-    final String? image,
-    final String? key,
-    final String? name,
-  ) = _$SaleMonthsImpl;
+  const factory _SaleMonths(final int? id, final String? image,
+      final String? key, final String? name) = _$SaleMonthsImpl;
 
   factory _SaleMonths.fromJson(Map<String, dynamic> json) =
       _$SaleMonthsImpl.fromJson;
@@ -1206,14 +1134,13 @@ abstract class $StickersCopyWith<$Res> {
   factory $StickersCopyWith(Stickers value, $Res Function(Stickers) then) =
       _$StickersCopyWithImpl<$Res, Stickers>;
   @useResult
-  $Res call({
-    String? backgroundColor,
-    String? image,
-    bool? isImage,
-    String? name,
-    bool? showInCard,
-    String? textColor,
-  });
+  $Res call(
+      {String? backgroundColor,
+      String? image,
+      bool? isImage,
+      String? name,
+      bool? showInCard,
+      String? textColor});
 }
 
 /// @nodoc
@@ -1238,41 +1165,32 @@ class _$StickersCopyWithImpl<$Res, $Val extends Stickers>
     Object? showInCard = freezed,
     Object? textColor = freezed,
   }) {
-    return _then(
-      _value.copyWith(
-            backgroundColor:
-                freezed == backgroundColor
-                    ? _value.backgroundColor
-                    : backgroundColor // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            image:
-                freezed == image
-                    ? _value.image
-                    : image // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            isImage:
-                freezed == isImage
-                    ? _value.isImage
-                    : isImage // ignore: cast_nullable_to_non_nullable
-                        as bool?,
-            name:
-                freezed == name
-                    ? _value.name
-                    : name // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            showInCard:
-                freezed == showInCard
-                    ? _value.showInCard
-                    : showInCard // ignore: cast_nullable_to_non_nullable
-                        as bool?,
-            textColor:
-                freezed == textColor
-                    ? _value.textColor
-                    : textColor // ignore: cast_nullable_to_non_nullable
-                        as String?,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      backgroundColor: freezed == backgroundColor
+          ? _value.backgroundColor
+          : backgroundColor // ignore: cast_nullable_to_non_nullable
+              as String?,
+      image: freezed == image
+          ? _value.image
+          : image // ignore: cast_nullable_to_non_nullable
+              as String?,
+      isImage: freezed == isImage
+          ? _value.isImage
+          : isImage // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      name: freezed == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String?,
+      showInCard: freezed == showInCard
+          ? _value.showInCard
+          : showInCard // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      textColor: freezed == textColor
+          ? _value.textColor
+          : textColor // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ) as $Val);
   }
 }
 
@@ -1280,19 +1198,17 @@ class _$StickersCopyWithImpl<$Res, $Val extends Stickers>
 abstract class _$$StickersImplCopyWith<$Res>
     implements $StickersCopyWith<$Res> {
   factory _$$StickersImplCopyWith(
-    _$StickersImpl value,
-    $Res Function(_$StickersImpl) then,
-  ) = __$$StickersImplCopyWithImpl<$Res>;
+          _$StickersImpl value, $Res Function(_$StickersImpl) then) =
+      __$$StickersImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    String? backgroundColor,
-    String? image,
-    bool? isImage,
-    String? name,
-    bool? showInCard,
-    String? textColor,
-  });
+  $Res call(
+      {String? backgroundColor,
+      String? image,
+      bool? isImage,
+      String? name,
+      bool? showInCard,
+      String? textColor});
 }
 
 /// @nodoc
@@ -1300,9 +1216,8 @@ class __$$StickersImplCopyWithImpl<$Res>
     extends _$StickersCopyWithImpl<$Res, _$StickersImpl>
     implements _$$StickersImplCopyWith<$Res> {
   __$$StickersImplCopyWithImpl(
-    _$StickersImpl _value,
-    $Res Function(_$StickersImpl) _then,
-  ) : super(_value, _then);
+      _$StickersImpl _value, $Res Function(_$StickersImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of Stickers
   /// with the given fields replaced by the non-null parameter values.
@@ -1316,34 +1231,32 @@ class __$$StickersImplCopyWithImpl<$Res>
     Object? showInCard = freezed,
     Object? textColor = freezed,
   }) {
-    return _then(
-      _$StickersImpl(
-        freezed == backgroundColor
-            ? _value.backgroundColor
-            : backgroundColor // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == image
-            ? _value.image
-            : image // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == isImage
-            ? _value.isImage
-            : isImage // ignore: cast_nullable_to_non_nullable
-                as bool?,
-        freezed == name
-            ? _value.name
-            : name // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == showInCard
-            ? _value.showInCard
-            : showInCard // ignore: cast_nullable_to_non_nullable
-                as bool?,
-        freezed == textColor
-            ? _value.textColor
-            : textColor // ignore: cast_nullable_to_non_nullable
-                as String?,
-      ),
-    );
+    return _then(_$StickersImpl(
+      freezed == backgroundColor
+          ? _value.backgroundColor
+          : backgroundColor // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == image
+          ? _value.image
+          : image // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == isImage
+          ? _value.isImage
+          : isImage // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      freezed == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == showInCard
+          ? _value.showInCard
+          : showInCard // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      freezed == textColor
+          ? _value.textColor
+          : textColor // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ));
   }
 }
 
@@ -1351,14 +1264,8 @@ class __$$StickersImplCopyWithImpl<$Res>
 
 @JsonSerializable(explicitToJson: true, fieldRename: FieldRename.snake)
 class _$StickersImpl implements _Stickers {
-  const _$StickersImpl(
-    this.backgroundColor,
-    this.image,
-    this.isImage,
-    this.name,
-    this.showInCard,
-    this.textColor,
-  );
+  const _$StickersImpl(this.backgroundColor, this.image, this.isImage,
+      this.name, this.showInCard, this.textColor);
 
   factory _$StickersImpl.fromJson(Map<String, dynamic> json) =>
       _$$StickersImplFromJson(json);
@@ -1399,15 +1306,8 @@ class _$StickersImpl implements _Stickers {
 
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  int get hashCode => Object.hash(
-    runtimeType,
-    backgroundColor,
-    image,
-    isImage,
-    name,
-    showInCard,
-    textColor,
-  );
+  int get hashCode => Object.hash(runtimeType, backgroundColor, image, isImage,
+      name, showInCard, textColor);
 
   /// Create a copy of Stickers
   /// with the given fields replaced by the non-null parameter values.
@@ -1419,19 +1319,20 @@ class _$StickersImpl implements _Stickers {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$StickersImplToJson(this);
+    return _$$StickersImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _Stickers implements Stickers {
   const factory _Stickers(
-    final String? backgroundColor,
-    final String? image,
-    final bool? isImage,
-    final String? name,
-    final bool? showInCard,
-    final String? textColor,
-  ) = _$StickersImpl;
+      final String? backgroundColor,
+      final String? image,
+      final bool? isImage,
+      final String? name,
+      final bool? showInCard,
+      final String? textColor) = _$StickersImpl;
 
   factory _Stickers.fromJson(Map<String, dynamic> json) =
       _$StickersImpl.fromJson;

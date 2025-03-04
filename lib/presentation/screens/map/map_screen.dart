@@ -83,7 +83,7 @@ class _MapScreenState extends State<MapScreen> {
             ),
             Container(
               width: double.infinity,
-              height: 200,
+              // height: 200,
               child: Column(
                 children: [
                   Padding(
@@ -162,7 +162,7 @@ class _MapScreenState extends State<MapScreen> {
                         Container(
                           padding: EdgeInsets.all(8),
                           decoration: BoxDecoration(
-                            border: Border.all(color: Colors.grey.shade400, width: 1), // 1dp grey border
+                            border: Border.all(color: Colors.grey.shade400, width: 1),
                             borderRadius: BorderRadius.circular(8), // Optional rounded corners
                           ),
                           child: Row(
@@ -183,7 +183,8 @@ class _MapScreenState extends State<MapScreen> {
                         ),
                       ],
                     ),
-                  )
+                  ),
+                  SizedBox(height: 16,)
                 ],
               ),
             )

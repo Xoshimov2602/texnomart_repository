@@ -12,8 +12,7 @@ part of 'details_response.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 DetailsResponse _$DetailsResponseFromJson(Map<String, dynamic> json) {
   return _DetailsResponse.fromJson(json);
@@ -40,17 +39,15 @@ mixin _$DetailsResponse {
 /// @nodoc
 abstract class $DetailsResponseCopyWith<$Res> {
   factory $DetailsResponseCopyWith(
-    DetailsResponse value,
-    $Res Function(DetailsResponse) then,
-  ) = _$DetailsResponseCopyWithImpl<$Res, DetailsResponse>;
+          DetailsResponse value, $Res Function(DetailsResponse) then) =
+      _$DetailsResponseCopyWithImpl<$Res, DetailsResponse>;
   @useResult
-  $Res call({
-    int? code,
-    DetailsData? data,
-    String? message,
-    int? status,
-    bool? success,
-  });
+  $Res call(
+      {int? code,
+      DetailsData? data,
+      String? message,
+      int? status,
+      bool? success});
 
   $DetailsDataCopyWith<$Res>? get data;
 }
@@ -76,36 +73,28 @@ class _$DetailsResponseCopyWithImpl<$Res, $Val extends DetailsResponse>
     Object? status = freezed,
     Object? success = freezed,
   }) {
-    return _then(
-      _value.copyWith(
-            code:
-                freezed == code
-                    ? _value.code
-                    : code // ignore: cast_nullable_to_non_nullable
-                        as int?,
-            data:
-                freezed == data
-                    ? _value.data
-                    : data // ignore: cast_nullable_to_non_nullable
-                        as DetailsData?,
-            message:
-                freezed == message
-                    ? _value.message
-                    : message // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            status:
-                freezed == status
-                    ? _value.status
-                    : status // ignore: cast_nullable_to_non_nullable
-                        as int?,
-            success:
-                freezed == success
-                    ? _value.success
-                    : success // ignore: cast_nullable_to_non_nullable
-                        as bool?,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      code: freezed == code
+          ? _value.code
+          : code // ignore: cast_nullable_to_non_nullable
+              as int?,
+      data: freezed == data
+          ? _value.data
+          : data // ignore: cast_nullable_to_non_nullable
+              as DetailsData?,
+      message: freezed == message
+          ? _value.message
+          : message // ignore: cast_nullable_to_non_nullable
+              as String?,
+      status: freezed == status
+          ? _value.status
+          : status // ignore: cast_nullable_to_non_nullable
+              as int?,
+      success: freezed == success
+          ? _value.success
+          : success // ignore: cast_nullable_to_non_nullable
+              as bool?,
+    ) as $Val);
   }
 
   /// Create a copy of DetailsResponse
@@ -126,19 +115,17 @@ class _$DetailsResponseCopyWithImpl<$Res, $Val extends DetailsResponse>
 /// @nodoc
 abstract class _$$DetailsResponseImplCopyWith<$Res>
     implements $DetailsResponseCopyWith<$Res> {
-  factory _$$DetailsResponseImplCopyWith(
-    _$DetailsResponseImpl value,
-    $Res Function(_$DetailsResponseImpl) then,
-  ) = __$$DetailsResponseImplCopyWithImpl<$Res>;
+  factory _$$DetailsResponseImplCopyWith(_$DetailsResponseImpl value,
+          $Res Function(_$DetailsResponseImpl) then) =
+      __$$DetailsResponseImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    int? code,
-    DetailsData? data,
-    String? message,
-    int? status,
-    bool? success,
-  });
+  $Res call(
+      {int? code,
+      DetailsData? data,
+      String? message,
+      int? status,
+      bool? success});
 
   @override
   $DetailsDataCopyWith<$Res>? get data;
@@ -149,9 +136,8 @@ class __$$DetailsResponseImplCopyWithImpl<$Res>
     extends _$DetailsResponseCopyWithImpl<$Res, _$DetailsResponseImpl>
     implements _$$DetailsResponseImplCopyWith<$Res> {
   __$$DetailsResponseImplCopyWithImpl(
-    _$DetailsResponseImpl _value,
-    $Res Function(_$DetailsResponseImpl) _then,
-  ) : super(_value, _then);
+      _$DetailsResponseImpl _value, $Res Function(_$DetailsResponseImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of DetailsResponse
   /// with the given fields replaced by the non-null parameter values.
@@ -164,30 +150,28 @@ class __$$DetailsResponseImplCopyWithImpl<$Res>
     Object? status = freezed,
     Object? success = freezed,
   }) {
-    return _then(
-      _$DetailsResponseImpl(
-        freezed == code
-            ? _value.code
-            : code // ignore: cast_nullable_to_non_nullable
-                as int?,
-        freezed == data
-            ? _value.data
-            : data // ignore: cast_nullable_to_non_nullable
-                as DetailsData?,
-        freezed == message
-            ? _value.message
-            : message // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == status
-            ? _value.status
-            : status // ignore: cast_nullable_to_non_nullable
-                as int?,
-        freezed == success
-            ? _value.success
-            : success // ignore: cast_nullable_to_non_nullable
-                as bool?,
-      ),
-    );
+    return _then(_$DetailsResponseImpl(
+      freezed == code
+          ? _value.code
+          : code // ignore: cast_nullable_to_non_nullable
+              as int?,
+      freezed == data
+          ? _value.data
+          : data // ignore: cast_nullable_to_non_nullable
+              as DetailsData?,
+      freezed == message
+          ? _value.message
+          : message // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == status
+          ? _value.status
+          : status // ignore: cast_nullable_to_non_nullable
+              as int?,
+      freezed == success
+          ? _value.success
+          : success // ignore: cast_nullable_to_non_nullable
+              as bool?,
+    ));
   }
 }
 
@@ -196,12 +180,7 @@ class __$$DetailsResponseImplCopyWithImpl<$Res>
 @JsonSerializable(explicitToJson: true, fieldRename: FieldRename.snake)
 class _$DetailsResponseImpl implements _DetailsResponse {
   const _$DetailsResponseImpl(
-    this.code,
-    this.data,
-    this.message,
-    this.status,
-    this.success,
-  );
+      this.code, this.data, this.message, this.status, this.success);
 
   factory _$DetailsResponseImpl.fromJson(Map<String, dynamic> json) =>
       _$$DetailsResponseImplFromJson(json);
@@ -246,24 +225,23 @@ class _$DetailsResponseImpl implements _DetailsResponse {
   @pragma('vm:prefer-inline')
   _$$DetailsResponseImplCopyWith<_$DetailsResponseImpl> get copyWith =>
       __$$DetailsResponseImplCopyWithImpl<_$DetailsResponseImpl>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$DetailsResponseImplToJson(this);
+    return _$$DetailsResponseImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _DetailsResponse implements DetailsResponse {
   const factory _DetailsResponse(
-    final int? code,
-    final DetailsData? data,
-    final String? message,
-    final int? status,
-    final bool? success,
-  ) = _$DetailsResponseImpl;
+      final int? code,
+      final DetailsData? data,
+      final String? message,
+      final int? status,
+      final bool? success) = _$DetailsResponseImpl;
 
   factory _DetailsResponse.fromJson(Map<String, dynamic> json) =
       _$DetailsResponseImpl.fromJson;
@@ -308,9 +286,8 @@ mixin _$DetailsData {
 /// @nodoc
 abstract class $DetailsDataCopyWith<$Res> {
   factory $DetailsDataCopyWith(
-    DetailsData value,
-    $Res Function(DetailsData) then,
-  ) = _$DetailsDataCopyWithImpl<$Res, DetailsData>;
+          DetailsData value, $Res Function(DetailsData) then) =
+      _$DetailsDataCopyWithImpl<$Res, DetailsData>;
   @useResult
   $Res call({DetailsElement? data});
 
@@ -331,17 +308,15 @@ class _$DetailsDataCopyWithImpl<$Res, $Val extends DetailsData>
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? data = freezed}) {
-    return _then(
-      _value.copyWith(
-            data:
-                freezed == data
-                    ? _value.data
-                    : data // ignore: cast_nullable_to_non_nullable
-                        as DetailsElement?,
-          )
-          as $Val,
-    );
+  $Res call({
+    Object? data = freezed,
+  }) {
+    return _then(_value.copyWith(
+      data: freezed == data
+          ? _value.data
+          : data // ignore: cast_nullable_to_non_nullable
+              as DetailsElement?,
+    ) as $Val);
   }
 
   /// Create a copy of DetailsData
@@ -363,9 +338,8 @@ class _$DetailsDataCopyWithImpl<$Res, $Val extends DetailsData>
 abstract class _$$DetailsDataImplCopyWith<$Res>
     implements $DetailsDataCopyWith<$Res> {
   factory _$$DetailsDataImplCopyWith(
-    _$DetailsDataImpl value,
-    $Res Function(_$DetailsDataImpl) then,
-  ) = __$$DetailsDataImplCopyWithImpl<$Res>;
+          _$DetailsDataImpl value, $Res Function(_$DetailsDataImpl) then) =
+      __$$DetailsDataImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({DetailsElement? data});
@@ -379,23 +353,22 @@ class __$$DetailsDataImplCopyWithImpl<$Res>
     extends _$DetailsDataCopyWithImpl<$Res, _$DetailsDataImpl>
     implements _$$DetailsDataImplCopyWith<$Res> {
   __$$DetailsDataImplCopyWithImpl(
-    _$DetailsDataImpl _value,
-    $Res Function(_$DetailsDataImpl) _then,
-  ) : super(_value, _then);
+      _$DetailsDataImpl _value, $Res Function(_$DetailsDataImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of DetailsData
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? data = freezed}) {
-    return _then(
-      _$DetailsDataImpl(
-        freezed == data
-            ? _value.data
-            : data // ignore: cast_nullable_to_non_nullable
-                as DetailsElement?,
-      ),
-    );
+  $Res call({
+    Object? data = freezed,
+  }) {
+    return _then(_$DetailsDataImpl(
+      freezed == data
+          ? _value.data
+          : data // ignore: cast_nullable_to_non_nullable
+              as DetailsElement?,
+    ));
   }
 }
 
@@ -438,7 +411,9 @@ class _$DetailsDataImpl implements _DetailsData {
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$DetailsDataImplToJson(this);
+    return _$$DetailsDataImplToJson(
+      this,
+    );
   }
 }
 
@@ -507,37 +482,35 @@ mixin _$DetailsElement {
 /// @nodoc
 abstract class $DetailsElementCopyWith<$Res> {
   factory $DetailsElementCopyWith(
-    DetailsElement value,
-    $Res Function(DetailsElement) then,
-  ) = _$DetailsElementCopyWithImpl<$Res, DetailsElement>;
+          DetailsElement value, $Res Function(DetailsElement) then) =
+      _$DetailsElementCopyWithImpl<$Res, DetailsElement>;
   @useResult
-  $Res call({
-    String? availability,
-    int? benefit,
-    String? brand,
-    List<DetailsBreadcrumbs>? breadcrumbs,
-    String? code,
-    String? guarantee,
-    int? id,
-    int? installmentPrice,
-    int? isCanLoanOrder,
-    List<String>? largeImages,
-    int? loanPrice,
-    List<DetailsMainCharacters>? mainCharacters,
-    DetailsMinimalLoanPrice? minimalLoanPrice,
-    dynamic? model,
-    String? name,
-    List<dynamic>? offersByCharacter,
-    List<dynamic>? offersByImage,
-    dynamic? oldPrice,
-    dynamic? promotion0012Price,
-    int? reviewsCount,
-    int? reviewsMiddleRating,
-    List<dynamic>? saleMonths,
-    int? salePrice,
-    List<String>? smallImages,
-    List<dynamic>? stickers,
-  });
+  $Res call(
+      {String? availability,
+      int? benefit,
+      String? brand,
+      List<DetailsBreadcrumbs>? breadcrumbs,
+      String? code,
+      String? guarantee,
+      int? id,
+      int? installmentPrice,
+      int? isCanLoanOrder,
+      List<String>? largeImages,
+      int? loanPrice,
+      List<DetailsMainCharacters>? mainCharacters,
+      DetailsMinimalLoanPrice? minimalLoanPrice,
+      dynamic? model,
+      String? name,
+      List<dynamic>? offersByCharacter,
+      List<dynamic>? offersByImage,
+      dynamic? oldPrice,
+      dynamic? promotion0012Price,
+      int? reviewsCount,
+      int? reviewsMiddleRating,
+      List<dynamic>? saleMonths,
+      int? salePrice,
+      List<String>? smallImages,
+      List<dynamic>? stickers});
 
   $DetailsMinimalLoanPriceCopyWith<$Res>? get minimalLoanPrice;
 }
@@ -583,136 +556,108 @@ class _$DetailsElementCopyWithImpl<$Res, $Val extends DetailsElement>
     Object? smallImages = freezed,
     Object? stickers = freezed,
   }) {
-    return _then(
-      _value.copyWith(
-            availability:
-                freezed == availability
-                    ? _value.availability
-                    : availability // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            benefit:
-                freezed == benefit
-                    ? _value.benefit
-                    : benefit // ignore: cast_nullable_to_non_nullable
-                        as int?,
-            brand:
-                freezed == brand
-                    ? _value.brand
-                    : brand // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            breadcrumbs:
-                freezed == breadcrumbs
-                    ? _value.breadcrumbs
-                    : breadcrumbs // ignore: cast_nullable_to_non_nullable
-                        as List<DetailsBreadcrumbs>?,
-            code:
-                freezed == code
-                    ? _value.code
-                    : code // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            guarantee:
-                freezed == guarantee
-                    ? _value.guarantee
-                    : guarantee // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            id:
-                freezed == id
-                    ? _value.id
-                    : id // ignore: cast_nullable_to_non_nullable
-                        as int?,
-            installmentPrice:
-                freezed == installmentPrice
-                    ? _value.installmentPrice
-                    : installmentPrice // ignore: cast_nullable_to_non_nullable
-                        as int?,
-            isCanLoanOrder:
-                freezed == isCanLoanOrder
-                    ? _value.isCanLoanOrder
-                    : isCanLoanOrder // ignore: cast_nullable_to_non_nullable
-                        as int?,
-            largeImages:
-                freezed == largeImages
-                    ? _value.largeImages
-                    : largeImages // ignore: cast_nullable_to_non_nullable
-                        as List<String>?,
-            loanPrice:
-                freezed == loanPrice
-                    ? _value.loanPrice
-                    : loanPrice // ignore: cast_nullable_to_non_nullable
-                        as int?,
-            mainCharacters:
-                freezed == mainCharacters
-                    ? _value.mainCharacters
-                    : mainCharacters // ignore: cast_nullable_to_non_nullable
-                        as List<DetailsMainCharacters>?,
-            minimalLoanPrice:
-                freezed == minimalLoanPrice
-                    ? _value.minimalLoanPrice
-                    : minimalLoanPrice // ignore: cast_nullable_to_non_nullable
-                        as DetailsMinimalLoanPrice?,
-            model:
-                freezed == model
-                    ? _value.model
-                    : model // ignore: cast_nullable_to_non_nullable
-                        as dynamic?,
-            name:
-                freezed == name
-                    ? _value.name
-                    : name // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            offersByCharacter:
-                freezed == offersByCharacter
-                    ? _value.offersByCharacter
-                    : offersByCharacter // ignore: cast_nullable_to_non_nullable
-                        as List<dynamic>?,
-            offersByImage:
-                freezed == offersByImage
-                    ? _value.offersByImage
-                    : offersByImage // ignore: cast_nullable_to_non_nullable
-                        as List<dynamic>?,
-            oldPrice:
-                freezed == oldPrice
-                    ? _value.oldPrice
-                    : oldPrice // ignore: cast_nullable_to_non_nullable
-                        as dynamic?,
-            promotion0012Price:
-                freezed == promotion0012Price
-                    ? _value.promotion0012Price
-                    : promotion0012Price // ignore: cast_nullable_to_non_nullable
-                        as dynamic?,
-            reviewsCount:
-                freezed == reviewsCount
-                    ? _value.reviewsCount
-                    : reviewsCount // ignore: cast_nullable_to_non_nullable
-                        as int?,
-            reviewsMiddleRating:
-                freezed == reviewsMiddleRating
-                    ? _value.reviewsMiddleRating
-                    : reviewsMiddleRating // ignore: cast_nullable_to_non_nullable
-                        as int?,
-            saleMonths:
-                freezed == saleMonths
-                    ? _value.saleMonths
-                    : saleMonths // ignore: cast_nullable_to_non_nullable
-                        as List<dynamic>?,
-            salePrice:
-                freezed == salePrice
-                    ? _value.salePrice
-                    : salePrice // ignore: cast_nullable_to_non_nullable
-                        as int?,
-            smallImages:
-                freezed == smallImages
-                    ? _value.smallImages
-                    : smallImages // ignore: cast_nullable_to_non_nullable
-                        as List<String>?,
-            stickers:
-                freezed == stickers
-                    ? _value.stickers
-                    : stickers // ignore: cast_nullable_to_non_nullable
-                        as List<dynamic>?,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      availability: freezed == availability
+          ? _value.availability
+          : availability // ignore: cast_nullable_to_non_nullable
+              as String?,
+      benefit: freezed == benefit
+          ? _value.benefit
+          : benefit // ignore: cast_nullable_to_non_nullable
+              as int?,
+      brand: freezed == brand
+          ? _value.brand
+          : brand // ignore: cast_nullable_to_non_nullable
+              as String?,
+      breadcrumbs: freezed == breadcrumbs
+          ? _value.breadcrumbs
+          : breadcrumbs // ignore: cast_nullable_to_non_nullable
+              as List<DetailsBreadcrumbs>?,
+      code: freezed == code
+          ? _value.code
+          : code // ignore: cast_nullable_to_non_nullable
+              as String?,
+      guarantee: freezed == guarantee
+          ? _value.guarantee
+          : guarantee // ignore: cast_nullable_to_non_nullable
+              as String?,
+      id: freezed == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int?,
+      installmentPrice: freezed == installmentPrice
+          ? _value.installmentPrice
+          : installmentPrice // ignore: cast_nullable_to_non_nullable
+              as int?,
+      isCanLoanOrder: freezed == isCanLoanOrder
+          ? _value.isCanLoanOrder
+          : isCanLoanOrder // ignore: cast_nullable_to_non_nullable
+              as int?,
+      largeImages: freezed == largeImages
+          ? _value.largeImages
+          : largeImages // ignore: cast_nullable_to_non_nullable
+              as List<String>?,
+      loanPrice: freezed == loanPrice
+          ? _value.loanPrice
+          : loanPrice // ignore: cast_nullable_to_non_nullable
+              as int?,
+      mainCharacters: freezed == mainCharacters
+          ? _value.mainCharacters
+          : mainCharacters // ignore: cast_nullable_to_non_nullable
+              as List<DetailsMainCharacters>?,
+      minimalLoanPrice: freezed == minimalLoanPrice
+          ? _value.minimalLoanPrice
+          : minimalLoanPrice // ignore: cast_nullable_to_non_nullable
+              as DetailsMinimalLoanPrice?,
+      model: freezed == model
+          ? _value.model
+          : model // ignore: cast_nullable_to_non_nullable
+              as dynamic?,
+      name: freezed == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String?,
+      offersByCharacter: freezed == offersByCharacter
+          ? _value.offersByCharacter
+          : offersByCharacter // ignore: cast_nullable_to_non_nullable
+              as List<dynamic>?,
+      offersByImage: freezed == offersByImage
+          ? _value.offersByImage
+          : offersByImage // ignore: cast_nullable_to_non_nullable
+              as List<dynamic>?,
+      oldPrice: freezed == oldPrice
+          ? _value.oldPrice
+          : oldPrice // ignore: cast_nullable_to_non_nullable
+              as dynamic?,
+      promotion0012Price: freezed == promotion0012Price
+          ? _value.promotion0012Price
+          : promotion0012Price // ignore: cast_nullable_to_non_nullable
+              as dynamic?,
+      reviewsCount: freezed == reviewsCount
+          ? _value.reviewsCount
+          : reviewsCount // ignore: cast_nullable_to_non_nullable
+              as int?,
+      reviewsMiddleRating: freezed == reviewsMiddleRating
+          ? _value.reviewsMiddleRating
+          : reviewsMiddleRating // ignore: cast_nullable_to_non_nullable
+              as int?,
+      saleMonths: freezed == saleMonths
+          ? _value.saleMonths
+          : saleMonths // ignore: cast_nullable_to_non_nullable
+              as List<dynamic>?,
+      salePrice: freezed == salePrice
+          ? _value.salePrice
+          : salePrice // ignore: cast_nullable_to_non_nullable
+              as int?,
+      smallImages: freezed == smallImages
+          ? _value.smallImages
+          : smallImages // ignore: cast_nullable_to_non_nullable
+              as List<String>?,
+      stickers: freezed == stickers
+          ? _value.stickers
+          : stickers // ignore: cast_nullable_to_non_nullable
+              as List<dynamic>?,
+    ) as $Val);
   }
 
   /// Create a copy of DetailsElement
@@ -724,9 +669,8 @@ class _$DetailsElementCopyWithImpl<$Res, $Val extends DetailsElement>
       return null;
     }
 
-    return $DetailsMinimalLoanPriceCopyWith<$Res>(_value.minimalLoanPrice!, (
-      value,
-    ) {
+    return $DetailsMinimalLoanPriceCopyWith<$Res>(_value.minimalLoanPrice!,
+        (value) {
       return _then(_value.copyWith(minimalLoanPrice: value) as $Val);
     });
   }
@@ -735,39 +679,37 @@ class _$DetailsElementCopyWithImpl<$Res, $Val extends DetailsElement>
 /// @nodoc
 abstract class _$$DetailsElementImplCopyWith<$Res>
     implements $DetailsElementCopyWith<$Res> {
-  factory _$$DetailsElementImplCopyWith(
-    _$DetailsElementImpl value,
-    $Res Function(_$DetailsElementImpl) then,
-  ) = __$$DetailsElementImplCopyWithImpl<$Res>;
+  factory _$$DetailsElementImplCopyWith(_$DetailsElementImpl value,
+          $Res Function(_$DetailsElementImpl) then) =
+      __$$DetailsElementImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    String? availability,
-    int? benefit,
-    String? brand,
-    List<DetailsBreadcrumbs>? breadcrumbs,
-    String? code,
-    String? guarantee,
-    int? id,
-    int? installmentPrice,
-    int? isCanLoanOrder,
-    List<String>? largeImages,
-    int? loanPrice,
-    List<DetailsMainCharacters>? mainCharacters,
-    DetailsMinimalLoanPrice? minimalLoanPrice,
-    dynamic? model,
-    String? name,
-    List<dynamic>? offersByCharacter,
-    List<dynamic>? offersByImage,
-    dynamic? oldPrice,
-    dynamic? promotion0012Price,
-    int? reviewsCount,
-    int? reviewsMiddleRating,
-    List<dynamic>? saleMonths,
-    int? salePrice,
-    List<String>? smallImages,
-    List<dynamic>? stickers,
-  });
+  $Res call(
+      {String? availability,
+      int? benefit,
+      String? brand,
+      List<DetailsBreadcrumbs>? breadcrumbs,
+      String? code,
+      String? guarantee,
+      int? id,
+      int? installmentPrice,
+      int? isCanLoanOrder,
+      List<String>? largeImages,
+      int? loanPrice,
+      List<DetailsMainCharacters>? mainCharacters,
+      DetailsMinimalLoanPrice? minimalLoanPrice,
+      dynamic? model,
+      String? name,
+      List<dynamic>? offersByCharacter,
+      List<dynamic>? offersByImage,
+      dynamic? oldPrice,
+      dynamic? promotion0012Price,
+      int? reviewsCount,
+      int? reviewsMiddleRating,
+      List<dynamic>? saleMonths,
+      int? salePrice,
+      List<String>? smallImages,
+      List<dynamic>? stickers});
 
   @override
   $DetailsMinimalLoanPriceCopyWith<$Res>? get minimalLoanPrice;
@@ -778,9 +720,8 @@ class __$$DetailsElementImplCopyWithImpl<$Res>
     extends _$DetailsElementCopyWithImpl<$Res, _$DetailsElementImpl>
     implements _$$DetailsElementImplCopyWith<$Res> {
   __$$DetailsElementImplCopyWithImpl(
-    _$DetailsElementImpl _value,
-    $Res Function(_$DetailsElementImpl) _then,
-  ) : super(_value, _then);
+      _$DetailsElementImpl _value, $Res Function(_$DetailsElementImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of DetailsElement
   /// with the given fields replaced by the non-null parameter values.
@@ -813,110 +754,108 @@ class __$$DetailsElementImplCopyWithImpl<$Res>
     Object? smallImages = freezed,
     Object? stickers = freezed,
   }) {
-    return _then(
-      _$DetailsElementImpl(
-        freezed == availability
-            ? _value.availability
-            : availability // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == benefit
-            ? _value.benefit
-            : benefit // ignore: cast_nullable_to_non_nullable
-                as int?,
-        freezed == brand
-            ? _value.brand
-            : brand // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == breadcrumbs
-            ? _value._breadcrumbs
-            : breadcrumbs // ignore: cast_nullable_to_non_nullable
-                as List<DetailsBreadcrumbs>?,
-        freezed == code
-            ? _value.code
-            : code // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == guarantee
-            ? _value.guarantee
-            : guarantee // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == id
-            ? _value.id
-            : id // ignore: cast_nullable_to_non_nullable
-                as int?,
-        freezed == installmentPrice
-            ? _value.installmentPrice
-            : installmentPrice // ignore: cast_nullable_to_non_nullable
-                as int?,
-        freezed == isCanLoanOrder
-            ? _value.isCanLoanOrder
-            : isCanLoanOrder // ignore: cast_nullable_to_non_nullable
-                as int?,
-        freezed == largeImages
-            ? _value._largeImages
-            : largeImages // ignore: cast_nullable_to_non_nullable
-                as List<String>?,
-        freezed == loanPrice
-            ? _value.loanPrice
-            : loanPrice // ignore: cast_nullable_to_non_nullable
-                as int?,
-        freezed == mainCharacters
-            ? _value._mainCharacters
-            : mainCharacters // ignore: cast_nullable_to_non_nullable
-                as List<DetailsMainCharacters>?,
-        freezed == minimalLoanPrice
-            ? _value.minimalLoanPrice
-            : minimalLoanPrice // ignore: cast_nullable_to_non_nullable
-                as DetailsMinimalLoanPrice?,
-        freezed == model
-            ? _value.model
-            : model // ignore: cast_nullable_to_non_nullable
-                as dynamic?,
-        freezed == name
-            ? _value.name
-            : name // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == offersByCharacter
-            ? _value._offersByCharacter
-            : offersByCharacter // ignore: cast_nullable_to_non_nullable
-                as List<dynamic>?,
-        freezed == offersByImage
-            ? _value._offersByImage
-            : offersByImage // ignore: cast_nullable_to_non_nullable
-                as List<dynamic>?,
-        freezed == oldPrice
-            ? _value.oldPrice
-            : oldPrice // ignore: cast_nullable_to_non_nullable
-                as dynamic?,
-        freezed == promotion0012Price
-            ? _value.promotion0012Price
-            : promotion0012Price // ignore: cast_nullable_to_non_nullable
-                as dynamic?,
-        freezed == reviewsCount
-            ? _value.reviewsCount
-            : reviewsCount // ignore: cast_nullable_to_non_nullable
-                as int?,
-        freezed == reviewsMiddleRating
-            ? _value.reviewsMiddleRating
-            : reviewsMiddleRating // ignore: cast_nullable_to_non_nullable
-                as int?,
-        freezed == saleMonths
-            ? _value._saleMonths
-            : saleMonths // ignore: cast_nullable_to_non_nullable
-                as List<dynamic>?,
-        freezed == salePrice
-            ? _value.salePrice
-            : salePrice // ignore: cast_nullable_to_non_nullable
-                as int?,
-        freezed == smallImages
-            ? _value._smallImages
-            : smallImages // ignore: cast_nullable_to_non_nullable
-                as List<String>?,
-        freezed == stickers
-            ? _value._stickers
-            : stickers // ignore: cast_nullable_to_non_nullable
-                as List<dynamic>?,
-      ),
-    );
+    return _then(_$DetailsElementImpl(
+      freezed == availability
+          ? _value.availability
+          : availability // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == benefit
+          ? _value.benefit
+          : benefit // ignore: cast_nullable_to_non_nullable
+              as int?,
+      freezed == brand
+          ? _value.brand
+          : brand // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == breadcrumbs
+          ? _value._breadcrumbs
+          : breadcrumbs // ignore: cast_nullable_to_non_nullable
+              as List<DetailsBreadcrumbs>?,
+      freezed == code
+          ? _value.code
+          : code // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == guarantee
+          ? _value.guarantee
+          : guarantee // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int?,
+      freezed == installmentPrice
+          ? _value.installmentPrice
+          : installmentPrice // ignore: cast_nullable_to_non_nullable
+              as int?,
+      freezed == isCanLoanOrder
+          ? _value.isCanLoanOrder
+          : isCanLoanOrder // ignore: cast_nullable_to_non_nullable
+              as int?,
+      freezed == largeImages
+          ? _value._largeImages
+          : largeImages // ignore: cast_nullable_to_non_nullable
+              as List<String>?,
+      freezed == loanPrice
+          ? _value.loanPrice
+          : loanPrice // ignore: cast_nullable_to_non_nullable
+              as int?,
+      freezed == mainCharacters
+          ? _value._mainCharacters
+          : mainCharacters // ignore: cast_nullable_to_non_nullable
+              as List<DetailsMainCharacters>?,
+      freezed == minimalLoanPrice
+          ? _value.minimalLoanPrice
+          : minimalLoanPrice // ignore: cast_nullable_to_non_nullable
+              as DetailsMinimalLoanPrice?,
+      freezed == model
+          ? _value.model
+          : model // ignore: cast_nullable_to_non_nullable
+              as dynamic?,
+      freezed == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == offersByCharacter
+          ? _value._offersByCharacter
+          : offersByCharacter // ignore: cast_nullable_to_non_nullable
+              as List<dynamic>?,
+      freezed == offersByImage
+          ? _value._offersByImage
+          : offersByImage // ignore: cast_nullable_to_non_nullable
+              as List<dynamic>?,
+      freezed == oldPrice
+          ? _value.oldPrice
+          : oldPrice // ignore: cast_nullable_to_non_nullable
+              as dynamic?,
+      freezed == promotion0012Price
+          ? _value.promotion0012Price
+          : promotion0012Price // ignore: cast_nullable_to_non_nullable
+              as dynamic?,
+      freezed == reviewsCount
+          ? _value.reviewsCount
+          : reviewsCount // ignore: cast_nullable_to_non_nullable
+              as int?,
+      freezed == reviewsMiddleRating
+          ? _value.reviewsMiddleRating
+          : reviewsMiddleRating // ignore: cast_nullable_to_non_nullable
+              as int?,
+      freezed == saleMonths
+          ? _value._saleMonths
+          : saleMonths // ignore: cast_nullable_to_non_nullable
+              as List<dynamic>?,
+      freezed == salePrice
+          ? _value.salePrice
+          : salePrice // ignore: cast_nullable_to_non_nullable
+              as int?,
+      freezed == smallImages
+          ? _value._smallImages
+          : smallImages // ignore: cast_nullable_to_non_nullable
+              as List<String>?,
+      freezed == stickers
+          ? _value._stickers
+          : stickers // ignore: cast_nullable_to_non_nullable
+              as List<dynamic>?,
+    ));
   }
 }
 
@@ -925,39 +864,39 @@ class __$$DetailsElementImplCopyWithImpl<$Res>
 @JsonSerializable(explicitToJson: true, fieldRename: FieldRename.snake)
 class _$DetailsElementImpl implements _DetailsElement {
   const _$DetailsElementImpl(
-    this.availability,
-    this.benefit,
-    this.brand,
-    final List<DetailsBreadcrumbs>? breadcrumbs,
-    this.code,
-    this.guarantee,
-    this.id,
-    this.installmentPrice,
-    this.isCanLoanOrder,
-    final List<String>? largeImages,
-    this.loanPrice,
-    final List<DetailsMainCharacters>? mainCharacters,
-    this.minimalLoanPrice,
-    this.model,
-    this.name,
-    final List<dynamic>? offersByCharacter,
-    final List<dynamic>? offersByImage,
-    this.oldPrice,
-    this.promotion0012Price,
-    this.reviewsCount,
-    this.reviewsMiddleRating,
-    final List<dynamic>? saleMonths,
-    this.salePrice,
-    final List<String>? smallImages,
-    final List<dynamic>? stickers,
-  ) : _breadcrumbs = breadcrumbs,
-      _largeImages = largeImages,
-      _mainCharacters = mainCharacters,
-      _offersByCharacter = offersByCharacter,
-      _offersByImage = offersByImage,
-      _saleMonths = saleMonths,
-      _smallImages = smallImages,
-      _stickers = stickers;
+      this.availability,
+      this.benefit,
+      this.brand,
+      final List<DetailsBreadcrumbs>? breadcrumbs,
+      this.code,
+      this.guarantee,
+      this.id,
+      this.installmentPrice,
+      this.isCanLoanOrder,
+      final List<String>? largeImages,
+      this.loanPrice,
+      final List<DetailsMainCharacters>? mainCharacters,
+      this.minimalLoanPrice,
+      this.model,
+      this.name,
+      final List<dynamic>? offersByCharacter,
+      final List<dynamic>? offersByImage,
+      this.oldPrice,
+      this.promotion0012Price,
+      this.reviewsCount,
+      this.reviewsMiddleRating,
+      final List<dynamic>? saleMonths,
+      this.salePrice,
+      final List<String>? smallImages,
+      final List<dynamic>? stickers)
+      : _breadcrumbs = breadcrumbs,
+        _largeImages = largeImages,
+        _mainCharacters = mainCharacters,
+        _offersByCharacter = offersByCharacter,
+        _offersByImage = offersByImage,
+        _saleMonths = saleMonths,
+        _smallImages = smallImages,
+        _stickers = stickers;
 
   factory _$DetailsElementImpl.fromJson(Map<String, dynamic> json) =>
       _$$DetailsElementImplFromJson(json);
@@ -1091,10 +1030,8 @@ class _$DetailsElementImpl implements _DetailsElement {
                 other.availability == availability) &&
             (identical(other.benefit, benefit) || other.benefit == benefit) &&
             (identical(other.brand, brand) || other.brand == brand) &&
-            const DeepCollectionEquality().equals(
-              other._breadcrumbs,
-              _breadcrumbs,
-            ) &&
+            const DeepCollectionEquality()
+                .equals(other._breadcrumbs, _breadcrumbs) &&
             (identical(other.code, code) || other.code == code) &&
             (identical(other.guarantee, guarantee) ||
                 other.guarantee == guarantee) &&
@@ -1103,80 +1040,66 @@ class _$DetailsElementImpl implements _DetailsElement {
                 other.installmentPrice == installmentPrice) &&
             (identical(other.isCanLoanOrder, isCanLoanOrder) ||
                 other.isCanLoanOrder == isCanLoanOrder) &&
-            const DeepCollectionEquality().equals(
-              other._largeImages,
-              _largeImages,
-            ) &&
+            const DeepCollectionEquality()
+                .equals(other._largeImages, _largeImages) &&
             (identical(other.loanPrice, loanPrice) ||
                 other.loanPrice == loanPrice) &&
-            const DeepCollectionEquality().equals(
-              other._mainCharacters,
-              _mainCharacters,
-            ) &&
+            const DeepCollectionEquality()
+                .equals(other._mainCharacters, _mainCharacters) &&
             (identical(other.minimalLoanPrice, minimalLoanPrice) ||
                 other.minimalLoanPrice == minimalLoanPrice) &&
             const DeepCollectionEquality().equals(other.model, model) &&
             (identical(other.name, name) || other.name == name) &&
-            const DeepCollectionEquality().equals(
-              other._offersByCharacter,
-              _offersByCharacter,
-            ) &&
-            const DeepCollectionEquality().equals(
-              other._offersByImage,
-              _offersByImage,
-            ) &&
+            const DeepCollectionEquality()
+                .equals(other._offersByCharacter, _offersByCharacter) &&
+            const DeepCollectionEquality()
+                .equals(other._offersByImage, _offersByImage) &&
             const DeepCollectionEquality().equals(other.oldPrice, oldPrice) &&
-            const DeepCollectionEquality().equals(
-              other.promotion0012Price,
-              promotion0012Price,
-            ) &&
+            const DeepCollectionEquality()
+                .equals(other.promotion0012Price, promotion0012Price) &&
             (identical(other.reviewsCount, reviewsCount) ||
                 other.reviewsCount == reviewsCount) &&
             (identical(other.reviewsMiddleRating, reviewsMiddleRating) ||
                 other.reviewsMiddleRating == reviewsMiddleRating) &&
-            const DeepCollectionEquality().equals(
-              other._saleMonths,
-              _saleMonths,
-            ) &&
+            const DeepCollectionEquality()
+                .equals(other._saleMonths, _saleMonths) &&
             (identical(other.salePrice, salePrice) ||
                 other.salePrice == salePrice) &&
-            const DeepCollectionEquality().equals(
-              other._smallImages,
-              _smallImages,
-            ) &&
+            const DeepCollectionEquality()
+                .equals(other._smallImages, _smallImages) &&
             const DeepCollectionEquality().equals(other._stickers, _stickers));
   }
 
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hashAll([
-    runtimeType,
-    availability,
-    benefit,
-    brand,
-    const DeepCollectionEquality().hash(_breadcrumbs),
-    code,
-    guarantee,
-    id,
-    installmentPrice,
-    isCanLoanOrder,
-    const DeepCollectionEquality().hash(_largeImages),
-    loanPrice,
-    const DeepCollectionEquality().hash(_mainCharacters),
-    minimalLoanPrice,
-    const DeepCollectionEquality().hash(model),
-    name,
-    const DeepCollectionEquality().hash(_offersByCharacter),
-    const DeepCollectionEquality().hash(_offersByImage),
-    const DeepCollectionEquality().hash(oldPrice),
-    const DeepCollectionEquality().hash(promotion0012Price),
-    reviewsCount,
-    reviewsMiddleRating,
-    const DeepCollectionEquality().hash(_saleMonths),
-    salePrice,
-    const DeepCollectionEquality().hash(_smallImages),
-    const DeepCollectionEquality().hash(_stickers),
-  ]);
+        runtimeType,
+        availability,
+        benefit,
+        brand,
+        const DeepCollectionEquality().hash(_breadcrumbs),
+        code,
+        guarantee,
+        id,
+        installmentPrice,
+        isCanLoanOrder,
+        const DeepCollectionEquality().hash(_largeImages),
+        loanPrice,
+        const DeepCollectionEquality().hash(_mainCharacters),
+        minimalLoanPrice,
+        const DeepCollectionEquality().hash(model),
+        name,
+        const DeepCollectionEquality().hash(_offersByCharacter),
+        const DeepCollectionEquality().hash(_offersByImage),
+        const DeepCollectionEquality().hash(oldPrice),
+        const DeepCollectionEquality().hash(promotion0012Price),
+        reviewsCount,
+        reviewsMiddleRating,
+        const DeepCollectionEquality().hash(_saleMonths),
+        salePrice,
+        const DeepCollectionEquality().hash(_smallImages),
+        const DeepCollectionEquality().hash(_stickers)
+      ]);
 
   /// Create a copy of DetailsElement
   /// with the given fields replaced by the non-null parameter values.
@@ -1185,44 +1108,43 @@ class _$DetailsElementImpl implements _DetailsElement {
   @pragma('vm:prefer-inline')
   _$$DetailsElementImplCopyWith<_$DetailsElementImpl> get copyWith =>
       __$$DetailsElementImplCopyWithImpl<_$DetailsElementImpl>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$DetailsElementImplToJson(this);
+    return _$$DetailsElementImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _DetailsElement implements DetailsElement {
   const factory _DetailsElement(
-    final String? availability,
-    final int? benefit,
-    final String? brand,
-    final List<DetailsBreadcrumbs>? breadcrumbs,
-    final String? code,
-    final String? guarantee,
-    final int? id,
-    final int? installmentPrice,
-    final int? isCanLoanOrder,
-    final List<String>? largeImages,
-    final int? loanPrice,
-    final List<DetailsMainCharacters>? mainCharacters,
-    final DetailsMinimalLoanPrice? minimalLoanPrice,
-    final dynamic? model,
-    final String? name,
-    final List<dynamic>? offersByCharacter,
-    final List<dynamic>? offersByImage,
-    final dynamic? oldPrice,
-    final dynamic? promotion0012Price,
-    final int? reviewsCount,
-    final int? reviewsMiddleRating,
-    final List<dynamic>? saleMonths,
-    final int? salePrice,
-    final List<String>? smallImages,
-    final List<dynamic>? stickers,
-  ) = _$DetailsElementImpl;
+      final String? availability,
+      final int? benefit,
+      final String? brand,
+      final List<DetailsBreadcrumbs>? breadcrumbs,
+      final String? code,
+      final String? guarantee,
+      final int? id,
+      final int? installmentPrice,
+      final int? isCanLoanOrder,
+      final List<String>? largeImages,
+      final int? loanPrice,
+      final List<DetailsMainCharacters>? mainCharacters,
+      final DetailsMinimalLoanPrice? minimalLoanPrice,
+      final dynamic? model,
+      final String? name,
+      final List<dynamic>? offersByCharacter,
+      final List<dynamic>? offersByImage,
+      final dynamic? oldPrice,
+      final dynamic? promotion0012Price,
+      final int? reviewsCount,
+      final int? reviewsMiddleRating,
+      final List<dynamic>? saleMonths,
+      final int? salePrice,
+      final List<String>? smallImages,
+      final List<dynamic>? stickers) = _$DetailsElementImpl;
 
   factory _DetailsElement.fromJson(Map<String, dynamic> json) =
       _$DetailsElementImpl.fromJson;
@@ -1308,9 +1230,8 @@ mixin _$DetailsBreadcrumbs {
 /// @nodoc
 abstract class $DetailsBreadcrumbsCopyWith<$Res> {
   factory $DetailsBreadcrumbsCopyWith(
-    DetailsBreadcrumbs value,
-    $Res Function(DetailsBreadcrumbs) then,
-  ) = _$DetailsBreadcrumbsCopyWithImpl<$Res, DetailsBreadcrumbs>;
+          DetailsBreadcrumbs value, $Res Function(DetailsBreadcrumbs) then) =
+      _$DetailsBreadcrumbsCopyWithImpl<$Res, DetailsBreadcrumbs>;
   @useResult
   $Res call({String? name, String? slug});
 }
@@ -1329,32 +1250,29 @@ class _$DetailsBreadcrumbsCopyWithImpl<$Res, $Val extends DetailsBreadcrumbs>
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? name = freezed, Object? slug = freezed}) {
-    return _then(
-      _value.copyWith(
-            name:
-                freezed == name
-                    ? _value.name
-                    : name // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            slug:
-                freezed == slug
-                    ? _value.slug
-                    : slug // ignore: cast_nullable_to_non_nullable
-                        as String?,
-          )
-          as $Val,
-    );
+  $Res call({
+    Object? name = freezed,
+    Object? slug = freezed,
+  }) {
+    return _then(_value.copyWith(
+      name: freezed == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String?,
+      slug: freezed == slug
+          ? _value.slug
+          : slug // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ) as $Val);
   }
 }
 
 /// @nodoc
 abstract class _$$DetailsBreadcrumbsImplCopyWith<$Res>
     implements $DetailsBreadcrumbsCopyWith<$Res> {
-  factory _$$DetailsBreadcrumbsImplCopyWith(
-    _$DetailsBreadcrumbsImpl value,
-    $Res Function(_$DetailsBreadcrumbsImpl) then,
-  ) = __$$DetailsBreadcrumbsImplCopyWithImpl<$Res>;
+  factory _$$DetailsBreadcrumbsImplCopyWith(_$DetailsBreadcrumbsImpl value,
+          $Res Function(_$DetailsBreadcrumbsImpl) then) =
+      __$$DetailsBreadcrumbsImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String? name, String? slug});
@@ -1364,28 +1282,28 @@ abstract class _$$DetailsBreadcrumbsImplCopyWith<$Res>
 class __$$DetailsBreadcrumbsImplCopyWithImpl<$Res>
     extends _$DetailsBreadcrumbsCopyWithImpl<$Res, _$DetailsBreadcrumbsImpl>
     implements _$$DetailsBreadcrumbsImplCopyWith<$Res> {
-  __$$DetailsBreadcrumbsImplCopyWithImpl(
-    _$DetailsBreadcrumbsImpl _value,
-    $Res Function(_$DetailsBreadcrumbsImpl) _then,
-  ) : super(_value, _then);
+  __$$DetailsBreadcrumbsImplCopyWithImpl(_$DetailsBreadcrumbsImpl _value,
+      $Res Function(_$DetailsBreadcrumbsImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of DetailsBreadcrumbs
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? name = freezed, Object? slug = freezed}) {
-    return _then(
-      _$DetailsBreadcrumbsImpl(
-        freezed == name
-            ? _value.name
-            : name // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == slug
-            ? _value.slug
-            : slug // ignore: cast_nullable_to_non_nullable
-                as String?,
-      ),
-    );
+  $Res call({
+    Object? name = freezed,
+    Object? slug = freezed,
+  }) {
+    return _then(_$DetailsBreadcrumbsImpl(
+      freezed == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == slug
+          ? _value.slug
+          : slug // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ));
   }
 }
 
@@ -1428,13 +1346,13 @@ class _$DetailsBreadcrumbsImpl implements _DetailsBreadcrumbs {
   @pragma('vm:prefer-inline')
   _$$DetailsBreadcrumbsImplCopyWith<_$DetailsBreadcrumbsImpl> get copyWith =>
       __$$DetailsBreadcrumbsImplCopyWithImpl<_$DetailsBreadcrumbsImpl>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$DetailsBreadcrumbsImplToJson(this);
+    return _$$DetailsBreadcrumbsImplToJson(
+      this,
+    );
   }
 }
 
@@ -1459,8 +1377,7 @@ abstract class _DetailsBreadcrumbs implements DetailsBreadcrumbs {
 }
 
 DetailsMainCharacters _$DetailsMainCharactersFromJson(
-  Map<String, dynamic> json,
-) {
+    Map<String, dynamic> json) {
   return _DetailsMainCharacters.fromJson(json);
 }
 
@@ -1481,19 +1398,16 @@ mixin _$DetailsMainCharacters {
 
 /// @nodoc
 abstract class $DetailsMainCharactersCopyWith<$Res> {
-  factory $DetailsMainCharactersCopyWith(
-    DetailsMainCharacters value,
-    $Res Function(DetailsMainCharacters) then,
-  ) = _$DetailsMainCharactersCopyWithImpl<$Res, DetailsMainCharacters>;
+  factory $DetailsMainCharactersCopyWith(DetailsMainCharacters value,
+          $Res Function(DetailsMainCharacters) then) =
+      _$DetailsMainCharactersCopyWithImpl<$Res, DetailsMainCharacters>;
   @useResult
   $Res call({String? name, String? value});
 }
 
 /// @nodoc
-class _$DetailsMainCharactersCopyWithImpl<
-  $Res,
-  $Val extends DetailsMainCharacters
->
+class _$DetailsMainCharactersCopyWithImpl<$Res,
+        $Val extends DetailsMainCharacters>
     implements $DetailsMainCharactersCopyWith<$Res> {
   _$DetailsMainCharactersCopyWithImpl(this._value, this._then);
 
@@ -1506,22 +1420,20 @@ class _$DetailsMainCharactersCopyWithImpl<
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? name = freezed, Object? value = freezed}) {
-    return _then(
-      _value.copyWith(
-            name:
-                freezed == name
-                    ? _value.name
-                    : name // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            value:
-                freezed == value
-                    ? _value.value
-                    : value // ignore: cast_nullable_to_non_nullable
-                        as String?,
-          )
-          as $Val,
-    );
+  $Res call({
+    Object? name = freezed,
+    Object? value = freezed,
+  }) {
+    return _then(_value.copyWith(
+      name: freezed == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String?,
+      value: freezed == value
+          ? _value.value
+          : value // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ) as $Val);
   }
 }
 
@@ -1529,9 +1441,9 @@ class _$DetailsMainCharactersCopyWithImpl<
 abstract class _$$DetailsMainCharactersImplCopyWith<$Res>
     implements $DetailsMainCharactersCopyWith<$Res> {
   factory _$$DetailsMainCharactersImplCopyWith(
-    _$DetailsMainCharactersImpl value,
-    $Res Function(_$DetailsMainCharactersImpl) then,
-  ) = __$$DetailsMainCharactersImplCopyWithImpl<$Res>;
+          _$DetailsMainCharactersImpl value,
+          $Res Function(_$DetailsMainCharactersImpl) then) =
+      __$$DetailsMainCharactersImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String? name, String? value});
@@ -1539,31 +1451,31 @@ abstract class _$$DetailsMainCharactersImplCopyWith<$Res>
 
 /// @nodoc
 class __$$DetailsMainCharactersImplCopyWithImpl<$Res>
-    extends
-        _$DetailsMainCharactersCopyWithImpl<$Res, _$DetailsMainCharactersImpl>
+    extends _$DetailsMainCharactersCopyWithImpl<$Res,
+        _$DetailsMainCharactersImpl>
     implements _$$DetailsMainCharactersImplCopyWith<$Res> {
-  __$$DetailsMainCharactersImplCopyWithImpl(
-    _$DetailsMainCharactersImpl _value,
-    $Res Function(_$DetailsMainCharactersImpl) _then,
-  ) : super(_value, _then);
+  __$$DetailsMainCharactersImplCopyWithImpl(_$DetailsMainCharactersImpl _value,
+      $Res Function(_$DetailsMainCharactersImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of DetailsMainCharacters
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? name = freezed, Object? value = freezed}) {
-    return _then(
-      _$DetailsMainCharactersImpl(
-        freezed == name
-            ? _value.name
-            : name // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == value
-            ? _value.value
-            : value // ignore: cast_nullable_to_non_nullable
-                as String?,
-      ),
-    );
+  $Res call({
+    Object? name = freezed,
+    Object? value = freezed,
+  }) {
+    return _then(_$DetailsMainCharactersImpl(
+      freezed == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == value
+          ? _value.value
+          : value // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ));
   }
 }
 
@@ -1605,23 +1517,20 @@ class _$DetailsMainCharactersImpl implements _DetailsMainCharacters {
   @override
   @pragma('vm:prefer-inline')
   _$$DetailsMainCharactersImplCopyWith<_$DetailsMainCharactersImpl>
-  get copyWith =>
-      __$$DetailsMainCharactersImplCopyWithImpl<_$DetailsMainCharactersImpl>(
-        this,
-        _$identity,
-      );
+      get copyWith => __$$DetailsMainCharactersImplCopyWithImpl<
+          _$DetailsMainCharactersImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$DetailsMainCharactersImplToJson(this);
+    return _$$DetailsMainCharactersImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _DetailsMainCharacters implements DetailsMainCharacters {
   const factory _DetailsMainCharacters(
-    final String? name,
-    final String? value,
-  ) = _$DetailsMainCharactersImpl;
+      final String? name, final String? value) = _$DetailsMainCharactersImpl;
 
   factory _DetailsMainCharacters.fromJson(Map<String, dynamic> json) =
       _$DetailsMainCharactersImpl.fromJson;
@@ -1636,12 +1545,11 @@ abstract class _DetailsMainCharacters implements DetailsMainCharacters {
   @override
   @JsonKey(includeFromJson: false, includeToJson: false)
   _$$DetailsMainCharactersImplCopyWith<_$DetailsMainCharactersImpl>
-  get copyWith => throw _privateConstructorUsedError;
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 DetailsMinimalLoanPrice _$DetailsMinimalLoanPriceFromJson(
-  Map<String, dynamic> json,
-) {
+    Map<String, dynamic> json) {
   return _DetailsMinimalLoanPrice.fromJson(json);
 }
 
@@ -1664,24 +1572,20 @@ mixin _$DetailsMinimalLoanPrice {
 
 /// @nodoc
 abstract class $DetailsMinimalLoanPriceCopyWith<$Res> {
-  factory $DetailsMinimalLoanPriceCopyWith(
-    DetailsMinimalLoanPrice value,
-    $Res Function(DetailsMinimalLoanPrice) then,
-  ) = _$DetailsMinimalLoanPriceCopyWithImpl<$Res, DetailsMinimalLoanPrice>;
+  factory $DetailsMinimalLoanPriceCopyWith(DetailsMinimalLoanPrice value,
+          $Res Function(DetailsMinimalLoanPrice) then) =
+      _$DetailsMinimalLoanPriceCopyWithImpl<$Res, DetailsMinimalLoanPrice>;
   @useResult
-  $Res call({
-    String? description,
-    String? minLoanType,
-    String? minMonthlyPrice,
-    int? monthNumber,
-  });
+  $Res call(
+      {String? description,
+      String? minLoanType,
+      String? minMonthlyPrice,
+      int? monthNumber});
 }
 
 /// @nodoc
-class _$DetailsMinimalLoanPriceCopyWithImpl<
-  $Res,
-  $Val extends DetailsMinimalLoanPrice
->
+class _$DetailsMinimalLoanPriceCopyWithImpl<$Res,
+        $Val extends DetailsMinimalLoanPrice>
     implements $DetailsMinimalLoanPriceCopyWith<$Res> {
   _$DetailsMinimalLoanPriceCopyWithImpl(this._value, this._then);
 
@@ -1700,31 +1604,24 @@ class _$DetailsMinimalLoanPriceCopyWithImpl<
     Object? minMonthlyPrice = freezed,
     Object? monthNumber = freezed,
   }) {
-    return _then(
-      _value.copyWith(
-            description:
-                freezed == description
-                    ? _value.description
-                    : description // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            minLoanType:
-                freezed == minLoanType
-                    ? _value.minLoanType
-                    : minLoanType // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            minMonthlyPrice:
-                freezed == minMonthlyPrice
-                    ? _value.minMonthlyPrice
-                    : minMonthlyPrice // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            monthNumber:
-                freezed == monthNumber
-                    ? _value.monthNumber
-                    : monthNumber // ignore: cast_nullable_to_non_nullable
-                        as int?,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      description: freezed == description
+          ? _value.description
+          : description // ignore: cast_nullable_to_non_nullable
+              as String?,
+      minLoanType: freezed == minLoanType
+          ? _value.minLoanType
+          : minLoanType // ignore: cast_nullable_to_non_nullable
+              as String?,
+      minMonthlyPrice: freezed == minMonthlyPrice
+          ? _value.minMonthlyPrice
+          : minMonthlyPrice // ignore: cast_nullable_to_non_nullable
+              as String?,
+      monthNumber: freezed == monthNumber
+          ? _value.monthNumber
+          : monthNumber // ignore: cast_nullable_to_non_nullable
+              as int?,
+    ) as $Val);
   }
 }
 
@@ -1732,31 +1629,27 @@ class _$DetailsMinimalLoanPriceCopyWithImpl<
 abstract class _$$DetailsMinimalLoanPriceImplCopyWith<$Res>
     implements $DetailsMinimalLoanPriceCopyWith<$Res> {
   factory _$$DetailsMinimalLoanPriceImplCopyWith(
-    _$DetailsMinimalLoanPriceImpl value,
-    $Res Function(_$DetailsMinimalLoanPriceImpl) then,
-  ) = __$$DetailsMinimalLoanPriceImplCopyWithImpl<$Res>;
+          _$DetailsMinimalLoanPriceImpl value,
+          $Res Function(_$DetailsMinimalLoanPriceImpl) then) =
+      __$$DetailsMinimalLoanPriceImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    String? description,
-    String? minLoanType,
-    String? minMonthlyPrice,
-    int? monthNumber,
-  });
+  $Res call(
+      {String? description,
+      String? minLoanType,
+      String? minMonthlyPrice,
+      int? monthNumber});
 }
 
 /// @nodoc
 class __$$DetailsMinimalLoanPriceImplCopyWithImpl<$Res>
-    extends
-        _$DetailsMinimalLoanPriceCopyWithImpl<
-          $Res,
-          _$DetailsMinimalLoanPriceImpl
-        >
+    extends _$DetailsMinimalLoanPriceCopyWithImpl<$Res,
+        _$DetailsMinimalLoanPriceImpl>
     implements _$$DetailsMinimalLoanPriceImplCopyWith<$Res> {
   __$$DetailsMinimalLoanPriceImplCopyWithImpl(
-    _$DetailsMinimalLoanPriceImpl _value,
-    $Res Function(_$DetailsMinimalLoanPriceImpl) _then,
-  ) : super(_value, _then);
+      _$DetailsMinimalLoanPriceImpl _value,
+      $Res Function(_$DetailsMinimalLoanPriceImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of DetailsMinimalLoanPrice
   /// with the given fields replaced by the non-null parameter values.
@@ -1768,26 +1661,24 @@ class __$$DetailsMinimalLoanPriceImplCopyWithImpl<$Res>
     Object? minMonthlyPrice = freezed,
     Object? monthNumber = freezed,
   }) {
-    return _then(
-      _$DetailsMinimalLoanPriceImpl(
-        freezed == description
-            ? _value.description
-            : description // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == minLoanType
-            ? _value.minLoanType
-            : minLoanType // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == minMonthlyPrice
-            ? _value.minMonthlyPrice
-            : minMonthlyPrice // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == monthNumber
-            ? _value.monthNumber
-            : monthNumber // ignore: cast_nullable_to_non_nullable
-                as int?,
-      ),
-    );
+    return _then(_$DetailsMinimalLoanPriceImpl(
+      freezed == description
+          ? _value.description
+          : description // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == minLoanType
+          ? _value.minLoanType
+          : minLoanType // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == minMonthlyPrice
+          ? _value.minMonthlyPrice
+          : minMonthlyPrice // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == monthNumber
+          ? _value.monthNumber
+          : monthNumber // ignore: cast_nullable_to_non_nullable
+              as int?,
+    ));
   }
 }
 
@@ -1795,12 +1686,8 @@ class __$$DetailsMinimalLoanPriceImplCopyWithImpl<$Res>
 
 @JsonSerializable(explicitToJson: true, fieldRename: FieldRename.snake)
 class _$DetailsMinimalLoanPriceImpl implements _DetailsMinimalLoanPrice {
-  const _$DetailsMinimalLoanPriceImpl(
-    this.description,
-    this.minLoanType,
-    this.minMonthlyPrice,
-    this.monthNumber,
-  );
+  const _$DetailsMinimalLoanPriceImpl(this.description, this.minLoanType,
+      this.minMonthlyPrice, this.monthNumber);
 
   factory _$DetailsMinimalLoanPriceImpl.fromJson(Map<String, dynamic> json) =>
       _$$DetailsMinimalLoanPriceImplFromJson(json);
@@ -1837,12 +1724,7 @@ class _$DetailsMinimalLoanPriceImpl implements _DetailsMinimalLoanPrice {
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
-    runtimeType,
-    description,
-    minLoanType,
-    minMonthlyPrice,
-    monthNumber,
-  );
+      runtimeType, description, minLoanType, minMonthlyPrice, monthNumber);
 
   /// Create a copy of DetailsMinimalLoanPrice
   /// with the given fields replaced by the non-null parameter values.
@@ -1850,23 +1732,23 @@ class _$DetailsMinimalLoanPriceImpl implements _DetailsMinimalLoanPrice {
   @override
   @pragma('vm:prefer-inline')
   _$$DetailsMinimalLoanPriceImplCopyWith<_$DetailsMinimalLoanPriceImpl>
-  get copyWith => __$$DetailsMinimalLoanPriceImplCopyWithImpl<
-    _$DetailsMinimalLoanPriceImpl
-  >(this, _$identity);
+      get copyWith => __$$DetailsMinimalLoanPriceImplCopyWithImpl<
+          _$DetailsMinimalLoanPriceImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$DetailsMinimalLoanPriceImplToJson(this);
+    return _$$DetailsMinimalLoanPriceImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _DetailsMinimalLoanPrice implements DetailsMinimalLoanPrice {
   const factory _DetailsMinimalLoanPrice(
-    final String? description,
-    final String? minLoanType,
-    final String? minMonthlyPrice,
-    final int? monthNumber,
-  ) = _$DetailsMinimalLoanPriceImpl;
+      final String? description,
+      final String? minLoanType,
+      final String? minMonthlyPrice,
+      final int? monthNumber) = _$DetailsMinimalLoanPriceImpl;
 
   factory _DetailsMinimalLoanPrice.fromJson(Map<String, dynamic> json) =
       _$DetailsMinimalLoanPriceImpl.fromJson;
@@ -1885,5 +1767,5 @@ abstract class _DetailsMinimalLoanPrice implements DetailsMinimalLoanPrice {
   @override
   @JsonKey(includeFromJson: false, includeToJson: false)
   _$$DetailsMinimalLoanPriceImplCopyWith<_$DetailsMinimalLoanPriceImpl>
-  get copyWith => throw _privateConstructorUsedError;
+      get copyWith => throw _privateConstructorUsedError;
 }

@@ -12,8 +12,7 @@ part of 'markets_profile.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 MarketsProfile _$MarketsProfileFromJson(Map<String, dynamic> json) {
   return _MarketsProfile.fromJson(json);
@@ -39,16 +38,11 @@ mixin _$MarketsProfile {
 /// @nodoc
 abstract class $MarketsProfileCopyWith<$Res> {
   factory $MarketsProfileCopyWith(
-    MarketsProfile value,
-    $Res Function(MarketsProfile) then,
-  ) = _$MarketsProfileCopyWithImpl<$Res, MarketsProfile>;
+          MarketsProfile value, $Res Function(MarketsProfile) then) =
+      _$MarketsProfileCopyWithImpl<$Res, MarketsProfile>;
   @useResult
-  $Res call({
-    bool? success,
-    String? message,
-    int? code,
-    MarketsProfileData? data,
-  });
+  $Res call(
+      {bool? success, String? message, int? code, MarketsProfileData? data});
 
   $MarketsProfileDataCopyWith<$Res>? get data;
 }
@@ -73,31 +67,24 @@ class _$MarketsProfileCopyWithImpl<$Res, $Val extends MarketsProfile>
     Object? code = freezed,
     Object? data = freezed,
   }) {
-    return _then(
-      _value.copyWith(
-            success:
-                freezed == success
-                    ? _value.success
-                    : success // ignore: cast_nullable_to_non_nullable
-                        as bool?,
-            message:
-                freezed == message
-                    ? _value.message
-                    : message // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            code:
-                freezed == code
-                    ? _value.code
-                    : code // ignore: cast_nullable_to_non_nullable
-                        as int?,
-            data:
-                freezed == data
-                    ? _value.data
-                    : data // ignore: cast_nullable_to_non_nullable
-                        as MarketsProfileData?,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      success: freezed == success
+          ? _value.success
+          : success // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      message: freezed == message
+          ? _value.message
+          : message // ignore: cast_nullable_to_non_nullable
+              as String?,
+      code: freezed == code
+          ? _value.code
+          : code // ignore: cast_nullable_to_non_nullable
+              as int?,
+      data: freezed == data
+          ? _value.data
+          : data // ignore: cast_nullable_to_non_nullable
+              as MarketsProfileData?,
+    ) as $Val);
   }
 
   /// Create a copy of MarketsProfile
@@ -118,18 +105,13 @@ class _$MarketsProfileCopyWithImpl<$Res, $Val extends MarketsProfile>
 /// @nodoc
 abstract class _$$MarketsProfileImplCopyWith<$Res>
     implements $MarketsProfileCopyWith<$Res> {
-  factory _$$MarketsProfileImplCopyWith(
-    _$MarketsProfileImpl value,
-    $Res Function(_$MarketsProfileImpl) then,
-  ) = __$$MarketsProfileImplCopyWithImpl<$Res>;
+  factory _$$MarketsProfileImplCopyWith(_$MarketsProfileImpl value,
+          $Res Function(_$MarketsProfileImpl) then) =
+      __$$MarketsProfileImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    bool? success,
-    String? message,
-    int? code,
-    MarketsProfileData? data,
-  });
+  $Res call(
+      {bool? success, String? message, int? code, MarketsProfileData? data});
 
   @override
   $MarketsProfileDataCopyWith<$Res>? get data;
@@ -140,9 +122,8 @@ class __$$MarketsProfileImplCopyWithImpl<$Res>
     extends _$MarketsProfileCopyWithImpl<$Res, _$MarketsProfileImpl>
     implements _$$MarketsProfileImplCopyWith<$Res> {
   __$$MarketsProfileImplCopyWithImpl(
-    _$MarketsProfileImpl _value,
-    $Res Function(_$MarketsProfileImpl) _then,
-  ) : super(_value, _then);
+      _$MarketsProfileImpl _value, $Res Function(_$MarketsProfileImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of MarketsProfile
   /// with the given fields replaced by the non-null parameter values.
@@ -154,26 +135,24 @@ class __$$MarketsProfileImplCopyWithImpl<$Res>
     Object? code = freezed,
     Object? data = freezed,
   }) {
-    return _then(
-      _$MarketsProfileImpl(
-        freezed == success
-            ? _value.success
-            : success // ignore: cast_nullable_to_non_nullable
-                as bool?,
-        freezed == message
-            ? _value.message
-            : message // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == code
-            ? _value.code
-            : code // ignore: cast_nullable_to_non_nullable
-                as int?,
-        freezed == data
-            ? _value.data
-            : data // ignore: cast_nullable_to_non_nullable
-                as MarketsProfileData?,
-      ),
-    );
+    return _then(_$MarketsProfileImpl(
+      freezed == success
+          ? _value.success
+          : success // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      freezed == message
+          ? _value.message
+          : message // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == code
+          ? _value.code
+          : code // ignore: cast_nullable_to_non_nullable
+              as int?,
+      freezed == data
+          ? _value.data
+          : data // ignore: cast_nullable_to_non_nullable
+              as MarketsProfileData?,
+    ));
   }
 }
 
@@ -221,23 +200,19 @@ class _$MarketsProfileImpl implements _MarketsProfile {
   @pragma('vm:prefer-inline')
   _$$MarketsProfileImplCopyWith<_$MarketsProfileImpl> get copyWith =>
       __$$MarketsProfileImplCopyWithImpl<_$MarketsProfileImpl>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$MarketsProfileImplToJson(this);
+    return _$$MarketsProfileImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _MarketsProfile implements MarketsProfile {
-  const factory _MarketsProfile(
-    final bool? success,
-    final String? message,
-    final int? code,
-    final MarketsProfileData? data,
-  ) = _$MarketsProfileImpl;
+  const factory _MarketsProfile(final bool? success, final String? message,
+      final int? code, final MarketsProfileData? data) = _$MarketsProfileImpl;
 
   factory _MarketsProfile.fromJson(Map<String, dynamic> json) =
       _$MarketsProfileImpl.fromJson;
@@ -280,9 +255,8 @@ mixin _$MarketsProfileData {
 /// @nodoc
 abstract class $MarketsProfileDataCopyWith<$Res> {
   factory $MarketsProfileDataCopyWith(
-    MarketsProfileData value,
-    $Res Function(MarketsProfileData) then,
-  ) = _$MarketsProfileDataCopyWithImpl<$Res, MarketsProfileData>;
+          MarketsProfileData value, $Res Function(MarketsProfileData) then) =
+      _$MarketsProfileDataCopyWithImpl<$Res, MarketsProfileData>;
   @useResult
   $Res call({List<MarketsProfileElement>? data});
 }
@@ -301,27 +275,24 @@ class _$MarketsProfileDataCopyWithImpl<$Res, $Val extends MarketsProfileData>
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? data = freezed}) {
-    return _then(
-      _value.copyWith(
-            data:
-                freezed == data
-                    ? _value.data
-                    : data // ignore: cast_nullable_to_non_nullable
-                        as List<MarketsProfileElement>?,
-          )
-          as $Val,
-    );
+  $Res call({
+    Object? data = freezed,
+  }) {
+    return _then(_value.copyWith(
+      data: freezed == data
+          ? _value.data
+          : data // ignore: cast_nullable_to_non_nullable
+              as List<MarketsProfileElement>?,
+    ) as $Val);
   }
 }
 
 /// @nodoc
 abstract class _$$MarketsProfileDataImplCopyWith<$Res>
     implements $MarketsProfileDataCopyWith<$Res> {
-  factory _$$MarketsProfileDataImplCopyWith(
-    _$MarketsProfileDataImpl value,
-    $Res Function(_$MarketsProfileDataImpl) then,
-  ) = __$$MarketsProfileDataImplCopyWithImpl<$Res>;
+  factory _$$MarketsProfileDataImplCopyWith(_$MarketsProfileDataImpl value,
+          $Res Function(_$MarketsProfileDataImpl) then) =
+      __$$MarketsProfileDataImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({List<MarketsProfileElement>? data});
@@ -331,24 +302,23 @@ abstract class _$$MarketsProfileDataImplCopyWith<$Res>
 class __$$MarketsProfileDataImplCopyWithImpl<$Res>
     extends _$MarketsProfileDataCopyWithImpl<$Res, _$MarketsProfileDataImpl>
     implements _$$MarketsProfileDataImplCopyWith<$Res> {
-  __$$MarketsProfileDataImplCopyWithImpl(
-    _$MarketsProfileDataImpl _value,
-    $Res Function(_$MarketsProfileDataImpl) _then,
-  ) : super(_value, _then);
+  __$$MarketsProfileDataImplCopyWithImpl(_$MarketsProfileDataImpl _value,
+      $Res Function(_$MarketsProfileDataImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of MarketsProfileData
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? data = freezed}) {
-    return _then(
-      _$MarketsProfileDataImpl(
-        freezed == data
-            ? _value._data
-            : data // ignore: cast_nullable_to_non_nullable
-                as List<MarketsProfileElement>?,
-      ),
-    );
+  $Res call({
+    Object? data = freezed,
+  }) {
+    return _then(_$MarketsProfileDataImpl(
+      freezed == data
+          ? _value._data
+          : data // ignore: cast_nullable_to_non_nullable
+              as List<MarketsProfileElement>?,
+    ));
   }
 }
 
@@ -357,7 +327,7 @@ class __$$MarketsProfileDataImplCopyWithImpl<$Res>
 @JsonSerializable(explicitToJson: true, fieldRename: FieldRename.snake)
 class _$MarketsProfileDataImpl implements _MarketsProfileData {
   const _$MarketsProfileDataImpl(final List<MarketsProfileElement>? data)
-    : _data = data;
+      : _data = data;
 
   factory _$MarketsProfileDataImpl.fromJson(Map<String, dynamic> json) =>
       _$$MarketsProfileDataImplFromJson(json);
@@ -397,13 +367,13 @@ class _$MarketsProfileDataImpl implements _MarketsProfileData {
   @pragma('vm:prefer-inline')
   _$$MarketsProfileDataImplCopyWith<_$MarketsProfileDataImpl> get copyWith =>
       __$$MarketsProfileDataImplCopyWithImpl<_$MarketsProfileDataImpl>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$MarketsProfileDataImplToJson(this);
+    return _$$MarketsProfileDataImplToJson(
+      this,
+    );
   }
 }
 
@@ -426,8 +396,7 @@ abstract class _MarketsProfileData implements MarketsProfileData {
 }
 
 MarketsProfileElement _$MarketsProfileElementFromJson(
-  Map<String, dynamic> json,
-) {
+    Map<String, dynamic> json) {
   return _MarketsProfileElement.fromJson(json);
 }
 
@@ -451,24 +420,20 @@ mixin _$MarketsProfileElement {
 
 /// @nodoc
 abstract class $MarketsProfileElementCopyWith<$Res> {
-  factory $MarketsProfileElementCopyWith(
-    MarketsProfileElement value,
-    $Res Function(MarketsProfileElement) then,
-  ) = _$MarketsProfileElementCopyWithImpl<$Res, MarketsProfileElement>;
+  factory $MarketsProfileElementCopyWith(MarketsProfileElement value,
+          $Res Function(MarketsProfileElement) then) =
+      _$MarketsProfileElementCopyWithImpl<$Res, MarketsProfileElement>;
   @useResult
-  $Res call({
-    int? id,
-    String? name,
-    List<OpenedStoresData>? openedStores,
-    List<dynamic>? notOpenedStores,
-  });
+  $Res call(
+      {int? id,
+      String? name,
+      List<OpenedStoresData>? openedStores,
+      List<dynamic>? notOpenedStores});
 }
 
 /// @nodoc
-class _$MarketsProfileElementCopyWithImpl<
-  $Res,
-  $Val extends MarketsProfileElement
->
+class _$MarketsProfileElementCopyWithImpl<$Res,
+        $Val extends MarketsProfileElement>
     implements $MarketsProfileElementCopyWith<$Res> {
   _$MarketsProfileElementCopyWithImpl(this._value, this._then);
 
@@ -487,31 +452,24 @@ class _$MarketsProfileElementCopyWithImpl<
     Object? openedStores = freezed,
     Object? notOpenedStores = freezed,
   }) {
-    return _then(
-      _value.copyWith(
-            id:
-                freezed == id
-                    ? _value.id
-                    : id // ignore: cast_nullable_to_non_nullable
-                        as int?,
-            name:
-                freezed == name
-                    ? _value.name
-                    : name // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            openedStores:
-                freezed == openedStores
-                    ? _value.openedStores
-                    : openedStores // ignore: cast_nullable_to_non_nullable
-                        as List<OpenedStoresData>?,
-            notOpenedStores:
-                freezed == notOpenedStores
-                    ? _value.notOpenedStores
-                    : notOpenedStores // ignore: cast_nullable_to_non_nullable
-                        as List<dynamic>?,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      id: freezed == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int?,
+      name: freezed == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String?,
+      openedStores: freezed == openedStores
+          ? _value.openedStores
+          : openedStores // ignore: cast_nullable_to_non_nullable
+              as List<OpenedStoresData>?,
+      notOpenedStores: freezed == notOpenedStores
+          ? _value.notOpenedStores
+          : notOpenedStores // ignore: cast_nullable_to_non_nullable
+              as List<dynamic>?,
+    ) as $Val);
   }
 }
 
@@ -519,28 +477,26 @@ class _$MarketsProfileElementCopyWithImpl<
 abstract class _$$MarketsProfileElementImplCopyWith<$Res>
     implements $MarketsProfileElementCopyWith<$Res> {
   factory _$$MarketsProfileElementImplCopyWith(
-    _$MarketsProfileElementImpl value,
-    $Res Function(_$MarketsProfileElementImpl) then,
-  ) = __$$MarketsProfileElementImplCopyWithImpl<$Res>;
+          _$MarketsProfileElementImpl value,
+          $Res Function(_$MarketsProfileElementImpl) then) =
+      __$$MarketsProfileElementImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    int? id,
-    String? name,
-    List<OpenedStoresData>? openedStores,
-    List<dynamic>? notOpenedStores,
-  });
+  $Res call(
+      {int? id,
+      String? name,
+      List<OpenedStoresData>? openedStores,
+      List<dynamic>? notOpenedStores});
 }
 
 /// @nodoc
 class __$$MarketsProfileElementImplCopyWithImpl<$Res>
-    extends
-        _$MarketsProfileElementCopyWithImpl<$Res, _$MarketsProfileElementImpl>
+    extends _$MarketsProfileElementCopyWithImpl<$Res,
+        _$MarketsProfileElementImpl>
     implements _$$MarketsProfileElementImplCopyWith<$Res> {
-  __$$MarketsProfileElementImplCopyWithImpl(
-    _$MarketsProfileElementImpl _value,
-    $Res Function(_$MarketsProfileElementImpl) _then,
-  ) : super(_value, _then);
+  __$$MarketsProfileElementImplCopyWithImpl(_$MarketsProfileElementImpl _value,
+      $Res Function(_$MarketsProfileElementImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of MarketsProfileElement
   /// with the given fields replaced by the non-null parameter values.
@@ -552,26 +508,24 @@ class __$$MarketsProfileElementImplCopyWithImpl<$Res>
     Object? openedStores = freezed,
     Object? notOpenedStores = freezed,
   }) {
-    return _then(
-      _$MarketsProfileElementImpl(
-        freezed == id
-            ? _value.id
-            : id // ignore: cast_nullable_to_non_nullable
-                as int?,
-        freezed == name
-            ? _value.name
-            : name // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == openedStores
-            ? _value._openedStores
-            : openedStores // ignore: cast_nullable_to_non_nullable
-                as List<OpenedStoresData>?,
-        freezed == notOpenedStores
-            ? _value._notOpenedStores
-            : notOpenedStores // ignore: cast_nullable_to_non_nullable
-                as List<dynamic>?,
-      ),
-    );
+    return _then(_$MarketsProfileElementImpl(
+      freezed == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int?,
+      freezed == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == openedStores
+          ? _value._openedStores
+          : openedStores // ignore: cast_nullable_to_non_nullable
+              as List<OpenedStoresData>?,
+      freezed == notOpenedStores
+          ? _value._notOpenedStores
+          : notOpenedStores // ignore: cast_nullable_to_non_nullable
+              as List<dynamic>?,
+    ));
   }
 }
 
@@ -580,12 +534,12 @@ class __$$MarketsProfileElementImplCopyWithImpl<$Res>
 @JsonSerializable(explicitToJson: true, fieldRename: FieldRename.snake)
 class _$MarketsProfileElementImpl implements _MarketsProfileElement {
   const _$MarketsProfileElementImpl(
-    this.id,
-    this.name,
-    final List<OpenedStoresData>? openedStores,
-    final List<dynamic>? notOpenedStores,
-  ) : _openedStores = openedStores,
-      _notOpenedStores = notOpenedStores;
+      this.id,
+      this.name,
+      final List<OpenedStoresData>? openedStores,
+      final List<dynamic>? notOpenedStores)
+      : _openedStores = openedStores,
+        _notOpenedStores = notOpenedStores;
 
   factory _$MarketsProfileElementImpl.fromJson(Map<String, dynamic> json) =>
       _$$MarketsProfileElementImplFromJson(json);
@@ -626,25 +580,20 @@ class _$MarketsProfileElementImpl implements _MarketsProfileElement {
             other is _$MarketsProfileElementImpl &&
             (identical(other.id, id) || other.id == id) &&
             (identical(other.name, name) || other.name == name) &&
-            const DeepCollectionEquality().equals(
-              other._openedStores,
-              _openedStores,
-            ) &&
-            const DeepCollectionEquality().equals(
-              other._notOpenedStores,
-              _notOpenedStores,
-            ));
+            const DeepCollectionEquality()
+                .equals(other._openedStores, _openedStores) &&
+            const DeepCollectionEquality()
+                .equals(other._notOpenedStores, _notOpenedStores));
   }
 
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
-    runtimeType,
-    id,
-    name,
-    const DeepCollectionEquality().hash(_openedStores),
-    const DeepCollectionEquality().hash(_notOpenedStores),
-  );
+      runtimeType,
+      id,
+      name,
+      const DeepCollectionEquality().hash(_openedStores),
+      const DeepCollectionEquality().hash(_notOpenedStores));
 
   /// Create a copy of MarketsProfileElement
   /// with the given fields replaced by the non-null parameter values.
@@ -652,25 +601,23 @@ class _$MarketsProfileElementImpl implements _MarketsProfileElement {
   @override
   @pragma('vm:prefer-inline')
   _$$MarketsProfileElementImplCopyWith<_$MarketsProfileElementImpl>
-  get copyWith =>
-      __$$MarketsProfileElementImplCopyWithImpl<_$MarketsProfileElementImpl>(
-        this,
-        _$identity,
-      );
+      get copyWith => __$$MarketsProfileElementImplCopyWithImpl<
+          _$MarketsProfileElementImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$MarketsProfileElementImplToJson(this);
+    return _$$MarketsProfileElementImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _MarketsProfileElement implements MarketsProfileElement {
   const factory _MarketsProfileElement(
-    final int? id,
-    final String? name,
-    final List<OpenedStoresData>? openedStores,
-    final List<dynamic>? notOpenedStores,
-  ) = _$MarketsProfileElementImpl;
+      final int? id,
+      final String? name,
+      final List<OpenedStoresData>? openedStores,
+      final List<dynamic>? notOpenedStores) = _$MarketsProfileElementImpl;
 
   factory _MarketsProfileElement.fromJson(Map<String, dynamic> json) =
       _$MarketsProfileElementImpl.fromJson;
@@ -689,7 +636,7 @@ abstract class _MarketsProfileElement implements MarketsProfileElement {
   @override
   @JsonKey(includeFromJson: false, includeToJson: false)
   _$$MarketsProfileElementImplCopyWith<_$MarketsProfileElementImpl>
-  get copyWith => throw _privateConstructorUsedError;
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 OpenedStoresData _$OpenedStoresDataFromJson(Map<String, dynamic> json) {
@@ -721,21 +668,19 @@ mixin _$OpenedStoresData {
 /// @nodoc
 abstract class $OpenedStoresDataCopyWith<$Res> {
   factory $OpenedStoresDataCopyWith(
-    OpenedStoresData value,
-    $Res Function(OpenedStoresData) then,
-  ) = _$OpenedStoresDataCopyWithImpl<$Res, OpenedStoresData>;
+          OpenedStoresData value, $Res Function(OpenedStoresData) then) =
+      _$OpenedStoresDataCopyWithImpl<$Res, OpenedStoresData>;
   @useResult
-  $Res call({
-    int? id,
-    String? name,
-    String? address,
-    String? description,
-    String? long,
-    String? lat,
-    String? phone,
-    String? workTime,
-    List<dynamic>? images,
-  });
+  $Res call(
+      {int? id,
+      String? name,
+      String? address,
+      String? description,
+      String? long,
+      String? lat,
+      String? phone,
+      String? workTime,
+      List<dynamic>? images});
 }
 
 /// @nodoc
@@ -763,89 +708,74 @@ class _$OpenedStoresDataCopyWithImpl<$Res, $Val extends OpenedStoresData>
     Object? workTime = freezed,
     Object? images = freezed,
   }) {
-    return _then(
-      _value.copyWith(
-            id:
-                freezed == id
-                    ? _value.id
-                    : id // ignore: cast_nullable_to_non_nullable
-                        as int?,
-            name:
-                freezed == name
-                    ? _value.name
-                    : name // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            address:
-                freezed == address
-                    ? _value.address
-                    : address // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            description:
-                freezed == description
-                    ? _value.description
-                    : description // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            long:
-                freezed == long
-                    ? _value.long
-                    : long // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            lat:
-                freezed == lat
-                    ? _value.lat
-                    : lat // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            phone:
-                freezed == phone
-                    ? _value.phone
-                    : phone // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            workTime:
-                freezed == workTime
-                    ? _value.workTime
-                    : workTime // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            images:
-                freezed == images
-                    ? _value.images
-                    : images // ignore: cast_nullable_to_non_nullable
-                        as List<dynamic>?,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      id: freezed == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int?,
+      name: freezed == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String?,
+      address: freezed == address
+          ? _value.address
+          : address // ignore: cast_nullable_to_non_nullable
+              as String?,
+      description: freezed == description
+          ? _value.description
+          : description // ignore: cast_nullable_to_non_nullable
+              as String?,
+      long: freezed == long
+          ? _value.long
+          : long // ignore: cast_nullable_to_non_nullable
+              as String?,
+      lat: freezed == lat
+          ? _value.lat
+          : lat // ignore: cast_nullable_to_non_nullable
+              as String?,
+      phone: freezed == phone
+          ? _value.phone
+          : phone // ignore: cast_nullable_to_non_nullable
+              as String?,
+      workTime: freezed == workTime
+          ? _value.workTime
+          : workTime // ignore: cast_nullable_to_non_nullable
+              as String?,
+      images: freezed == images
+          ? _value.images
+          : images // ignore: cast_nullable_to_non_nullable
+              as List<dynamic>?,
+    ) as $Val);
   }
 }
 
 /// @nodoc
 abstract class _$$OpenedStoresDataImplCopyWith<$Res>
     implements $OpenedStoresDataCopyWith<$Res> {
-  factory _$$OpenedStoresDataImplCopyWith(
-    _$OpenedStoresDataImpl value,
-    $Res Function(_$OpenedStoresDataImpl) then,
-  ) = __$$OpenedStoresDataImplCopyWithImpl<$Res>;
+  factory _$$OpenedStoresDataImplCopyWith(_$OpenedStoresDataImpl value,
+          $Res Function(_$OpenedStoresDataImpl) then) =
+      __$$OpenedStoresDataImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    int? id,
-    String? name,
-    String? address,
-    String? description,
-    String? long,
-    String? lat,
-    String? phone,
-    String? workTime,
-    List<dynamic>? images,
-  });
+  $Res call(
+      {int? id,
+      String? name,
+      String? address,
+      String? description,
+      String? long,
+      String? lat,
+      String? phone,
+      String? workTime,
+      List<dynamic>? images});
 }
 
 /// @nodoc
 class __$$OpenedStoresDataImplCopyWithImpl<$Res>
     extends _$OpenedStoresDataCopyWithImpl<$Res, _$OpenedStoresDataImpl>
     implements _$$OpenedStoresDataImplCopyWith<$Res> {
-  __$$OpenedStoresDataImplCopyWithImpl(
-    _$OpenedStoresDataImpl _value,
-    $Res Function(_$OpenedStoresDataImpl) _then,
-  ) : super(_value, _then);
+  __$$OpenedStoresDataImplCopyWithImpl(_$OpenedStoresDataImpl _value,
+      $Res Function(_$OpenedStoresDataImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of OpenedStoresData
   /// with the given fields replaced by the non-null parameter values.
@@ -862,46 +792,44 @@ class __$$OpenedStoresDataImplCopyWithImpl<$Res>
     Object? workTime = freezed,
     Object? images = freezed,
   }) {
-    return _then(
-      _$OpenedStoresDataImpl(
-        freezed == id
-            ? _value.id
-            : id // ignore: cast_nullable_to_non_nullable
-                as int?,
-        freezed == name
-            ? _value.name
-            : name // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == address
-            ? _value.address
-            : address // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == description
-            ? _value.description
-            : description // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == long
-            ? _value.long
-            : long // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == lat
-            ? _value.lat
-            : lat // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == phone
-            ? _value.phone
-            : phone // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == workTime
-            ? _value.workTime
-            : workTime // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == images
-            ? _value._images
-            : images // ignore: cast_nullable_to_non_nullable
-                as List<dynamic>?,
-      ),
-    );
+    return _then(_$OpenedStoresDataImpl(
+      freezed == id
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as int?,
+      freezed == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == address
+          ? _value.address
+          : address // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == description
+          ? _value.description
+          : description // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == long
+          ? _value.long
+          : long // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == lat
+          ? _value.lat
+          : lat // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == phone
+          ? _value.phone
+          : phone // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == workTime
+          ? _value.workTime
+          : workTime // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == images
+          ? _value._images
+          : images // ignore: cast_nullable_to_non_nullable
+              as List<dynamic>?,
+    ));
   }
 }
 
@@ -910,16 +838,16 @@ class __$$OpenedStoresDataImplCopyWithImpl<$Res>
 @JsonSerializable(explicitToJson: true, fieldRename: FieldRename.snake)
 class _$OpenedStoresDataImpl implements _OpenedStoresData {
   const _$OpenedStoresDataImpl(
-    this.id,
-    this.name,
-    this.address,
-    this.description,
-    this.long,
-    this.lat,
-    this.phone,
-    this.workTime,
-    final List<dynamic>? images,
-  ) : _images = images;
+      this.id,
+      this.name,
+      this.address,
+      this.description,
+      this.long,
+      this.lat,
+      this.phone,
+      this.workTime,
+      final List<dynamic>? images)
+      : _images = images;
 
   factory _$OpenedStoresDataImpl.fromJson(Map<String, dynamic> json) =>
       _$$OpenedStoresDataImplFromJson(json);
@@ -975,18 +903,8 @@ class _$OpenedStoresDataImpl implements _OpenedStoresData {
 
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
-  int get hashCode => Object.hash(
-    runtimeType,
-    id,
-    name,
-    address,
-    description,
-    long,
-    lat,
-    phone,
-    workTime,
-    const DeepCollectionEquality().hash(_images),
-  );
+  int get hashCode => Object.hash(runtimeType, id, name, address, description,
+      long, lat, phone, workTime, const DeepCollectionEquality().hash(_images));
 
   /// Create a copy of OpenedStoresData
   /// with the given fields replaced by the non-null parameter values.
@@ -995,28 +913,27 @@ class _$OpenedStoresDataImpl implements _OpenedStoresData {
   @pragma('vm:prefer-inline')
   _$$OpenedStoresDataImplCopyWith<_$OpenedStoresDataImpl> get copyWith =>
       __$$OpenedStoresDataImplCopyWithImpl<_$OpenedStoresDataImpl>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$OpenedStoresDataImplToJson(this);
+    return _$$OpenedStoresDataImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _OpenedStoresData implements OpenedStoresData {
   const factory _OpenedStoresData(
-    final int? id,
-    final String? name,
-    final String? address,
-    final String? description,
-    final String? long,
-    final String? lat,
-    final String? phone,
-    final String? workTime,
-    final List<dynamic>? images,
-  ) = _$OpenedStoresDataImpl;
+      final int? id,
+      final String? name,
+      final String? address,
+      final String? description,
+      final String? long,
+      final String? lat,
+      final String? phone,
+      final String? workTime,
+      final List<dynamic>? images) = _$OpenedStoresDataImpl;
 
   factory _OpenedStoresData.fromJson(Map<String, dynamic> json) =
       _$OpenedStoresDataImpl.fromJson;

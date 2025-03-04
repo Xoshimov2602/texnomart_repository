@@ -27,7 +27,7 @@ class _MarketsProfileApi implements MarketsProfileApi {
       Options(method: 'GET', headers: _headers, extra: _extra)
           .compose(
             _dio.options,
-            'web/v1/region/stores-list',
+            'region/stores-list',
             queryParameters: queryParameters,
             data: _data,
           )

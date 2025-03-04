@@ -12,12 +12,10 @@ part of 'special_brands_response.dart';
 T _$identity<T>(T value) => value;
 
 final _privateConstructorUsedError = UnsupportedError(
-  'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models',
-);
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 SpecialBrandsResponse _$SpecialBrandsResponseFromJson(
-  Map<String, dynamic> json,
-) {
+    Map<String, dynamic> json) {
   return _SpecialBrandsResponse.fromJson(json);
 }
 
@@ -41,27 +39,23 @@ mixin _$SpecialBrandsResponse {
 
 /// @nodoc
 abstract class $SpecialBrandsResponseCopyWith<$Res> {
-  factory $SpecialBrandsResponseCopyWith(
-    SpecialBrandsResponse value,
-    $Res Function(SpecialBrandsResponse) then,
-  ) = _$SpecialBrandsResponseCopyWithImpl<$Res, SpecialBrandsResponse>;
+  factory $SpecialBrandsResponseCopyWith(SpecialBrandsResponse value,
+          $Res Function(SpecialBrandsResponse) then) =
+      _$SpecialBrandsResponseCopyWithImpl<$Res, SpecialBrandsResponse>;
   @useResult
-  $Res call({
-    int? code,
-    SpecialBrandsData? data,
-    String? message,
-    int? status,
-    bool? success,
-  });
+  $Res call(
+      {int? code,
+      SpecialBrandsData? data,
+      String? message,
+      int? status,
+      bool? success});
 
   $SpecialBrandsDataCopyWith<$Res>? get data;
 }
 
 /// @nodoc
-class _$SpecialBrandsResponseCopyWithImpl<
-  $Res,
-  $Val extends SpecialBrandsResponse
->
+class _$SpecialBrandsResponseCopyWithImpl<$Res,
+        $Val extends SpecialBrandsResponse>
     implements $SpecialBrandsResponseCopyWith<$Res> {
   _$SpecialBrandsResponseCopyWithImpl(this._value, this._then);
 
@@ -81,36 +75,28 @@ class _$SpecialBrandsResponseCopyWithImpl<
     Object? status = freezed,
     Object? success = freezed,
   }) {
-    return _then(
-      _value.copyWith(
-            code:
-                freezed == code
-                    ? _value.code
-                    : code // ignore: cast_nullable_to_non_nullable
-                        as int?,
-            data:
-                freezed == data
-                    ? _value.data
-                    : data // ignore: cast_nullable_to_non_nullable
-                        as SpecialBrandsData?,
-            message:
-                freezed == message
-                    ? _value.message
-                    : message // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            status:
-                freezed == status
-                    ? _value.status
-                    : status // ignore: cast_nullable_to_non_nullable
-                        as int?,
-            success:
-                freezed == success
-                    ? _value.success
-                    : success // ignore: cast_nullable_to_non_nullable
-                        as bool?,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      code: freezed == code
+          ? _value.code
+          : code // ignore: cast_nullable_to_non_nullable
+              as int?,
+      data: freezed == data
+          ? _value.data
+          : data // ignore: cast_nullable_to_non_nullable
+              as SpecialBrandsData?,
+      message: freezed == message
+          ? _value.message
+          : message // ignore: cast_nullable_to_non_nullable
+              as String?,
+      status: freezed == status
+          ? _value.status
+          : status // ignore: cast_nullable_to_non_nullable
+              as int?,
+      success: freezed == success
+          ? _value.success
+          : success // ignore: cast_nullable_to_non_nullable
+              as bool?,
+    ) as $Val);
   }
 
   /// Create a copy of SpecialBrandsResponse
@@ -132,18 +118,17 @@ class _$SpecialBrandsResponseCopyWithImpl<
 abstract class _$$SpecialBrandsResponseImplCopyWith<$Res>
     implements $SpecialBrandsResponseCopyWith<$Res> {
   factory _$$SpecialBrandsResponseImplCopyWith(
-    _$SpecialBrandsResponseImpl value,
-    $Res Function(_$SpecialBrandsResponseImpl) then,
-  ) = __$$SpecialBrandsResponseImplCopyWithImpl<$Res>;
+          _$SpecialBrandsResponseImpl value,
+          $Res Function(_$SpecialBrandsResponseImpl) then) =
+      __$$SpecialBrandsResponseImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    int? code,
-    SpecialBrandsData? data,
-    String? message,
-    int? status,
-    bool? success,
-  });
+  $Res call(
+      {int? code,
+      SpecialBrandsData? data,
+      String? message,
+      int? status,
+      bool? success});
 
   @override
   $SpecialBrandsDataCopyWith<$Res>? get data;
@@ -151,13 +136,12 @@ abstract class _$$SpecialBrandsResponseImplCopyWith<$Res>
 
 /// @nodoc
 class __$$SpecialBrandsResponseImplCopyWithImpl<$Res>
-    extends
-        _$SpecialBrandsResponseCopyWithImpl<$Res, _$SpecialBrandsResponseImpl>
+    extends _$SpecialBrandsResponseCopyWithImpl<$Res,
+        _$SpecialBrandsResponseImpl>
     implements _$$SpecialBrandsResponseImplCopyWith<$Res> {
-  __$$SpecialBrandsResponseImplCopyWithImpl(
-    _$SpecialBrandsResponseImpl _value,
-    $Res Function(_$SpecialBrandsResponseImpl) _then,
-  ) : super(_value, _then);
+  __$$SpecialBrandsResponseImplCopyWithImpl(_$SpecialBrandsResponseImpl _value,
+      $Res Function(_$SpecialBrandsResponseImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of SpecialBrandsResponse
   /// with the given fields replaced by the non-null parameter values.
@@ -170,30 +154,28 @@ class __$$SpecialBrandsResponseImplCopyWithImpl<$Res>
     Object? status = freezed,
     Object? success = freezed,
   }) {
-    return _then(
-      _$SpecialBrandsResponseImpl(
-        freezed == code
-            ? _value.code
-            : code // ignore: cast_nullable_to_non_nullable
-                as int?,
-        freezed == data
-            ? _value.data
-            : data // ignore: cast_nullable_to_non_nullable
-                as SpecialBrandsData?,
-        freezed == message
-            ? _value.message
-            : message // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == status
-            ? _value.status
-            : status // ignore: cast_nullable_to_non_nullable
-                as int?,
-        freezed == success
-            ? _value.success
-            : success // ignore: cast_nullable_to_non_nullable
-                as bool?,
-      ),
-    );
+    return _then(_$SpecialBrandsResponseImpl(
+      freezed == code
+          ? _value.code
+          : code // ignore: cast_nullable_to_non_nullable
+              as int?,
+      freezed == data
+          ? _value.data
+          : data // ignore: cast_nullable_to_non_nullable
+              as SpecialBrandsData?,
+      freezed == message
+          ? _value.message
+          : message // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == status
+          ? _value.status
+          : status // ignore: cast_nullable_to_non_nullable
+              as int?,
+      freezed == success
+          ? _value.success
+          : success // ignore: cast_nullable_to_non_nullable
+              as bool?,
+    ));
   }
 }
 
@@ -202,12 +184,7 @@ class __$$SpecialBrandsResponseImplCopyWithImpl<$Res>
 @JsonSerializable(explicitToJson: true, fieldRename: FieldRename.snake)
 class _$SpecialBrandsResponseImpl implements _SpecialBrandsResponse {
   const _$SpecialBrandsResponseImpl(
-    this.code,
-    this.data,
-    this.message,
-    this.status,
-    this.success,
-  );
+      this.code, this.data, this.message, this.status, this.success);
 
   factory _$SpecialBrandsResponseImpl.fromJson(Map<String, dynamic> json) =>
       _$$SpecialBrandsResponseImplFromJson(json);
@@ -251,26 +228,24 @@ class _$SpecialBrandsResponseImpl implements _SpecialBrandsResponse {
   @override
   @pragma('vm:prefer-inline')
   _$$SpecialBrandsResponseImplCopyWith<_$SpecialBrandsResponseImpl>
-  get copyWith =>
-      __$$SpecialBrandsResponseImplCopyWithImpl<_$SpecialBrandsResponseImpl>(
-        this,
-        _$identity,
-      );
+      get copyWith => __$$SpecialBrandsResponseImplCopyWithImpl<
+          _$SpecialBrandsResponseImpl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$SpecialBrandsResponseImplToJson(this);
+    return _$$SpecialBrandsResponseImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _SpecialBrandsResponse implements SpecialBrandsResponse {
   const factory _SpecialBrandsResponse(
-    final int? code,
-    final SpecialBrandsData? data,
-    final String? message,
-    final int? status,
-    final bool? success,
-  ) = _$SpecialBrandsResponseImpl;
+      final int? code,
+      final SpecialBrandsData? data,
+      final String? message,
+      final int? status,
+      final bool? success) = _$SpecialBrandsResponseImpl;
 
   factory _SpecialBrandsResponse.fromJson(Map<String, dynamic> json) =
       _$SpecialBrandsResponseImpl.fromJson;
@@ -291,7 +266,7 @@ abstract class _SpecialBrandsResponse implements SpecialBrandsResponse {
   @override
   @JsonKey(includeFromJson: false, includeToJson: false)
   _$$SpecialBrandsResponseImplCopyWith<_$SpecialBrandsResponseImpl>
-  get copyWith => throw _privateConstructorUsedError;
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 SpecialBrandsData _$SpecialBrandsDataFromJson(Map<String, dynamic> json) {
@@ -315,9 +290,8 @@ mixin _$SpecialBrandsData {
 /// @nodoc
 abstract class $SpecialBrandsDataCopyWith<$Res> {
   factory $SpecialBrandsDataCopyWith(
-    SpecialBrandsData value,
-    $Res Function(SpecialBrandsData) then,
-  ) = _$SpecialBrandsDataCopyWithImpl<$Res, SpecialBrandsData>;
+          SpecialBrandsData value, $Res Function(SpecialBrandsData) then) =
+      _$SpecialBrandsDataCopyWithImpl<$Res, SpecialBrandsData>;
   @useResult
   $Res call({List<SpecialBrandsElement>? data});
 }
@@ -336,27 +310,24 @@ class _$SpecialBrandsDataCopyWithImpl<$Res, $Val extends SpecialBrandsData>
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? data = freezed}) {
-    return _then(
-      _value.copyWith(
-            data:
-                freezed == data
-                    ? _value.data
-                    : data // ignore: cast_nullable_to_non_nullable
-                        as List<SpecialBrandsElement>?,
-          )
-          as $Val,
-    );
+  $Res call({
+    Object? data = freezed,
+  }) {
+    return _then(_value.copyWith(
+      data: freezed == data
+          ? _value.data
+          : data // ignore: cast_nullable_to_non_nullable
+              as List<SpecialBrandsElement>?,
+    ) as $Val);
   }
 }
 
 /// @nodoc
 abstract class _$$SpecialBrandsDataImplCopyWith<$Res>
     implements $SpecialBrandsDataCopyWith<$Res> {
-  factory _$$SpecialBrandsDataImplCopyWith(
-    _$SpecialBrandsDataImpl value,
-    $Res Function(_$SpecialBrandsDataImpl) then,
-  ) = __$$SpecialBrandsDataImplCopyWithImpl<$Res>;
+  factory _$$SpecialBrandsDataImplCopyWith(_$SpecialBrandsDataImpl value,
+          $Res Function(_$SpecialBrandsDataImpl) then) =
+      __$$SpecialBrandsDataImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({List<SpecialBrandsElement>? data});
@@ -366,24 +337,23 @@ abstract class _$$SpecialBrandsDataImplCopyWith<$Res>
 class __$$SpecialBrandsDataImplCopyWithImpl<$Res>
     extends _$SpecialBrandsDataCopyWithImpl<$Res, _$SpecialBrandsDataImpl>
     implements _$$SpecialBrandsDataImplCopyWith<$Res> {
-  __$$SpecialBrandsDataImplCopyWithImpl(
-    _$SpecialBrandsDataImpl _value,
-    $Res Function(_$SpecialBrandsDataImpl) _then,
-  ) : super(_value, _then);
+  __$$SpecialBrandsDataImplCopyWithImpl(_$SpecialBrandsDataImpl _value,
+      $Res Function(_$SpecialBrandsDataImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of SpecialBrandsData
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
-  $Res call({Object? data = freezed}) {
-    return _then(
-      _$SpecialBrandsDataImpl(
-        freezed == data
-            ? _value._data
-            : data // ignore: cast_nullable_to_non_nullable
-                as List<SpecialBrandsElement>?,
-      ),
-    );
+  $Res call({
+    Object? data = freezed,
+  }) {
+    return _then(_$SpecialBrandsDataImpl(
+      freezed == data
+          ? _value._data
+          : data // ignore: cast_nullable_to_non_nullable
+              as List<SpecialBrandsElement>?,
+    ));
   }
 }
 
@@ -392,7 +362,7 @@ class __$$SpecialBrandsDataImplCopyWithImpl<$Res>
 @JsonSerializable(explicitToJson: true, fieldRename: FieldRename.snake)
 class _$SpecialBrandsDataImpl implements _SpecialBrandsData {
   const _$SpecialBrandsDataImpl(final List<SpecialBrandsElement>? data)
-    : _data = data;
+      : _data = data;
 
   factory _$SpecialBrandsDataImpl.fromJson(Map<String, dynamic> json) =>
       _$$SpecialBrandsDataImplFromJson(json);
@@ -432,13 +402,13 @@ class _$SpecialBrandsDataImpl implements _SpecialBrandsData {
   @pragma('vm:prefer-inline')
   _$$SpecialBrandsDataImplCopyWith<_$SpecialBrandsDataImpl> get copyWith =>
       __$$SpecialBrandsDataImplCopyWithImpl<_$SpecialBrandsDataImpl>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$SpecialBrandsDataImplToJson(this);
+    return _$$SpecialBrandsDataImplToJson(
+      this,
+    );
   }
 }
 
@@ -484,27 +454,23 @@ mixin _$SpecialBrandsElement {
 
 /// @nodoc
 abstract class $SpecialBrandsElementCopyWith<$Res> {
-  factory $SpecialBrandsElementCopyWith(
-    SpecialBrandsElement value,
-    $Res Function(SpecialBrandsElement) then,
-  ) = _$SpecialBrandsElementCopyWithImpl<$Res, SpecialBrandsElement>;
+  factory $SpecialBrandsElementCopyWith(SpecialBrandsElement value,
+          $Res Function(SpecialBrandsElement) then) =
+      _$SpecialBrandsElementCopyWithImpl<$Res, SpecialBrandsElement>;
   @useResult
-  $Res call({
-    String? image,
-    String? imageAlt,
-    SpecialBrandsInner? meta,
-    String? name,
-    String? slug,
-  });
+  $Res call(
+      {String? image,
+      String? imageAlt,
+      SpecialBrandsInner? meta,
+      String? name,
+      String? slug});
 
   $SpecialBrandsInnerCopyWith<$Res>? get meta;
 }
 
 /// @nodoc
-class _$SpecialBrandsElementCopyWithImpl<
-  $Res,
-  $Val extends SpecialBrandsElement
->
+class _$SpecialBrandsElementCopyWithImpl<$Res,
+        $Val extends SpecialBrandsElement>
     implements $SpecialBrandsElementCopyWith<$Res> {
   _$SpecialBrandsElementCopyWithImpl(this._value, this._then);
 
@@ -524,36 +490,28 @@ class _$SpecialBrandsElementCopyWithImpl<
     Object? name = freezed,
     Object? slug = freezed,
   }) {
-    return _then(
-      _value.copyWith(
-            image:
-                freezed == image
-                    ? _value.image
-                    : image // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            imageAlt:
-                freezed == imageAlt
-                    ? _value.imageAlt
-                    : imageAlt // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            meta:
-                freezed == meta
-                    ? _value.meta
-                    : meta // ignore: cast_nullable_to_non_nullable
-                        as SpecialBrandsInner?,
-            name:
-                freezed == name
-                    ? _value.name
-                    : name // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            slug:
-                freezed == slug
-                    ? _value.slug
-                    : slug // ignore: cast_nullable_to_non_nullable
-                        as String?,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      image: freezed == image
+          ? _value.image
+          : image // ignore: cast_nullable_to_non_nullable
+              as String?,
+      imageAlt: freezed == imageAlt
+          ? _value.imageAlt
+          : imageAlt // ignore: cast_nullable_to_non_nullable
+              as String?,
+      meta: freezed == meta
+          ? _value.meta
+          : meta // ignore: cast_nullable_to_non_nullable
+              as SpecialBrandsInner?,
+      name: freezed == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String?,
+      slug: freezed == slug
+          ? _value.slug
+          : slug // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ) as $Val);
   }
 
   /// Create a copy of SpecialBrandsElement
@@ -574,19 +532,17 @@ class _$SpecialBrandsElementCopyWithImpl<
 /// @nodoc
 abstract class _$$SpecialBrandsElementImplCopyWith<$Res>
     implements $SpecialBrandsElementCopyWith<$Res> {
-  factory _$$SpecialBrandsElementImplCopyWith(
-    _$SpecialBrandsElementImpl value,
-    $Res Function(_$SpecialBrandsElementImpl) then,
-  ) = __$$SpecialBrandsElementImplCopyWithImpl<$Res>;
+  factory _$$SpecialBrandsElementImplCopyWith(_$SpecialBrandsElementImpl value,
+          $Res Function(_$SpecialBrandsElementImpl) then) =
+      __$$SpecialBrandsElementImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({
-    String? image,
-    String? imageAlt,
-    SpecialBrandsInner? meta,
-    String? name,
-    String? slug,
-  });
+  $Res call(
+      {String? image,
+      String? imageAlt,
+      SpecialBrandsInner? meta,
+      String? name,
+      String? slug});
 
   @override
   $SpecialBrandsInnerCopyWith<$Res>? get meta;
@@ -596,10 +552,9 @@ abstract class _$$SpecialBrandsElementImplCopyWith<$Res>
 class __$$SpecialBrandsElementImplCopyWithImpl<$Res>
     extends _$SpecialBrandsElementCopyWithImpl<$Res, _$SpecialBrandsElementImpl>
     implements _$$SpecialBrandsElementImplCopyWith<$Res> {
-  __$$SpecialBrandsElementImplCopyWithImpl(
-    _$SpecialBrandsElementImpl _value,
-    $Res Function(_$SpecialBrandsElementImpl) _then,
-  ) : super(_value, _then);
+  __$$SpecialBrandsElementImplCopyWithImpl(_$SpecialBrandsElementImpl _value,
+      $Res Function(_$SpecialBrandsElementImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of SpecialBrandsElement
   /// with the given fields replaced by the non-null parameter values.
@@ -612,30 +567,28 @@ class __$$SpecialBrandsElementImplCopyWithImpl<$Res>
     Object? name = freezed,
     Object? slug = freezed,
   }) {
-    return _then(
-      _$SpecialBrandsElementImpl(
-        freezed == image
-            ? _value.image
-            : image // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == imageAlt
-            ? _value.imageAlt
-            : imageAlt // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == meta
-            ? _value.meta
-            : meta // ignore: cast_nullable_to_non_nullable
-                as SpecialBrandsInner?,
-        freezed == name
-            ? _value.name
-            : name // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == slug
-            ? _value.slug
-            : slug // ignore: cast_nullable_to_non_nullable
-                as String?,
-      ),
-    );
+    return _then(_$SpecialBrandsElementImpl(
+      freezed == image
+          ? _value.image
+          : image // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == imageAlt
+          ? _value.imageAlt
+          : imageAlt // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == meta
+          ? _value.meta
+          : meta // ignore: cast_nullable_to_non_nullable
+              as SpecialBrandsInner?,
+      freezed == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == slug
+          ? _value.slug
+          : slug // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ));
   }
 }
 
@@ -644,12 +597,7 @@ class __$$SpecialBrandsElementImplCopyWithImpl<$Res>
 @JsonSerializable(explicitToJson: true, fieldRename: FieldRename.snake)
 class _$SpecialBrandsElementImpl implements _SpecialBrandsElement {
   const _$SpecialBrandsElementImpl(
-    this.image,
-    this.imageAlt,
-    this.meta,
-    this.name,
-    this.slug,
-  );
+      this.image, this.imageAlt, this.meta, this.name, this.slug);
 
   factory _$SpecialBrandsElementImpl.fromJson(Map<String, dynamic> json) =>
       _$$SpecialBrandsElementImplFromJson(json);
@@ -694,26 +642,25 @@ class _$SpecialBrandsElementImpl implements _SpecialBrandsElement {
   @override
   @pragma('vm:prefer-inline')
   _$$SpecialBrandsElementImplCopyWith<_$SpecialBrandsElementImpl>
-  get copyWith =>
-      __$$SpecialBrandsElementImplCopyWithImpl<_$SpecialBrandsElementImpl>(
-        this,
-        _$identity,
-      );
+      get copyWith =>
+          __$$SpecialBrandsElementImplCopyWithImpl<_$SpecialBrandsElementImpl>(
+              this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$SpecialBrandsElementImplToJson(this);
+    return _$$SpecialBrandsElementImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _SpecialBrandsElement implements SpecialBrandsElement {
   const factory _SpecialBrandsElement(
-    final String? image,
-    final String? imageAlt,
-    final SpecialBrandsInner? meta,
-    final String? name,
-    final String? slug,
-  ) = _$SpecialBrandsElementImpl;
+      final String? image,
+      final String? imageAlt,
+      final SpecialBrandsInner? meta,
+      final String? name,
+      final String? slug) = _$SpecialBrandsElementImpl;
 
   factory _SpecialBrandsElement.fromJson(Map<String, dynamic> json) =
       _$SpecialBrandsElementImpl.fromJson;
@@ -734,7 +681,7 @@ abstract class _SpecialBrandsElement implements SpecialBrandsElement {
   @override
   @JsonKey(includeFromJson: false, includeToJson: false)
   _$$SpecialBrandsElementImplCopyWith<_$SpecialBrandsElementImpl>
-  get copyWith => throw _privateConstructorUsedError;
+      get copyWith => throw _privateConstructorUsedError;
 }
 
 SpecialBrandsInner _$SpecialBrandsInnerFromJson(Map<String, dynamic> json) {
@@ -760,9 +707,8 @@ mixin _$SpecialBrandsInner {
 /// @nodoc
 abstract class $SpecialBrandsInnerCopyWith<$Res> {
   factory $SpecialBrandsInnerCopyWith(
-    SpecialBrandsInner value,
-    $Res Function(SpecialBrandsInner) then,
-  ) = _$SpecialBrandsInnerCopyWithImpl<$Res, SpecialBrandsInner>;
+          SpecialBrandsInner value, $Res Function(SpecialBrandsInner) then) =
+      _$SpecialBrandsInnerCopyWithImpl<$Res, SpecialBrandsInner>;
   @useResult
   $Res call({String? description, String? keywords, String? title});
 }
@@ -786,36 +732,29 @@ class _$SpecialBrandsInnerCopyWithImpl<$Res, $Val extends SpecialBrandsInner>
     Object? keywords = freezed,
     Object? title = freezed,
   }) {
-    return _then(
-      _value.copyWith(
-            description:
-                freezed == description
-                    ? _value.description
-                    : description // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            keywords:
-                freezed == keywords
-                    ? _value.keywords
-                    : keywords // ignore: cast_nullable_to_non_nullable
-                        as String?,
-            title:
-                freezed == title
-                    ? _value.title
-                    : title // ignore: cast_nullable_to_non_nullable
-                        as String?,
-          )
-          as $Val,
-    );
+    return _then(_value.copyWith(
+      description: freezed == description
+          ? _value.description
+          : description // ignore: cast_nullable_to_non_nullable
+              as String?,
+      keywords: freezed == keywords
+          ? _value.keywords
+          : keywords // ignore: cast_nullable_to_non_nullable
+              as String?,
+      title: freezed == title
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ) as $Val);
   }
 }
 
 /// @nodoc
 abstract class _$$SpecialBrandsInnerImplCopyWith<$Res>
     implements $SpecialBrandsInnerCopyWith<$Res> {
-  factory _$$SpecialBrandsInnerImplCopyWith(
-    _$SpecialBrandsInnerImpl value,
-    $Res Function(_$SpecialBrandsInnerImpl) then,
-  ) = __$$SpecialBrandsInnerImplCopyWithImpl<$Res>;
+  factory _$$SpecialBrandsInnerImplCopyWith(_$SpecialBrandsInnerImpl value,
+          $Res Function(_$SpecialBrandsInnerImpl) then) =
+      __$$SpecialBrandsInnerImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String? description, String? keywords, String? title});
@@ -825,10 +764,9 @@ abstract class _$$SpecialBrandsInnerImplCopyWith<$Res>
 class __$$SpecialBrandsInnerImplCopyWithImpl<$Res>
     extends _$SpecialBrandsInnerCopyWithImpl<$Res, _$SpecialBrandsInnerImpl>
     implements _$$SpecialBrandsInnerImplCopyWith<$Res> {
-  __$$SpecialBrandsInnerImplCopyWithImpl(
-    _$SpecialBrandsInnerImpl _value,
-    $Res Function(_$SpecialBrandsInnerImpl) _then,
-  ) : super(_value, _then);
+  __$$SpecialBrandsInnerImplCopyWithImpl(_$SpecialBrandsInnerImpl _value,
+      $Res Function(_$SpecialBrandsInnerImpl) _then)
+      : super(_value, _then);
 
   /// Create a copy of SpecialBrandsInner
   /// with the given fields replaced by the non-null parameter values.
@@ -839,22 +777,20 @@ class __$$SpecialBrandsInnerImplCopyWithImpl<$Res>
     Object? keywords = freezed,
     Object? title = freezed,
   }) {
-    return _then(
-      _$SpecialBrandsInnerImpl(
-        freezed == description
-            ? _value.description
-            : description // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == keywords
-            ? _value.keywords
-            : keywords // ignore: cast_nullable_to_non_nullable
-                as String?,
-        freezed == title
-            ? _value.title
-            : title // ignore: cast_nullable_to_non_nullable
-                as String?,
-      ),
-    );
+    return _then(_$SpecialBrandsInnerImpl(
+      freezed == description
+          ? _value.description
+          : description // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == keywords
+          ? _value.keywords
+          : keywords // ignore: cast_nullable_to_non_nullable
+              as String?,
+      freezed == title
+          ? _value.title
+          : title // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ));
   }
 }
 
@@ -902,22 +838,19 @@ class _$SpecialBrandsInnerImpl implements _SpecialBrandsInner {
   @pragma('vm:prefer-inline')
   _$$SpecialBrandsInnerImplCopyWith<_$SpecialBrandsInnerImpl> get copyWith =>
       __$$SpecialBrandsInnerImplCopyWithImpl<_$SpecialBrandsInnerImpl>(
-        this,
-        _$identity,
-      );
+          this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$SpecialBrandsInnerImplToJson(this);
+    return _$$SpecialBrandsInnerImplToJson(
+      this,
+    );
   }
 }
 
 abstract class _SpecialBrandsInner implements SpecialBrandsInner {
-  const factory _SpecialBrandsInner(
-    final String? description,
-    final String? keywords,
-    final String? title,
-  ) = _$SpecialBrandsInnerImpl;
+  const factory _SpecialBrandsInner(final String? description,
+      final String? keywords, final String? title) = _$SpecialBrandsInnerImpl;
 
   factory _SpecialBrandsInner.fromJson(Map<String, dynamic> json) =
       _$SpecialBrandsInnerImpl.fromJson;

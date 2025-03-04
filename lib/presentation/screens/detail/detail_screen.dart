@@ -134,19 +134,18 @@ class _DetailScreenState extends State<DetailScreen> {
                             height: 300,
                             color: Colors.white,
                             child: CarouselSlider(
-                              items:
-                                  images.map((item) {
-                                    return Container(
-                                      color: Colors.white,
-                                      // color: Colors.transparent,
-                                      child: Image.network(
-                                        item,
-                                        fit: BoxFit.contain,
-                                        width: double.infinity,
-                                        height: 300,
-                                      ),
-                                    );
-                                  }).toList(),
+                              items: images.map((item) {
+                                return Container(
+                                  color: Colors.white,
+                                  // color: Colors.transparent,
+                                  child: Image.network(
+                                    item,
+                                    fit: BoxFit.contain,
+                                    width: double.infinity,
+                                    height: 300,
+                                  ),
+                                );
+                              }).toList(),
                               carouselController: _controller,
                               options: CarouselOptions(
                                 height: 300,
@@ -162,33 +161,31 @@ class _DetailScreenState extends State<DetailScreen> {
                           ),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.center,
-                            children:
-                                images.asMap().entries.map((entry) {
-                                  return GestureDetector(
-                                    onTap:
-                                        () => _controller.animateToPage(
-                                          entry.key,
-                                        ),
-                                    child: Container(
-                                      width: 8.0,
-                                      height: 8.0,
-                                      margin: EdgeInsets.symmetric(
-                                        vertical: 10.0,
-                                        horizontal: 4.0,
-                                      ),
-                                      decoration: BoxDecoration(
-                                        shape: BoxShape.circle,
-                                        color: (Theme.of(context).brightness ==
-                                                    Brightness.dark
-                                                ? Colors.white
-                                                : Colors.black)
-                                            .withOpacity(
-                                              _current == entry.key ? 0.9 : 0.4,
-                                            ),
-                                      ),
+                            children: images.asMap().entries.map((entry) {
+                              return GestureDetector(
+                                onTap: () => _controller.animateToPage(
+                                  entry.key,
+                                ),
+                                child: Container(
+                                  width: 8.0,
+                                  height: 8.0,
+                                  margin: EdgeInsets.symmetric(
+                                    vertical: 10.0,
+                                    horizontal: 4.0,
+                                  ),
+                                  decoration: BoxDecoration(
+                                    shape: BoxShape.circle,
+                                    color: (Theme.of(context).brightness ==
+                                                Brightness.dark
+                                            ? Colors.white
+                                            : Colors.black)
+                                        .withOpacity(
+                                      _current == entry.key ? 0.9 : 0.4,
                                     ),
-                                  );
-                                }).toList(),
+                                  ),
+                                ),
+                              );
+                            }).toList(),
                           ),
                           Padding(
                             padding: const EdgeInsets.symmetric(
@@ -290,9 +287,9 @@ class _DetailScreenState extends State<DetailScreen> {
                                               child: Padding(
                                                 padding:
                                                     const EdgeInsets.symmetric(
-                                                      vertical: 3.0,
-                                                      horizontal: 2,
-                                                    ),
+                                                  vertical: 3.0,
+                                                  horizontal: 2,
+                                                ),
                                                 child: Text(
                                                   "${formatPrice(int.parse(state.detail?.data?.data?.minimalLoanPrice?.minMonthlyPrice ?? "0"))}",
                                                   style: TextStyle(
@@ -330,100 +327,97 @@ class _DetailScreenState extends State<DetailScreen> {
                                         right: 10.0,
                                         bottom: 10,
                                       ),
-                                      child:
-                                          HiveHelper.isInCart(widget.productId)
-                                              ? InkWell(
-                                                onTap: () {
-                                                  Navigator.push(
-                                                    context,
-                                                    MaterialPageRoute(
-                                                      builder:
-                                                          (
-                                                            context,
-                                                          ) => BasketScreen(
-                                                            updateBasketCount:
-                                                                updateBasketCount,
-                                                          ),
-                                                    ),
-                                                  );
-                                                },
-                                                child: Padding(
-                                                  padding:
-                                                      const EdgeInsets.only(
-                                                        left: 10.0,
-                                                        right: 10.0,
-                                                        bottom: 10,
-                                                      ),
-                                                  child: InkWell(
-                                                    child: Container(
-                                                      height: 45,
-                                                      width: double.infinity,
-                                                      decoration: BoxDecoration(
-                                                        color: Colors.white,
-                                                        // White background
-                                                        borderRadius:
-                                                            BorderRadius.circular(
-                                                              10,
-                                                            ),
-                                                        border: Border.all(
-                                                          color:
-                                                              Colors
-                                                                  .orangeAccent, // Border with orange accent color
-                                                        ),
-                                                      ),
-                                                      child: Center(
-                                                        child: Text(
-                                                          "savatda", // Updated text
-                                                          style: TextStyle(
-                                                            fontWeight:
-                                                                FontWeight.w600,
-                                                            color:
-                                                                Colors
-                                                                    .black, // Matching text color with border
-                                                          ),
-                                                        ),
-                                                      ),
+                                      child: HiveHelper.isInCart(
+                                              widget.productId)
+                                          ? InkWell(
+                                              onTap: () {
+                                                Navigator.push(
+                                                  context,
+                                                  MaterialPageRoute(
+                                                    builder: (
+                                                      context,
+                                                    ) =>
+                                                        BasketScreen(
+                                                      updateBasketCount:
+                                                          updateBasketCount,
                                                     ),
                                                   ),
+                                                );
+                                              },
+                                              child: Padding(
+                                                padding: const EdgeInsets.only(
+                                                  left: 10.0,
+                                                  right: 10.0,
+                                                  bottom: 10,
                                                 ),
-                                              )
-                                              : InkWell(
-                                                onTap: () {
-                                                  HiveHelper.addToCart(
-                                                    CartModel(
-                                                      id: widget.productId,
-                                                      name: widget.name,
-                                                      image: widget.image,
-                                                      salePrice: widget.price,
-                                                      axiomMonthlyPrice:
-                                                          widget.axiom,
-                                                      quantity: 1,
+                                                child: InkWell(
+                                                  child: Container(
+                                                    height: 45,
+                                                    width: double.infinity,
+                                                    decoration: BoxDecoration(
+                                                      color: Colors.white,
+                                                      // White background
+                                                      borderRadius:
+                                                          BorderRadius.circular(
+                                                        10,
+                                                      ),
+                                                      border: Border.all(
+                                                        color: Colors
+                                                            .orangeAccent, // Border with orange accent color
+                                                      ),
                                                     ),
-                                                  );
-                                                  setState(() {});
-                                                },
-                                                child: Container(
-                                                  height: 45,
-                                                  width: double.infinity,
-                                                  decoration: BoxDecoration(
-                                                    borderRadius:
-                                                        BorderRadius.circular(
-                                                          10,
+                                                    child: Center(
+                                                      child: Text(
+                                                        "savatda", // Updated text
+                                                        style: TextStyle(
+                                                          fontWeight:
+                                                              FontWeight.w600,
+                                                          color: Colors
+                                                              .black, // Matching text color with border
                                                         ),
-                                                    color: Colors.orangeAccent,
-                                                  ),
-                                                  child: Center(
-                                                    child: Text(
-                                                      "Savatchaga qo'shish",
-                                                      style: TextStyle(
-                                                        fontWeight:
-                                                            FontWeight.w600,
-                                                        color: Colors.black,
                                                       ),
                                                     ),
                                                   ),
                                                 ),
                                               ),
+                                            )
+                                          : InkWell(
+                                              onTap: () {
+                                                HiveHelper.addToCart(
+                                                  CartModel(
+                                                    id: widget.productId,
+                                                    name: widget.name,
+                                                    image: widget.image,
+                                                    salePrice: widget.price,
+                                                    axiomMonthlyPrice:
+                                                        widget.axiom,
+                                                    quantity: 1,
+                                                  ),
+                                                );
+                                                setState(() {});
+                                              },
+                                              child: Container(
+                                                height: 45,
+                                                width: double.infinity,
+                                                decoration: BoxDecoration(
+                                                  borderRadius:
+                                                      BorderRadius.circular(
+                                                    10,
+                                                  ),
+                                                  color: Colors.orangeAccent,
+                                                ),
+                                                child: Center(
+                                                  child: Text(
+                                                    "Savatchaga qo'shish",
+                                                    style: TextStyle(
+                                                      fontWeight:
+                                                          FontWeight.w600,
+                                                      color: Colors.black,
+                                                    ),
+                                                  ),
+                                                ),
+                                              ),
+                                            ),
                                     ),
                                   ],
                                 ),
@@ -451,7 +445,8 @@ class _DetailScreenState extends State<DetailScreen> {
                                   Navigator.push(
                                     context,
                                     MaterialPageRoute(
-                                      builder: (contex) => MarketsScreen(id: widget.productId),
+                                      builder: (contex) =>
+                                          MarketsScreen(id: widget.productId),
                                     ),
                                   );
                                 },
@@ -485,14 +480,15 @@ class _DetailScreenState extends State<DetailScreen> {
                               ),
                             ),
                           ),
-
-                          Padding(
-                            padding: EdgeInsets.symmetric(
-                              horizontal: 16,
-                              vertical: 10,
-                            ),
-                            child: Text('Tavsif'),
-                          ),
+                          state.info?.data?.data != null
+                              ? Padding(
+                                  padding: EdgeInsets.symmetric(
+                                    horizontal: 16,
+                                    vertical: 10,
+                                  ),
+                                  child: Text('Tavsif'),
+                                )
+                              : SizedBox(),
                           Padding(
                             padding: EdgeInsets.symmetric(horizontal: 16),
                             child: Text(
@@ -501,32 +497,35 @@ class _DetailScreenState extends State<DetailScreen> {
                               overflow: TextOverflow.ellipsis,
                             ),
                           ),
-                          Padding(
-                            padding: EdgeInsets.symmetric(
-                              horizontal: 16,
-                              vertical: 10,
-                            ),
-                            child: InkWell(
-                              onTap: () {
-                                Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                    builder:
-                                        (context) => ReadDetailScreen(
-                                          detail: state.info?.data?.data ?? "",
-                                        ),
+                          state.info?.data?.data != null
+                              ? Padding(
+                                  padding: EdgeInsets.symmetric(
+                                    horizontal: 16,
+                                    vertical: 10,
                                   ),
-                                );
-                              },
-                              child: Text(
-                                "Ko'proq o'qish",
-                                style: TextStyle(
-                                  color: Colors.blue,
-                                  decoration: TextDecoration.underline,
-                                ),
-                              ),
-                            ),
-                          ),
+                                  child: InkWell(
+                                    onTap: () {
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) =>
+                                              ReadDetailScreen(
+                                            detail:
+                                                state.info?.data?.data ?? "",
+                                          ),
+                                        ),
+                                      );
+                                    },
+                                    child: Text(
+                                      "Ko'proq o'qish",
+                                      style: TextStyle(
+                                        color: Colors.blue,
+                                        decoration: TextDecoration.underline,
+                                      ),
+                                    ),
+                                  ),
+                                )
+                              : SizedBox(),
                           Padding(
                             padding: EdgeInsets.symmetric(horizontal: 16),
                             child: Text(
@@ -546,31 +545,16 @@ class _DetailScreenState extends State<DetailScreen> {
                                 physics: NeverScrollableScrollPhysics(),
                                 shrinkWrap: true,
                                 scrollDirection: Axis.vertical,
-                                itemCount:
-                                    state
-                                        .about
-                                        ?.data
-                                        ?.data?[0]
-                                        .characters
-                                        ?.length ??
+                                itemCount: state.about?.data?.data?[0]
+                                        .characters?.length ??
                                     0,
                                 itemBuilder: (context, index) {
                                   return ItemDetail(
-                                    type:
-                                        state
-                                            .about
-                                            ?.data
-                                            ?.data?[0]
-                                            .characters?[index]
-                                            .name ??
+                                    type: state.about?.data?.data?[0]
+                                            .characters?[index].name ??
                                         "",
-                                    value:
-                                        state
-                                            .about
-                                            ?.data
-                                            ?.data?[0]
-                                            .characters?[index]
-                                            .value ??
+                                    value: state.about?.data?.data?[0]
+                                            .characters?[index].value ??
                                         "",
                                   );
                                 },
@@ -605,15 +589,9 @@ class _DetailScreenState extends State<DetailScreen> {
                             ),
                           ),
                           Visibility(
-                            visible:
-                                (state
-                                        .accessories
-                                        ?.data
-                                        ?.data
-                                        ?.first
-                                        .products
-                                        ?.isNotEmpty ??
-                                    false),
+                            visible: (state.accessories?.data?.data?.first
+                                    .products?.isNotEmpty ??
+                                false),
                             child: Padding(
                               padding: EdgeInsets.symmetric(horizontal: 16),
                               child: Container(
@@ -622,23 +600,12 @@ class _DetailScreenState extends State<DetailScreen> {
                                   physics: BouncingScrollPhysics(),
                                   shrinkWrap: true,
                                   scrollDirection: Axis.horizontal,
-                                  itemCount:
-                                      state
-                                          .accessories
-                                          ?.data
-                                          ?.data
-                                          ?.first
-                                          .products
-                                          ?.length ??
+                                  itemCount: state.accessories?.data?.data
+                                          ?.first.products?.length ??
                                       0,
                                   itemBuilder: (context, index) {
-                                    final product =
-                                        state
-                                            .accessories
-                                            ?.data
-                                            ?.data
-                                            ?.first
-                                            .products;
+                                    final product = state.accessories?.data
+                                        ?.data?.first.products;
 
                                     if (product == null ||
                                         index >= product.length) {
@@ -656,30 +623,22 @@ class _DetailScreenState extends State<DetailScreen> {
                                       imageUrl: product[index].image ?? "",
                                       subtitle:
                                           product[index].axiomMonthlyPrice ??
-                                          "",
+                                              "",
                                       price: product[index].salePrice ?? 0,
                                       onClick: () {
                                         Navigator.push(
                                           context,
                                           MaterialPageRoute(
-                                            builder:
-                                                (context) => DetailScreen(
-                                                  productId:
-                                                      product[index].id ?? 0,
-                                                  name:
-                                                      product[index].name ?? "",
-                                                  image:
-                                                      product[index].image ??
-                                                      "",
-                                                  axiom:
-                                                      product[index]
-                                                          .axiomMonthlyPrice ??
-                                                      "",
-                                                  price:
-                                                      product[index]
-                                                          .salePrice ??
-                                                      0,
-                                                ),
+                                            builder: (context) => DetailScreen(
+                                              productId: product[index].id ?? 0,
+                                              name: product[index].name ?? "",
+                                              image: product[index].image ?? "",
+                                              axiom: product[index]
+                                                      .axiomMonthlyPrice ??
+                                                  "",
+                                              price:
+                                                  product[index].salePrice ?? 0,
+                                            ),
                                           ),
                                         );
                                       },

@@ -21,8 +21,14 @@ class _MarketsScreenState extends State<MarketsScreen> {
 
   @override
   void initState() {
-    print(widget.id);
-    bloc.add(GetMarkets(widget.id));
+    print("TTT ${widget.id}");
+    if (widget.id != 0){
+      print("TTT not equal to zero");
+      bloc.add(GetMarkets(widget.id));
+    } else {
+      print("TTT equal to zero");
+      bloc.add(GetMarketsProfile());
+    }
     super.initState();
   }
 
