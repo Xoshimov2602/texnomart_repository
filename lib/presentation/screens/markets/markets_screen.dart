@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:texnomart/data/source/remote/response/markets/markets_response.dart';
+import 'package:texnomart/data/source/remote/response/markets_profile/markets_profile.dart';
 
 import '../map/map_screen.dart';
 import 'bloc/market_bloc.dart';
@@ -22,7 +23,7 @@ class _MarketsScreenState extends State<MarketsScreen> {
   @override
   void initState() {
     print("TTT ${widget.id}");
-    if (widget.id != 0){
+    if (widget.id != 0) {
       print("TTT not equal to zero");
       bloc.add(GetMarkets(widget.id));
     } else {
@@ -74,59 +75,109 @@ class _MarketsScreenState extends State<MarketsScreen> {
                 {
                   return Container(
                     width: double.infinity,
-                    child: widget.id == 0 ? ListView.separated(
-                   itemBuilder: (context, index) {
-                     return ItemMarkets(
-                       title: state.openedMarkets?[index].name ?? "",
-                       subtitle: state.openedMarkets?[index].workTime ?? "", onTab: (){},
-                     );
-                   },
-                   separatorBuilder: (context, index) {
-                     return Padding(
-                       padding: const EdgeInsets.symmetric(horizontal: 16),
-                       child: Divider(
-                         color: Colors.grey[400],
-                         thickness: 1,
-                       ),
-                     );
-                   },
-                   itemCount: state.openedMarkets?.length ?? 0,
-                 )
-               : ListView.separated(
-                      itemBuilder: (context, index) {
-                        return ItemMarkets(
-                          title: state.markets?.data?.data?[index].name ?? "",
-                          subtitle:
-                              state.markets?.data?.data?[index].workTime ?? "",
-                          onTab: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => MapScreen(
-                                  market: state.markets?.data?.data?[index] ??
-                                      MarketsElement(
-                                          "address",
-                                          "description",
-                                          0,
-                                          "lat",
-                                          "long",
-                                          "name",
-                                          "phone",
-                                          "workTime"),
+                    child: widget.id == 0
+                        ? ListView.separated(
+                            itemBuilder: (context, index) {
+                              return ItemMarkets(
+                                title: state.openedMarkets?[index].name ?? "",
+                                subtitle:
+                                    state.openedMarkets?[index].workTime ?? "",
+                                onTab: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => MapScreen(
+                                        opened: state.openedMarkets?[index] ??
+                                            OpenedStoresData(
+                                                0,
+                                                "name",
+                                                "address",
+                                                "description",
+                                                "long",
+                                                "lat",
+                                                "phone",
+                                                "workTime",
+                                                null),
+                                        market: MarketsElement(
+                                            "address",
+                                            "description",
+                                            0,
+                                            "lat",
+                                            "long",
+                                            "name",
+                                            "phone",
+                                            "workTime"),
+                                        isDetail: false,
+                                      ),
+                                    ),
+                                  );
+                                },
+                              );
+                            },
+                            separatorBuilder: (context, index) {
+                              return Padding(
+                                padding:
+                                    const EdgeInsets.symmetric(horizontal: 16),
+                                child: Divider(
+                                  color: Colors.grey[400],
+                                  thickness: 1,
                                 ),
-                              ),
-                            );
-                          },
-                        );
-                      },
-                      separatorBuilder: (context, index) {
-                        return Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 16),
-                          child: Divider(color: Colors.grey[400], thickness: 1),
-                        );
-                      },
-                      itemCount: state.markets?.data?.data?.length ?? 0,
-                    ),
+                              );
+                            },
+                            itemCount: state.openedMarkets?.length ?? 0,
+                          )
+                        : ListView.separated(
+                            itemBuilder: (context, index) {
+                              return ItemMarkets(
+                                title: state.markets?.data?.data?[index].name ??
+                                    "",
+                                subtitle: state
+                                        .markets?.data?.data?[index].workTime ??
+                                    "",
+                                onTab: () {
+                                  print("YYYY bosilyapti}");
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => MapScreen(
+                                        market:
+                                            state.markets?.data?.data?[index] ??
+                                                MarketsElement(
+                                                    "address",
+                                                    "description",
+                                                    0,
+                                                    "lat",
+                                                    "long",
+                                                    "name",
+                                                    "phone",
+                                                    "workTime"),
+                                        opened: OpenedStoresData(
+                                            0,
+                                            "name",
+                                            "address",
+                                            "description",
+                                            "0",
+                                            "0.0",
+                                            "",
+                                            "workTime",
+                                            null),
+                                        isDetail: true,
+                                      ),
+                                    ),
+                                  );
+                                },
+                              );
+                            },
+                            separatorBuilder: (context, index) {
+                              return Padding(
+                                padding:
+                                    const EdgeInsets.symmetric(horizontal: 16),
+                                child: Divider(
+                                    color: Colors.grey[400], thickness: 1),
+                              );
+                            },
+                            itemCount: state.markets?.data?.data?.length ?? 0,
+                          ),
                   );
                 }
               case MarketStatus.failure:

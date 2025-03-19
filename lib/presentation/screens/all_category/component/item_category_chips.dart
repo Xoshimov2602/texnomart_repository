@@ -5,8 +5,9 @@ class ItemCategoryChip extends StatefulWidget {
   final String imgUrl;
   final String name;
   final OnProductPressed onPressed;
+  final bool isChosen;
 
-  const ItemCategoryChip({super.key, required this.imgUrl, required this.name, required this.onPressed});
+  const ItemCategoryChip({super.key, required this.imgUrl, required this.name, required this.onPressed, this.isChosen = false});
 
   @override
   State<ItemCategoryChip> createState() => _ItemCategoryChipState();
@@ -19,6 +20,7 @@ class _ItemCategoryChipState extends State<ItemCategoryChip> {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 10.0,horizontal: 5),
       child: InkWell(
+        borderRadius: BorderRadius.circular(10),
         onTap: (){widget.onPressed();},
         child: Container(
           decoration: BoxDecoration(color: Colors.grey[200],borderRadius: BorderRadius.circular(10)),

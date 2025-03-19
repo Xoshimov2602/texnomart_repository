@@ -67,7 +67,6 @@ class _AllCategoryScreenState extends State<AllCategoryScreen> {
             switch (state.status) {
               case AllCategoriesStatus.success:
                 {
-                  print("LLLLLLL success");
                   return Container(
                     width: double.infinity,
                     height: double.infinity,

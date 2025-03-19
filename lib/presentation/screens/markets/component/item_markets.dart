@@ -4,8 +4,7 @@ class ItemMarkets extends StatelessWidget {
   final String title;
   final String subtitle;
   final Function onTab;
-  const ItemMarkets({Key? key, required this.title, required this.subtitle, required this.onTab})
-    : super(key: key);
+  const ItemMarkets({super.key, required this.title, required this.subtitle, required this.onTab});
 
   @override
   Widget build(BuildContext context) {

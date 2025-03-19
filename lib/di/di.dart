@@ -22,7 +22,7 @@ import '../data/source/remote/api/top_categories/special_category_api.dart';
 
 final getIt = GetIt.instance;
 
-void setup () {
+void setup() {
   // getIt.registerSingleton<Dio>(Dio(BaseOptions(
   //   baseUrl: 'https://gw.texnomart.uz/api/',
   //   //https://gateway.texnomart.uz/api/web/v1/region/stores-list
@@ -50,14 +50,13 @@ void setup () {
 
   registerMainDio();
   registerStoresDio();
-
   getIt.registerSingleton<ProductApi>(ProductApi(getIt<Dio>()));
   getIt.registerSingleton<NewProductsApi>(NewProductsApi(getIt<Dio>()));
   getIt.registerSingleton<SpecialBrandsApi>(SpecialBrandsApi(getIt<Dio>()));
   getIt.registerSingleton<SpecialCategoryApi>(SpecialCategoryApi(getIt<Dio>()));
   getIt.registerSingleton<CollectionsApi>(CollectionsApi(getIt<Dio>()));
-  getIt.registerSingleton<CategoriesApi> (CategoriesApi(getIt<Dio>()));
-  getIt.registerSingleton<DetailsApi> (DetailsApi(getIt<Dio>()));
+  getIt.registerSingleton<CategoriesApi>(CategoriesApi(getIt<Dio>()));
+  getIt.registerSingleton<DetailsApi>(DetailsApi(getIt<Dio>()));
   getIt.registerSingleton<AllCategoriesApi>(AllCategoriesApi(getIt<Dio>()));
   getIt.registerSingleton<CategoryChipsApi>(CategoryChipsApi(getIt<Dio>()));
   getIt.registerSingleton<LeaderSaleApi>(LeaderSaleApi(getIt<Dio>()));
@@ -65,7 +64,8 @@ void setup () {
   getIt.registerSingleton<DetailAboutApi>(DetailAboutApi(getIt<Dio>()));
   getIt.registerSingleton<AccessoriesApi>(AccessoriesApi(getIt<Dio>()));
   getIt.registerSingleton<MarketsApi>(MarketsApi(getIt<Dio>()));
-  getIt.registerSingleton<MarketsProfileApi>(MarketsProfileApi(getIt<Dio>(instanceName: 'stores')));
+  getIt.registerSingleton<MarketsProfileApi>(
+      MarketsProfileApi(getIt<Dio>(instanceName: 'stores')));
 
   getIt.registerSingleton<ProductRepository>(ProductRepositoryimpl());
 }
