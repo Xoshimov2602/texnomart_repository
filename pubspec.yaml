@@ -57,11 +57,17 @@ dependencies:
   yandex_maps_mapkit_lite:
     version: ^4.5.0
   geolocator: ^13.0.2
+  flutter_launcher_icons: ^0.14.3
 #  build_runner: ^2.4.15
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/img_1.png"
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
