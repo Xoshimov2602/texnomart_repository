@@ -182,7 +182,7 @@ class _MarketsScreenState extends State<MarketsScreen> {
                 }
               case MarketStatus.failure:
                 {
-                  return Center(child: Text("Unknown error"));
+                  return Center(child: Image.asset('assets/no_internet.png'));
                 }
               case MarketStatus.loading:
                 return Center(child: CupertinoActivityIndicator());

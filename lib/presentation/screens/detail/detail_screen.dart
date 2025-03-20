@@ -657,7 +657,7 @@ class _DetailScreenState extends State<DetailScreen> {
                 }
               case DetailsStatus.failure:
                 {
-                  return Text('Unknown error');
+                  return Image.asset('assets/no_internet.png');
                 }
               case DetailsStatus.loading:
                 {

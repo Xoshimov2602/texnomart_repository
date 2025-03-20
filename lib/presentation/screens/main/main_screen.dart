@@ -216,9 +216,6 @@ class _MainScreenState extends State<MainScreen> {
                                               ),
                                             ),
                                           );
-                                          print(
-                                            "YYY item from main screen ${state.data?.data?.data[index].name}",
-                                          );
                                         },
                                       ),
                                     );
@@ -553,7 +550,7 @@ class _MainScreenState extends State<MainScreen> {
                 }
               case MainStatus.error:
                 {
-                  return Center(child: Text("Unknown Error"));
+                  return Center(child: Image.asset('assets/no_internet.png'));
                 }
               case null:
                 {

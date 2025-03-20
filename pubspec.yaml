@@ -58,6 +58,7 @@ dependencies:
     version: ^4.5.0
   geolocator: ^13.0.2
   flutter_launcher_icons: ^0.14.3
+  skeletonizer: ^1.4.3
 #  build_runner: ^2.4.15
 
 dev_dependencies:

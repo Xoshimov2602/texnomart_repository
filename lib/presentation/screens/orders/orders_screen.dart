@@ -114,7 +114,7 @@ class _OrdersScreenState extends State<OrdersScreen> {
                 }
               case OrderStatus.failure:
                 {
-                  return Center(child: Text('Unknown error'));
+                  return Center(child: Image.asset('assets/no_internet.png'));
                 }
               case OrderStatus.loading:
                 return CupertinoActivityIndicator();

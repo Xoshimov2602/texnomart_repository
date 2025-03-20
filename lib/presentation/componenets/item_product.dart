@@ -398,7 +398,8 @@ Widget horizontalProductCard({
   required String title,
   required String imageUrl,
   required String? subtitle,
-  required CollectionsStickers? stickers,
+  // required CollectionsStickers? stickers,
+  required List<dynamic>? stickers,
   VoidCallback? onFavouriteToggle,
   required Function onClick,
   required Function onLikeClick,
@@ -456,7 +457,7 @@ Widget horizontalProductCard({
                       child: Container(
                         decoration: BoxDecoration(
                           color: hexToColor(
-                            stickers.backgroundColor ?? "#ffffff",
+                            /*stickers.backgroundColor ??*/ "#ffffff",
                           ),
                           borderRadius: BorderRadius.circular(6),
                         ),
@@ -465,7 +466,7 @@ Widget horizontalProductCard({
                           vertical: 2,
                         ),
                         child: Text(
-                          stickers.name ?? "",
+                          /*stickers.name ??*/ "",
                           style: const TextStyle(
                             fontSize: 10,
                             fontWeight: FontWeight.bold,

@@ -98,7 +98,7 @@ class _AllCategoryScreenState extends State<AllCategoryScreen> {
                   print("LLLLLLL failure");
                   return Container(
                     alignment: Alignment(0, 0),
-                    child: Text('Unknown error'),
+                    child: Image.asset('assets/no_internet.png'),
                   );
                 }
               case AllCategoriesStatus.loading:
